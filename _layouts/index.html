@@ -4,15 +4,14 @@
     {% include header.html %}
     <main class="PageContent" aria-label="Content">
       <div class="PostWell">
-          {% for post in site.posts %}
-            <article class="BlogEntry">
-              <h1 class="BlogEntry__title">
-                <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-              </h1>
-              {{ post.excerpt }}
-            </article>
-          {% endfor %}
-        </div>
+        {% for post in site.posts %}
+          <article class="PostTeaser">
+            <h1 class="PostTeaser__title">
+              <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+            </h1>
+            {{ post.excerpt }}
+          </article>
+        {% endfor %}
       </div>
     </main>
 
