@@ -1,0 +1,33 @@
+.SiteHeader {
+  background-color: #363636;
+  padding: 20px;
+  
+  &__nav {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #363636;
+    color: white;
+    flex-direction: column;
+    
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
+    
+    &-link {
+      color: white;
+      margin-top: 1em;
+      text-align: center;
+      @include breakpoint(medium) {
+        margin-top: 0.5em;
+      }
+      
+      &.name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0;
+      }
+    }
+  }
+}

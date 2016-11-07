@@ -1,0 +1,23 @@
+{% include head.html %}
+
+  <body>
+    {% include header.html %}
+    <main class="PageContent" aria-label="Content">
+      <div class="PostWell">
+        <h1 class="PostEntry__title">{{ post.title }}</h1>
+        {{ content }}
+      </div>
+      
+      <div class="RelatedPosts">
+        <h3 class="RelatedPosts__header">Other recent articles</h3>
+        {% for post in site.posts %}
+          <article class="PostTeaser">
+            <h1 class="PostTeaser__title">
+              <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+            </h1>
+          </article>
+        {% endfor %}
+      </div>
+    </main>
+
+{% include footer.html %}

@@ -1,0 +1,21 @@
+@mixin breakpoint($class) {
+  @if $class == xsmall {
+    @media (min-width: 0em) { @content; }
+  }
+ 
+  @else if $class == small {
+    @media (min-width: 40em) { @content; }
+  }
+ 
+  @else if $class == medium {
+    @media (min-width: 56em) { @content; }
+  }
+ 
+  @else if $class == large {
+    @media (min-width: 64em) { @content; }
+  }
+ 
+  @else {
+    @warn "Breakpoint mixin supports: xsmall, small, medium, large";
+  }
+}
