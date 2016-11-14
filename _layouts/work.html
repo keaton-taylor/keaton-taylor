@@ -1,0 +1,19 @@
+{% include head.html %}
+
+  <body>
+    {% include header.html %}
+    <main class="PageContent" aria-label="Content">
+      <div class="PostWell">
+        {% assign posts = site.posts | where:"type", "work" %}
+        {% for post in site.posts %}
+        <article class="PostTeaser">
+          {{ post.image }}
+          <h1 class="PostTeaser__title">
+            <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+          </h1>
+        </article>
+        {% endfor %}
+      </div>
+    </main>
+
+{% include footer.html %}

@@ -4,6 +4,7 @@
     {% include header.html %}
     <main class="PageContent" aria-label="Content">
       <div class="PostWell">
+        {% assign posts = site.posts | where:"type", "blog" %}
         {% for post in site.posts %}
           <article class="PostTeaser">
             <h1 class="PostTeaser__title">

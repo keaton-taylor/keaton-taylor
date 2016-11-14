@@ -1,9 +1,9 @@
 ---
 layout: work
-title:  "RaiseMore"
-date:   2016-10-31 09:13:10 -0500
-category: work
-excerpt: Imagine making it as easy as filling out a form and choosing 
+title:  "A blanket of market pantry"
+date:   2016-11-03 09:18:10 -0500
+categories: work
+excerpt: When you have two or more distinct user roles to serve inside a growing company, how do you define who the most right stakeholder is? Welp, as with most things, in most cases, that just depends. 
 ---
 _I'm woefully under-informed in this subject but I'm going to share some thoughts on ad sales for editorial products. also I work with an ad-ops team that kicks ass and we don't have this issue (to my knowledge)._
 
@@ -11,7 +11,7 @@ I used to be a salesperson. I was in management at two different retail stores a
 
 In working for a company that does in fact sell advertising packages, it strikes me as even more of a conflict. If a product company is paying sales people on commission there is an innate possibility that the person selling will put her sales numbers before the product. Making damn sure an ad loads/performs becomes more important than the (internal and external) users of the product. There has to be a confluence of organizational priority that puts Users first but doesn't ignore clients. 
 
-{% include image name="triangle_of_focus.png" caption="The clear shareholder is not always super clear." %}
+![Triangle of Focus](/assets/images/triangle_of_focus.png)
 
 Where's the sweet spot in this triangle? 
 • Too far up and to the right and you lose focus on the people who control your revenue. 

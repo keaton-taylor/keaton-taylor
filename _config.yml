@@ -23,6 +23,16 @@ twitter_username: keaton_taylor
 github_username: keaton-taylor
 
 # Build settings
+defaults:
+  - scope:
+      path: "_posts/blog"
+    values:
+      type: "news"
+  - scope:
+      path: "_posts/work"
+    values:
+      type: "work"
+
 markdown: kramdown
 theme: minima
 gems:
