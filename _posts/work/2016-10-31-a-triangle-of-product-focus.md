@@ -1,6 +1,6 @@
 ---
 layout: work
-title:  "A blanket of market pantry"
+title:  "Another triangle"
 date:   2016-11-03 09:13:10 -0500
 categories: work
 excerpt: When you have two or more distinct user roles to serve inside a growing company, how do you define who the most right stakeholder is? Welp, as with most things, in most cases, that just depends. 

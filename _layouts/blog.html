@@ -4,8 +4,8 @@
     {% include header.html %}
     <main class="PageContent" aria-label="Content">
       <div class="PostWell">
-        {% assign posts = site.posts | where:"type", "blog" %}
-        <h1 class="PostEntry__title">{{ post.title }}</h1>
+        {% assign posts = site.categories.blog %}
+        <div class="PostEntry__title">{{ page.title }}<div>
         {{ content }}
       </div>
     </main>
