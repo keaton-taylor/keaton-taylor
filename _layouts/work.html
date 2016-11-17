@@ -2,16 +2,17 @@
 
   <body>
     {% include header.html %}
-    <main class="PageContent" aria-label="Content">
-      <div class="PostWell">
-        {% for post in site.categories.work %}
-        <article class="PostTeaser">
-          <h1 class="PostTeaser__title">
-            <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
-          </h1>
-        </article>
-        {% endfor %}
-      </div>
-    </main>
-
+      <main class="PageContent" aria-label="Content">
+        <div class="PostWell">
+          {% for post in site.categories.work %}
+            <article class="PostTeaser">
+              <h1 class="PostTeaser__title">
+                <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+              </h1>
+              {{ post.excerpt }}
+            </article>
+            <hr>
+          {% endfor %}
+        </div>
+      </main>
 {% include footer.html %}

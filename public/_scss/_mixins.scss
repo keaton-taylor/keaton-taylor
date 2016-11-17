@@ -8,11 +8,11 @@
   }
  
   @else if $class == medium {
-    @media (min-width: 56em) { @content; }
+    @media (min-width: 48em) { @content; }
   }
  
   @else if $class == large {
-    @media (min-width: 64em) { @content; }
+    @media (min-width: 56em) { @content; }
   }
  
   @else {

@@ -2,17 +2,19 @@
 
   <body>
     {% include header.html %}
-      {% assign posts = site.posts | where:"type", "blog" %}
-        <main class="PageContent" aria-label="Content">
-          <div class="PostWell">
-            {% for post in site.categories.blog %}
+      <main class="PageContent" aria-label="Content">
+        <div class="PostWell">
+          {% for post in site.categories.blog %}
+            <a href="{{ post.url }}" rel="bookmark">
               <article class="PostTeaser">
                 <h1 class="PostTeaser__title">
-                  <a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a>
+                  {{ post.title }}
                 </h1>
                 {{ post.excerpt }}
               </article>
-            {% endfor %}
-          </div>
-        </main>
+            </a>
+            <hr>
+          {% endfor %}
+        </div>
+      </main>
     {% include footer.html %}

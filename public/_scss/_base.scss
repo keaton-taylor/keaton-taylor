@@ -1,13 +1,14 @@
 .PageContent {
-  overflow: hidden;
-  padding-left: 1em;
-  padding-right: 1em;
+  overflow: wrap;
+  padding-left: .5em;
+  padding-right: .5em;
   margin-bottom: 2em;
   max-width: 786px;
   line-height: 1.5;
-  margin: 0 auto;
-}
-
-.RelatedPosts {
-  margin: 4em 0 2em;
+  margin: 0 auto 2em;
+  
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

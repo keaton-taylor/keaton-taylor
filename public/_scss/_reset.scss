@@ -184,8 +184,9 @@ sub {
 
 img {
   border: 0;
-  width: 100%;
+  max-width: 100%;
   display: block;
+  margin: 1em 0;
 }
 
 /**
@@ -423,4 +424,10 @@ table {
 td,
 th {
   padding: 0;
+}
+
+/* lists
+   ========================================================================== */
+ul, li {
+  list-style: none;
 }
