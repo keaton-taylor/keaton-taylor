@@ -1,6 +1,19 @@
 .AboutPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @include breakpoint(medium) {
+    flex-direction: row;
+    align-items: left;
+  }
+
   &__image {
-    max-width: 250px !important;
-    
+    padding: 1em;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  
+  &__info {
   }
 }
