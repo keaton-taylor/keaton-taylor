@@ -1,5 +1,4 @@
 .SiteHeader {
-  background-color: #363636;
   padding: 20px;
   
   &__nav {
@@ -7,8 +6,6 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    background-color: #363636;
-    color: white;
     flex-direction: column;
     
     @include breakpoint(medium) {
@@ -16,13 +13,18 @@
     }
     
     &-link {
-      color: white;
+      color: #363636;
       margin-top: 1em;
       text-align: center;
       font-size: 1.5em;
       
       @include breakpoint(medium) {
         margin-top: 0.33em;
+      }
+      
+      &-img {
+        color: black;
+        height: 100%;
       }
       
       &.name {

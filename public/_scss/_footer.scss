@@ -3,10 +3,25 @@
   color: white;
   justify-content: space-around;
   background-color: #363636;
-  padding: 0.75em 2em;
   text-align: center;
-  
-  &-link {
-    color: white;
+    
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #363636;
+    display: flex;
+    justify-content: space-around;
+    margin: 1em auto;
+    line-height: 1;
+    max-width: 970px;
+    
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
+    
+    &-link {
+      color: white;
+      background-color: #373737;
+    }
   }
 }
