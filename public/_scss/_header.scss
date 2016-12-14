@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  max-width: 800px;
   flex-flow: column wrap;
   justify-content: space-around;
   
@@ -13,65 +11,34 @@
   
   &__name {
     font-size: 2em;
-    flex: 1 0 100%;
   }
   
   &__nav {
     display: flex;
-    padding: 0;
+    margin: 0;
+    padding: 0; 
+    
+    @include breakpoint(medium) {
+      margin: 1 0;
+    }
+    
+    li:nth-child(3) {
+      margin-top: 3px;
+    }
     
     &-link {
       flex-direction: row;
       justify-content: space-around;
+
     }
     
     &-img {
       width: 2em;
       padding: 0 1em;
+      
+      @include breakpoint(medium) {
+        padding-right: 0;
+      }
     }
   }
 }
-
-// /* *********** media queries *********** */
-// @media all and (max-width: 990px) {
-//   .SiteHeader{
-//     flex-direction: column;
-//   }
-//   
-//   .logo {
-//   margin: 0;
-// }
-//   
-//   .navigation  {
-//     width: 100%;
-//     justify-content: space-around;
-//   }
-// }
-// 
-// 
-// /* ****** ****** */
-// @media all and (max-width: 600px) {
-//   .flex-container {
-//     flex-flow: column wrap;
-//   }
-//   
-//   .logo {
-//   margin: 0;
-// }
-//   .navigation {
-// /*     width: 100%; */
-//     flex-flow: column wrap;
-//     // padding: 0;
-//   }
-//   
-//   .navigation a { 
-//     text-align: center; 
-//     padding: 10px;
-//     border-top: 1px solid rgba(255,255,255,0.3); 
-//     border-bottom: 1px solid rgba(0,0,0,0.1); 
-//   }
-//   
-//   .navigation li:last-of-type a {
-//     border-bottom: none;
-//   }
-// }

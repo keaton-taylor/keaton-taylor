@@ -2,9 +2,21 @@
   @if $class == xsmall {
     @media (min-width: 0em) { @content; }
   }
+  
+  @else if $class == xsmall-only {
+    @media (min-width: 0em) and (max-width:39.99em) { @content; }
+  }
  
   @else if $class == small {
     @media (min-width: 40em) { @content; }
+  }
+  
+  @else if $class == small-only {
+    @media (min-width: 40em) and (max-width:47.99em) { @content; }
+  }
+ 
+  @else if $class == mobile-only {
+    @media (min-width: 0em) and (max-width:47.99em) { @content; }
   }
  
   @else if $class == medium {
@@ -16,6 +28,6 @@
   }
  
   @else {
-    @warn "Breakpoint mixin supports: xsmall, small, medium, large";
+    @warn "Breakpoint mixin supports: xsmall, xsmall-only, small, small-only, mobile-only, medium, large";
   }
 }
