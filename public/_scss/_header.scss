@@ -4,13 +4,16 @@
   align-items: center;
   flex-flow: column wrap;
   justify-content: space-around;
+  margin: 1em 0 1.25em;
   
   @include breakpoint(medium) {
     flex-flow: row;
   }
   
   &__name {
-    font-size: 2em;
+    font-family: "ff-enzo", sans-serif;
+    font-weight: 300;
+    line-height: 1;
   }
   
   &__nav {

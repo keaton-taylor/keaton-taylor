@@ -12,3 +12,31 @@
     margin-right: auto;
   }
 }
+
+.IntroContent {
+  margin-bottom: 2em;
+  &__image {
+    width: 60%;
+    position: relative;
+    right: 60px;
+
+  }
+  
+  &__text {
+    position: absolute;
+    top: 11.75em;
+    width: 53%;
+    left: 9.25em;
+  }
+  
+  &__headline {
+    line-height: 1.1;
+    margin-bottom: .25em;
+  }
+  
+  &__list-item {
+    margin-bottom: .5em;
+    line-height: 1.25;
+    
+  }
+}

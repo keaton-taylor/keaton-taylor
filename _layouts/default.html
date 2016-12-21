@@ -3,8 +3,21 @@
   <body>
     {% include header.html %}
       <main class="PageContent" aria-label="Content">
+        <section class="IntroContent">
+          <img class="IntroContent__image" src="/assets/images/keaton-img.png">
+          <div class="IntroContent__text">
+            <h1 class="IntroContent__headline">Product Designer</h1>
+            <ul class="IntroContent__list">
+              <li class="IntroContent__list-item">UX Design</li>
+              <li class="IntroContent__list-item">Visual Design</li>
+              <li class="IntroContent__list-item">Front End Development</li>
+            </ul>
+        </section>
+        
+        
+        
         <sectionclass="PostWell">
-          {% for post in site.categories.blog %}
+          {% for post in site.categories.work %}
             <a href="{{ post.url }}" rel="bookmark">
               <article class="PostTeaser">
                 <h2 class="PostTeaser__title">
