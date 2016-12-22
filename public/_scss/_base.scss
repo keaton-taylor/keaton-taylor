@@ -1,11 +1,4 @@
 .PageContent {
-  overflow: wrap;
-  padding-left: .5em;
-  padding-right: .5em;
-  margin-bottom: 2em;
-  max-width: 1024px;
-  line-height: 1.5;
-  margin: 0 auto 2em;
   
   img {
     margin-left: auto;
@@ -14,29 +7,63 @@
 }
 
 .IntroContent {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   &__image {
     width: 60%;
     position: relative;
     right: 60px;
-
+    
+    @include breakpoint(medium) {
+      width: 30%;
+      right:200px;
+    }
   }
   
   &__text {
     position: absolute;
-    top: 11.75em;
-    width: 53%;
-    left: 9.25em;
+    top: 32%;
+    width: 47%;
+    left: 49%;
+    
+    @include breakpoint(medium) {
+      width: 60%;
+      top: 10em;
+      left: 15em;
+    }
   }
   
   &__headline {
     line-height: 1.1;
     margin-bottom: .25em;
+    
+    @include breakpoint(medium) {
+      font-size: 3em;
+    }
   }
   
   &__list-item {
     margin-bottom: .5em;
     line-height: 1.25;
+    font-family: $enzo-stack;
     
+    @include breakpoint(medium) {
+      margin-left: 1em;
+      font-size: 1.25em;
+    }
+  }
+}
+
+.SectionHeader {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  
+  &__headline {
+    font-family: $enzo-stack;
+    font-weight: 600;
+    font-size: 3em;
+    margin: 0;
+    z-index: -100;
+    width: 70%;
   }
 }

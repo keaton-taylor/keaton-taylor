@@ -1,8 +1,14 @@
-
-.PostEntry {
-  &__title {
-    font-size: 2em;
-    line-height: 1.3;
-    margin-bottom: .25em;
+.PostWell {
+  background-color: #c4f1f2;
+  position: relative;
+  top: -25px;
+  padding: 2em 1em 1em;
+  
+  .PostEntry {
+    &__title {
+      font-size: 2em;
+      line-height: 1.3;
+      margin-bottom: .25em;
+    }
   }
 }
