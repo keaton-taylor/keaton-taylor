@@ -1,15 +1,38 @@
 .PostTeaser {
-  padding: 0.5em 1.25em 1.25em 1.25em;
-  margin: 0 auto;
-  background: #fff;
-  margin-bottom: 1em;
+  padding: 1.5em;
+  margin: 0 auto 1em;
   max-width: 1024px;
+  background: #fff;
   
+  @include breakpoint(767px) {
+    background: rgba(0,0,0,0.0)
+  }
+  
+  &__image {
+    margin-bottom: 1em;
+    
+    @include breakpoint(767px) {
+      width: 70%;
+      position: relative;
+      background: #fff;
+    }
+  }
+  
+  &__info {
+    right: 0px;
+    
+    @include breakpoint(767px) {
+      width: 40%;
+      position: absolute;
+      background: #fff;
+      top: 270px;
+      right: 70px;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  }
   
   &__title {
-    margin-bottom: .25em
-  }
-  &:hover {
-    background: #f7f7f7;
+    margin-bottom: .25em;
+    margin-top: 0;
   }
 }

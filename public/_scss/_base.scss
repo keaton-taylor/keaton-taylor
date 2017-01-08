@@ -8,27 +8,29 @@
 
 .IntroContent {
   margin-bottom: 1em;
+  display: flex;
   &__image {
-    width: 60%;
-    position: relative;
-    right: 60px;
+    height: 100%;
+    width: 61%;
     
-    @include breakpoint(medium) {
-      width: 30%;
-      right:200px;
+    @include breakpoint(25.9em) {
+      width: 50%;
+    }
+    @include breakpoint(47.9em) {
+      width: 75%;
     }
   }
   
   &__text {
-    position: absolute;
-    top: 32%;
-    width: 47%;
-    left: 49%;
+    margin: 50px 0 0 -45px;
     
-    @include breakpoint(medium) {
-      width: 60%;
-      top: 10em;
-      left: 15em;
+    @include breakpoint(374px) {
+      margin: 81px 1em 0 -40px;
+    }
+    
+    @include breakpoint(767px) {
+    margin-left: -65px;
+    position: relative;
     }
   }
   
@@ -36,9 +38,19 @@
     line-height: 1.1;
     margin-bottom: .25em;
     
-    @include breakpoint(medium) {
-      font-size: 3em;
+    @include breakpoint(767px) {
+      font-size: 4em;
     }
+  }
+  
+  &__list {
+    @include breakpoint(413px) {
+      margin-top: .25em;
+    }  
+    @include breakpoint(767px) {
+      margin-left: 1em;
+    } 
+    
   }
   
   &__list-item {
@@ -46,9 +58,12 @@
     line-height: 1.25;
     font-family: $enzo-stack;
     
+    @include breakpoint(414px) {
+      font-size: 1em;
+    }
+    
     @include breakpoint(medium) {
-      margin-left: 1em;
-      font-size: 1.25em;
+      font-size: 2em;
     }
   }
 }

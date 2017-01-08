@@ -1,33 +1,53 @@
-@mixin breakpoint($class) {
-  @if $class == xsmall {
-    @media (min-width: 0em) { @content; }
-  }
+@mixin breakpoint($min: 0, $max: 0) {
+  $type: type-of($min);
   
-  @else if $class == xsmall-only {
-    @media (min-width: 0em) and (max-width:39.99em) { @content; }
+  @if $type == string {
+    @if $min == xsmall {
+      @media (min-width: 0em) { @content; }
+    }
+    
+    @else if $min == xsmall-only {
+      @media (min-width: 0em) and (max-width:19.99em) { @content; }
+    }
+   
+    @else if $min == small {
+      @media (min-width: 20em) { @content; }
+    }
+    
+    @else if $min == small-only {
+      @media (min-width: 20em) and (max-width:31.56em) { @content; }
+    }
+   
+    @else if $min == mobile-only {
+      @media (min-width: 0em) and (max-width:31.56em) { @content; }
+    }
+   
+    @else if $min == medium {
+      @media (min-width: 31.57em) { @content; }
+    }
+   
+    @else if $min == large {
+      @media (min-width: 37.5em) { @content; }
+    }
+
+    @else if $min == xlarge {
+      @media (min-width: 42em) { @content; }
+    }
+    
+    @else if $min == xxlarge {
+      @media (min-width: 50em) { @content; }
+    }
+   
+    @else {
+      @warn "Breakpoint mixin supports: xsmall, xsmall-only, small, small-only, mobile-only, medium, large";
+    }
   }
- 
-  @else if $class == small {
-    @media (min-width: 40em) { @content; }
-  }
-  
-  @else if $class == small-only {
-    @media (min-width: 40em) and (max-width:47.99em) { @content; }
-  }
- 
-  @else if $class == mobile-only {
-    @media (min-width: 0em) and (max-width:47.99em) { @content; }
-  }
- 
-  @else if $class == medium {
-    @media (min-width: 48em) { @content; }
-  }
- 
-  @else if $class == large {
-    @media (min-width: 56em) { @content; }
-  }
- 
-  @else {
-    @warn "Breakpoint mixin supports: xsmall, xsmall-only, small, small-only, mobile-only, medium, large";
+ @else if $type == number {
+    // Allow for custom parameters for min and max size
+    $query: "all" !default;
+    @if      $min != 0 and $max != 0 { $query: "(min-width: #{$min}) and (max-width: #{$max})"; } // set both min and max
+    @else if $min != 0 and $max == 0 { $query: "(min-width: #{$min})"; } // set just min
+    @else if $min == 0 and $max != 0 { $query: "(max-width: #{$max})"; } // set just max
+    @media #{$query} { @content; }
   }
 }

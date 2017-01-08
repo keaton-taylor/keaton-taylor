@@ -3,7 +3,8 @@ layout: blog
 title:  "Evaluated: Comic Book Movie"
 date:   2015-10-01 09:13:10 -0500
 categories: blog
-excerpt: Even with some modest updates, ComicBookMovie.com is a hard sell on mobile devices. How could that possibly be fixed? I have some thoughts. 
+excerpt: Even with some modest updates, ComicBookMovie.com is a hard sell on mobile devices. How could that possibly be fixed? I have some thoughts.
+image: assets/post-imgs/triangle_of_focus.png
 ---
 
 ## Summary

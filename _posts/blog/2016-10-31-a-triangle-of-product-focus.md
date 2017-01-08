@@ -4,6 +4,7 @@ title:  "A Triangle of Product Focus"
 date:   2016-10-31 09:13:10 -0500
 categories: blog
 excerpt: When you have two or more distinct user roles to serve inside a growing company, how do you define who the most right stakeholder is? Welp, as with most things, in most cases, that just depends. 
+image: assets/post-imgs/triangle_of_focus.png
 ---
 ![Triangle of Focus](/assets/images/triangle_of_focus.png)
 

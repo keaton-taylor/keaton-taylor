@@ -22,10 +22,15 @@
           {% for post in site.categories.blog %}
             <a href="{{ post.url }}" rel="bookmark">
               <article class="PostTeaser">
-                <h2 class="PostTeaser__title">
-                  {{ post.title }}
-                </h2>
-                {{ post.excerpt }}
+                <div class="PostTeaser__image">
+                  <img src="{{ post.image }}">
+                </div>
+                <div class="PostTeaser__info">
+                  <h2 class="PostTeaser__title">
+                    {{ post.title }}
+                  </h2>
+                  {{ post.excerpt }}
+                </div>
               </article>
             </a>
           {% endfor %}
