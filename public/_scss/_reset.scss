@@ -1,5 +1,4 @@
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-
 /* Document
    ========================================================================== */
 
@@ -12,10 +11,17 @@
 
 html {
   font-family: sans-serif; /* 1 */
-  line-height: 1.15; /* 2 */
+  line-height: 1.4; /* 2 */
   margin: 0 !important;
   padding: 0 !important;
   width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility
 }
 
 /* Sections
@@ -47,8 +53,11 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  margin: 0.67em 0;
+h1,h2,h3,h4,h5,p {
+  margin: 0!important;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  
 }
 
 ul li {

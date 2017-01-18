@@ -1,85 +1,11 @@
-.PageContent {
-  height:100%;
-  
-  img {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.IntroContent {
-  margin-bottom: 1em;
-  display: flex;
-  &__image {
-    height: 100%;
-    width: 61%;
-    
-    @include breakpoint(25.9em) {
-      width: 50%;
-    }
-    @include breakpoint(47.9em) {
-      width: 75%;
-    }
-  }
-  
-  &__text {
-    margin: 50px 0 0 -45px;
-    
-    @include breakpoint(374px) {
-      margin: 81px 1em 0 -40px;
-    }
-    
-    @include breakpoint(767px) {
-    margin-left: -65px;
-    position: relative;
-    }
-  }
-  
-  &__headline {
-    line-height: 1.1;
-    margin-bottom: .25em;
-    
-    @include breakpoint(767px) {
-      font-size: 4em;
-    }
-  }
-  
-  &__list {
-    @include breakpoint(413px) {
-      margin-top: .25em;
-    }  
-    @include breakpoint(767px) {
-      margin-left: 1em;
-    } 
-    
-  }
-  
-  &__list-item {
-    margin-bottom: .5em;
-    line-height: 1.25;
-    font-family: $enzo-stack;
-    
-    @include breakpoint(414px) {
-      font-size: 1em;
-    }
-    
-    @include breakpoint(medium) {
-      font-size: 2em;
-    }
-  }
-}
-
-.SectionHeader {
-  width: 100%;
+.ContentWell {
+  max-width: 700px!important;
   margin: 0 auto;
-  max-width: 1024px;
+  display: flex;
+  padding: 0 1em;
   
-  &__headline {
-    font-family: $enzo-stack;
-    font-weight: 600;
-    font-size: 3em;
-    margin: 0;
-    z-index: -100;
-    width: 70%;
+  &__large {
+    max-width: 1024px;
+    padding: 0 1em;
   }
 }

@@ -1,39 +1,54 @@
 {% include head.html %}
-
-  <body>
-    {% include header.html %}
-      <main class="PageContent" aria-label="Content">
-        <section class="IntroContent content">
-          <img class="IntroContent__image" src="/assets/images/keaton-img.png">
-          <div class="IntroContent__text">
-          <h1 class="IntroContent__headline">Product Designer</h1>
-          <ul class="IntroContent__list">
-            <li class="IntroContent__list-item">UX Design</li>
-            <li class="IntroContent__list-item">Visual Design</li>
-            <li class="IntroContent__list-item">Front End Development</li>
-          </ul>
-        </section>
+    <body>
+      <main class="Content" aria-label="Content">
+        <header class="Header overlay">
+          <div class="ContentWell">
+            <section class="Header__text">
+              <p>HI!</p>
+              <h1>I'm Keaton</h1>
+              <p>I'm a multidisciplinary designer working on editorial products with the fine folks at Apartment Therapy Media.</p>
+            </section>
+            <section class="Header__img">
+              <img src="/assets/images/keaton-img@2x.png" alt="This is Keaton. He's happy. He's wearing a plaid shirt.">
+            </section>
+          </div>
+        </header>
         
-        <section class="SectionHeader">
-          <h2 class="SectionHeader__headline content">WORK</h2>
-        </section>
-        
-        <section class="PostWell">
-          {% for post in site.categories.blog %}
-            <a href="{{ post.url }}" rel="bookmark">
-              <article class="PostTeaser">
-                <div class="PostTeaser__image">
-                  <img src="{{ post.image }}">
-                </div>
-                <div class="PostTeaser__info">
-                  <h2 class="PostTeaser__title">
-                    {{ post.title }}
-                  </h2>
-                  {{ post.excerpt }}
-                </div>
-              </article>
-            </a>
-          {% endfor %}
+        <section class="PostTeasers">
+          <div class="ContentWell__large">
+            
+            <aside class="PostTeasers__articles">
+              <h2 class="PostTeasers__title">Sometimes I write Things</h2>
+              {% for post in site.categories.blog %}
+                <a href="{{ post.url }}" rel="bookmark">
+                  <article class="PostTeaser PostTeaser__articles">
+                    <div class="PostTeaser__info">
+                      <h3 class="PostTeaser__headline">
+                        {{ post.title }}
+                      </h3>
+                      <p class="PostTeaser__date">
+                        {{ post.date | date: "%B %-d %Y"}}
+                      </p>
+                    </div>
+                  </article>
+                </a>
+              {% endfor %}
+            </aside>
+            
+            <section class="PostTeasers__work">
+              <h2 class="PostTeasers__title">Sometimes I Build Things</h2>
+              {% for post in site.categories.work %}
+                <a href="{{ post.url }}" rel="bookmark">
+                  <article class="PostTeaser PostTeaser__work">
+                    <div class="PostTeaser__image">
+                      <img src="{{ post.image }}">
+                    </div>
+                  </article>
+                </a>
+              {% endfor %}
+            </section>
+            
+          </div>
         </section>
       </main>
     {% include footer.html %}

@@ -1,0 +1,31 @@
+.PostTeasers {
+  z-index: 2;
+  
+  &__articles,
+  &__work {
+    margin-bottom: 2em;
+  }
+  &__title {
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+
+.PostTeaser {
+  &__info {
+    margin: 1em 0;
+  }
+  
+  &__headline {
+    font-family: $serif-stack;
+  }
+  
+  &__date {
+    font-size: .75em;
+  }
+  
+  &__image {
+    margin-bottom: 1em;
+  }
+}
