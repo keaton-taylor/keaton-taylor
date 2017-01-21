@@ -17,6 +17,19 @@
         <section class="PostTeasers">
           <div class="ContentWell__large">
             
+            <section class="PostTeasers__work">
+              <h2 class="PostTeasers__title">Sometimes I Build Things</h2>
+              {% for post in site.categories.work %}
+                <a href="{{ post.url }}" rel="bookmark">
+                  <article class="PostTeaser PostTeaser__work">
+                    <div class="PostTeaser__image">
+                      <img src="{{ post.image }}">
+                    </div>
+                  </article>
+                </a>
+              {% endfor %}
+            </section>
+            
             <aside class="PostTeasers__articles">
               <h2 class="PostTeasers__title">Sometimes I write Things</h2>
               {% for post in site.categories.blog %}
@@ -34,19 +47,6 @@
                 </a>
               {% endfor %}
             </aside>
-            
-            <section class="PostTeasers__work">
-              <h2 class="PostTeasers__title">Sometimes I Build Things</h2>
-              {% for post in site.categories.work %}
-                <a href="{{ post.url }}" rel="bookmark">
-                  <article class="PostTeaser PostTeaser__work">
-                    <div class="PostTeaser__image">
-                      <img src="{{ post.image }}">
-                    </div>
-                  </article>
-                </a>
-              {% endfor %}
-            </section>
             
           </div>
         </section>

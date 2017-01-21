@@ -1,10 +1,9 @@
 ---
 layout: work
-title:  "Evaluated: Comic Book Movie"
-date:   2015-10-01 09:13:10 -0500
+title:  "RaiseMore"
+date:   2017-01-01 09:13:10 -0500
 categories: work
-excerpt: Even with some modest updates, ComicBookMovie.com is a hard sell on mobile devices. How could that possibly be fixed? I have some thoughts.
-image: assets/post-imgs/cbm-sign-in.jpg
+image: assets/images/rm-cover-img.png
 ---
 
 ## Summary

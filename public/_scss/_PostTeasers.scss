@@ -1,13 +1,27 @@
 .PostTeasers {
   z-index: 2;
   
-  &__articles,
+  &__articles {
+    margin-bottom: 2em;
+
+    @include breakpoint(xxlarge) {
+      flex-direction: column;
+      padding-left: 2em;
+      min-width: 250px;
+    }
+  }
+  
   &__work {
     margin-bottom: 2em;
+
+    @include breakpoint(xxlarge) {
+      flex-direction: column;
+    }
   }
+  
   &__title {
     font-weight: 200;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 1.2;
   }
 }
