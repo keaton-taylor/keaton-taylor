@@ -11,7 +11,7 @@ I'm a big fan of movies and comic books, and my number one source to see where t
 
 ## Competitor Analysis & Business Considerations
 
-![ComicBook.com Mobile View](/assets/images/cb-mobile.png)
+![ComicBook.com Mobile View](assets/images/rm-cover-img.png)
 ![SuperHeroHype Mobile View](/assets/images/shh-mobile.png)
 
 These two sites rank lower in search results than comicbookmovie.com but both have considerably more navigable sites on mobile than CBM. Seeing as CBM still apparently has a leg up in the market, there is room for potentially significant growth by branching into the mobile space. My first inclination was a responsive website with ads baked in and support for administering the messaging/bb side of things. The more I researched issues with ads in a responsive setting (~6% of users are using ad blocking software*, Probable need to use a polyfill like PictureFill† or deal with Safari issues with iframes to effectively switch ads at proper sizes) the less hopeful I was about a proper solution. My preliminary solution was simply use the PictureFill polyfill to art direct ads at different sizes and use a single image for it with html text overlayed. With a community driven content stream and a small core team (from what I could find in my research) the upkeep of managing a technical ad display might not be feasible. 
