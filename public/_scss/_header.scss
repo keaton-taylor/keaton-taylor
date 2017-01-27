@@ -1,18 +1,17 @@
 .Header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-    padding-top: 2em;
-    background: url(/assets/images/nyc-skyline.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 302px;
-    margin-bottom: 2em;
-    z-index: -1;
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 2em;
+  background: url(/assets/images/nyc-skyline.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 302px;
+  margin-bottom: 2em;
+  z-index: -1;
 
   &:after {
     background: white;
@@ -49,16 +48,19 @@
   }
   
   &__img {
-    padding-left: 3em;
     display: none;
     z-index: 2;
     
     @include breakpoint(medium) {
       display: initial;
       padding: 0;
+      margin-right: 0!important;
       
       img {
-        width: 80%;
+        width: 50%;
+        margin: 0!important;
+        padding: 0!important;
+        display: block;
       }
     }
   }

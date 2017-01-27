@@ -2,14 +2,14 @@
     <body>
       <main class="Content" aria-label="Content">
         <header class="Header overlay">
-          <div class="ContentWell">
+          <div class="ContentWell__large">
             <section class="Header__text">
               <p>HI!</p>
               <h1>I'm Keaton</h1>
               <p>I'm a multidisciplinary designer working on editorial products with the fine folks at Apartment Therapy Media.</p>
             </section>
             <section class="Header__img">
-              <img src="/assets/images/keaton-img@2x.png" alt="This is Keaton. He's happy. He's wearing a plaid shirt.">
+              <img src="/assets/images/keaton-img.png" alt="This is Keaton. He's happy. He's wearing a plaid shirt.">
             </section>
           </div>
         </header>
@@ -30,24 +30,20 @@
               {% endfor %}
             </section>
             
-            <aside class="PostTeasers__articles">
-              <h2 class="PostTeasers__title">Sometimes I write Things</h2>
+            <section class="PostTeasers__blog">
+              <h2 class="PostTeasers__title">Sometimes I Write Things</h2>
               {% for post in site.categories.blog %}
-                <a href="{{ post.url }}" rel="bookmark">
-                  <article class="PostTeaser PostTeaser__articles">
-                    <div class="PostTeaser__info">
-                      <h3 class="PostTeaser__headline">
-                        {{ post.title }}
-                      </h3>
-                      <p class="PostTeaser__date">
-                        {{ post.date | date: "%B %-d %Y"}}
-                      </p>
-                    </div>
+                <a href="{{ post.link }}" rel="bookmark">
+                  <article class="PostTeaser PostTeaser__blog">
+                    <div class="PostTeaser__title">{{ post.title }}</div>
+                    <div class="PostTeaser__date">{{ post.date | date: "%B %-d, %Y" }}</div>
                   </article>
                 </a>
               {% endfor %}
-            </aside>
-            
+              <a class="PostTeasers__more" href="http://www.medium.com/keaton_taylor">
+                Read More
+              </a>
+            </section>
           </div>
         </section>
       </main>
