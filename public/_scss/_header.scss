@@ -10,17 +10,17 @@
   background-position: center center;
   background-repeat: no-repeat;
   height: 302px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   z-index: -1;
 
   &:after {
     background: white;
-    bottom: -11%;
+    bottom: -17%;
     content: '';
     height: 70px;
     position: relative;
     transform-origin: left bottom;
-    transform: skewY(2deg);
+    transform: skewY(1deg);
     width: 100%;
     z-index: 1;
     
@@ -39,11 +39,19 @@
       font-size: 1.25em;
       margin: 0;
       line-height: 1.4;
+      
+      @include breakpoint(medium) {
+        font-size: 2em;
+      }
     }
     
     h1 {
       font-size: 1.75em;
       margin: .75em 0;
+      
+      @include breakpoint(medium) {
+        font-size: 2em;
+      }
     }
   }
   
