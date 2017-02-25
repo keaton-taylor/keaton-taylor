@@ -17,6 +17,10 @@
       line-height: 1.3;
       width: 100%;
       font-family: $serif-stack;
+      
+      @include breakpoint(medium) {
+        width: 70%;
+      }
     }
     
     h1 {
