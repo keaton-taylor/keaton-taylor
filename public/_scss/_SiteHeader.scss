@@ -1,4 +1,4 @@
-.Header {
+.SiteHeader {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -29,24 +29,6 @@
       
       @include breakpoint(medium) {
         font-size: 2em;
-      }
-    }
-  }
-  
-  &__img {
-    display: none;
-    z-index: 2;
-    
-    @include breakpoint(medium) {
-      display: initial;
-      padding: 0;
-      margin-right: 0!important;
-      
-      img {
-        width: 67%;
-        margin: 0!important;
-        padding: 0!important;
-        display: block;
       }
     }
   }

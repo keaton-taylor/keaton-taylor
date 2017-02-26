@@ -1,15 +1,3 @@
-.ContentWell {
-  max-width: 840px!important;
-  margin: 0 auto;
-  display: flex;
-  
-  &__large {
-    max-width: 920px;
-    padding: 0 1em;
-    margin: 0 auto;
-    
-    @include breakpoint(xxlarge) {
-      display: flex;
-    }
-  }
+.menu-icon {
+  display: none;
 }

@@ -1,27 +1,37 @@
-.SiteFooter {
+.SiteNav {
   background-color: #373737;
   color: white;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #363636;
   text-align: center;
+  margin-bottom: 2em;
     
   &__nav {
     display: flex;
     flex-direction: column;
     background-color: #363636;
-    display: flex;
-    justify-content: space-around;
-    margin: 1em auto;
-    line-height: 1;
-    max-width: 970px;
-    
+    padding: 1em 0;
+
     @include breakpoint(medium) {
       flex-direction: row;
+      justify-content: space-between;
+      max-width: 920px;
     }
     
     &-link {
       color: white;
       background-color: #373737;
+      line-height: 1.2;
+      padding: 1em 0;
+      
+      h1 {
+        margin-bottom: 0!important;
+      }
     }
+  }
+  
+  h1 {
+    margin-bottom: 2em;
+    color: white;
   }
 }

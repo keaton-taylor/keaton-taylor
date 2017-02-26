@@ -7,8 +7,10 @@
 @import "helper";
 @import "grid";
 @import "base";
+
+@import "SiteHeader";
+@import "SiteNav";
+@import "AboutPage";
 @import "PostTeasers";
-@import "header";
-@import "footer";
-@import "about";
-@import "postentry";
+@import "PostEntry";
+@import "SiteFooter";

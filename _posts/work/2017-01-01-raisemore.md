@@ -6,7 +6,8 @@ categories: work
 image: assets/images/rm-cover-img.png
 ---
 
-# Raise More
+![Design Sprint Workflow Sketches for Social Sharing](/assets/images/rm-cover-img.png)
+
 Summer of 2015 I joined a friend at his new startup, RaiseMore as a long term contractor to sort out some UI/UX issues. RaiseMore helped non-profits raise more money through better data collection and engaged participants. RaiseMore includes a website, a web based dashboard and mobile apps built on Ionic. I went into it with a great amount of excitement. 
 
 I had the pleasure of taking part in some exciting exercises from user tests to leading remote design Sprints.
@@ -14,6 +15,8 @@ I had the pleasure of taking part in some exciting exercises from user tests to 
 ## RaiseMore Beta
 
 September 15-16 of 2016, I was part of a 2 day user feedback summit in Oklahoma City with the entire RaiseMore team. We went through 4 sessions of feedback on 3 aspects of the product and our product roadmap. 
+<br/>
+
 
 ### Here are a few takeaways*:
 
@@ -29,6 +32,7 @@ One of our assumptions was that users would start in the app from the feed page.
 Mobile Sharing is Hard
 A major feature in the mobile app was the ability to share to elicit donations. We got there but it wasn't easy. Sharing could happen in-app or could be shared to a social media platform. Building a seamless and good looking sharing option is not easy. 
 
+
 ## Design Sprints
 One of our most interesting sprints was around reworking our social sharing workflow. As a remote team, traditional Design Sprints presented a specific set of challenges. We had to make some changes to the process to fit our needs:
 Define requirements
@@ -39,6 +43,7 @@ Prototype feature for testing
 Project handoff for final design/engineering
 We did this over the course of around a week. Definitely not the ideal system (Sorry Jake and Daniel) 
 
+
 ## Social Share
 One of the issues we wanted to tackle was designing around the issues in sharing for the mobile app. We ran our design sprint around this and came up with some guidelines: 
 
@@ -48,10 +53,17 @@ One of the issues we wanted to tackle was designing around the issues in sharing
 
 • We have to live with the fact that we're not Instagram. We're going to have to send separate messages from separate form fields. 
 
-![Design Sprint Workflow Sketches for Social Sharing](assets/images/rm-wireframe.jpg)
-![Second Round of Design Sprint Workflow Sketches for Social Sharing](assets/images/rm-wireframe--2.jpg)
-![Prototyping Phase of Design Sprint](assets/images/rm-social-sharing.jpg)
+<div class="PostImage">
+  ![Design Sprint Workflow Sketches for Social Sharing](assets/images/rm-wireframe.jpg)
+</div>
 
+<div class="PostImage">
+  ![Second Round of Design Sprint Workflow Sketches for Social Sharing](assets/images/rm-wireframe--2.jpg)
+</div>
+
+<div class="PostImage">
+  ![Prototyping Phase of Design Sprint](assets/images/rm-social-sharing.jpg)
+</div>
 _______________________________________________
 
 * Numbers extrapolated to identify total user base from user base who was able to attend the beta retreat.
