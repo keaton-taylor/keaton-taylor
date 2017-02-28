@@ -1,47 +1,28 @@
 {% include head.html %}
 
-{% include header.html %}
+{% include SiteNav.html %}
 
   <body>
-    <main class="PageContent" aria-label="Content">
-      <div class="AboutPage PostWell">
+    <main class="content" aria-label="Content">
+      <div class="AboutPage PostEntry">
         <div class="AboutPage__info">
-          <h2 class="AboutPage__title">Hi, I'm Keaton.</h2>
-          <article>
-            <p>I'm a designer a frontent developer living in Joplin, Missouri. I live with my lovely wife, three kids and a couple of dogs.</p>
-            
-            <h2>What I do</h2>
-            <p>I help motivated people build exceptional mobile and web-based digital products. Right now that mean I spend my days helping the great people at <a href="http://www.apartmenttherapy.com">Apartment Therapy Media</a> build a world-class lifestyle editorial product.</p>
-            
-            <p>In the past I've helped companies achieve ther goals through user-centered design and standards based front end development. Here are some of my past roles and what I did with them:</p>
-            
-            <ul class="CompanyList__info">
-              <li class="CompanyList__info-name">RaiseMore</li>
-              <li class="CompanyList__info-role">Contract Product Designer</li>
-              <li class="CompanyList__info-description"> 
-                <p><em>Responsibilities:</em> Iteration on a system designed and built by a small team. Feature design and prototyping (Sketch App, html/css) Edit html and css inside an Ember.js app Ideate new features and talk through feedback from real users.</p>
-                <p><em>Accomplishments:</em> Designed an alert system for users to receive coaching and (eventually) updates from their team leaders Helped guide a 2 day user research summit with 8 real-life potential users of the product from well known non-profit entities. Designed and helped develop dashboard features for paying users.</p>
-              </li>
-            </ul>            
-
-            <ul class="CompanyList__info">
-              <li class="CompanyList__info-name">RaiseMore</li>
-              <li class="CompanyList__info-role">Contract Product Designer</li>
-              <li class="CompanyList__info-description"> 
-                <p><em>Responsibilities:</em> Iteration on a system designed and built by a small team. Feature design and prototyping (Sketch App, html/css) Edit html and css inside an Ember.js app Ideate new features and talk through feedback from real users.</p>
-                <p><em>Accomplishments:</em> Designed an alert system for users to receive coaching and (eventually) updates from their team leaders Helped guide a 2 day user research summit with 8 real-life potential users of the product from well known non-profit entities. Designed and helped develop dashboard features for paying users.</p>
-              </li>
-            </ul>    
-
-
-
-
-
-
-
-          </article>
+          <h2>What I do</h2>
+          <p>I help motivated people build exceptional mobile and web-based digital products. Right now that mean I spend my days helping the great people at <a href="http://www.apartmenttherapy.com">Apartment Therapy Media</a> build a world-class lifestyle editorial product.</p>
+          <p>In the past I've helped companies achieve ther goals through user-centered design and standards based front end development.</p>
+          <p>When I'm not building the internet I'm being wrestled to the ground by two preschool boys and a kindergartener girl while my wife looks on and laughs.</p>
+          <p>I also love craft beer, acidic coffee and bad tv. If any or all of that sounds like fun let's make some stuff together.</p>
+          <div id="instafeed"></div>
         </div>
       </div>
     </main>
 
 {% include footer.html %}
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '22506966',
+        clientId: 'c0f847cf3d47461db65f19b20e8e2382'
+    });
+    feed.run();
+</script>

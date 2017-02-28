@@ -1,34 +1,41 @@
 .PostEntry {
-  position: relative;
-  top: -25px;
   max-width: 840px!important;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
-  margin-right: 1em;
   
   &--large {
     max-width: 920px;
     padding: 0 1em;
     margin: 0 auto;
     flex-direction: column;
-    
-    @include breakpoint(xxlarge) {
-      display: flex;
-    }
+    display: flex;
   }
   
   &__title {
     text-align: center;
     font-size: 2em;
+    margin-bottom: 2em;
   }
-  
-  img,
+    
   p {
     margin-bottom: 1em!important;
   }
   
-  
+  &__img {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    margin-bottom: 1em;
 
+    @include breakpoint(large) {
+      justify-content: space-between;
+      flex-direction: row;
+      overflow: scroll;
+    }
+  }
+  
+  figure {
+    flex-direction: column;
+  }
 }

@@ -1,46 +1,42 @@
 {% include head.html %}
+{% include SiteNav.html %}
     <body>
-      <main class="Content" aria-label="Content">
-        <header class="Header overlay">
-          <div class="ContentWell__large">
-            <section class="Header__text">
-              <h1>Hi, I'm Keaton</h1>
-              <p>I’m a multidisciplinary designer building editorial products with Apartment Therapy. Occasionally, I lend my time as a freelance product designer and front end developer for others. I live and work in Joplin, Missouri with my wife and our three kids. </p>
-            </section>
-          </div>
+      <main class="content" aria-label="Content">
+        <header class="SiteHeader">
+          <section class="SiteHeader__text">
+            <h1>Hi, I'm Keaton</h1>
+            <p>I’m a multidisciplinary designer building editorial products with Apartment Therapy. Occasionally, I lend my time as a freelance product designer and front end developer for others. I live and work in Joplin, Missouri with my wife and our three kids. </p>
+          </section>
         </header>
         
-        <section class="PostTeasers">
-          <div class="ContentWell__large">
-            
-            <section class="PostTeasers__work">
-              <h2 class="PostTeasers__title">Sometimes I design things</h2>
-              {% for post in site.categories.work %}
-                <a href="{{ post.url }}" rel="bookmark">
-                  <article class="PostTeaser PostTeaser__work">
-                    <div class="PostTeaser__image">
-                      <img src="{{ post.image }}">
-                    </div>
-                  </article>
-                </a>
-              {% endfor %}
-            </section>
-            
-            <section class="PostTeasers__blog">
-              <h2 class="PostTeasers__title">Sometimes I write things</h2>
-              {% for post in site.categories.blog %}
-                <a href="{{ post.link }}" rel="bookmark">
-                  <article class="PostTeaser PostTeaser__blog">
-                    <div class="PostTeaser__title">{{ post.title }}</div>
-                    <div class="PostTeaser__date">{{ post.date | date: "%B %-d, %Y" }}</div>
-                  </article>
-                </a>
-              {% endfor %}
-              <a class="PostTeasers__more" href="https://medium.com/@keaton_taylor">
-                Read More
+        <section class="PostTeasers">            
+          <section class="PostTeasers__work">
+            <h2 class="PostTeasers__title">Sometimes I design things</h2>
+            {% for post in site.categories.work %}
+              <a href="{{ post.url }}" rel="bookmark">
+                <article class="PostTeaser PostTeaser__work">
+                  <div class="PostTeaser__image">
+                    <img src="{{ post.image }}">
+                  </div>
+                </article>
               </a>
-            </section>
-          </div>
+            {% endfor %}
+          </section>
+          
+          <section class="PostTeasers__blog">
+            <h2 class="PostTeasers__title">Sometimes I write things</h2>
+            {% for post in site.categories.blog %}
+              <a href="{{ post.link }}" rel="bookmark">
+                <article class="PostTeaser PostTeaser__blog">
+                  <div class="PostTeaser__title">{{ post.title }}</div>
+                  <div class="PostTeaser__date">{{ post.date | date: "%B %-d, %Y" }}</div>
+                </article>
+              </a>
+            {% endfor %}
+            <a class="PostTeasers__more" href="https://medium.com/@keaton_taylor">
+              Read More
+            </a>
+          </section>
         </section>
       </main>
     {% include footer.html %}

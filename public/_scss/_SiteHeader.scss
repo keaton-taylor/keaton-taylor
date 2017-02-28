@@ -3,14 +3,12 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: stretch;  
   margin-bottom: 3em;
   
   &__text {
     position: relative;
     top: 1em;
 
-    
     p {
       font-size: 1.25em;
       margin: 0;
@@ -18,7 +16,7 @@
       width: 100%;
       font-family: $serif-stack;
       
-      @include breakpoint(medium) {
+      @include breakpoint(xlarge) {
         width: 70%;
       }
     }

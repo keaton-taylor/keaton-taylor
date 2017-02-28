@@ -11,3 +11,17 @@ h1, h2, li, p {
   font-family: $sans-stack;
   color: #363636;
 }
+
+figure {
+  margin: 0 0 1em;
+  padding: .25em;
+}    
+
+figcaption {
+  margin-top: 0.5em;
+  font-style: italic;
+  font-family: $serif-stack;
+  color: #636363;
+  font-size: 14px;
+  line-height: 1.3;
+}

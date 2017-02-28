@@ -2,10 +2,27 @@
 //   padding-right: 0 !important;
 // }
 .content {
-    padding-left: .5em;
-    padding-right: .5em;
-    margin-bottom: 2em;
-    max-width: 1024px;
-    line-height: 1.5;
-    margin: 0 auto 2em;
+  max-width: 1024px;
+  line-height: 1.2;
+  margin: 0 auto 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.one {
+  @include breakpoint(large) {
+    flex-basis: 100%;
+  }
+}
+
+.two {
+  @include breakpoint(large) {
+    flex-basis: 50%;
+  }
+}
+
+.three {
+  @include breakpoint(large) {
+    flex-basis: 33%;
+  }
 }

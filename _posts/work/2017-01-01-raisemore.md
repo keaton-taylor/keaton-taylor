@@ -53,17 +53,62 @@ One of the issues we wanted to tackle was designing around the issues in sharing
 
 • We have to live with the fact that we're not Instagram. We're going to have to send separate messages from separate form fields. 
 
-<div class="PostImage">
-  ![Design Sprint Workflow Sketches for Social Sharing](assets/images/rm-wireframe.jpg)
+<div class="PostEntry__img">
+  <figure class="three"><img src="/assets/images/rm-wireframe.jpg">
+  <figcaption>This was my first sketch, The idea here was essentially that the user would select their social media platforms wrote a main post and had to agree every time it went to a new social outlet. The final screen is the success screen, while the screen below is the "Would you like to send another update?" dialogue.</figcaption></figure>
+  
+  <figure class="three"><img src="/assets/images/rm-wireframe--2.jpg"><figcaption>My second sketch refined my first thought process by showing that the dialogues would slide up as they were ready to share.</figcaption></figure>
+
+  <figure class="three"><img src="/assets/images/rm-social-sharing.jpg"><figcaption>This final mock was to give another team member a more fleshed out view of what I was thinking. In the end elements of this initial design were worked into the final product, but another team member took point on the design.</figcaption></figure>
 </div>
 
-<div class="PostImage">
-  ![Second Round of Design Sprint Workflow Sketches for Social Sharing](assets/images/rm-wireframe--2.jpg)
+## User OnBoarding
+Another of our Sprints aimed to rework login processes and onboarding processes. One of the glaring issues was the technical debt left over from our Bootstrap MVP. During this Sprint we used more time than we expected walking through the signup process in the specific context of data collection and mobile to `www.` changes. 
+
+Our goals were obvious:
+• Make signup as easy as possible.
+• Capture the smallest possible amount of information:
+    - Organization - We need this to organize Teams inside the mobile app based on the Administrator's and Team Leader's org affiliation.
+    - Name 
+    - Email
+    - Password
+• Immediately push users into an action after signup.
+
+To keep us on track to sort out some of these ideas we put together three simple personas based on users from our beta.
+
+<div class="PostEntry__img">
+  <figure class="three"><img src="/assets/images/admin-persona.png"><figcaption></figcaption></figure>
+  <figure class="three"><img src="/assets/images/noob-persona.png"><figcaption></figcaption></figure>
+  <figure class="three"><img src="/assets/images/exec-persona.jpg"><figcaption></figcaption></figure>
 </div>
 
-<div class="PostImage">
-  ![Prototyping Phase of Design Sprint](assets/images/rm-social-sharing.jpg)
+One piece of useful information we gleaned from these meetings was that in total there were up to 4 places in our product where a user could potentially sign up and define a password. 
+
+<div class="PostEntry__img">
+  <figure class="one">
+    <img src="/assets/images/entry-points.png">
+    <figcaption>Mapping out our entry points. Trying to make sure our entry points are cohesive but also tuned to the specific needs of that user, at that entry point. </figcaption>
+  </figure>
 </div>
+
+This meant we had to create a cohesive and strategic plan for the three key user entry points as well as planning for one edge case. We also had to to think through changing the "Request a Demo" call to action on our home page to a more generic login/signup Call to Action. 
+
+## Signing Up from Various Places
+<div class="PostEntry__img">
+  <figure class="two"><img src="/assets/images/header-cta__modal.png"><figcaption>Used in the process as guidance on how much data to collect and where.</figcaption></figure>
+  <figure class="two"><img src="/assets/images/header-cta__modal-success.jpg"><figcaption>An early mock of how we might confirm success for a signup submission.</figcaption></figure>
+</div>
+
+## Requesting Access to View 
+This is born of a slightly different use-case. This involves a user being sent a preview of the mobile app or data within the product and being denied access because of a lack of an account. The suggested and adopted solution became giving organization admins the ability to create user accounts and login credentials.
+
+<div class="PostEntry__img">
+  <figure class="two"><img src="/assets/images/request-access-modal.jpg"><figcaption>A quick dialogue modal letting the user know that they are locked out until they request access.</figcaption></figure>
+  <figure class="two"><img src="/assets/images/request-access-modal---success.jpg"><figcaption>Aaaaaand the success message.</figcaption></figure>
+</div>
+
+
+
 _______________________________________________
 
-* Numbers extrapolated to identify total user base from user base who was able to attend the beta retreat.
+ *Numbers extrapolated to identify total user base from user base who was able to attend the beta retreat.

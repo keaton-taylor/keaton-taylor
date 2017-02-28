@@ -11,17 +11,19 @@
     flex-direction: column;
     background-color: #363636;
     padding: 1em 0;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
 
     @include breakpoint(medium) {
       flex-direction: row;
-      justify-content: space-between;
       max-width: 920px;
     }
     
     &-link {
       color: white;
       background-color: #373737;
-      line-height: 1.2;
+      line-height: 1;
       padding: 1em 0;
       
       h1 {
