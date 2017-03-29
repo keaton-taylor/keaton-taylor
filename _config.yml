@@ -16,7 +16,7 @@
 title: "Keaton Taylor | Product Designer"
 email: keatontaylor@me.com
 description: The work and thoughts of keaton taylor. Husband, parent, human, designer and front end code writer.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://keaton-taylor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: keaton_taylor
 github_username: keaton-taylor
@@ -36,7 +36,7 @@ markdown: kramdown
 
 kramdown:
   input: GFM
-  
+
 theme: minima
 gems:
   - jekyll-feed

@@ -4,27 +4,27 @@
   flex-direction: row;
   justify-content: flex-start;
   margin-bottom: 3em;
-  
+
   &__text {
     position: relative;
     top: 1em;
 
     p {
-      font-size: 1.25em;
+      font-size: 1.75em;
       margin: 0;
       line-height: 1.3;
       width: 100%;
       font-family: $serif-stack;
-      
-      @include breakpoint(xlarge) {
-        width: 70%;
+
+      @include breakpoint(xxlarge) {
+        width: 77%;
       }
     }
-    
+
     h1 {
       font-size: 1.75em;
-      margin: .75em 0;
-      
+      margin: .75em 0 .25em;
+
       @include breakpoint(medium) {
         font-size: 2em;
       }

@@ -1,42 +1,13 @@
 {% include head.html %}
-{% include SiteNav.html %}
-    <body>
-      <main class="content" aria-label="Content">
-        <header class="SiteHeader">
-          <section class="SiteHeader__text">
-            <h1>Hi, I'm Keaton</h1>
-            <p>I’m a multidisciplinary designer building editorial products with Apartment Therapy. I'm taking freelance work inquiries for the first half of April 2017, Hit me up. I live and work in Joplin, Missouri with my wife and our three kids. </p>
-          </section>
-        </header>
-        
-        <section class="PostTeasers">            
-          <section class="PostTeasers__work">
-            <h2 class="PostTeasers__title">Sometimes I design things</h2>
-            {% for post in site.categories.work %}
-              <a href="{{ post.url }}" rel="bookmark">
-                <article class="PostTeaser PostTeaser__work">
-                  <div class="PostTeaser__image">
-                    <img src="{{ post.image }}">
-                  </div>
-                </article>
-              </a>
-            {% endfor %}
-          </section>
-          
-          <section class="PostTeasers__blog">
-            <h2 class="PostTeasers__title">Sometimes I write things</h2>
-            {% for post in site.categories.blog %}
-              <a href="{{ post.link }}" rel="bookmark">
-                <article class="PostTeaser PostTeaser__blog">
-                  <div class="PostTeaser__title">{{ post.title }}</div>
-                  <div class="PostTeaser__date">{{ post.date | date: "%B %-d, %Y" }}</div>
-                </article>
-              </a>
-            {% endfor %}
-            <a class="PostTeasers__more" href="https://medium.com/@keaton_taylor">
-              Read More
-            </a>
-          </section>
-        </section>
-      </main>
-    {% include footer.html %}
+  <body>
+    <main class="content" aria-label="Content">
+      <section class="PersonalComponent">
+        <div class="PersonalComponent__image-wrap">
+          <h1 class="PersonalComponent__headline">Keaton Taylor</h1>
+        </div>
+        <div class="PersonalComponent__info">
+          <p>I’m a designer building editorial products with <a href="www.apartmenttherapy.com">Apartment Therapy</a>. To see what I'm working on and thinking about, head over to <a href="www.dribbble.com/keaton_taylor">Dribbble</a> or <a href="https://medium.com/@keaton_taylor">Medium</a>.If you’re interested in my previously’s you can find all that on <a href="https://www.linkedin.com/in/keatontaylor/">LinkedIn</a>. Need help designing & building websites or apps? <a href="mailto:keatontaylor@me.com">Let’s Talk</a>.
+          </p>
+        </div>
+      </section>
+    </main>
