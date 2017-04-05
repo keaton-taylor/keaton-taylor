@@ -1,16 +1,16 @@
 ---
 # front matter
 ---
-// @import "reset";
-// @import "mixins";
+@import "reset";
+@import "mixins";
 @import "typography";
-// @import "helper";
-// @import "grid";
+@import "helper";
+@import "grid";
 @import "base";
 
-// @import "SiteHeader";
-// @import "SiteNav";
-// @import "AboutPage";
-// @import "PostTeasers";
-// @import "PostEntry";
-// @import "SiteFooter";
+@import "SiteHeader";
+@import "SiteNav";
+@import "AboutPage";
+@import "PostTeasers";
+@import "PostEntry";
+@import "SiteFooter";
