@@ -37,7 +37,7 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-theme: minima
+theme:
 gems:
   - jekyll-feed
 exclude:
