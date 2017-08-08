@@ -1,0 +1,11 @@
+<body>
+  <main aria-label="Content">
+    <header class="WorkHeader">
+      <nav>
+        <ul class="WorkHeader__nav row">
+          {% for posts in site.categories.work %}
+            <li class="WorkHeader__nav-item"><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </header>
