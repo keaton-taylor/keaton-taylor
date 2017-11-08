@@ -1,6 +1,9 @@
-{% include head.html %}
-  {% include header.html %}
-    <body>
-      <main aria-label="Content">
-        {% include worknav.html %}
-      </main>
+  {% include head.html %}
+    {% include header.html %}
+      <h2 class="content center mb-half">{{ page.title }}</h2>
+      <section class="content">
+        {{ page.content }}
+      </section>
+    </main>
+  </body>
+</html>

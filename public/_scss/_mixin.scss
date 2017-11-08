@@ -1,43 +1,37 @@
 @mixin breakpoint($min: 0, $max: 0) {
   $type: type-of($min);
-  
+
   @if $type == string {
     @if $min == xsmall {
       @media (min-width: 0em) { @content; }
     }
-    
-    @else if $min == xsmall-only {
-      @media (min-width: 0em) and (max-width:19.99em) { @content; }
-    }
-   
+
     @else if $min == small {
       @media (min-width: 20em) { @content; }
     }
-    
-    @else if $min == small-only {
-      @media (min-width: 20em) and (max-width:31.56em) { @content; }
-    }
-   
+
     @else if $min == mobile-only {
-      @media (min-width: 0em) and (max-width:31.56em) { @content; }
+      @media (min-width: 0em) and (max-width:39.99em) {
+        @content;
+      }
     }
-   
+
     @else if $min == medium {
-      @media (min-width: 31.57em) { @content; }
+      @media (min-width: 40em) { @content; }
     }
-   
+
     @else if $min == large {
-      @media (min-width: 37.5em) { @content; }
+      @media (min-width: 60em) { @content; }
     }
 
     @else if $min == xlarge {
-      @media (min-width: 42em) { @content; }
+      @media (min-width: 70em) { @content; }
     }
-    
+
     @else if $min == xxlarge {
-      @media (min-width: 50em) { @content; }
+      @media (min-width: 90em) { @content; }
     }
-   
+
     @else {
       @warn "Breakpoint mixin supports: xsmall, xsmall-only, small, small-only, mobile-only, medium, large";
     }

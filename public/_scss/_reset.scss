@@ -1,27 +1,18 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
 /* Document
    ========================================================================== */
 
 /**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
 
 html {
-  font-family: sans-serif; /* 1 */
-  line-height: 1.4; /* 2 */
-  margin: 0 !important;
-  padding: 0 !important;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  text-rendering: optimizeLegibility
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -52,21 +43,11 @@ section {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
- 
-p {
-  margin-top: 0.25em;
-  margin-bottom: 0.75em;
-}
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0.25em;
-  margin-bottom: 0;
+h1 {
+  font-size: 2rem;
+  margin: 0.67em 0;
 }
-
-ul li {
-  list-style: none;
-}
-
 
 /* Grouping content
    ========================================================================== */
@@ -79,8 +60,7 @@ ul li {
 figcaption,
 figure,
 main { /* 1 */
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 /**
@@ -100,7 +80,6 @@ hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
-  margin: 0;
 }
 
 /**
@@ -110,7 +89,7 @@ hr {
 
 pre {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 1rem; /* 2 */
 }
 
 /* Text-level semantics
@@ -127,17 +106,7 @@ a {
 }
 
 /**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-/**
- * 1. Remove the bottom border in Firefox 39-.
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 
@@ -174,7 +143,7 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-size: 1rem; /* 2 */
 }
 
 /**
@@ -216,11 +185,11 @@ sup {
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -0.25rem;
 }
 
 sup {
-  top: -0.5em;
+  top: -0.5rem;
 }
 
 /* Embedded content
@@ -250,8 +219,6 @@ audio:not([controls]) {
 
 img {
   border-style: none;
-  width: 100%;
-  display: flex;
 }
 
 /**
@@ -338,13 +305,11 @@ button:-moz-focusring,
 }
 
 /**
- * Change the border, margin, and padding in all browsers (opinionated).
+ * Correct the padding in Firefox.
  */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: 0.35em 0.75em 0.625rem;
 }
 
 /**
@@ -448,7 +413,7 @@ menu {
  */
 
 summary {
-  display: list-item;
+  display: list-itrem;
 }
 
 /* Scripting

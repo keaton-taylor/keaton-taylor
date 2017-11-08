@@ -2,7 +2,7 @@
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
+# yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
@@ -13,36 +13,32 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Keaton Taylor | Product Designer"
+title: Keaton Taylor | Product Designer
 email: keatontaylor@me.com
-description: The work and thoughts of keaton taylor. Husband, parent, human, designer and front end code writer.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://keaton-taylor.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+description: "Keaton lives and works in Joplin Missouri with his wife and three kids."
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://keaton-taylor.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: keaton_taylor
-github_username: keaton-taylor
+github_username:  keaton-taylor
 
 # Build settings
-defaults:
-  - blog:
-      path: "_posts/blog"
-    values:
-      type: "blog"
-  - work:
-      path: "_posts/work"
-    values:
-      type: "work"
-
 markdown: kramdown
 
-kramdown:
-  input: GFM
-
 theme:
-gems:
+plugins_dir:
   - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 sass:
   sass_dir: public/_scss
