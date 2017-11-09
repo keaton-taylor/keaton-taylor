@@ -1,14 +1,39 @@
   {% include head.html %}
     {% include header.html %}
-      <section class="PersonalComponent content">
-        <p class="mb-0">Hi! I'm Keaton.</br>I’m a Product Designer building people-centered software and platforms. Sometimes that’s an editorial platform like <a href="https://www.apartmenttherapy.com">Apartment Therapy</a> or <a href="https://www.mealthy.com">Mealthy</a>. Other times it’s been fundraising products like <a href="{{ site_url }}2017/09/06/raisemore.html">RaiseMore</a>. Everything I work on - at it's core - is about people. Here's <a href="https://www.dropbox.com/s/offbw1zj8unucih/kt-resume-17.pdf?dl=0">my CV</a>, just in case you're curious.</p> 
 
-        <h2 class="mt-0">I believe that design is about human relationships.</h2>
-        <h2>I believe data and iteration are the best paths to success.</h2>
-        <h2>I believe in the inherent link between design and business.</h2>
-        <h2>I believe solving people problems solves business problems.</h2>
+      <section class="PersonalComponent">
+        <p>I’m a Product Designer building people-centered software and platforms. Sometimes that’s an editorial platform like <a href="https://www.apartmenttherapy.com">Apartment Therapy</a> or <a href="https://www.mealthy.com">Mealthy</a>. Other times it’s been fundraising products like <a href="{{ site_url }}2017/09/06/raisemore.html">RaiseMore</a>. Everything I work on - at it's core - is about people. Here's <a href="https://www.dropbox.com/s/offbw1zj8unucih/kt-resume-17.pdf?dl=0">my CV</a>, just in case you're curious. Also fair warning: this is where I try new things, so strap in, it's gonna get weird.</p> 
       </section>
 
+      <section class="DesignValues">
+        <div class="DesignValues__image" id="slideshow">
+          <div>
+            <h2>Design is about human relationships.</h2>
+          </div>
+          <div>
+            <h2>Design and business are inherently linked.</h2>
+          </div>
+            <div>
+            <h2>Solving people problems solves business problems.</h2>
+          </div>
+            <div>
+            <h2>Data and iteration are the best paths to success.</h2>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+      $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 3000);
+    </script>
   </body>
 </html>
