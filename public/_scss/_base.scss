@@ -21,7 +21,6 @@ main {
   @include breakpoint(medium) {
     justify-content: space-between;
     flex-direction: row;
-    max-width: 1200px;
   }
 
   &__name {
@@ -68,6 +67,18 @@ main {
   }
 }
 
+h3 {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: darkslategray;
+  padding: 0 0.75rem;;
+
+  @include breakpoint(medium) {
+    padding-left: 2rem;
+  }
+}
+
 .DesignValues {
 
   &__image {
@@ -76,8 +87,9 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 320px;
-    background: linear-gradient(1400deg, rgba(238, 39, 55, 0.6), rgba(1, 104, 179, 0.6));
+    height: 260px;
+    position: absolute;
+    background: linear-gradient(1400deg, #92fe9d, #00c9ff);
     background-size: 400% 400%;
     -webkit-animation: DesignValues 10s infinite;
     -moz-animation: DesignValues 10s ease infinite;
@@ -140,44 +152,74 @@ main {
       }
     }
 
+    @include breakpoint(375px) {
+      height: 400px;
+    }
+
+    @include breakpoint(414px) {
+
+    }
+
+    @include breakpoint(medium) {
+
+    }
+
+    @include breakpoint(large) {
+
+    }
+
+    @include breakpoint(1400px) {
+
+    }
+
     h2 {
       font-size: 2.25rem;
       font-family: serif;
-      color: white;
+      color: lighten(#69d1d1, 50%);
       padding: 0 0.75rem;
       flex-wrap: wrap;
-      text-shadow: 4px 4px rgba(0, 0, 0, 0.1);
-      position: absolute;
-      bottom: -9.75rem;
+      text-shadow: 4px 4px rgba(0, 0, 0, 0.05);
+      position: relative;
+      bottom: -9.5rem;
 
-      @include breakpoint(375px) {
-        bottom: -6.75rem;
-        font-size: 3rem;
-      }
-
-      @include breakpoint(414px) {
-        bottom: -4.25rem;
-        font-size: 3.25rem;
-      }
-
-      @include breakpoint(medium) {
-        font-size: 4.5rem;
-        padding-left: 2rem;
-        bottom: 20.75rem;
-      }
-
-      @include breakpoint(800px) {
-        bottom: 36.75rem;
-      }
-
-      @include breakpoint(large) {
-        font-size: 6.5rem;
-        padding-left: 2rem;
-        bottom: 0.75rem;
-      }
-
-
-
+      // @include breakpoint(360px) {
+      //   bottom: -5rem;
+      // }
+      //
+      // @include breakpoint(375px) {
+      //   bottom: -6.75rem;
+      //   font-size: 3rem;
+      // }
+      //
+      // @include breakpoint(412px) {
+      //   bottom: -1.25rem;
+      //   font-size: 3.25rem;
+      // }
+      //
+      // @include breakpoint(600px) {
+      //   bottom: 16.75rem;
+      //   font-size: 4.25rem;
+      // }
+      //
+      // @include breakpoint(medium) {
+      //   font-size: 4.5rem;
+      //   padding-left: 2rem;
+      //   bottom: 6.75rem;
+      // }
+      //
+      // @include breakpoint(large) {
+      //   font-size: 5rem;
+      //   bottom: -2rem;
+      // }
+      //
+      // @include breakpoint(1200px) {
+      //   bottom: 7rem;
+      //   width: 75vw;
+      // }
+      //
+      // @include breakpoint(1400px) {
+      //   font-size: 6.5rem;
+      // }
     }
   }
 
