@@ -88,7 +88,7 @@ h3 {
     align-items: flex-start;
     justify-content: center;
     height: 260px;
-    position: absolute;
+    position: relative;
     background: linear-gradient(1400deg, #92fe9d, #00c9ff);
     background-size: 400% 400%;
     -webkit-animation: DesignValues 10s infinite;
@@ -179,7 +179,7 @@ h3 {
       padding: 0 0.75rem;
       flex-wrap: wrap;
       text-shadow: 4px 4px rgba(0, 0, 0, 0.05);
-      position: relative;
+      position: absolute;
       bottom: -9.5rem;
 
       // @include breakpoint(360px) {
