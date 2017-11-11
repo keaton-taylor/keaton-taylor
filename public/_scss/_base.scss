@@ -170,7 +170,7 @@ h3 {
     }
 
     @include breakpoint(large) {
-      width:70vw
+      width:70vw;
       height: 360px;
     }
 
