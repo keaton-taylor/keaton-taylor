@@ -1,13 +1,13 @@
   {% include head.html %}
     {% include header.html %}
 
-      <section class="PersonalComponent mt-1">
-        <p>I’m a Product Designer building people-centered software and platforms. Sometimes that’s an editorial platform like <a href="https://www.apartmenttherapy.com">Apartment Therapy</a> or <a href="https://www.mealthy.com">Mealthy</a>. Other times it’s been fundraising products like <a href="{{ site_url }}2017/09/06/raisemore.html">RaiseMore</a>. Everything I work on - at it's core - is about people. Here's <a href="https://www.dropbox.com/s/offbw1zj8unucih/kt-resume-17.pdf?dl=0">my CV</a>, just in case you're curious. Also fair warning: this is where I try new things, so strap in, it's gonna get weird.</p> 
+      <section class="PersonalComponent mt-1 mb-2">
+        <p class="m-0">I’m a Product Designer building people-centered software and platforms. Sometimes that’s an editorial platform like <a href="https://www.apartmenttherapy.com">Apartment Therapy</a> or <a href="https://www.mealthy.com">Mealthy</a>. Other times it’s been fundraising products like <a href="{{ site_url }}2017/09/06/raisemore.html">RaiseMore</a>. Everything I work on - at it's core - is about people. Here's <a href="https://www.dropbox.com/s/offbw1zj8unucih/kt-resume-17.pdf?dl=0">my CV</a>, just in case you're curious. Also fair warning: this is where I try new things, so strap in, it's gonna get weird.</p> 
       </section>
 
-      <h3 class="mb-0">Some things I've learned along the way.</h3>
+      <h3 class="m-0">Some things I've learned along the way.</h3>
 
-      <section class="DesignValues">
+      <section class="DesignValues mb-2">
         <div class="DesignValues__image" id="slideshow">
           <div>
             <h2 class="m-0">Design is about relationships.</h2>
@@ -35,7 +35,17 @@
         </div>
       </section>
 
-      <section class="ContentComponent">
+      <section class="ContentComponent content m-auto">
+        <ul>
+          {% for post in site.posts %}
+            <a href="{{ post.url }}">
+              <li class="ContentComponent__teaser">
+                <h3 class="p-0 mt-0 mb-half">{{ post.title }}</h3>
+                <p class="m-0">{{ post.excerpt}}</p>
+              </li>
+            </a>
+          {% endfor %}
+        </ul>
       </section>
     </main>
 
