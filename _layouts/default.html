@@ -1,13 +1,12 @@
   {% include head.html %}
     {% include header.html %}
-
       <section class="PersonalComponent mt-1 mb-2">
         <p class="m-0">I’m a Product Designer building people-centered software and platforms. Sometimes that’s an editorial platform like <a href="https://www.apartmenttherapy.com">Apartment Therapy</a> or <a href="https://www.mealthy.com">Mealthy</a>. Other times it’s been fundraising products like <a href="{{ site_url }}2017/09/06/raisemore.html">RaiseMore</a>. Everything I work on - at it's core - is about people. Here's <a href="https://www.dropbox.com/s/offbw1zj8unucih/kt-resume-17.pdf?dl=0">my CV</a>, just in case you're curious. Also fair warning: this is where I try new things, so strap in, it's gonna get weird.</p> 
       </section>
 
       <h3 class="m-0">Some things I've learned along the way.</h3>
 
-      <section class="DesignValues mb-2">
+      <section class="DesignValues">
         <div class="DesignValues__image" id="slideshow">
           <div>
             <h2 class="m-0">Design is about relationships.</h2>
@@ -35,18 +34,30 @@
         </div>
       </section>
 
-      <section class="ContentComponent content m-auto">
-        <ul>
+      <section class="ContentComponent">
+        <div class="ContentComponent__summary">
+          <h2>Werk</h2>
+          <p class="ContentComponent__summary-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper.</p>
+        </div>
+
+        <ul class="ContentComponent__teaser-list p-0">
           {% for post in site.posts %}
-            <a href="{{ post.url }}">
-              <li class="ContentComponent__teaser">
+
+            {% if post.category == "secondary" %}
+
+            {% else if %}
+            <li class="WorkTeaser">
+              <a href="{{ post.url }}">
+                <img src="{{ post.image }}" />
                 <h3 class="p-0 mt-0 mb-half">{{ post.title }}</h3>
                 <p class="m-0">{{ post.excerpt}}</p>
-              </li>
-            </a>
+              </a>
+            </li>
+            {% endif %}
           {% endfor %}
         </ul>
       </section>
+      {% include footer.html %}
     </main>
 
     <script>

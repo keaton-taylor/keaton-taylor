@@ -1,0 +1,32 @@
+  {% include head.html %}
+    {% include header.html %}
+
+      <section class="content RaiseMore">
+        <h2 class="center mb-half" style="text-align: center;">{{ page.title }}</h2>
+        <section class="ContentComponent">
+          <ul class="ContentComponent__teaser-list m-0 pl-0" style="justify-content: space-between; align-items: center;">
+            {% for post in site.posts %}
+              {% if post.category == "primary" %}
+
+              {% else if %}
+              <li class="WorkTeaser" style="border: none; box-shadow: none;">
+                <a href="{{ post.url }}">
+                  <h3 class="p-0 mt-0 mb-half">{{ post.title }}</h3>
+                </a>
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </section>
+
+          <div class="RaiseMore__image mt-1 mb-2">
+            <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_E6C2E1981A9640327110390FCA8823B3EFD888DDBE1E984574D91BEEACCC87E1_1506112086095_rm-cover-img.png" alt="RaiseMore Logo on OKC skyline" />
+          </div>
+          <div class="PageContent">
+            {{ page.content }}
+          </div>
+      </section>
+      {% include footer.html %}
+    </main>
+  </body>
+</html>

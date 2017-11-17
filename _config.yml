@@ -27,6 +27,7 @@ markdown: kramdown
 theme:
 plugins_dir:
   - jekyll-feed
+  - jekyll-browsersync
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

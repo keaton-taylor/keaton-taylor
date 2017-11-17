@@ -1,30 +1,33 @@
 body {
-  max-width: 1400px;
   margin: 0 auto;
-  background: #f7f7f7;
+  max-width: 1400px;
+}
+
+.PageContent {
+  padding: 0 1em;
 }
 
 main {
-  margin: 1rem auto;
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
 }
 
-ul {
-  padding: 0;
-  margin-top: 0;
-
-  @include breakpoint(medium) {
-    padding-left: 1rem;
-  }
-}
-
 .content {
+  width: 100%;
   line-height: 1.4;
-  display: flex;
-  flex-direction: column;
   max-width: 700px;
+  margin: 0 auto;
+
+  h2,
+  p,
+  ul {
+    margin: 0 0 1rem;
+  }
+
+  li {
+    margin-bottom: 1.25rem;
+  }
 }
 
 .SiteHeader {
@@ -51,9 +54,23 @@ ul {
     &-item {
       padding: 0 1rem;
 
-      &:first-of-type {
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:first-child {
         padding-left: 0;
       }
+    }
+  }
+}
+
+.SubHeader {
+  &__nav {
+    display: flex;
+
+    &-item {
+      padding: 0 1rem;
     }
   }
 }
@@ -61,12 +78,16 @@ ul {
 .PersonalComponent {
   display: flex;
   flex-direction: row;
-  align-self: flex-end;
+  align-self: flex-start;
   max-width: 700px;
   padding: 0 0.75rem;
 
   @include breakpoint(medium) {
     padding: initial;
+  }
+
+  @include breakpoint(large) {
+    align-self: flex-end;
   }
 
   a {
@@ -86,7 +107,7 @@ h3 {
   font-weight: 500;
   font-size: 1.5rem;
   color: darkslategray;
-  padding: 0 0.75rem .5rem;
+  padding: 0 0.75rem 0.5rem;
 
   @include breakpoint(medium) {
     padding-left: 2rem;
@@ -95,7 +116,13 @@ h3 {
 
 .DesignValues {
 
+  @include breakpoint(large) {
+    margin-bottom: 2rem;
+  }
+
   &__image {
+    @include gradient;
+
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -103,88 +130,14 @@ h3 {
     justify-content: center;
     height: 260px;
     position: relative;
-    background: linear-gradient(1400deg, #92fe9d, #00c9ff);
-    background-size: 400% 400%;
-    -webkit-animation: DesignValues 10s infinite;
-    -moz-animation: DesignValues 10s ease infinite;
-    -o-animation: DesignValues 10s ease infinite;
-    animation: DesignValues 10s ease infinite;
-
-    @-webkit-keyframes DesignValues {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    @-moz-keyframes DesignValues {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    @-o-keyframes DesignValues {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    @keyframes DesignValues {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
 
     @include breakpoint(375px) {
       height: 400px;
     }
 
-    @include breakpoint(414px) {
-
-    }
-
-    @include breakpoint(medium) {
-
-    }
-
     @include breakpoint(large) {
-      width:70vw;
+      width: 74vw;
       height: 360px;
-    }
-
-    @include breakpoint(1400px) {
-
     }
 
     h2 {
@@ -249,32 +202,84 @@ h3 {
   small {
     background-color: #f7f7f7;
   }
+}
 
-  .RaiseMore {
-    &__image {
+.RaiseMore {
+  h2 {
+    margin-top: 1.5rem;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      text-align: left;
+    }
+  }
+
+  .ContentComponent {
+    background: none;
+    padding: 0;
+
+    ul {
       display: flex;
       flex-direction: column;
-      align-self: center;
-      width: 100%;
+      margin-bottom: 0;
+      justify-content: space-between;
 
       @include breakpoint(medium) {
         flex-direction: row;
-        max-width: 750px;
       }
+
+      li {
+        padding: 0 2rem;
+
+        h3 {
+          font-size: 1rem;
+          margin-bottom: 0;
+        }
+      }
+
+      a {
+        text-decoration: underline;
+        text-decoration-skip: ink;
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @include breakpoint(medium) {
+      flex-direction: row;
     }
   }
 }
 
 .ContentComponent {
-  ul {
-    list-style: none;
+  display: flex;
+  background: #f7f7f7;
+  flex-direction: column;
+  padding: 2rem 1rem;
+
+  @include breakpoint(large) {
+    flex-direction: row;
   }
 
-  &__teaser {
-    background: white;
-    padding: 2rem;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+  &__summary {
+    @include breakpoint(large) {
+      padding-right: 2rem;
+    }
+  }
 
+  &__teaser-list {
+    list-style: none;
+    display: flex;
 
     a {
       display: block;
@@ -282,4 +287,27 @@ h3 {
       width: 100%;
     }
   }
+}
+
+.WorkTeaser {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 1rem;
+
+  @include breakpoint(large) {
+    padding: 2rem;
+  }
+
+  img {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+}
+
+footer {
+  @include gradient;
+  padding: 1rem 0;
+  font-family: sans-serif;
+  color: white;
+  width: 100%;
 }

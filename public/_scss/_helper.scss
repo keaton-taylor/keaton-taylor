@@ -1,3 +1,7 @@
+.m-width {
+  max-width: 1400px;
+}
+
 .m-auto {
   margin: 0 auto;
 }
@@ -31,15 +35,27 @@
 }
 
 .p-0 {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .p-1 {
   padding: 1rem;
 }
 
+.p-2 {
+  padding: 2rem;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
 .m-0 {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .no-bull {
