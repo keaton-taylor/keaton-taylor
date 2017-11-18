@@ -3,11 +3,10 @@
   height: 100%;
   line-height: 1.4;
 
-
-    small {
-      background-color: #FFFFE0;
-      font-family: $condensed-stack;
-    }
+  small {
+    background-color: #ffffe0;
+    font-family: $condensed-stack;
+  }
 
   .content {
     padding: 0 1rem;
@@ -55,7 +54,7 @@
         h3 {
           font-size: 1.25rem;
           margin-bottom: 0;
-          color: darken(#69d1d1 , 40%);
+          color: darken(#69d1d1, 40%);
           font-family: $condensed-stack;
           font-weight: bold;
 
