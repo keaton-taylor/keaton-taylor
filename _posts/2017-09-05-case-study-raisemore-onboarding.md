@@ -1,12 +1,11 @@
 ---
 layout: raisemore
 date:   2017-09-05 16:16:01 -0600
-category: secondary
+category: rm_secondary
 title: "User Onboarding"
-excerpt: "RaiseMore was a platform for fundraising organizations to use social media and social relationships to organize fundraising into a team sport. We worked on web apps, mobile apps and user testing and interviewing initiatives."
 ---
 
-## User Onboarding 
+## User Onboarding
 Onboarding is hard. Reworking the general login process was an imperative. One of the glaring issues was the technical debt left over from our Bootstrap MVP. During this Sprint we used more time than we  expected walking through the signup process. The conundrum we spent the most time on was the amount of data we needed to collect. Where is the line between too much and not enough? We weren't sure. In hindsight what we were asking for became a barrier to entry.
 
 Our goals for the update were:

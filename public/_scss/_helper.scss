@@ -1,3 +1,13 @@
+$light-link: lighten(#69d1d1, 10%);
+
+.lighter {
+  font-weight: lighter;
+}
+
+.heavier {
+  font-weight: bolder;
+}
+
 .m-width {
   max-width: 1400px;
 }

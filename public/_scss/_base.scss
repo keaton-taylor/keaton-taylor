@@ -1,27 +1,23 @@
 body {
-  margin: 0 auto;
-  max-width: 1400px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+  margin: 0;
+  padding: 0;
 }
 
 .content {
-  flex: 1 0 auto;
-  width: 100%;
-  line-height: 1.4;
+  margin: auto;
   max-width: 700px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  h2,
-  p,
-  ul {
-    margin: 0 0 1rem;
+  &--large {
+    max-width: 960px;
   }
 
-  li {
-    margin-bottom: 1.25rem;
-  }
 }
 
 .SiteHeader {
@@ -29,6 +25,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 0.75rem;
+  font-family: $sans-stack;
 
   @include breakpoint(medium) {
     justify-content: space-between;
@@ -71,33 +68,38 @@ body {
 
 .PersonalComponent {
   display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  max-width: 700px;
-  padding: 0 0.75rem;
-
-  @include breakpoint(medium) {
-    padding: initial;
-  }
+  margin: auto;
+  max-width: 1400px;
 
   @include breakpoint(large) {
-    align-self: flex-end;
+    flex-direction: row-reverse;
   }
 
-  a {
-    font-weight: 400;
-    color: #69d1d1;
-  }
-
-  p {
+  &__content {
+    max-width: 700px;
+    padding: 0 0.75rem;
     font-size: 1.2rem;
     line-height: 1.3;
     font-weight: lighter;
+
+    @include breakpoint(medium) {
+      padding: initial;
+    }
+
+    a {
+      font-weight: 400;
+      color: darken(#69d1d1 , 40%);
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+      }
+    }
   }
 }
 
 h3 {
-  font-family: sans-serif;
+  font-family: $serif-stack;
   font-weight: 500;
   font-size: 1.5rem;
   color: darkslategray;
@@ -109,6 +111,9 @@ h3 {
 }
 
 .DesignValues {
+  margin: auto;
+  max-width: 1400px;
+
 
   @include breakpoint(large) {
     margin-bottom: 2rem;
@@ -136,7 +141,7 @@ h3 {
 
     h2 {
       font-size: 2.25rem;
-      font-family: serif;
+      font-family: $serif-stack !important;
       color: lighten(#69d1d1, 50%);
       padding: 0 0.75rem;
       flex-wrap: wrap;
@@ -192,82 +197,34 @@ h3 {
       }
     }
   }
-
-  small {
-    background-color: #f7f7f7;
-  }
-}
-
-.RaiseMore {
-  h2 {
-    margin-top: 1.5rem;
-    text-align: center;
-
-    @include breakpoint(medium) {
-      text-align: left;
-    }
-  }
-
-  .ContentComponent {
-    background: none;
-    padding: 0;
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 0;
-      justify-content: space-between;
-
-      @include breakpoint(medium) {
-        flex-direction: row;
-      }
-
-      li {
-        padding: 0 2rem;
-
-        h3 {
-          font-size: 1rem;
-          margin-bottom: 0;
-        }
-      }
-
-      a {
-        text-decoration: underline;
-        text-decoration-skip: ink;
-      }
-    }
-  }
-
-  &__image {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-    @include breakpoint(medium) {
-      flex-direction: row;
-    }
-  }
 }
 
 .ContentComponent {
-  display: flex;
-  background: #f7f7f7;
-  flex-direction: column;
   padding: 2rem 1rem;
+  background: #f7f7f7;
 
-  @include breakpoint(large) {
-    flex-direction: row;
+  &__wrap {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(large) {
+      flex-direction: row;
+    }
   }
 
   &__summary {
     @include breakpoint(large) {
       padding-right: 2rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        margin-top: 0.5rem;
+        line-height: 1.4
+      }
     }
   }
 
@@ -301,7 +258,9 @@ h3 {
 footer {
   @include gradient;
   padding: 1rem 0;
-  font-family: sans-serif;
+  font-family: $sans-stack;
   color: white;
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
 }

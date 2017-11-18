@@ -1,9 +1,8 @@
 ---
 layout: raisemore
 date:   2017-09-07 16:16:01 -0600
-category: secondary
+category: rm_secondary
 title: "RaiseMore Beta"
-excerpt: "RaiseMore was a platform for fundraising organizations to use social media and social relationships to organize fundraising into a team sport. We worked on web apps, mobile apps and user testing and interviewing initiatives."
 ---
 
 ## RaiseMore Beta

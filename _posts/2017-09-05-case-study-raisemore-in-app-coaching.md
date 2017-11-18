@@ -1,9 +1,10 @@
 ---
 layout: raisemore
-date:   2017-09-04 16:16:01 -0600
-category: secondary
+date:   2017-09-03 16:16:01 -0600
+category: rm_secondary
 title: "In-App Coaching"
 ---
+
 
 ## In-App Coaching
 
@@ -26,3 +27,5 @@ The implementation was more challenging than we were ready to take on at such an
 <div class="RaiseMore__image mb-2">
   <img src="/assets/images/rm-messaging-examples.png" alt="initial concept for the alert" />
 </div>
+
+This feature ended up being mostly aspirational because of some engineering limitations with the Ionic Framework at the time but was a fun excercise in thinking about our products' evolutions over time.

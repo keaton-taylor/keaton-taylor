@@ -1,5 +1,6 @@
-$serif-stack: "sofia-pro",sans-serif;
-$sans-stack: "sofia-pro",sans-serif;
+$serif-stack: "grad", sans-serif;
+$sans-stack:  "proxima-nova", sans-serif;
+$condensed-stack: "proxima-nova-condensed", serif;
 
 a {
   text-decoration: none;
@@ -7,8 +8,8 @@ a {
   line-height: 1.2;
 }
 
-h1, h2, li, p {
-  font-family: $sans-stack;
+h1, h2,h3 li {
+  font-family: $condensed-stack;
   color: #363636;
 }
 

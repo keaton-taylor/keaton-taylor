@@ -24,10 +24,16 @@ github_username:  keaton-taylor
 # Build settings
 markdown: kramdown
 
+autoprefixer:
+  browsers:
+  - last 2 versions
+
 theme:
 plugins_dir:
   - jekyll-feed
   - jekyll-browsersync
+  - jekyll-autoprefixer
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -43,3 +49,4 @@ exclude:
 
 sass:
   sass_dir: public/_scss
+  style: :compressed
