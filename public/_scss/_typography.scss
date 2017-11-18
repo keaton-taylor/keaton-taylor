@@ -8,14 +8,17 @@ a {
   line-height: 1.2;
 }
 
-h1, h2,h3 li {
+h1,
+h2,
+h3,
+li {
   font-family: $condensed-stack;
   color: #363636;
 }
 
 figure {
   margin: 0 0 1rem;
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 figcaption {
