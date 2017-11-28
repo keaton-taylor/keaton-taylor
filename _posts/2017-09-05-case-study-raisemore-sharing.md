@@ -7,7 +7,7 @@ title: "Social Sharing"
 
 ## Social Sharing
 
-One of the problems  we wanted to tackle was reworking our social sharing workflow. Designing around the complications in sharing for native iOS apps (at the time) was an interesting problem. We ran a couple of modified design sprints around mobile sharing. Before we got into the sprint we set out some loose req's to make sure we were working toward a unified end. We set out one major user need and a couple of gotchas to plan for:
+One of the problems we wanted to tackle was reworking our social sharing workflow. Designing around the complications in sharing for native iOS apps (at the time) was an interesting problem. We ran a couple of modified design sprints around mobile sharing. Before we got into the sprint we set out some loose req's to make sure we were working toward a unified end. We set out one major user need and a couple of gotchas to plan for:
 
 - As a user I need to be able to share both to social media and in their timeline inside the App.
 - We needed to design around a framework of extensibility. It's the only way to ensure the ability to add social media platforms when necessary.

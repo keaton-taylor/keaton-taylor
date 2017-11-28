@@ -5,6 +5,7 @@ body {
   align-items: center;     /* center items horizontally, in this case */
   margin: 0;
   padding: 0;
+  text-rendering: optimizeLegibility;
 }
 
 .content {
@@ -17,7 +18,6 @@ body {
   &--large {
     max-width: 960px;
   }
-
 }
 
 .SiteHeader {
@@ -120,45 +120,37 @@ h3 {
   }
 
   &__image {
-    @include gradient;
-
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 260px;
     position: relative;
+    height: 280px;
 
     @include breakpoint(375px) {
-      height: 400px;
+      height: 237px;
+    }
+
+    @include breakpoint(400px) {
+      height: 320px;
     }
 
     @include breakpoint(large) {
-      width: 85%;
-      height: 360px;
+      height: 17rem;
     }
 
     h2 {
-      font-size: 2.25rem;
-      color: lighten(#69d1d1, 50%);
+      font-size: 2.5rem;
+      color: lighten(#000, 30%);
       padding: 0 0.75rem;
       flex-wrap: wrap;
-      text-shadow: 4px 4px rgba(0, 0, 0, 0.05);
+      text-shadow: 0px 2px rgba(0, 0, 0, 0.05);
       position: absolute;
-      bottom: 2.5rem;
-
-      @include breakpoint(360px) {
-        bottom: 3rem;
-      }
-
-      @include breakpoint(375px) {
-        bottom: 8rem;
-        font-size: 3rem;
-      }
+      bottom: 2rem;
 
       @include breakpoint(412px) {
-        bottom: 5rem;
+        bottom: 3rem;
         font-size: 3.25rem;
       }
 
@@ -174,13 +166,11 @@ h3 {
       }
 
       @include breakpoint(large) {
-        width: 65vw;
         font-size: 3.5rem;
         bottom: 5rem;
       }
 
       @include breakpoint(1200px) {
-        width: 55vw;
         bottom: 2.75rem;
         font-size: 4.5rem;
       }
@@ -192,6 +182,7 @@ h3 {
 
       @include breakpoint(1600px) {
         bottom: 2rem;
+        font-size: 6rem;
       }
     }
   }
@@ -200,6 +191,7 @@ h3 {
 .ContentComponent {
   padding: 2rem 1rem;
   background: #f7f7f7;
+  line-height: 1.4;
 
   &__wrap {
     max-width: 1400px;
@@ -213,6 +205,9 @@ h3 {
   }
 
   &__summary {
+    &-paragraph {
+      font-size: 1.25rem;
+    }
     @include breakpoint(large) {
       padding-right: 2rem;
 
@@ -222,7 +217,6 @@ h3 {
 
       p {
         margin-top: 0.5rem;
-        line-height: 1.4;
       }
     }
   }
@@ -230,6 +224,11 @@ h3 {
   &__teaser-list {
     list-style: none;
     display: flex;
+    flex-direction: column;
+
+    @include breakpoint(large) {
+      flex-direction: row;
+    }
 
     a {
       display: block;
@@ -243,9 +242,11 @@ h3 {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
   background: white;
   padding: 1rem;
+  margin: 1rem 0;
 
   @include breakpoint(large) {
     padding: 2rem;
+    margin: 0 1rem;
   }
 
   img {
@@ -262,4 +263,12 @@ footer {
   display: flex;
   flex-direction: row;
   width: 100vw;
+}
+
+.OldWork {
+  padding: 0 1rem;
+  .RaiseMore__image {
+    flex-direction: column;
+
+  }
 }
