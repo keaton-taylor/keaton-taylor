@@ -39,6 +39,16 @@ section {
   display: block;
 }
 
+::selection {
+  background: rgba(146, 254, 157, 0.7);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: rgba(146, 254, 157, 0.7);
+  text-shadow: none;
+}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -167,10 +177,6 @@ mark {
  * Add the correct font size in all browsers.
  */
 
-small {
-  font-size: 80%;
-}
-
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
@@ -219,6 +225,9 @@ audio:not([controls]) {
 
 img {
   border-style: none;
+  width: 100%;
+  display: flex;
+  height: auto;
 }
 
 /**

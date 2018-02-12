@@ -3,17 +3,11 @@
 
   @if $type == string {
     @if $min == xsmall {
-      @media (min-width: 0em) { @content; }
+      @media (max-width: 29.99em) { @content; }
     }
 
     @else if $min == small {
-      @media (min-width: 20em) { @content; }
-    }
-
-    @else if $min == mobile-only {
-      @media (min-width: 0em) and (max-width:39.99em) {
-        @content;
-      }
+      @media (min-width: 30em) { @content; }
     }
 
     @else if $min == medium {
@@ -21,11 +15,11 @@
     }
 
     @else if $min == large {
-      @media (min-width: 60em) { @content; }
+      @media (min-width: 64em) { @content; }
     }
 
     @else if $min == xlarge {
-      @media (min-width: 70em) { @content; }
+      @media (min-width: 78.125em) { @content; }
     }
 
     @else if $min == xxlarge {

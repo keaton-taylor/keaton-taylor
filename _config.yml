@@ -49,4 +49,3 @@ exclude:
 
 sass:
   sass_dir: public/_scss
-  style: :compressed

@@ -1,7 +1,28 @@
-$light-link: lighten(#69d1d1, 10%);
+$color--light-link: lighten(#69d1d1, 10%);
+$color--light-gray: lighten(lightgray, 12%);
+$color--dark-gray: darken(lightgray, 30%);
+
+$color--blue: #00c9ff;
+$color--green: #92fe9d;
+
+.border {
+  border: 1px solid lightgray;;
+}
 
 .lighter {
   font-weight: lighter;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.lightgray {
+  background-color: $color--light-gray;
 }
 
 .heavier {
@@ -22,6 +43,14 @@ $light-link: lighten(#69d1d1, 10%);
 
 .mb-half {
   margin-bottom: 0.5rem;
+}
+
+.mt-half {
+  margin-top: 0.5rem;
+}
+
+.mt-quarter {
+  margin-top: 0.25rem !important;
 }
 
 .mb-1 {
@@ -48,6 +77,12 @@ $light-link: lighten(#69d1d1, 10%);
   padding: 0 !important;
 }
 
+.p-0-m {
+  @include breakpoint(xsmall) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
 .p-1 {
   padding: 1rem;
 }
@@ -73,8 +108,8 @@ $light-link: lighten(#69d1d1, 10%);
 }
 
 .icon {
-  height: 24px;
-  width: 24px;
+  height: 40px;
+  width: 40px;
 }
 
 .round {
@@ -111,4 +146,13 @@ $light-link: lighten(#69d1d1, 10%);
   @include breakpoint(medium) {
     flex-direction: row !important;
   }
+}
+
+.i {
+  font-style: italic;
+}
+
+.border {
+  border: 2px solid $color--green;
+  border-radius: 100%;
 }

@@ -1,0 +1,98 @@
+.ContentHeadline {
+  font-size: 2.5rem;
+  line-height: 1;
+
+  @include breakpoint(medium) {
+    font-size: 4rem;
+  }
+
+  @include breakpoint(61em) {
+    font-size: 5rem;
+  }
+
+  @include breakpoint(large) {
+    font-size: 6rem;
+  }
+}
+
+.ContentArea {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin: auto;
+
+  @include breakpoint(medium) {
+    grid-template-columns: 1fr 20%;
+  }
+
+  @include breakpoint(large) {
+    grid-template-columns: 1fr 15%;
+  }
+
+  &__main {
+    display: grid;
+    grid-template: "content";
+    line-height: 1.4;
+
+    @include breakpoint(large) {
+      max-width: 60vw;
+    }
+
+    p:first-of-type {
+      margin-top: 1rem;
+    }
+
+    p {
+      font-family: $serif-stack;
+      line-height: 1.4;
+      margin-top: 0;
+    }
+
+    h3 {
+      margin: 1rem 0 0;
+      font-size: 1.75rem;
+      line-height: 1.2;
+
+      &:first-of-type {
+        font-family: $serif-stack;
+      }
+
+    }
+
+    h4 {
+      margin: 1rem 0 0;
+    }
+
+    img {
+      margin: 0.5rem 0;
+
+      @include breakpoint(large) {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  &__sidebar {
+    display: grid;
+    grid-template: "sidebar";
+
+    @include breakpoint(medium) {
+      max-height: 280px;
+      justify-self: end;
+      text-align: right;
+    }
+
+    &-row {
+      h4 {
+        font-size: 14px;
+        margin-bottom: 0;
+        padding-bottom: 0.25rem;
+      }
+
+      p {
+        margin-top: 0.5rem;
+        font-size: 12px;
+      }
+    }
+  }
+}

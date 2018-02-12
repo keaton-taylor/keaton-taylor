@@ -1,0 +1,31 @@
+.PostPage {
+  margin: auto;
+  height: 100%;
+  line-height: 1.4;
+
+  p {
+    font-family: $sans-stack;
+    line-height: 1.4;
+  }
+
+  .ContentHeadline {
+    @include breakpoint(large) {
+      font-size: 4rem;
+    }
+  }
+
+  .ContentArea {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: auto auto 2rem;
+
+    @include breakpoint(medium) {
+      grid-template-columns: 1fr;
+    }
+
+    @include breakpoint(large) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

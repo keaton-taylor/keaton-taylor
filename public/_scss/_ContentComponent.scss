@@ -1,0 +1,54 @@
+.ContentComponent {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  &__articles {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
+  }
+
+  &__article {
+    flex-direction: column;
+    padding: 0.5rem 1rem 1rem 0;
+
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+
+    }
+
+    &-title {
+      margin: 0;
+      padding: 0;
+      font-size: 1.5rem;
+    }
+
+    &-excerpt {
+      font-family: "leitura-news", "georgia", sans-serif;
+      line-height: 1.4;
+    }
+
+    a {
+      text-decoration: none;
+
+      @include breakpoint(large) {
+        &:hover {
+          text-decoration: underline;
+          text-decoration-style: dotted;
+        }
+      }
+    }
+
+    &:nth-last-child {
+      margin-right: 0;
+    }
+  }
+}
