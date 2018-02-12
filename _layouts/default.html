@@ -1,63 +1,86 @@
   {% include head.html %}
     {% include header.html %}
+    <section class="PersonalSummary container">
+      <div class="PersonalSummary__image"></div>
+      <h2>I Design People-focused Software that Usually Lives on the Internet</h2>
 
-      <section class="PersonalComponent mt-1 mb-2">
-        <p class="PersonalComponent__content pn_text">I’m a Product Designer building people-centered software and platforms. Sometimes that’s an editorial platform like <a href="https://www.apartmenttherapy.com">Apartment Therapy</a> or <a href="https://www.mealthy.com">Mealthy</a>. Other times it’s been fundraising products like <a href="{{ site_url }}2017/09/06/raisemore.html">RaiseMore</a>. Everything I work on - at it's core - is about people. Here's <a href="https://www.dropbox.com/s/offbw1zj8unucih/kt-resume-17.pdf?dl=0">my CV</a>, just in case you're curious. Also fair warning: this is where I try new things, so strap in, it's gonna get weird.</p> 
-      </section>
+      <!-- <section class="DesignValues">
+        <div class="DesignValues__content">
+          <h3 class="m-0 lighter">Some things I'm keen to share.</h3>
+          <div id="slideshow">
+            <div>
+              <h2 class="m-0">Design is about relationships.</h2>
+            </div>
 
-      <section class="DesignValues">
-        <h3 class="m-0 pn_text">Some things I've learned along the way.</h3>
-        <div class="DesignValues__image" id="slideshow">
-          <div>
-            <h2 class="m-0">Design is about relationships.</h2>
-          </div>
+            <div>
+              <h2 class="m-0">Design & Business are inherently linked.</h2>
+            </div>
 
-          <div>
-            <h2 class="m-0">Design & Business are inherently linked.</h2>
-          </div>
+            <div>
+              <h2 class="m-0">Treat design as a strategy as much as an action.</h2>
+            </div>
 
-          <div>
-            <h2 class="m-0">Treat design as a strategy as much as an action.</h2>
-          </div>
+            <div>
+              <h2 class="m-0">Don't take yourself too seriously.</h2>
+            </div>
 
-          <div>
-            <h2 class="m-0">Don't take yourself too seriously.</h2>
-          </div>
+            <div>
+              <h2 class="m-0">Solving people problems often solves business problems.</h2>
+            </div>
 
-          <div>
-            <h2 class="m-0">Solving people problems often solves business problems.</h2>
-          </div>
+            <div>
+              <h2 class="m-0">Don't be a Jerk.</h2>
+            </div>
 
-          <div>
-            <h2 class="m-0">Don't be a Dick.</h2>
-          </div>
-
-          <div>
-            <h2 class="m-0">Data & iteration are the best paths to success.</h2>
+            <div>
+              <h2 class="m-0">Data & iteration are the best paths to success.</h2>
+            </div>
           </div>
         </div>
+      </section> -->
+      <section class="PersonalSummary__summary container__small">
+        <h3 class="m-0">I've been designing and developing internet things for about the last six years. I've worked on everything from mobile apps for Intel to marketing sites for industrial machine companies.<br><br>These are my stories. DUN DUN</h3>
       </section>
+    </section>
 
-      <section class="ContentComponent">
-        <div class="ContentComponent__wrap">
+    <section class="container">
+      <section class="container__small">
+        <div class="ContentComponent mb-0">
+          <h2 class="m-0 lighter">Work</h2>
+          <div class="ContentComponent__articles">
 
-        <div class="ContentComponent__summary">
-          <h2 class="pn_title m-0 p-0 heavier">Work</h2>
-          <p class="ContentComponent__summary-paragraph pn_text lighter">Since 2008 I've been working on design or design adjacent projects. I didnt always value the same things or do the same kind of work but I've always loved the act of creating. Here are a few samples of things I've worked on over the years. Thanks for looking.</p>
-        </div>
-
-          <ul class="ContentComponent__teaser-list p-0">
-            {% for post in site.categories.primary %}
-              <li class="WorkTeaser">
+            {% for post in site.categories.case_study limit:6 %}
+              <article class="ContentComponent__article mb-1">
+                <small class="franklin-condensed">{{ post.series }}</small>
                 <a href="{{ post.url }}">
-                  <img src="{{ post.image }}" />
-                  <h3 class="heavier p-0 mt-0 mb-half">{{ post.title }}</h3>
-                  <p class="pn_text m-0">{{ post.excerpt}}</p>
+                  <h3 class="ContentComponent__article-title mb-half mt-quarter"> {{ post.title }} </h3>
                 </a>
-              </li>
+                <p class="ContentComponent__article-excerpt mt-half mb-0"> {{ post.excerpt }}</p>
+              </article>
             {% endfor %}
-          </ul>
+
+          </div>
         </div>
       </section>
 
-      {% include footer.html %}
+      <section class="container__small">
+        <div class="ContentComponent mb-0">
+          <h2 class="lighter m-0">Words</h2>
+          <div class="ContentComponent__articles">
+
+          {% for post in site.categories.blog_post limit:4 %}
+            <article class="ContentComponent__article mb-1">
+              <small class="franklin-condensed">{{ post.series }}</small>
+              <a href="{{ post.url }}">
+                <h3 class="ContentComponent__article-title mb-half mt-quarter">{{ post.title }}</h3>
+              </a>
+              <p class="ContentComponent__article-excerpt mt-half mb-0">{{ post.excerpt }}</p>
+            </article>
+          {% endfor %}
+
+          </div>
+        </div>
+      </section>
+    </section>
+
+    {% include footer.html %}

@@ -1,26 +1,8 @@
-<footer class="center">
-  <small class="DateTime m-auto">All work and words by Keaton Taylor Copyright © 2017</small>
-</footer>
+    <footer class="center">
+      <small class="DateTime m-auto">All work and words by Keaton Taylor Copyright © 2017</small>
+    </footer>
 
-</main>
-
-<script>
-$(document).ready(function(){
-  $('.ShowMenu').click(function(){
-    $('.ContentComponent__teaser-list').slideToggle();
-  });
-});
-
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function() {
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-}, 3000);
-</script>
-</body>
+    </main>
+    <script id="dsq-count-scr" src="//keaton-taylor-com.disqus.com/count.js" async></script>
+  </body>
 </html>

@@ -1,0 +1,55 @@
+.SiteHeader {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+
+    @include breakpoint(medium) {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      font-size: 1.75rem;
+      text-decoration: none;
+      font-weight: bolder;
+    }
+  }
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: lighter;
+    padding: 0;
+    margin-top: 2rem;
+
+    @include breakpoint(medium) {
+      margin-top: 1rem;
+    }
+
+    &-item {
+      padding: 0 1rem;
+
+      img {
+        max-width: 40px;
+        max-height: 40px;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
+}

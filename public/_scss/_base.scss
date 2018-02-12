@@ -1,274 +1,141 @@
 body {
-  display: flex;           /* establish flex container */
-  flex-direction: column;  /* make main axis vertical */
-  justify-content: center; /* center items vertically, in this case */
-  align-items: center;     /* center items horizontally, in this case */
-  margin: 0;
-  padding: 0;
+  font-family: $sans-stack;
+  background: #fff;
+  color: #1a5454;
   text-rendering: optimizeLegibility;
+  border-top: 0.25rem solid #00c9ff;
+  font-size: 18px !important;
 }
 
-.content {
-  margin: auto;
-  max-width: 700px;
+.container {
+  max-width: 1200px;
+  padding: 1em 1em 0;
+
+  @include breakpoint(1199px) {
+    margin: 0 auto;
+  }
+
+  &__small {
+    max-width: 960px;
+    padding: 1em 0 0;
+
+    @include breakpoint(959px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__xsmall {
+    max-width: 740px;
+    padding: 1em 1em 0;
+
+    @include breakpoint(739px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__images {
+    @include breakpoint(medium){
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+  }
+
+  &__image {
+    flex-direction: column;
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
+
+    &--small {
+      max-width: 400px;
+      margin: auto;
+    }
+
+    img {
+      box-shadow: 1px 0 6px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+hr {
+  width: 100%;
+  color: $color--light-gray
+}
+
+small {
+  font-size: 1rem;
+  font-family: $condensed-stack;
+  letter-spacing: 0.5px;
+}
+
+blockquote {
+  border-left: 4px solid $color--green;
+  font-family: $serif-stack;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 1em auto;
+  padding-left: 1.25em;
+
+  @include breakpoint(large) {
+    margin-right: 1.5em;
+  }
+}
+
+.PersonalSummary {
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  &--large {
-    max-width: 960px;
-  }
-}
-
-.SiteHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 0.75rem;
-  font-family: $sans-stack;
-
-  @include breakpoint(medium) {
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  &__name {
-    justify-content: flex-start;
-  }
-
-  &__nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: lighter;
-
-    &-item {
-      padding: 0 1rem;
-
-      &:last-child {
-        padding-right: 0;
-      }
-
-      &:first-child {
-        padding-left: 0;
-      }
-    }
-  }
-}
-
-.SubHeader {
-  &__nav {
-    display: flex;
-
-    &-item {
-      padding: 0 1rem;
-    }
-  }
-}
-
-.PersonalComponent {
-  display: flex;
-  margin: auto;
-  max-width: 1400px;
-
-  @include breakpoint(large) {
-    flex-direction: row-reverse;
-  }
-
-  &__content {
-    max-width: 700px;
-    padding: 0 0.75rem;
-    font-size: 1.2rem;
-    line-height: 1.3;
-    font-weight: lighter;
-
-    @include breakpoint(medium) {
-      padding: initial;
-    }
-
-    a {
-      font-weight: 400;
-      color: darken(#69d1d1 , 40%);
-
-      &:hover {
-        text-decoration: underline;
-        text-decoration-style: dotted;
-      }
-    }
-  }
-}
-
-h3 {
-  font-family: $serif-stack;
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: darkslategray;
-  padding: 0 0.75rem 0.5rem;
-
-  @include breakpoint(medium) {
-    padding-left: 2rem;
-  }
-}
-
-.DesignValues {
-  margin: auto;
-  max-width: 1400px;
-
-
-  @include breakpoint(large) {
-    margin-bottom: 2rem;
-  }
-
   &__image {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    height: 280px;
-
-    @include breakpoint(375px) {
-      height: 237px;
-    }
-
-    @include breakpoint(400px) {
-      height: 320px;
-    }
-
-    @include breakpoint(large) {
-      height: 17rem;
-    }
-
-    h2 {
-      font-size: 2.5rem;
-      color: lighten(#000, 30%);
-      padding: 0 0.75rem;
-      flex-wrap: wrap;
-      text-shadow: 0px 2px rgba(0, 0, 0, 0.05);
-      position: absolute;
-      bottom: 2rem;
-
-      @include breakpoint(412px) {
-        bottom: 3rem;
-        font-size: 3.25rem;
-      }
-
-      @include breakpoint(600px) {
-        bottom: 4rem;
-        font-size: 4.25rem;
-      }
-
-      @include breakpoint(medium) {
-        font-size: 4.5rem;
-        padding-left: 2rem;
-        bottom: 6.75rem;
-      }
-
-      @include breakpoint(large) {
-        font-size: 3.5rem;
-        bottom: 5rem;
-      }
-
-      @include breakpoint(1200px) {
-        bottom: 2.75rem;
-        font-size: 4.5rem;
-      }
-
-      @include breakpoint(1400px) {
-        font-size: 4.5rem;
-        bottom: 2rem;
-      }
-
-      @include breakpoint(1600px) {
-        bottom: 2rem;
-        font-size: 6rem;
-      }
-    }
-  }
-}
-
-.ContentComponent {
-  padding: 2rem 1rem;
-  background: #f7f7f7;
-  line-height: 1.4;
-
-  &__wrap {
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-
-    @include breakpoint(large) {
-      flex-direction: row;
-    }
+    background: url(/assets/images/blob.png) no-repeat center center;
+    background-size: contain;
+    height: 100%;
+    position: absolute;
+    width: 90vw;
+    max-width: 1200px;
+    z-index: -1;
+    top: -90px;
+    opacity: 0.5;
+    align-items: center;
+    align-self: center;
   }
 
   &__summary {
-    &-paragraph {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
+    font-family: $serif-stack;
+    line-height: 1.3;
+
+    @include breakpoint(medium) {
+      font-size: 2rem;
     }
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 1rem 0 0 0;
+    line-height: 1.1;
+    position: relative;
+
+    @include breakpoint(medium) {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 0.9;
+      letter-spacing: 1px;
+    }
+
     @include breakpoint(large) {
-      padding-right: 2rem;
-
-      h2 {
-        font-size: 2rem;
-      }
-
-      p {
-        margin-top: 0.5rem;
-      }
+      font-size: 5rem;
     }
-  }
-
-  &__teaser-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-
-    @include breakpoint(large) {
-      flex-direction: row;
-    }
-
-    a {
-      display: block;
-      height: 100%;
-      width: 100%;
-    }
-  }
-}
-
-.WorkTeaser {
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
-  background: white;
-  padding: 1rem;
-  margin: 1rem 0;
-
-  @include breakpoint(large) {
-    padding: 2rem;
-    margin: 0 1rem;
-  }
-
-  img {
-    margin-bottom: 0.5rem;
-    width: 100%;
   }
 }
 
 footer {
   @include gradient;
+
   padding: 1rem 0;
-  font-family: $sans-stack;
+  font-weight: bolder;
   color: white;
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-}
-
-.OldWork {
-  padding: 0 1rem;
-  .RaiseMore__image {
-    flex-direction: column;
-
-  }
+  margin-top: 14vh;
 }

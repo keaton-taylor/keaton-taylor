@@ -1,19 +1,15 @@
-$serif-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$sans-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$condensed-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$sans-stack: "franklin-gothic-urw", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$serif-stack: "leitura-news", "georgia", serif;
+$condensed-stack: "franklin-gothic-urw-cond", sans-serif;
 
 a {
-  text-decoration: none;
-  color: #363636;
-  line-height: 1.2;
-}
+  font-weight: 400;
+  color: darken(#69d1d1, 40%);
 
-h1,
-h2,
-h3,
-li {
-  font-family: $condensed-stack;
-  color: #363636;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
 }
 
 figure {
