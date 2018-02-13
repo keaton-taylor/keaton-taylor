@@ -88,7 +88,7 @@ blockquote {
   justify-content: center;
 
   &__image {
-    background: url(/assets/images/blob.png) no-repeat center center;
+    background: url(/assets/images/blob.svg) no-repeat center center;
     background-size: contain;
     height: 100%;
     position: absolute;
@@ -121,7 +121,6 @@ blockquote {
     @include breakpoint(medium) {
       font-size: 3rem;
       font-weight: 800;
-      line-height: 0.9;
       letter-spacing: 1px;
     }
 
