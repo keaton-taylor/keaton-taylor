@@ -16,39 +16,16 @@
 
   .ContentArea {
     display: grid;
-    grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 40em) [main-end] minmax(1em, 1fr) [full-end];
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
     margin: auto auto 2rem;
 
-    & > * {
-      grid-column: main;
-    }
-
-    & > figure {
-      grid-column: full;
-    }
-
-    & > figure img {
-      display: block;
+    @include breakpoint(medium) {
+      grid-template-columns: 1fr;
     }
 
     @include breakpoint(large) {
-      & > figure {
-        align-items: end;
-        display: inherit;
-        grid-template-columns: inherit;
-      }
-
-      /**
-       * Wrapping div required for Firefox for some reason? 😕
-       */
-
-      & > figure > div {
-        grid-column: main / full;
-      }
-
-      & > figure > figcaption {
-        order: -1;
-        text-align: right;
-      }
+      grid-template-columns: 1fr;
     }
+  }
 }
