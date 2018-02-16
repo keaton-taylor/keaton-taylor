@@ -95,10 +95,44 @@ blockquote {
     width: 90vw;
     max-width: 1200px;
     z-index: -1;
-    top: -90px;
+    top: 60px;
     opacity: 0.5;
     align-items: center;
     align-self: center;
+    display:none;
+
+    @include breakpoint(360px) {
+      top: -5px;
+      display: block;
+    }
+
+    @include breakpoint(375px) {
+      top: -44px;
+    }
+
+    @include breakpoint(384px) {
+      top: -30px;
+    }
+
+    @include breakpoint(412px) {
+      top: -78px;
+    }
+
+    @include breakpoint(600px) {
+      top: -218px;
+    }
+
+    @include breakpoint(768px) {
+      top: -302px;
+    }
+
+    @include breakpoint(large) {
+      top: -110px;
+    }
+
+    @include breakpoint(xlarge) {
+      top: -230px;
+    }
   }
 
   &__summary {
