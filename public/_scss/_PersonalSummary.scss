@@ -1,0 +1,89 @@
+.PersonalSummary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__image {
+    background: url(/assets/images/blob.svg) no-repeat center center;
+    background-size: contain;
+    height: 100vh;
+    position: absolute;
+    width: 90vw;
+    max-width: 1200px;
+    z-index: -1;
+    top: 60px;
+    opacity: 0.5;
+    align-items: center;
+    align-self: center;
+    display: none;
+
+    @include breakpoint(360px) {
+      top: -5px;
+      display: block;
+    }
+
+    @include breakpoint(375px) {
+      top: -44px;
+    }
+
+    @media screen and ( min-width: 375px ) and ( height: 812px ){
+      top: -119px;
+    }
+
+    @include breakpoint(384px) {
+      top: -30px;
+    }
+
+    @include breakpoint(412px) {
+      top: -89px;
+    }
+
+    @include breakpoint(600px) {
+      top: -218px;
+    }
+
+    @include breakpoint(768px) {
+      top: -302px;
+    }
+
+    @include breakpoint(large) {
+      top: -110px;
+    }
+
+    @include breakpoint(xlarge) {
+      top: -230px;
+    }
+  }
+
+  &__summary {
+    font-size: 1.25rem;
+    font-family: $serif-stack;
+    line-height: 1.3;
+
+    @include breakpoint(medium) {
+      font-size: 1.5rem;
+    }
+
+    @include breakpoint(large) {
+      font-size: 2rem;
+    }
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin: 1rem 0 0 0;
+    line-height: 1.1;
+    position: relative;
+
+    @include breakpoint(medium) {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    @include breakpoint(large) {
+      font-size: 5rem;
+    }
+  }
+}
