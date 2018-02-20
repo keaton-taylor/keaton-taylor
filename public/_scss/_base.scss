@@ -58,30 +58,6 @@ body {
   }
 }
 
-hr {
-  width: 100%;
-  color: $color--light-gray
-}
-
-small {
-  font-size: 1rem;
-  font-family: $condensed-stack;
-  letter-spacing: 0.5px;
-}
-
-blockquote {
-  border-left: 4px solid $color--green;
-  font-family: $serif-stack;
-  font-size: 1.5rem;
-  font-style: italic;
-  margin: 1em auto;
-  padding-left: 1.25em;
-
-  @include breakpoint(large) {
-    margin-right: 1.5em;
-  }
-}
-
 footer {
   @include gradient;
 

@@ -37,11 +37,8 @@
 
     &-item {
       padding: 0 1rem;
-
-      img {
-        max-width: 40px;
-        max-height: 40px;
-      }
+      max-width: 40px;
+      max-height: 40px;
 
       &:last-child {
         padding-right: 0;
@@ -49,6 +46,42 @@
 
       &:first-child {
         padding-left: 0;
+      }
+    }
+  }
+
+  &__nav-item.icon {
+    &.twitter:active {
+      fill: #1da1f2
+    }
+
+    &.github:active {
+      fill: #4078c0;
+    }
+
+    &.dribbble:active {
+      fill: #ea4c89;
+    }
+
+    &.img:active {
+      filter: grayscale(100%);
+    }
+
+    @include breakpoint(large) {
+      &.twitter:hover {
+        fill: #1da1f2;
+      }
+
+      &.github:hover {
+        fill: #4078c0;
+      }
+
+      &.dribbble:hover {
+        fill: #ea4c89;
+      }
+
+      &.img:hover {
+        filter: grayscale(100%);
       }
     }
   }
