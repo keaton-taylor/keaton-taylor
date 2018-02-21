@@ -1,16 +1,20 @@
   {% include head.html %}
-    {% include header.html %}
+    {% include SiteHeader.html %}
       <section class="PostPage container__xsmall">
         <h2 class="ContentHeadline mt-1 mb-1">{{ page.title }}</h2>
         <section class="ContentArea">
           <section class="ContentArea__main">
             {{ page.content }}
           </section>
+        </section>
+
+        {% include SocialShare.html %}
+
+        <section class="container__small p-0">
           <hr>
           {% if page.series == "Little Thoughts" %}
           <div>
-            <small><em>Little Thoughts<em> is a series of half formed thoughts and musings that probably are only half corret or 3/4 true. Take them with a salt lick.</small>
-            <br>
+            <small><em>Little Thoughts</em> is a series of half formed thoughts and musings. Take them with a salt lick.</small>
             <br>
             <small>Keaton Taylor is a designer and front-end developer moving through the world asking lots of questions and being wrong about no less than 50% of his ideas at any given time. He is an IC at Apartment Therapy Media and all his thoughts and ideas are his own.</small>
           </div>
@@ -19,7 +23,7 @@
           {% endif %}
         </section>
 
-        <section class="container mt-2 p-0">
+        <section class="container__small mt-2 p-0">
           {% if page.comments %}
             <div id="disqus_thread"></div>
             <script>

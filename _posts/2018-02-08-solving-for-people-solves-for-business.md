@@ -8,7 +8,7 @@ series: Little Thoughts
 comments: true
 ---
 
-As you may or may not know, advertising on the web is generally regarded as being a terrible and immoral thing. With some caveats - I disagree with that. I think advertising, in it's many forms, was a logical step in the monetization on the web. Advertising is an ever-present part of modern life. The idea that it would be ported to the internet is totally normal.
+Advertising on the web is generally regarded as being a terrible and immoral thing. With some caveats - I disagree with that. I think advertising, in it's many forms, was a logical step in the monetization on the web. Advertising is an ever-present part of modern life. The idea that it would be ported to the internet is totally normal.
 
 So that's established: I think advertising online makes sense.
 

@@ -15,17 +15,6 @@
   }
 
   .ContentArea {
-    display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
-    margin: auto auto 2rem;
-
-    @include breakpoint(medium) {
-      grid-template-columns: 1fr;
-    }
-
-    @include breakpoint(large) {
-      grid-template-columns: 1fr;
-    }
   }
 }

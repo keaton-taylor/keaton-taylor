@@ -34,10 +34,6 @@
     grid-template: "content";
     line-height: 1.4;
 
-    @include breakpoint(large) {
-      max-width: 60vw;
-    }
-
     p:first-of-type {
       margin-top: 1rem;
     }
