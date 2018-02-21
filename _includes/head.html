@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{{ site.title }}</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search resu...">
+  <meta name="description" content="{{ site.description }}">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
@@ -27,9 +27,59 @@
   <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- Twitter card support conditionals -->
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@keaton_taylor">
+  <meta name="twitter:creator" content="@keaton_taylor">
+  {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}">
+  {% else %}
+    <meta name="twitter:title" content="{{ site.title }}">
+  {% endif %}
+  {% if page.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  {% endif %}
+  {% if page.description %}
+    <meta name="twitter:description" content="{{ page.excerpt }}">
+  {% else %}
+    <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+  {% if page.image %}
+    <meta name="twitter:image:src" content="{{ site.url }}/assets/images{{ page.image }}">
+  {% else %}
+    <meta name="twitter:image:src" content="http://www.fillmurray.com/600/314">
+  {% endif %}
+
+  <!-- OG Data support conditionals -->
+
+    <meta content="{{ site.title }}" property="og:site_name">
+  {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+    <meta content="{{ site.title }}" property="og:title">
+  {% endif %}
+  {% if page.title %}
+    <meta content="article" property="og:type">
+  {% else %}
+    <meta content="website" property="og:type">
+  {% endif %}
+  {% if page.description %}
+    <meta content="{{ page.description }}" property="og:description">
+  {% else %}
+    <meta content="{{ site.description }}" property="og:description">
+  {% endif %}
+  {% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  {% endif %}
+  {% if page.image %}
+    <meta content="assets/images{{ page.image }}" property="og:image">
+  {% else %}
+    <meta content="http://keaton-taylor.com/assets/images/keaton__round.png" property="og:image">
+  {% endif %}
 
   <link rel="stylesheet" href="{{ url }}/public/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://keaton-taylor.com">
   <link rel="alternate" type="application/rss+xml" title="Keaton Taylor | Product Designer" href="/feed.xml">
 
   <!-- <style>

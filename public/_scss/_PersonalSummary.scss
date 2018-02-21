@@ -17,29 +17,9 @@
     align-self: center;
     display: none;
 
-    @include breakpoint(360px) {
-      top: -5px;
+    @include breakpoint(medium) {
+      top: -297px;
       display: block;
-    }
-
-    @include breakpoint(375px) {
-      top: -44px;
-    }
-
-    @media screen and (min-width: 375px) and (height: 812px) {
-      top: -119px;
-    }
-
-    @include breakpoint(384px) {
-      top: -30px;
-    }
-
-    @include breakpoint(412px) {
-      top: -89px;
-    }
-
-    @include breakpoint(600px) {
-      top: -218px;
     }
 
     @include breakpoint(768px) {
@@ -47,7 +27,7 @@
     }
 
     @include breakpoint(large) {
-      top: -110px;
+      top: -230px;
     }
 
     @include breakpoint(xlarge) {
