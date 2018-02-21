@@ -1,0 +1,78 @@
+.SocialShare {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  justify-content: space-between;
+
+  @include breakpoint(medium) {
+    flex-direction: column;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+
+    &--link {
+      background-color: $color--light-gray;
+      padding: 0.5rem 1.25rem;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      font-size: 0.75em;
+
+      &.linkedin {
+        background-color: $color--linkedin;
+        color: white;
+
+        @include breakpoint(large) {
+          &:hover {
+            background-color: lighten($color--linkedin, 30%);
+            color: $color--linkedin;
+            transition:
+              background-color 300ms ease-out,
+              padding 0.8s linear;
+
+            svg {
+              fill: $color--linkedin;
+            }
+          }
+        }
+      }
+
+      &.twitter {
+        background-color: $color--linkedin;
+        color: white;
+
+        @include breakpoint(large) {
+          &:hover {
+            background-color: lighten($color--twitter, 30%);
+            color: $color--twitter;
+            transition:
+              background-color 300ms ease-out,
+              padding 0.8s linear;
+
+            svg {
+              fill: $color--twitter;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &--icon {
+      display: flex;
+      align-self: center;
+      align-items: center;
+
+      svg {
+        max-width: 24px;
+        fill: #fff;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
