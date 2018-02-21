@@ -17,7 +17,7 @@ body {
 
   &__small {
     max-width: 960px;
-    padding: 1em 0 0;
+    padding: 1em 1em 0;
 
     @include breakpoint(959px) {
       margin: 0 auto;

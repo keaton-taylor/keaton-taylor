@@ -52,15 +52,15 @@
 
   &__nav-item.icon {
     &.twitter:active {
-      fill: #1da1f2
+      fill: darken($color--twitter, 20%);
     }
 
     &.github:active {
-      fill: #4078c0;
+      fill: darken($color--github, 20%);
     }
 
     &.dribbble:active {
-      fill: #ea4c89;
+      fill: darken($color--dribbble, 20%);
     }
 
     &.img:active {
@@ -69,15 +69,15 @@
 
     @include breakpoint(large) {
       &.twitter:hover {
-        fill: #1da1f2;
+        fill: black;
       }
 
       &.github:hover {
-        fill: #4078c0;
+        fill: black;
       }
 
       &.dribbble:hover {
-        fill: #ea4c89;
+        fill: black;
       }
 
       &.img:hover {
