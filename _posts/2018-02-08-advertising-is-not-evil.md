@@ -2,8 +2,9 @@
 layout: PostPage
 date:   2017-09-03 16:16:01 -0600
 category: blog_post
-title: "Advertising Isn't Evil, but the Way We Do It Might Be. Sometimes."
-excerpt: "If no one's using your products, your products can't make money."
+title: Advertising Is not Evil, but the Way We Do It Might Be. Sometimes.
+excerpt: If no one is using your products, your products cannot make money.
+image: /keaton.png
 series: Little Thoughts
 comments: true
 ---
