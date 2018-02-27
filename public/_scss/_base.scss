@@ -3,32 +3,32 @@ body {
   background: #fff;
   color: #1a5454;
   text-rendering: optimizeLegibility;
-  border-top: 0.25rem solid #00c9ff;
-  font-size: 18px !important;
+  border-top: 0.25rem solid $color--green;
+  font-size: 16px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 75em;
   padding: 1em 1em 0;
 
-  @include breakpoint(1199px) {
+  @include breakpoint(74.9375em) {
     margin: 0 auto;
   }
 
   &__small {
-    max-width: 960px;
+    max-width: 60em;
     padding: 1em 1em 0;
 
-    @include breakpoint(959px) {
+    @include breakpoint(59.9375em) {
       margin: 0 auto;
     }
   }
 
   &__xsmall {
-    max-width: 740px;
+    max-width: 46.25em;
     padding: 1em 1em 0;
 
-    @include breakpoint(739px) {
+    @include breakpoint(46.185em) {
       margin: 0 auto;
     }
   }
@@ -48,7 +48,7 @@ body {
     }
 
     &--small {
-      max-width: 400px;
+      max-width: 25em;
       margin: auto;
     }
 
@@ -61,7 +61,7 @@ body {
 footer {
   @include gradient;
 
-  padding: 1rem 0;
+  padding: 1em 0;
   font-weight: bolder;
   color: white;
   margin-top: 14vh;

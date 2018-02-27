@@ -34,14 +34,14 @@
     grid-template: "content";
     line-height: 1.4;
 
-    p:first-of-type {
-      margin-top: 1rem;
-    }
-
     p {
       font-family: $serif-stack;
       line-height: 1.6;
       margin-top: 0;
+
+      &:first-of-type {
+        margin-top: 1rem;
+      }
     }
 
     h3 {
