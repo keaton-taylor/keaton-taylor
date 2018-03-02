@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   max-width: 960px;
+  position: relative;
 
   h2 {
     font-size: 2.25rem;
+    margin-bottom: 2em;
   }
 
   &__articles {
@@ -16,24 +18,59 @@
     }
   }
 
+  &__wrap {
+    padding: 0;
+
+    @include breakpoint(medium) {
+      padding: 1rem 1rem;
+    }
+  }
+
   &__article {
-    flex-direction: column;
-    padding: 0.5rem 1rem 1rem 0;
+    flex-direction: row;
+    padding: 1rem 1rem;
+    display: flex;
+    background: lighten($color--green, 15%);
 
     @include breakpoint(medium) {
       margin-bottom: 0;
+    }
 
+    &-image {
+      display: none;
+
+      @include breakpoint(medium) {
+        display: block;
+        height: 100%;
+        margin-top: -2.5rem;
+        width: 100%;
+        max-width: 450px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
     }
 
     &-title {
       margin: 0;
       padding: 0;
       font-size: 1.5rem;
+
+      @include breakpoint(medium) {
+        font-size: 1.75rem;
+      }
+
+      @include breakpoint(800px) {
+        font-size: 2.25rem;
+      }
     }
 
     &-excerpt {
       font-family: "leitura-news", "georgia", sans-serif;
       line-height: 1.4;
+      color: lighten($color--text, 5%);
+
+      @include breakpoint(medium_only) {
+        display: none;
+      }
     }
 
     a {
