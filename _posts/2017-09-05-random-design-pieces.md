@@ -2,9 +2,9 @@
 layout: PostPage
 date:   2017-09-01 16:16:01 -0600
 category: case_study
-image: /assets/images/extras-post-img.png
+image: /assets/images/bo-website.png
 title: "Logos and Websites of Yesteryear"
-excerpt: "Some random work that I have lying around. There's everything here from branding to illustration, to some websites that are only mildly embarrassing."
+excerpt: "Some random work that I have lying around. There's everything here from branding to illustration to regional marketing and commerce sites."
 series: Design Work
 comments: false
 ---
