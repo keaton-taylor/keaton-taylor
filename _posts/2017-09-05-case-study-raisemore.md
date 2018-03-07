@@ -33,9 +33,9 @@ Our goals for the update were:
 
 In the course of discussing the new on-boarding flow we exposed a glaring experience flaw. There were no less than 4 places for a person to sign up and define credentials.
 
-<figure class="container__image mb-2">
-  <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_E6C2E1981A9640327110390FCA8823B3EFD888DDBE1E984574D91BEEACCC87E1_1506112086179_rm-entry-points.png" alt="image There are at least 4 portals that will drop you into a Sign-Up situation" />
-  <figcaption class="mt-half center">
+<figure class="container__image container__break">
+  <img src="/assets/images/rm-entry-points.png" alt="image There are at least 4 portals that will drop you into a Sign-Up situation" />
+  <figcaption class="mt-half center mb-1">
     <small>There are at least 4 portals that will drop you into a Sign-Up situation</small>
   </figcaption>
 </figure>
@@ -44,14 +44,14 @@ Mapping out entry points and making them cohesive and contextually relevant was 
 
 <div class="container__images">
   <figure class="container__image">
-    <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_E6C2E1981A9640327110390FCA8823B3EFD888DDBE1E984574D91BEEACCC87E1_1506112086030_rm-header-cta__modal.png" alt="image Header Call to action" />
+    <img src="/assets/images/rm-header-cta__modal.png" alt="image Header Call to action" />
     <figcaption class="mt-half center">
       <small>Header Call to action</small>
     </figcaption>
   </figure>
 
   <figure class="container__image">
-    <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_E6C2E1981A9640327110390FCA8823B3EFD888DDBE1E984574D91BEEACCC87E1_1506112086022_rm-header-cta__modal-success.jpg" alt="image Header call to action success modal" />
+    <img src="/assets/images/rm-header-cta__modal-success.jpg" alt="image Header call to action success modal" />
     <figcaption class="mt-half center">
       <small>Header call to action success modal</small>
     </figcaption>
@@ -60,16 +60,16 @@ Mapping out entry points and making them cohesive and contextually relevant was 
 
 Once a person works through the actual signup we prompt them to go through our "mini-store" experience to start customizing their app.
 
-<figure class="container__image">
+<figure class="container__image container__break ">
   <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_F311AE08451D62116DFFACCBDC7E009E2FF890EF15810A623D30F66D11798920_1517346138952_Screenshot+2018-01-30+15.02.02.png" alt="image After signing up, you’re invited to customize your app - which is released to the  app store after your subscription is confirmed through our signup UI." />
-  <figcaption class="mt-half center">
+  <figcaption class="mt-half center mb-1">
     <small>After signing up, you’re invited to customize your app - which is released to the  app store after your subscription is confirmed through our signup UI.</small>
   </figcaption>
 </figure>
 
 Ultimately the mini-store shipped as an MVP. After our Beta, it was clear it needed some updating. We needed a clear affordance to make the process more transparent. we tried a few different iterations of this and the one we landed on was a 3 part status indicator at the top of the page that's purpose was to give people a sense of place and a feeling of completion as they signed up.
 
-<figure class="container__image">
+<figure class="container__image container__break mb-1">
   <img src="/assets/images/review_c1.png" alt="An image of a header with three green arrows" />
   <figcaption class="mt-half center">
     <small>A UI in the mini-store to show people where they are in the process of creation and to launch a demo.</small>
@@ -84,16 +84,16 @@ One of the problems we wanted to tackle was reworking our social sharing workflo
 - We needed to design around a framework of extensibility. It's the only way to ensure the ability to add social media platforms when necessary.
 - We have to live with the fact that we're not Instagram. We're going to have to send separate messages from separate fields.
 
-<div class="container__images">
+<div class="container__images mb-1">
   <figure class="container__image">
-    <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_E6C2E1981A9640327110390FCA8823B3EFD888DDBE1E984574D91BEEACCC87E1_1506112086066_rm-wireframe.jpg" alt="Mobile Sharing sketch 1" />
+    <img src="/assets/images/rm-wireframe.jpg" alt="Mobile Sharing sketch 1" />
     <figcaption class="mt-half center">
       <small>Mobile Sharing sketch 1</small>
     </figcaption>
   </figure>
 
   <figure class="container__image">
-    <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_E6C2E1981A9640327110390FCA8823B3EFD888DDBE1E984574D91BEEACCC87E1_1506112086059_rm-wireframe--2.jpg" alt="Mobile Sharing sketch 2" />
+    <img src="/assets/images/rm-wireframe--2.jpg" alt="Mobile Sharing sketch 2" />
     <figcaption class="mt-half center">
       <small>Mobile Sharing sketch 2</small>
     </figcaption>
@@ -103,7 +103,12 @@ One of the problems we wanted to tackle was reworking our social sharing workflo
 The person would need to select their social media platforms, write a main post and agree every time the post went to a new social outlet. The final screen is the success screen, the screen below is the “Would you like to send another update?” dialogue. This was a really complex workflow, but was the reality of sharing as we understood it at the time.
 From there we thought a lot about the interaction. The next social media post sliding up from the bottom for example. we started fleshing this out a little more to hand off to engineering for some prototyping.
 
-![Social sharing comp](https://d2mxuefqeaa7sj.cloudfront.net/s_E6C2E1981A9640327110390FCA8823B3EFD888DDBE1E984574D91BEEACCC87E1_1506112086052_rm-social-sharing.jpg)
+<figure class="container__image container__break mb-1">
+  <img src="/assets/images/rm-social-sharing.jpg" alt="Social sharing comp" />
+  <figcaption class="mt-half center">
+    <small>A UI comp for Social sharing</small>
+  </figcaption>
+</figure>
 
 #### In-App Coaching
 
@@ -111,7 +116,7 @@ During the course of my time at RaiseMore there was one feature I coveted more t
 
 Our first step was to define some types of messages that might be sent. Warning Alerts, Coaching, Reminders, Data Points. The possibilities of message types are nearly endless. We went through a few different types of message and thought about how it might look and feel. starting with the icons it might use.
 
-<figure class="container__image">
+<figure class="container__image mb-1">
   <img src="/assets/images/rm-messaging-assets.png" alt="Mobile Sharing sketch 2" alt="a picture of raisemore messaging icons" />
   <figcaption class="mt-half center">
     <small>raisemore messaging icons</small>
@@ -131,8 +136,14 @@ There was an initial idea that floated around of using photos uploaded to the ap
 
 The implementation was more challenging than we were ready to take on at such an early stage. We opted to work with the icons and an integrated color-field that might be slightly different depending on the colors chosen in the app building process.
 
-![initial concept for the alert](/assets/images/rm-messaging-examples.png)
+<figure class="container__image container__break ">
+  <img src="/assets/images/rm-messaging-examples.png" alt="initial concept for the alert" />
+  <figcaption class="mt-half center mb-1">
+    <small>initial concept for the alert</small>
+  </figcaption>
+</figure>
 
 This feature ended up being mostly aspirational because of some engineering limitations with the Ionic Framework at the time but was a fun excercise in thinking about our products' evolutions over time.
 
-[![RaiseMore Product Walkthrough with CEO, CTO and Lead Engineer and some shots from our beta testing summit. ](assets/images/rm-cover-img-png)](https://vimeo.com/200031428)
+[![RaiseMore Product Walkthrough with CEO, CTO and Lead Engineer and some shots from our beta testing summit. ](/assets/images/rm-cover-img.png)](https://vimeo.com/200031428)
+### RaiseMore Product Walkthrough with CEO, CTO and Lead Engineer and some shots from our beta testing summit.

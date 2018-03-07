@@ -2,7 +2,7 @@
 layout: PostPage
 date:   2017-09-01 16:16:01 -0600
 category: case_study
-image: /assets/images/bo-website.png
+image: /assets/images/batteryOutfitters.png
 title: "Logos and Websites of Yesteryear"
 excerpt: "Some random work that I have lying around. There's everything here from branding to illustration to regional marketing and commerce sites."
 series: Design Work
@@ -25,7 +25,7 @@ comments: false
   </figure>
 
   <figure class="container__image mb-2">
-    <img src="/assets/images/bo-website.png" alt="battery outfitters" />
+    <img src="/assets/images/batteryOutfitters.png" alt="battery outfitters" />
     <figcaption class="mt-half center">
       <small>Website for <a href="http://batteryoutfitters.com/">Battery Outfitters.</a><br>Design</small>
     </figcaption>

@@ -18,6 +18,17 @@
     }
   }
 
+  a {
+    text-decoration: none;
+
+    @include breakpoint(large) {
+      &:hover {
+        animation: 10s ease infinite;
+        color: $color--blue;
+      }
+    }
+  }
+
   &__wrap {
     padding: 0;
 
@@ -30,7 +41,7 @@
     flex-direction: row;
     padding: 1rem 1rem;
     display: flex;
-    background: lighten($color--green, 15%);
+    background: lighten($color--green, 40%);
 
     @include breakpoint(medium) {
       margin-bottom: 0;
@@ -70,17 +81,6 @@
 
       @include breakpoint(medium_only) {
         display: none;
-      }
-    }
-
-    a {
-      text-decoration: none;
-
-      @include breakpoint(large) {
-        &:hover {
-          text-decoration: underline;
-          text-decoration-style: dotted;
-        }
       }
     }
 

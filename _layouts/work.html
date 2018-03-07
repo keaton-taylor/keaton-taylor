@@ -2,25 +2,26 @@
     {% include SiteHeader.html %}
       <section class="container">
         <h2 class="ContentHeadline mt-1 mb-1">{{ page.title }}</h2>
-        <section class="ContentArea container__small">
-          <section class="ContentArea__main">
-            {{ page.content }}
-          </section>
+      </section>
+      <section class="ContentArea container__xsmall">
+        <section class="ContentArea__main">
+          {{ page.content }}
+        </section>
 
-          <section class="ContentArea__sidebar">
-            <div class="ContentArea__sidebar-row">
-              <h4>Completed</h4>
-              <p>{{ page.year }}<p>
-            </div>
-            <div class="ContentArea__sidebar-row">
-              <h4>Role</h4>
-              <p>{{ page.role }}<p>
-            </div>
-            <div class="ContentArea__sidebar-row">
-              <h4>Platform</h4>
-              <p>{{ page.platform }}<p>
-            </div>
-          </section>
+        <section class="ContentArea__sidebar">
+          <div class="ContentArea__sidebar-row">
+            <h4>Completed</h4>
+            <p>{{ page.year }}<p>
+          </div>
+          <div class="ContentArea__sidebar-row">
+            <h4>Role</h4>
+            <p>{{ page.role }}<p>
+          </div>
+          <div class="ContentArea__sidebar-row">
+            <h4>Platform</h4>
+            <p>{{ page.platform }}<p>
+          </div>
         </section>
       </section>
+
     {% include footer.html %}

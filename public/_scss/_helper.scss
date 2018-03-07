@@ -4,7 +4,7 @@ $color--dark-gray: darken(lightgray, 30%);
 $color--text: #1a5454;
 
 $color--blue: #00c9ff;
-$color--green: #92fe9d;
+$color--green: #00FF98;
 
 $color--github: #4078c0;
 $color--twitter: #1da1f2;
@@ -137,6 +137,12 @@ $color--dribbble: #ea4c89;
   @include breakpoint(xsmall) {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+}
+
+.container__break {
+  @include breakpoint(large) {
+    margin: 0 -20% !important;
   }
 }
 
