@@ -146,4 +146,4 @@ The implementation was more challenging than we were ready to take on at such an
 This feature ended up being mostly aspirational because of some engineering limitations with the Ionic Framework at the time but was a fun excercise in thinking about our products' evolutions over time.
 
 [![RaiseMore Product Walkthrough with CEO, CTO and Lead Engineer and some shots from our beta testing summit. ](/assets/images/rm-cover-img.png)](https://vimeo.com/200031428)
-### RaiseMore Product Walkthrough with CEO, CTO and Lead Engineer and some shots from our beta testing summit.
+#### Click above to watch a RaiseMore Product Walkthrough with CEO, CTO and Lead Engineer and some shots from our beta testing summit.
