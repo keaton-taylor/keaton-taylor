@@ -15,6 +15,15 @@ body {
     margin: 0 auto;
   }
 
+  &__xsmall {
+    max-width: 46.25em;
+    padding: 1em 1em 0;
+
+    @include breakpoint(46.185em) {
+      margin: 0 auto;
+    }
+  }
+
   &__small {
     max-width: 60em;
     padding: 1em 1em 0;
@@ -24,11 +33,12 @@ body {
     }
   }
 
-  &__xsmall {
-    max-width: 46.25em;
-    padding: 1em 1em 0;
+  &__large {
+    max-width: 100%;
+    padding: 0;
 
-    @include breakpoint(46.185em) {
+    @include breakpoint(medium) {
+      padding: 0 1em;
       margin: 0 auto;
     }
   }
