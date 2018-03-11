@@ -3,7 +3,7 @@ body {
   background: #fff;
   color: #1a5454;
   text-rendering: optimizeLegibility;
-  border-top: 0.5em solid $color--blue;
+  border-top: 4px solid $color--blue;
   font-size: 16px;
 }
 
@@ -17,10 +17,10 @@ body {
 
   &__xsmall {
     max-width: 46.25em;
-    padding: 1em 1em 0;
+    margin: 0 auto;
 
-    @include breakpoint(46.185em) {
-      margin: 0 auto;
+    @include breakpoint(medium) {
+      padding: 0;
     }
   }
 
@@ -34,8 +34,8 @@ body {
   }
 
   &__large {
-    max-width: 100%;
-    padding: 0;
+    max-width: 1400px;
+    padding: 0 1em;
 
     @include breakpoint(medium) {
       padding: 0 1em;

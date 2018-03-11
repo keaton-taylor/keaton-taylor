@@ -2,80 +2,39 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 1rem;
+  font-family: $serif-stack;
+  line-height: 1.4;
 
-  &__image {
-    background: url(/assets/images/blob.svg) no-repeat center center;
-    background-size: contain;
-    height: 100vh;
-    position: absolute;
-    width: 90vw;
-    max-width: 1200px;
-    z-index: -1;
-    top: 60px;
-    opacity: 0.5;
-    align-items: center;
-    align-self: center;
-    display: none;
-
-    @include breakpoint(medium) {
-      top: -297px;
-      display: block;
-    }
-
-    @include breakpoint(768px) {
-      top: -340px;
-    }
-
-    @include breakpoint(large) {
-      top: -230px;
-    }
-
-    @include breakpoint(xlarge) {
-      top: -320px;
-    }
-
-    @media screen and (min-height: 1080px) {
-      top: -34%;
-    }
-
-    @media screen and (min-height: 1200px) {
-      top: -38%;
-    }
-
-    @media screen and (min-height: 1400px) {
-      top: -40%;
-    }
+  @include breakpoint(medium) {
+    font-size: 1.5rem;
   }
 
-  &__summary {
-    font-size: 1.25rem;
-    font-family: $serif-stack;
-    line-height: 1.3;
+  @include breakpoint(large) {
+    font-size: 2rem;
+  }
 
-    @include breakpoint(medium) {
-      font-size: 1.5rem;
-    }
-
-    @include breakpoint(large) {
-      font-size: 2rem;
-    }
+  @include breakpoint(xlarge) {
+    margin: 3em -3em 3em 11em;
   }
 
   h2 {
-    font-size: 2.25rem;
-    font-weight: 800;
+    font-size: 1.5rem;
     margin: 1rem 0 0 0;
-    line-height: 1.1;
+    line-height: 1.6;
     position: relative;
-
-    @include breakpoint(medium) {
-      font-size: 3rem;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
-
-    @include breakpoint(large) {
-      font-size: 5rem;
-    }
+    font-weight: lighter;
   }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 1.75s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

@@ -20,41 +20,71 @@
     text-decoration: none;
 
     @include breakpoint(large) {
+
+      .ContentComponent__article-title {
+        transition: all 500ms ease-in-out;
+      }
+
       &:hover {
-        animation: 10s ease infinite;
-        color: $color--blue;
+        .ContentComponent__article-title {
+          transition: all 500ms ease-in;
+          color: darken($color--blue, 10%);
+        }
       }
     }
   }
 
   &__wrap {
-    padding: 0;
+    padding: 1em;
 
     @include breakpoint(medium) {
-      padding: 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @include breakpoint(large) {
+      padding: 3rem;
     }
   }
 
   &__article {
-    flex-direction: row;
-    padding: 1rem 1rem;
     display: flex;
+    flex-direction: column;
     background: lighten($color--green, 40%);
+    transition: all 200ms ease-in;
+    margin: 0;
+
+    &:hover {
+      transition: all 200ms ease-in;
+      margin: 0 -1em 0 1em;
+    }
 
     @include breakpoint(medium) {
       margin-bottom: 0;
+      flex-direction: row;
+    }
+
+    @include breakpoint(large) {
+      img {
+        filter: hue-rotate(0deg);
+        transition: all 500ms ease-in-out;
+      }
+
+      &:hover {
+        img {
+          filter: hue-rotate(45deg);
+          transition: all 500ms ease-in-out;
+        }
+      }
     }
 
     &-image {
-      display: none;
 
       @include breakpoint(medium) {
         display: block;
         height: 100%;
-        margin-top: -2.5rem;
         width: 100%;
-        max-width: 450px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       }
     }
 
@@ -63,19 +93,24 @@
       padding: 0;
       font-size: 1.5rem;
 
-      @include breakpoint(800px) {
+      @include breakpoint(medium) {
+        font-size: 1.25rem;
+      }
+
+      @include breakpoint(large) {
         font-size: 2rem;
+      }
+
+      @include breakpoint(xlarge) {
+        font-size: 2.75rem;
       }
     }
 
     &-excerpt {
+      font-size: 1rem;
       font-family: "leitura-news", "georgia", sans-serif;
       line-height: 1.4;
       color: lighten($color--text, 5%);
-
-      @include breakpoint(medium_only) {
-        display: none;
-      }
     }
 
     &:nth-last-child {

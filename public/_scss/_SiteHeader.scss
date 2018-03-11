@@ -37,8 +37,8 @@
 
     &-item {
       padding: 0 1rem;
-      max-width: 40px;
-      max-height: 40px;
+      max-width: 32px;
+      max-height: 32px;
 
       &:last-child {
         padding-right: 0;
@@ -50,7 +50,10 @@
     }
   }
 
+
   &__nav-item.icon {
+    transition: all 500ms ease-in-out;
+
     &.twitter:active {
       fill: darken($color--twitter, 20%);
     }
@@ -63,24 +66,42 @@
       fill: darken($color--dribbble, 20%);
     }
 
+    &.medium:active {
+      fill: darken($color--medium, 20%);
+    }
+
     &.img:active {
       filter: grayscale(100%);
     }
 
     @include breakpoint(large) {
       &.twitter:hover {
-        fill: black;
+        transition: all 200ms ease-in;
+        fill: lighten($color--twitter, 20%);
       }
 
       &.github:hover {
-        fill: black;
+        transition: all 200ms ease-in;
+        fill: lighten($color--github, 20%);
       }
 
       &.dribbble:hover {
-        fill: black;
+        transition: all 200ms ease-in;
+        fill: lighten($color--dribbble, 20%);
+      }
+
+      &.medium:hover {
+        transition: all 200ms ease-in;
+        fill: lighten($color--medium, 20%);
+      }
+
+      &.linkedin:hover {
+        transition: all 200ms ease-in;
+        fill: lighten($color--linkedin, 20%);
       }
 
       &.img:hover {
+        transition: all 200ms ease-in;
         filter: grayscale(100%);
       }
     }

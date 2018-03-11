@@ -1,0 +1,16 @@
+.AboutPage {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+  }
+
+  &__image {
+    padding: 0 0 1rem;
+
+    @include breakpoint(medium) {
+      padding: 0 1rem 0 0;
+    }
+  }
+}
