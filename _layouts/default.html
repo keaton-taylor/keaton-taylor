@@ -1,19 +1,19 @@
   {% include head.html %}
     {% include SiteHeader.html %}
-    <section class="container__small">
-      <div class="PersonalSummary fade-in">
-        <h2 class="mb-1">Hi, I'm Keaton. I'm a designer. I've been focused on building digital products for the last 3 years. I like to know a bit about everything. I'm a fierce advocate for users, I dabble in front-end dev and I'm interested in how design can make business more ethical while sustaining profitability.</h2>
+    <section class="container__full">
+      <div class="PersonalSummary fade-in container__large">
+        <h2 class="mb-2">Hi, I'm Keaton. I'm a designer. I like to know a little bit about a lot of things. I'm a fierce advocate for users, I dabble in front-end dev and I'm interested in how design can make digital product businesses more ethical while sustaining profitability.</h2>
       </div>
     </section>
 
     <section class="container__large">
       <div class="ContentComponent mb-0">
-        <h2 class="mb-1 mt-0 lighter">Work</h2>
+        <h2 class="ContentComponent__headline mb-1 mt-0 lighter">Work<span class="ContentComponent__down">{% include icon--down.svg%}</span></h2>
         <div class="ContentComponent__articles">
 
           {% for post in site.categories.case_study limit:6 %}
             <a class="mb-3" href="{{ post.url }}">
-              <article class="ContentComponent__article mb-3">
+              <article class="ContentComponent__article mb-4">
                 <img class="ContentComponent__article-image" src="{{ post.image }}" />
                 <div class="ContentComponent__wrap">
                   <small class="franklin-condensed">{{ post.series }}</small>
@@ -28,23 +28,25 @@
       </div>
     </section>
 
-    <section class="container__xsmall">
-      <div class="ContentComponent mb-0">
-        <h2 class="lighter mt-0 mb-1">Words</h2>
-        <div class="ContentComponent__articles">
+    <section class="container__full lg p-2">
+      <div class="container__small">
+        <div class="ContentComponent mb-0 p-1">
+          <h2 class="ContentComponent__headline lighter mt-0 mb-1">Words</h2>
+          <div class="ContentComponent__articles">
 
-        {% for post in site.categories.blog_post limit:4 %}
-          <article class="ContentComponent__article bg-none mb-1 pl-0">
-            <div class="ContentComponent__wrap pr-0 pl-0">
-              <small class="franklin-condensed">{{ post.series }}</small>
-              <a href="{{ post.url }}">
-                <h3 class="ContentComponent__article-title mb-half mt-quarter">{{ post.title }}</h3>
-              </a>
-              <p class="ContentComponent__article-excerpt mt-half mb-0">{{ post.excerpt }}</p>
-            </div>
-          </article>
-        {% endfor %}
+          {% for post in site.categories.blog_post limit:4 %}
+            <article class="ContentComponent__article bg-none mb-1 pl-0">
+              <div class="ContentComponent__wrap pr-0 pl-0">
+                <small class="franklin-condensed">{{ post.series }}</small>
+                <a href="{{ post.url }}">
+                  <h3 class="ContentComponent__article-title mb-half mt-quarter">{{ post.title }}</h3>
+                </a>
+                <p class="ContentComponent__article-excerpt mt-half mb-0">{{ post.excerpt }}</p>
+              </div>
+            </article>
+          {% endfor %}
 
+          </div>
         </div>
       </div>
     </section>

@@ -12,6 +12,19 @@ $color--linkedin: #0077b5;
 $color--dribbble: #ea4c89;
 $color--medium: #00ab6c;
 
+$trans--long-in: all 500ms ease-in;
+$trans--long-out: all 500ms ease-in-out;
+$trans--short-in: all 200ms ease-in;
+$trans--short-out: all 200ms ease-in-out;
+
+
+.lg {
+  background: $color--light-gray;
+}
+
+.gradient {
+  @include gradient;
+}
 
 .medium {
   fill: $color--medium;
@@ -95,6 +108,10 @@ $color--medium: #00ab6c;
 
 .mb-3 {
   margin-bottom: 3rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 4rem !important;
 }
 
 .mt-0 {

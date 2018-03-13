@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
 
-  h2 {
+  &__headline {
+    display: flex;
+    justify-content: space-between;
     font-size: 2.25rem;
     margin-bottom: 2em;
   }
@@ -18,15 +20,14 @@
 
   a {
     text-decoration: none;
-
     @include breakpoint(large) {
       .ContentComponent__article-title {
-        transition: all 500ms ease-in-out;
+        transition: $trans--long-out;
       }
 
       &:hover {
         .ContentComponent__article-title {
-          transition: all 500ms ease-in;
+          transition: $trans--long-in;
           color: darken($color--blue, 10%);
         }
       }
@@ -43,7 +44,7 @@
     }
 
     @include breakpoint(large) {
-      padding: 3rem;
+      padding: 2rem;
     }
   }
 
@@ -51,39 +52,31 @@
     display: flex;
     flex-direction: column;
     background: lighten($color--green, 45%);
-    transition: all 200ms ease-in;
+    transition: $trans--short-in;
     margin: 0;
-
-    &:hover {
-      transition: all 200ms ease-in;
-      margin: 0 -1em 0 1em;
-    }
 
     @include breakpoint(medium) {
       margin-bottom: 0;
       flex-direction: row;
+      &:hover {
+        margin: 0;
+      }
     }
 
     @include breakpoint(large) {
       img {
         filter: hue-rotate(0deg);
-        transition: all 500ms ease-in-out;
+        transition: $trans--long-out;
       }
 
       &:hover {
+        transition: $trans--short-in;
+        margin: 0 -1em 0 1em;
+
         img {
           filter: hue-rotate(45deg);
-          transition: all 500ms ease-in-out;
+          transition: $trans--long-out;
         }
-      }
-    }
-
-    &-image {
-
-      @include breakpoint(medium) {
-        display: block;
-        height: 100%;
-        width: 100%;
       }
     }
 

@@ -34,11 +34,19 @@ body {
   }
 
   &__large {
-    max-width: 1400px;
+    max-width: 1200px;
     padding: 0 1em;
 
     @include breakpoint(medium) {
       padding: 0 1em;
+      margin: 0 auto;
+    }
+  }
+
+  &__full {
+    max-width: 100%;
+    overflow: hidden;
+    @include breakpoint(medium) {
       margin: 0 auto;
     }
   }
@@ -74,5 +82,4 @@ footer {
   padding: 1em 0;
   font-weight: bolder;
   color: white;
-  margin-top: 14vh;
 }
