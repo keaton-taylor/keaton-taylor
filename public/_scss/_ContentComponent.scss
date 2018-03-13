@@ -20,7 +20,6 @@
     text-decoration: none;
 
     @include breakpoint(large) {
-
       .ContentComponent__article-title {
         transition: all 500ms ease-in-out;
       }
@@ -51,7 +50,7 @@
   &__article {
     display: flex;
     flex-direction: column;
-    background: lighten($color--green, 40%);
+    background: lighten($color--green, 45%);
     transition: all 200ms ease-in;
     margin: 0;
 
