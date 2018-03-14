@@ -1,6 +1,7 @@
 .AboutPage {
   display: flex;
   flex-direction: column;
+  margin-bottom: 4rem;
 
   @include breakpoint(medium) {
     flex-direction: row;
@@ -8,6 +9,8 @@
 
   &__image {
     padding: 0 0 1rem;
+    max-width:50%;
+    height: 100%;
 
     @include breakpoint(medium) {
       padding: 0 1rem 0 0;

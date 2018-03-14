@@ -30,6 +30,14 @@
       @media (min-width: 90em) { @content; }
     }
 
+    @else if $min == xxxlarge {
+      @media (min-width: 100em) { @content; }
+    }
+
+    @else if $min == fullscreen {
+      @media (min-width: 1919px) { @content; }
+    }
+
     @else {
       @warn "Breakpoint mixin supports: xsmall, xsmall-only, small, small-only, mobile-only, medium, large";
     }
