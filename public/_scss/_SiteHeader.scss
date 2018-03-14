@@ -37,8 +37,8 @@
 
     &-item {
       padding: 0 1rem;
-      max-width: 40px;
-      max-height: 40px;
+      max-width: 32px;
+      max-height: 32px;
 
       &:last-child {
         padding-right: 0;
@@ -51,16 +51,24 @@
   }
 
   &__nav-item.icon {
-    &.twitter:active {
+    &.twitter svg:active {
       fill: darken($color--twitter, 20%);
     }
 
-    &.github:active {
+    &.github svg:active {
       fill: darken($color--github, 20%);
     }
 
-    &.dribbble:active {
+    &.dribbble svg:active {
       fill: darken($color--dribbble, 20%);
+    }
+
+    &.medium svg:active {
+      fill: darken($color--medium, 20%);
+    }
+
+    &.linkedin svg:active {
+      fill: darken($color--linkedin, 20%);
     }
 
     &.img:active {
@@ -68,16 +76,24 @@
     }
 
     @include breakpoint(large) {
-      &.twitter:hover {
-        fill: black;
+      &.twitter svg:hover {
+        fill: lighten($color--twitter, 20%)!important;
       }
 
-      &.github:hover {
-        fill: black;
+      &.github svg:hover {
+        fill: lighten($color--github, 20%)!important;
       }
 
-      &.dribbble:hover {
-        fill: black;
+      &.dribbble svg:hover {
+        fill: lighten($color--dribbble, 20%)!important;
+      }
+
+      &.medium svg:hover {
+        fill: lighten($color--medium, 20%)!important;
+      }
+
+      &.linkedin svg:hover {
+        fill: lighten($color--linkedin, 20%)!important;
       }
 
       &.img:hover {

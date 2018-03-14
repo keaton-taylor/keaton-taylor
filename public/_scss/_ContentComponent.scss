@@ -1,10 +1,10 @@
 .ContentComponent {
   display: flex;
   flex-direction: column;
-  max-width: 960px;
-  position: relative;
 
-  h2 {
+  &__headline {
+    display: flex;
+    justify-content: space-between;
     font-size: 2.25rem;
     margin-bottom: 2em;
   }
@@ -20,43 +20,71 @@
 
   a {
     text-decoration: none;
-
     @include breakpoint(large) {
+      .ContentComponent__article-title {
+        transition: $trans--long-out;
+      }
+
       &:hover {
-        animation: 10s ease infinite;
-        color: $color--blue;
+        .ContentComponent__article-title {
+          transition: $trans--long-in;
+          color: darken($color--blue, 10%);
+        }
       }
     }
   }
 
   &__wrap {
-    padding: 0;
+    padding: 1em;
 
     @include breakpoint(medium) {
-      padding: 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @include breakpoint(large) {
+      padding: 2rem;
     }
   }
 
   &__article {
-    flex-direction: row;
-    padding: 1rem 1rem;
     display: flex;
-    background: lighten($color--green, 40%);
+    flex-direction: column;
+    background: lighten($color--green, 45%);
+    transition: $trans--short-in;
+    margin: 0;
+
+    img {
+      height: 100%;
+      max-width: 583px;
+      display: block;
+
+
+    }
 
     @include breakpoint(medium) {
       margin-bottom: 0;
+      flex-direction: row;
+      &:hover {
+        margin: 0;
+      }
     }
 
-    &-image {
-      display: none;
+    @include breakpoint(large) {
+      img {
+        filter: hue-rotate(0deg);
+        transition: $trans--long-out;
+      }
 
-      @include breakpoint(medium) {
-        display: block;
-        height: 100%;
-        margin-top: -2.5rem;
-        width: 100%;
-        max-width: 450px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      &:hover {
+        transition: $trans--short-in;
+        margin: 0 -1em 0 1em;
+
+        img {
+          filter: hue-rotate(45deg);
+          transition: $trans--long-out;
+        }
       }
     }
 
@@ -65,19 +93,24 @@
       padding: 0;
       font-size: 1.5rem;
 
-      @include breakpoint(800px) {
+      @include breakpoint(medium) {
+        font-size: 1.25rem;
+      }
+
+      @include breakpoint(large) {
         font-size: 2rem;
+      }
+
+      @include breakpoint(xlarge) {
+        font-size: 2.75rem;
       }
     }
 
     &-excerpt {
+      font-size: 1rem;
       font-family: "leitura-news", "georgia", sans-serif;
       line-height: 1.4;
       color: lighten($color--text, 5%);
-
-      @include breakpoint(medium_only) {
-        display: none;
-      }
     }
 
     &:nth-last-child {

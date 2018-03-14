@@ -3,7 +3,7 @@ layout: PostPage
 date:   2017-09-01 16:16:01 -0600
 category: case_study
 image: /assets/images/batteryOutfitters.png
-title: "Logos and Websites of Yesteryear"
+title: "Logos, Websites and General Design Assets from the Last Few Years"
 excerpt: "Some random work that I have lying around. There's everything here from branding to illustration to regional marketing and commerce sites."
 series: Design Work
 comments: false
