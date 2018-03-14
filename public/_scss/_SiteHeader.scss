@@ -71,10 +71,6 @@
       fill: darken($color--linkedin, 20%);
     }
 
-    &.img:active {
-      filter: grayscale(100%);
-    }
-
     @include breakpoint(large) {
       &.twitter svg:hover {
         fill: lighten($color--twitter, 20%)!important;
