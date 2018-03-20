@@ -17,6 +17,9 @@ $trans--long-out: all 500ms ease-in-out;
 $trans--short-in: all 200ms ease-in;
 $trans--short-out: all 200ms ease-in-out;
 
+.no-shadow {
+  box-shadow: none !important;
+}
 
 .lg {
   background: $color--light-gray;
