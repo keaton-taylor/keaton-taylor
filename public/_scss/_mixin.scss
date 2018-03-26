@@ -35,7 +35,7 @@
     }
 
     @else if $min == fullscreen {
-      @media (min-width: 1919px) { @content; }
+      @media (min-width: 1919px) and (min-height: 1079px) { @content; }
     }
 
     @else {

@@ -25,7 +25,11 @@
     @include breakpoint(xxlarge) {
       font-size: 2rem;
       max-width: 32em;
-      height: 83vh;
+      height: 82vh;
+    }
+
+    @media (min-height: 1079px) {
+      height: 65vh;
     }
 
     h2 {

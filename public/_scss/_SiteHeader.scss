@@ -2,11 +2,26 @@
   display: flex;
   flex-direction: column;
 
-  &__name {
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bolder;
+    line-height: 1;
     margin-bottom: 2rem;
 
     @include breakpoint(medium) {
       margin-bottom: 0;
+      transition: $trans--long-out;
+
+      &:hover {
+        text-decoration: none;
+        transition: $trans--short-in;
+        filter: hue-rotate(-30deg);
+      }
     }
 
     h2 {
@@ -16,12 +31,16 @@
       @include breakpoint(medium) {
         margin-bottom: 1rem;
       }
+    }
+  }
 
-      a {
-        font-size: 1.75rem;
-        text-decoration: none;
-        font-weight: bolder;
-      }
+  &__icon {
+    width: 51px;
+    align-self: center;
+    padding: 0.5rem 0.5rem 0 0;
+
+    svg {
+      fill: #00c9ff;
     }
   }
 
