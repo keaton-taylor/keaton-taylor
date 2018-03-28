@@ -51,8 +51,7 @@
   &__article {
     display: flex;
     flex-direction: column;
-    background: lighten($color--green, 45%);
-    transition: $trans--short-in;
+    background: lighten($color--green, 40%);
     margin: 0;
 
     img {
@@ -75,13 +74,13 @@
     @include breakpoint(large) {
       img {
         filter: hue-rotate(0deg);
-        transition: $trans--short-out;
+        transition: $trans--long-out;
       }
 
       &:hover {
         img {
           filter: hue-rotate(45deg);
-          transition: $trans--long-out;
+          transition: $trans--long-in;
         }
       }
     }
