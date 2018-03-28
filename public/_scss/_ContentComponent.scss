@@ -59,13 +59,14 @@
       height: 100%;
 
       @include breakpoint(medium) {
-        max-width:50%;
+        max-width: 50%;
       }
     }
 
     @include breakpoint(medium) {
       margin-bottom: 0;
       flex-direction: row;
+
       &:hover {
         margin: 0;
       }
@@ -78,9 +79,6 @@
       }
 
       &:hover {
-        transition: $trans--short-in;
-        margin: 0 -1em 0 1em;
-
         img {
           filter: hue-rotate(45deg);
           transition: $trans--long-out;
