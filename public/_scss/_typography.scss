@@ -8,7 +8,7 @@ a {
 
   &:hover {
     text-decoration: underline;
-    text-decoration-style: dotted;
+    color: darken($color--blue, 10%);
   }
 }
 
