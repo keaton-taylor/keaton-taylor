@@ -79,7 +79,7 @@
 
       &:hover {
         img {
-          filter: hue-rotate(45deg);
+          filter: hue-rotate(-45deg);
           transition: $trans--long-in;
         }
       }
