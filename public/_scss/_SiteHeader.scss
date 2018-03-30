@@ -73,6 +73,10 @@
   }
 
   &__nav-item.icon {
+    &.resume svg:active {
+      fill: darken($color--resume, 20%);
+    }
+
     &.twitter svg:active {
       fill: darken($color--twitter, 20%);
     }
@@ -94,6 +98,10 @@
     }
 
     @include breakpoint(large) {
+      &.resume svg:hover {
+        fill: lighten($color--resume, 20%)!important;
+      }
+
       &.twitter svg:hover {
         fill: lighten($color--twitter, 20%)!important;
       }

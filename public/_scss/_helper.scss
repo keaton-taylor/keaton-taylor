@@ -11,6 +11,7 @@ $color--twitter: #1da1f2;
 $color--linkedin: #0077b5;
 $color--dribbble: #ea4c89;
 $color--medium: #00ab6c;
+$color--resume: #639;
 
 $trans--long-in: all 500ms ease-in;
 $trans--long-out: all 500ms ease-in-out;
@@ -27,6 +28,10 @@ $trans--short-out: all 200ms ease-in-out;
 
 .gradient {
   @include gradient;
+}
+
+.resume {
+  fill: $color--resume;
 }
 
 .medium {
