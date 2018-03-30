@@ -99,27 +99,27 @@
 
     @include breakpoint(large) {
       &.resume svg:hover {
-        fill: lighten($color--resume, 20%)!important;
+        fill: lighten($color--resume, 20%) !important;
       }
 
       &.twitter svg:hover {
-        fill: lighten($color--twitter, 20%)!important;
+        fill: lighten($color--twitter, 20%) !important;
       }
 
       &.github svg:hover {
-        fill: lighten($color--github, 20%)!important;
+        fill: lighten($color--github, 20%) !important;
       }
 
       &.dribbble svg:hover {
-        fill: lighten($color--dribbble, 20%)!important;
+        fill: lighten($color--dribbble, 20%) !important;
       }
 
       &.medium svg:hover {
-        fill: lighten($color--medium, 20%)!important;
+        fill: lighten($color--medium, 20%) !important;
       }
 
       &.linkedin svg:hover {
-        fill: lighten($color--linkedin, 20%)!important;
+        fill: lighten($color--linkedin, 20%) !important;
       }
 
       &.img:hover {

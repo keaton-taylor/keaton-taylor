@@ -17,7 +17,7 @@ series: TL;DR
 I've gotten to work on a great many fun and interesting projects at Apartment Therapy. I'd like to quickly highlight a few that I felt were exceptionally fun and/or challenging.
 
 ### Color Search by Sherwin-Williams
-My first project at AT Media was a complete overhaul of our Sherwin-Williams sponsored Color Search tool, which was a collaboration with McKinney. I came into the process as wireframes were being handed off and was able to jump in and contribute to the team in the first 2 weeks after I started. Our work did not go unnoticed - along with our partners at McKinney and our dorect sales team, our work on Color Search won an IAB Mixx award in 2016.
+My first project at AT Media was a complete overhaul of our Sherwin-Williams sponsored Color Search tool, which was a collaboration with McKinney. I came into the process as wireframes were being handed off and was able to jump in and contribute to the team in the first 2 weeks after I started. Our work did not go unnoticed - along with our partners at McKinney and our direct sales and creative services teams, our work on Color Search won an IAB Mixx award in 2016.
 
 <figure class="container__image container__break">
   <img src="/assets/images/color-search-screens.png" alt="4 iPhones with various screens from the color search interface" />

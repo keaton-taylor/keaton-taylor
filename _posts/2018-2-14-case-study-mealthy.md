@@ -11,7 +11,7 @@ platform: Web, Mobile, Physical
 series: TL;DR
 ---
 
-### My time at Mealthy was interesting and challenging. Preemptively building a digital platform to coincide with physical product releases is a very meaty problem to try and solve. I'm going to highlight a few specific parts of my 8 months working with the team. I had the opportunity to be an early contract hire which allowed me to grow and lead a very talented team as the organization scaled up.
+### My time at Mealthy was interesting and challenging. Preemptively building a digital platform to coincide with physical product releases is a very meaty problem set. I'm going to highlight a few specific parts of my 8 months working with the team. I had the opportunity to be an early contract hire which allowed me to grow and lead a very talented team as the organization scaled up.
 
 ### Starting from Scratch
 As the first contractor for Mealthy I was able to help the CEO define systems and processes to create a product-focused culture. Being the first and only designer for a while meant we were working through a lot of bad ideas. I worked with the CEO to bring in the first engineering contractors to work with the editorial team. We tackled a lot of the crazy early stage work - like branding, defining a basic visual system and helping build and evolve a brand bible.
