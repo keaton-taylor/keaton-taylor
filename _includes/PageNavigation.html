@@ -7,7 +7,7 @@
         <h3>More of My Work</h3>
           {% for post in site.categories[case_study] limit:4 %}
             {% unless post.title == page.title %}
-             <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+             <h3><a onClick="_gaq.push(['_trackEvent', 'WorkPage', 'Click', 'NextTeaser']);" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
             {% endunless %}
           {% endfor %}
         </div>
