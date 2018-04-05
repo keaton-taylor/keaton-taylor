@@ -6,12 +6,8 @@ a {
   font-weight: 400;
   color: darken(#69d1d1, 40%);
 
-  svg {
-    fill: default;
-  }
-
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: darken($color--blue, 10%);
   }
 

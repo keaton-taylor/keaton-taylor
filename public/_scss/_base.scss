@@ -23,13 +23,13 @@ body {
 
   &__small {
     max-width: 52em;
-    padding: 1em 1em 0;
+    padding: 0 1em 0;
     margin: 0 auto;
   }
 
   &__large {
     max-width: 75em;
-    padding: 0 1em;
+    padding: 0 1em 0;
     margin: 0 auto;
 
     @include breakpoint(medium) {

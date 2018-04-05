@@ -1,10 +1,11 @@
 .ContentHeadline {
   font-size: 2rem;
   line-height: 1.2;
-  margin: 3rem 0 2rem;
+  padding: 1.5rem 0 1.5rem;
 
   @include breakpoint(medium) {
     font-size: 4rem;
+    padding: 2rem 0 2rem;
   }
 
   @include breakpoint(61em) {

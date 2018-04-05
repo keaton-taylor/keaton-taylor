@@ -1,5 +1,4 @@
 .PersonalSummary {
-
   &__wrap {
     display: flex;
     flex-direction: row;
@@ -18,7 +17,7 @@
       height: 81vh;
     }
 
-    @include breakpoint(large) {
+    @include breakpoint(xlarge) {
       height: 80vh;
     }
 

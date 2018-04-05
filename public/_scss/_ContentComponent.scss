@@ -88,7 +88,8 @@
     &-title {
       margin: 0;
       padding: 0;
-      font-size: 1.5rem;
+      font-weight: lighter;
+      font-size: 1.75rem;
 
       @include breakpoint(medium) {
         font-size: 1.25rem;
@@ -99,7 +100,7 @@
       }
 
       @include breakpoint(xlarge) {
-        font-size: 2.75rem;
+        font-size: 3rem;
       }
     }
 

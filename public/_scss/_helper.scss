@@ -162,8 +162,8 @@ $trans--short-out: all 200ms ease-in-out;
   margin: 0 !important;
 }
 
-
 .p-0-m {
+
   @include breakpoint(xsmall) {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -185,8 +185,18 @@ $trans--short-out: all 200ms ease-in-out;
 }
 
 .icon {
-  height: 40px;
-  width: 40px;
+  height: 28px;
+  width: 28px;
+
+  @include breakpoint(medium) {
+    height: 32px;
+    width: 32px;
+  }
+
+  @include breakpoint(large) {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .round {
@@ -220,17 +230,6 @@ $trans--short-out: all 200ms ease-in-out;
 
 .right {
   text-align: right;
-}
-
-.flex {
-  display: flex;
-}
-
-.row {
-  flex-direction: column;
-  @include breakpoint(medium) {
-    flex-direction: row !important;
-  }
 }
 
 .i {
