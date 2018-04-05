@@ -11,10 +11,44 @@ platform: Web
 series: TL;DR
 ---
 
-### In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time and on purpose. After interviewing with a few companies I landed at Apartment Therapy. The team, the culture and the focus on quality outcomes drew me in and have kept me going for just over 2 years.
+### In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time and on purpose. After interviewing with a few companies I landed at Apartment Therapy. The team, the culture, and the focus on quality have kept me going for just over 2 years.
 
-### The Condensed Version
-I've gotten to work on a great many fun and interesting projects at Apartment Therapy. I'd like to quickly highlight a few that I felt were exceptionally fun and/or challenging.
+### Content Personalization
+#### The Problem
+_Can we deliver specific content to specific people depending on device context?_
+
+The short answer is yes, but we weren't sure what that looked like. Our editorial goal was to deliver more focused content to our "Below-Post" area on article pages. Our product goal was to test using The Parse.ly Recommendation API against The LiftIgniter Machine Learning API to deliver personalized content based on context and engagement.
+
+With editorial and product goals, there are obviously business goals to lean on as well. For this feature, our business goals sat on the shoulders of our Engagement OKR for the quarter. The hypothesis was that we could deliver more opportunities for readers to read better content. Readers finding more content should raise our content shareability and in turn visibility for ad impressions.
+
+#### The Process
+Our cross-functional team came together to put together a common-sense scope for our project. What came out of that were a few ideas on how we could make this engaging and fun for users to navigate the three categories of content we want to deliver:
+- Could we make it feel magical?
+- A choose your own adventure game?
+- A survey of some sort?
+- A simple tabbed solution?
+
+Lots of other fun and kind of silly possibilities were discussed. Based on some of the ideas and notes we took, I started playing around in Sketch trying to see what some of those ideas might look like.
+
+After reviewing what we had in Sketch, we moved the mockups to InVision to test them out. We realized that the fun ideas we had were kind of terrible for a reader. They were not at all conducive to skimming headlines and reading articles. This was super valuable feedback from people testing the prototypes. It drove home that we were trying to be too clever.
+
+During our regroup with my Product Manager, it became more and more clear that we were starting too big. We needed to scale back and start again. What does that look like? How does that feel? We refocused and simplified our original scope:
+- We have three content types we need to deliver to all readers
+- We want all three to be optimized across devices
+- We need an easy-to-use interface that doesn't feel clunky
+
+Based on these learnings t was clear that building this into some sort of game didn’t feel on-brand and didn’t meet the goals of this feature. So we stripped everything back to a significantly lower common denominator for testing. We still wanted an interactive experience so we started with 3 clickable tabs correlated to our three content categories.
+
+In implementation we ran an initial test comparing Parse.ly to LiftIgniter apples-to-apples and saw a marked difference in engagement.
+
+#### Results and Iteration
+What we found after a few days of monitoring analytics numbers was that very few people (<2%) were switching through the tabbed content on larger screens and smaller screens were doing only slightly better. After talking through the results and ramifications, we decided to split the three content types out into three columns on larger screens. We kept the tabbed interface on smaller screens in hope that adoption was taking more time than expected. While tabs hide content and hiding content is almost never a good thing.
+
+It wasn't. We got analytics numbers back and "desktop" click through rate had gone up from 3.6% to 5.8% and "mobile" had gone down to 3.3% with 99% of clicks coming from the default active tab. Up to this point, we had been using the Parse.ly API to drive recommendations in the "Related" and "Popular" tabs. We decided to follow some suggestions from Parse.ly and LiftIgniter to test a “back to the drawing board” option. Their data suggests that a simple 4x3 grid of article teasers might increase overall interactions.
+
+Based on Parse.ly and LiftIgniter suggestions we did, in fact, remove all tabs on smaller screens and went to a 3 row, 4 column view on larger screens. Switching to this layout yielded growth in teasers clicked across screen sizes. As time has gone on we’ve tested and  implemented more changes. Moving to LiftIgniter to power most of our machine learning-driven content recommendations. Splitting recirculation into a mix of plain text links after post content and switching most of our teasers to a highly scrollable new horizontal teaser design. Click through rates seem to hover around 8%. The Apartment Therapy team continue to test, monitor and iterate to deliver the best context-optimized content recommendations.
+
+<hr>
 
 ### Color Search by Sherwin-Williams
 My first project at AT Media was a complete overhaul of our Sherwin-Williams sponsored Color Search tool, which was a collaboration with McKinney. I came into the process as wireframes were being handed off and was able to jump in and contribute to the team in the first 2 weeks after I started. Our work did not go unnoticed - along with our partners at McKinney and our direct sales and creative services teams, our work on Color Search won an IAB Mixx award in 2016.
