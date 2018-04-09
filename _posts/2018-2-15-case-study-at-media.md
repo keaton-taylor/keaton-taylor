@@ -8,43 +8,78 @@ excerpt: "Designing lifestyle-focused digital products at scale with an engineer
 role: Product Designer
 year: 2016-Present
 platform: Web
-series: TL;DR
+series: Case Study
 ---
 
 ### In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time and on purpose. After interviewing with a few companies I landed at Apartment Therapy. The team, the culture, and the focus on quality have kept me going for just over 2 years.
 
-### Content Personalization
-#### The Problem
-_Can we deliver specific content to specific people depending on device context?_
+## Content Personalization
+### The Problem and Goals
+_How can we deliver better content options to readers?_
 
-The short answer is yes, but we weren't sure what that looked like. Our editorial goal was to deliver more focused content to our "Below-Post" area on article pages. Our product goal was to test using The Parse.ly Recommendation API against The LiftIgniter Machine Learning API to deliver personalized content based on context and engagement.
+Our working hypothesis was that by implementing and testing data driven recommendation APIs, we could deliver more opportunities for readers to read better content. We already used Parse.ly for editorial analytics, so pulling recommendations from their API was a relatively low hurdle. In addition to Parse.ly we planned to test LiftIgniter, a machine learning API for making recommendations. Our editorial goal was to deliver more effective content recommendations on article pages. Our business goals sat on the shoulders of our Engagement OKR for the quarter. It stands to reason that readers finding more and better content should raise our content share-ability and in turn visibility for impressions.
 
-With editorial and product goals, there are obviously business goals to lean on as well. For this feature, our business goals sat on the shoulders of our Engagement OKR for the quarter. The hypothesis was that we could deliver more opportunities for readers to read better content. Readers finding more content should raise our content shareability and in turn visibility for ad impressions.
-
-#### The Process
-Our cross-functional team came together to put together a common-sense scope for our project. What came out of that were a few ideas on how we could make this engaging and fun for users to navigate the three categories of content we want to deliver:
+### The Process
+Out of the gate our cross-functional team came together to define a common-sense scope for our project. What came out of that were a few ideas on how we could make this engaging and fun for users to navigate the three categories of content we want to deliver:
 - Could we make it feel magical?
 - A choose your own adventure game?
 - A survey of some sort?
 - A simple tabbed solution?
 
-Lots of other fun and kind of silly possibilities were discussed. Based on some of the ideas and notes we took, I started playing around in Sketch trying to see what some of those ideas might look like.
+Lots of other fun and kind of silly possibilities were discussed. We compiled research both on what had worked for us in the past and what other media outlets were doing to make related content visible. The options kind of ran the gamut or what was possible: text links, teaser rolls, simplified teasers, images, stylized images. It was kind of all over the place. Based on our research and some of the notes we took, I started playing around in Sketch trying to see what some of those ideas might look like.
 
-After reviewing what we had in Sketch, we moved the mockups to InVision to test them out. We realized that the fun ideas we had were kind of terrible for a reader. They were not at all conducive to skimming headlines and reading articles. This was super valuable feedback from people testing the prototypes. It drove home that we were trying to be too clever.
+<div class="container__images">
+  <figure class="container__image">
+    <img src="/assets/images/at-SurveyConcept.png" alt="A sketch for a survey concept" />
+    <figcaption class="mt-half center">
+      <small>Sketching a possible survey.</small>
+    </figcaption>
+  </figure>
 
-During our regroup with my Product Manager, it became more and more clear that we were starting too big. We needed to scale back and start again. What does that look like? How does that feel? We refocused and simplified our original scope:
+  <figure class="container__image">
+    <img src="/assets/images/at-OwnAdventure.png" alt="A Kind of Choose Your Own Director" />
+    <figcaption class="mt-half center">
+      <small>Sketching out a choose your own adventure of sorts.</small>
+    </figcaption>
+  </figure>
+</div>
+
+After reviewing what we had in Sketch, we moved the mockups to InVision to test them out. We realized that the fun ideas we had were kind of terrible for a reader. These early concepts mostly created roadblocks for users and were not conducive to skimming headlines and reading articles. This was super valuable feedback from people testing the prototypes. It drove home that we were trying to be too clever.
+
+<figure class="container__image container__break">
+  <img class="no-shadow" src="/assets/images/at-iam-statements.png" alt="concepts for choose your own content things." />
+  <figcaption class="mt-half center mb-1">
+    <small>Quick Mockups for a choose your own content component.</small>
+  </figcaption>
+</figure>
+
+During our regroup with one of our Product Managers, it became more and more clear that we were starting too big. We needed to scale back and start again. What does that look like? How does that feel? We refocused and simplified our original scope:
 - We have three content types we need to deliver to all readers
 - We want all three to be optimized across devices
 - We need an easy-to-use interface that doesn't feel clunky
 
-Based on these learnings t was clear that building this into some sort of game didn’t feel on-brand and didn’t meet the goals of this feature. So we stripped everything back to a significantly lower common denominator for testing. We still wanted an interactive experience so we started with 3 clickable tabs correlated to our three content categories.
+Based on these learnings it was clear that building this into some sort of game didn’t feel on-brand and didn’t meet the goals of the feature. So we stripped everything back to a significantly lower common denominator for testing. We still wanted an interactive experience. We wanted users to feel like they were in control of the experience. As such we started with 3 clickable tabs correlated to our three content categories.
 
-In implementation we ran an initial test comparing Parse.ly to LiftIgniter apples-to-apples and saw a marked difference in engagement.
+<figure class="container__image container__break">
+  <img class="no-shadow" src="/assets/images/at-upnext.png" alt="Simpler content delivery." />
+  <figcaption class="mt-half center mb-1">
+    <small>A simplified interface that feels a little more on-brand.</small>
+  </figcaption>
+</figure>
 
-#### Results and Iteration
+In implementation we ran an initial test comparing Parse.ly to LiftIgniter apples-to-apples and saw a marked difference in engagement. LiftIgniter was clearly making more actionable recommendations. Over time we would come to traffic most of our user recommendations through LiftIgniter because of the staggering increase in engagement.
+
+### Results and Iteration
 What we found after a few days of monitoring analytics numbers was that very few people (<2%) were switching through the tabbed content on larger screens and smaller screens were doing only slightly better. After talking through the results and ramifications, we decided to split the three content types out into three columns on larger screens. We kept the tabbed interface on smaller screens in hope that adoption was taking more time than expected. While tabs hide content and hiding content is almost never a good thing.
 
 It wasn't. We got analytics numbers back and "desktop" click through rate had gone up from 3.6% to 5.8% and "mobile" had gone down to 3.3% with 99% of clicks coming from the default active tab. Up to this point, we had been using the Parse.ly API to drive recommendations in the "Related" and "Popular" tabs. We decided to follow some suggestions from Parse.ly and LiftIgniter to test a “back to the drawing board” option. Their data suggests that a simple 4x3 grid of article teasers might increase overall interactions.
+
+<figure class="container__image container__break">
+  <img class="no-shadow" src="/assets/images/at-fourthree.png" alt="The four by three column." />
+  <figcaption class="mt-half center mb-1">
+    <small>The 4x3 grid of teasers on a large screen.</small>
+  </figcaption>
+</figure>
 
 Based on Parse.ly and LiftIgniter suggestions we did, in fact, remove all tabs on smaller screens and went to a 3 row, 4 column view on larger screens. Switching to this layout yielded growth in teasers clicked across screen sizes. As time has gone on we’ve tested and  implemented more changes. Moving to LiftIgniter to power most of our machine learning-driven content recommendations. Splitting recirculation into a mix of plain text links after post content and switching most of our teasers to a highly scrollable new horizontal teaser design. Click through rates seem to hover around 8%. The Apartment Therapy team continue to test, monitor and iterate to deliver the best context-optimized content recommendations.
 
