@@ -2,7 +2,7 @@
   <div class="SiteHeader mb-0">
 
     <div>
-      <a class="SiteHeader__wrapper" data-event-category="SiteHeader" data-event-action="Click" data-event-label="Home" href="/">
+      <a onClick="gtag('event', 'Click', { event_category: 'InternalLink', event_action: 'SiteLogo' });" class="SiteHeader__wrapper" href="/">
         <div class="SiteHeader__icon">
           {% include icon--kt.svg %}
         </div>
@@ -15,42 +15,36 @@
 
     <ul class="SiteHeader__nav no-bull mb-0 mt-0">
       <li class="SiteHeader__nav-item icon github">
-        <a data-event-category="SiteHeader" data-event-action="Click" data-event-label="Github" href="https://www.github.com/keaton-taylor" target="_blank">
+        <a onClick="gtag('event', 'Click', { event_category: 'OutboundLink', event_action: 'GitHub' });" href="https://www.github.com/keaton-taylor" target="_blank">
           {% include icon--github.svg %}
         </a>
       </li>
 
       <li class="SiteHeader__nav-item icon dribbble">
-        <a data-event-category="SiteHeader" data-event-action="Click" data-event-label="Dribbble" href="https://www.dribbble.com/keaton_taylor" target="_blank">
+        <a onClick="gtag('event', 'Click', { event_category: 'OutboundLink', event_action: 'Dribbble' });" href="https://www.dribbble.com/keaton_taylor" target="_blank">
           {% include icon--dribbble.svg %}
         </a>
       </li>
       <li class="SiteHeader__nav-item icon twitter">
-        <a data-event-category="SiteHeader" data-event-action="Click" data-event-label="Twitter" href="https://www.twitter.com/keaton_taylor" target="_blank">
+        <a onClick="gtag('event', 'Click', { event_category: 'OutboundLink', event_action: 'Twitter' });" href="https://www.twitter.com/keaton_taylor" target="_blank">
           {% include icon--twitter.svg %}
         </a>
       </li>
 
-      <li class="SiteHeader__nav-item icon medium">
-        <a data-event-category="SiteHeader" data-event-action="Click" data-event-label="Medium" href="https://medium.com/@keaton_taylor" target="_blank">
-          {% include icon--medium.svg %}
-        </a>
-      </li>
-
       <li class="SiteHeader__nav-item icon linkedin">
-        <a data-event-category="SiteHeader" data-event-action="Click" data-event-label="LinkedIn" href="https://www.linkedin.com/in/keatontaylor/" target="_blank">
+        <a onClick="gtag('event', 'Click', { event_category: 'OutboundLink', event_action: 'LinkedIn' });" href="https://www.linkedin.com/in/keatontaylor/" target="_blank">
           {% include icon--linkedin.svg %}
         </a>
       </li>
 
       <li class="SiteHeader__nav-item icon resume">
-        <a data-event-category="SiteHeader" data-event-action="Click" data-event-label="Resume" href="/assets/images/kt-resume-17.pdf" target="_blank">
+        <a onClick="gtag('event', 'Click', { event_category: 'OutboundLink', event_action: 'Resume' });" href="/assets/images/kt-resume-17.pdf" target="_blank">
           {% include icon--resume.svg %}
         </a>
       </li>
 
       <li class="SiteHeader__nav-item icon img">
-        <a data-event-category="SiteHeader" data-event-action="Click" data-event-label="About" href="/about.html">
+        <a onClick="gtag('event', 'Click', { event_category: 'InternalLink', event_action: '/about' });" href="/about.html">
           <img src="/assets/images/keaton__round.png" alt="Keaton's so handsome">
         </a>
       </li>

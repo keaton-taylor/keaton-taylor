@@ -7,7 +7,7 @@
         <h3>More of My Work</h3>
           {% for post in site.categories[case_study] limit:4 %}
             {% unless post.title == page.title %}
-             <h3><a data-event-category="WorkPage" data-event-action="Click" data-event-label="{{ post.title }}" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+             <h3><a onClick="gtag('event', 'Click', { event_category: 'InternalRecirc', event_action: 'RelatedArticle' });" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
             {% endunless %}
           {% endfor %}
         </div>

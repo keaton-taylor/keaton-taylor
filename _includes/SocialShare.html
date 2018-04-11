@@ -1,12 +1,12 @@
 <ul class="SocialShare no-bull">
   <li class="SocialShare__button">
-    <a data-event-category="BlogPost" data-event-action="Share" data-event-label="Twitter" class="SocialShare__button--link twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Tweet this Article">
+    <a onClick="gtag('event', 'Click', { event_category: 'SocialShare', event_action: 'Twitter' });" class="SocialShare__button--link twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Tweet this Article">
       <div class="SocialShare__button--icon">{% include icon--twitter.svg %} <span>Tweet</span></div>
     </a>
   </li>
 
   <li class="SocialShare__button">
-    <a data-event-category="BlogPost" data-event-action="Share" data-event-label="Linkedin" class="SocialShare__button--link linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.excerpt }}&image={{ page.image }}" title="Share on LinkedIn" >
+    <a onClick="gtag('event', 'Click', { event_category: 'SocialShare', event_action: 'LinkedIn' });" class="SocialShare__button--link linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ site.baseurl }}{{ page.url }}&title={{ page.title }}&summary={{ page.excerpt }}&image={{ page.image }}" title="Share on LinkedIn" >
       <div class="SocialShare__button--icon">{% include icon--linkedin.svg %} <span>Share</span></div>
     </a>
   </li>
