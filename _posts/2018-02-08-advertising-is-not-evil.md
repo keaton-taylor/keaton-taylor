@@ -5,7 +5,7 @@ category: blog_post
 title: Advertising Is not Evil, but the Way We Do It Might Be. Sometimes.
 excerpt: If no one is using your products, your products cannot make money.
 image: /keaton.png
-series: Little Thoughts
+series: LITTLE THOUGHTS
 comments: true
 ---
 

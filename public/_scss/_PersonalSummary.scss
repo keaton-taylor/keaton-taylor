@@ -1,8 +1,5 @@
 .PersonalSummary {
   &__wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     font-size: 1rem;
     font-family: $serif-stack;
@@ -10,21 +7,26 @@
 
     @include breakpoint(medium) {
       font-size: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
 
     @include breakpoint(large) {
-      font-size: 2rem;
+      font-size: 3rem;
+      max-width: 16em;
       height: 81vh;
     }
 
     @include breakpoint(xlarge) {
+      max-width: 16em;
       height: 80vh;
     }
 
     @include breakpoint(xxlarge) {
       font-size: 2rem;
-      max-width: 32em;
-      height: 82vh;
+      max-width: 24em;
+      height: 85vh;
     }
 
     @media (min-height: 1079px) {
@@ -32,18 +34,13 @@
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       line-height: 1.6;
       font-weight: lighter;
 
-      @include breakpoint(large) {
+      @include breakpoint(medium) {
         font-size: 1.75rem;
-        margin-left: 13rem;
-      }
-
-      @include breakpoint(xlarge) {
-        margin-left: 21rem;
-        font-size: 2rem;
+        padding: 1em;
       }
     }
   }

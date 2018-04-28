@@ -4,7 +4,7 @@ date:   2017-02-08 16:16:01 -0600
 category: blog_post
 title: "Probably Just Be Nice to People?"
 excerpt: "Why does everyone want to be an edgy dick? It's not cool maaaaaaan"
-series: Little Thoughts
+series: LITTLE THOUGHTS
 comments: true
 ---
 

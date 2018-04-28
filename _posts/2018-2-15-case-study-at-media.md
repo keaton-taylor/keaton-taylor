@@ -8,7 +8,7 @@ excerpt: "How Might we deliver content optimized for devices and readers tastes?
 role: Product Designer
 year: 2016 - 2018
 platform: Web
-series: Case Study
+series: CASE STUDY
 ---
 
 ### In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time. After interviewing with a few companies I landed at Apartment Therapy. The team culture, engineering focus and commitment to quality have afforded me incredible learning opportunities. One of the most memorable projects we approached involved trying to deliver personalized content to our readers.

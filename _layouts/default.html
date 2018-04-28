@@ -1,24 +1,22 @@
   {% include head.html %}
     {% include SiteHeader.html %}
-    <section class="PersonalSummary container__full">
-      <div class="dots"></div>
-      <div class="color"></div>
-      <div class="PersonalSummary__wrap container__small ">
+    <section class="PersonalSummary container__large">
+      <div class="PersonalSummary__wrap">
         <h2 class="fade-in mb-2">Hi, I'm Keaton. I'm a designer. I like to know a little bit about a lot of things. I'm a fierce advocate for users, I like to dabble in front-end development and I'm really interested in how design can keep digital products ethical while sustaining profitability.</h2>
       </div>
     </section>
 
     <section class="container__large">
       <div class="ContentComponent mb-0">
-        <h2 class="ContentComponent__headline mb-1 mt-0 lighter">Work<span class="ContentComponent__down">{% include icon--down.svg%}</span></h2>
+        <h3 class="ContentComponent__headline mb-1 mt-0 lighter">Work<span class="ContentComponent__down">{% include icon--down.svg%}</span></h3>
         <div class="ContentComponent__articles">
 
           {% for post in site.categories.case_study limit:6 %}
-            <a onClick="_gaq.push(['_trackEvent', 'HomePage', 'Click', 'WorkTeaser']);" class="mb-3" href="{{ post.url }}">
+            <a class="mb-3" href="{{ post.url }}">
               <article class="ContentComponent__article mb-4">
                 <img class="ContentComponent__article-image" src="{{ post.image }}" />
                 <div class="ContentComponent__wrap">
-                  <small class="franklin-condensed">{{ post.series }}</small>
+                  <small>{{ post.series }}</small>
                   <h3 class="ContentComponent__article-title mb-half mt-quarter"> {{ post.title }} </h3>
                   <p class="ContentComponent__article-excerpt mt-half mb-0"> {{ post.excerpt }}</p>
                 </div>
@@ -39,8 +37,8 @@
           {% for post in site.categories.blog_post limit:4 %}
             <article class="ContentComponent__article bg-none mb-1 pl-0">
               <div class="ContentComponent__wrap pr-0 pl-0">
-                <small class="franklin-condensed">{{ post.series }}</small>
-                <a  onClick="_gaq.push(['_trackEvent', 'HomePage', 'Click', 'BlogPost']);" href="{{ post.url }}">
+                <small>{{ post.series }}</small>
+                <a href="{{ post.url }}">
                   <h3 class="ContentComponent__article-title mb-half mt-quarter">{{ post.title }}</h3>
                 </a>
                 <p class="ContentComponent__article-excerpt mt-half mb-0">{{ post.excerpt }}</p>

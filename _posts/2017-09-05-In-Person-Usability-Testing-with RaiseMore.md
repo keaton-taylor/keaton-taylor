@@ -4,7 +4,7 @@ date:   2017-09-03 16:16:01 -0600
 category: blog_post
 title: "In-Person Usability Testing at the RaiseMore Beta in Oklahoma City"
 excerpt: "It's hard to build software for people when you fundamentally do not understand them. Go figure."
-series: Blog Post
+series: BLOG POST
 comments: false
 ---
 

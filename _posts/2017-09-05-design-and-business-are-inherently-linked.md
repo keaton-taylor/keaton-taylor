@@ -4,7 +4,7 @@ date:   2017-09-03 16:16:01 -0600
 category: blog_post
 title: "Design and Business are Inherently Linked(?)"
 excerpt: "But are they though? Has business become a proxy for people?"
-series: Little Thoughts
+series: LITTLE THOUGHTS
 comments: true
 ---
 
@@ -12,4 +12,4 @@ For a while now, I’ve been saying some form of “Design & Business are inhere
 
 So to that end design and business _are linked_ - it's just kind of a shitty link. I think this reenforces how Jared Spool defines design: It's the rendering of intent. There's no morality or implied integrity tied to rendering an intent. It just IS. I guess the responsibility always comes back to the renderer.
 
-As I go about my work this week I'm going to try and closely consider my intent. I'll make a note somewhere on what the intent was behind the thing I'm designing. Maybe that's the way I put together my conversation with my wife about the budget. Maybe it's a UI for editors at work. I think design in this capacity reenforces my personal need to be more intentional and to uncover and monitor the why as much as the what. 
+As I go about my work this week I'm going to try and closely consider my intent. I'll make a note somewhere on what the intent was behind the thing I'm designing. Maybe that's the way I put together my conversation with my wife about the budget. Maybe it's a UI for editors at work. I think design in this capacity reenforces my personal need to be more intentional and to uncover and monitor the why as much as the what.

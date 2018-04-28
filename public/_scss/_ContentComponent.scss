@@ -5,7 +5,8 @@
   &__headline {
     display: flex;
     justify-content: space-between;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
+    font-weight: 400;
     margin-bottom: 2em;
   }
 
@@ -22,12 +23,12 @@
     text-decoration: none;
     @include breakpoint(large) {
       .ContentComponent__article-title {
-        transition: $trans--long-out;
+        transition: $trans--long-in;
       }
 
       &:hover {
         .ContentComponent__article-title {
-          transition: $trans--long-in;
+          transition: $trans--short-out;
           color: darken($color--blue, 10%);
         }
       }
@@ -45,6 +46,16 @@
 
     @include breakpoint(large) {
       padding: 2rem;
+    }
+
+    small {
+      transition: $trans--long-in;
+      letter-spacing: 1px;
+      font-weight: 400;
+
+      &:hover {
+        transition: $trans--short-out;
+      }
     }
   }
 
@@ -88,7 +99,7 @@
     &-title {
       margin: 0;
       padding: 0;
-      font-weight: lighter;
+      font-weight: 800;
       font-size: 1.75rem;
 
       @include breakpoint(medium) {

@@ -8,7 +8,7 @@ excerpt: "RaiseMore was a social fundraising platform that used teamwork and soc
 role: Product Designer
 year: 2015-2016
 platform: Web, Mobile
-series: Case Study
+series: CASE STUDY
 ---
 
 ### In the Summer of 2015 I joined the team at RaiseMore, a social fundraising platform based in Oklahoma City, as a product designer. RaiseMore used teamwork and social interactions to maximize fundraising efforts. In turn we used the aggregate data to help predict fundraising trends and event success patterns.

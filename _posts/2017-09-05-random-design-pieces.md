@@ -5,7 +5,7 @@ category: case_study
 image: /assets/images/batteryOutfitters.png
 title: "Logos, Websites and General Design Assets from the Last Few Years"
 excerpt: "Some random work that I have lying around. There's everything here from branding to illustration to regional marketing and commerce sites."
-series: Design Work
+series: DESIGN WORK
 comments: false
 ---
 <section class="container__small mb-2">
