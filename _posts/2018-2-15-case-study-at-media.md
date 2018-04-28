@@ -3,19 +3,18 @@ layout: work
 date:   2017-09-03 16:16:01 -0600
 category: case_study
 image: assets/images/AT_Media.png
-title: "Apartment Therapy: Designing a Healthier Happier Home"
-excerpt: "Designing lifestyle-focused digital products at scale with an engineering-forward team."
+title: "Apartment Therapy: Delivering Better Content Across Devices"
+excerpt: "How Might we deliver content optimized for devices and readers tastes? We have no idea but let's work on it to try and find out!"
 role: Product Designer
-year: 2016-Present
+year: 2016 - 2018
 platform: Web
 series: Case Study
 ---
 
-### In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time and on purpose. After interviewing with a few companies I landed at Apartment Therapy. The team, the culture, and the focus on quality have kept me going for just over 2 years.
+### In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time. After interviewing with a few companies I landed at Apartment Therapy. The team culture, engineering focus and commitment to quality have afforded me incredible learning opportunities. One of the most memorable projects we approached involved trying to deliver personalized content to our readers.
 
-## Content Personalization
-### The Problem and Goals
-_How can we deliver better content options to readers?_
+### The Challenges and Goals
+_How can we deliver personalized content options to readers?_
 
 Our working hypothesis was that by implementing and testing data driven recommendation APIs, we could deliver more opportunities for readers to read better content. We already used Parse.ly for editorial analytics, so pulling recommendations from their API was a relatively low hurdle. In addition to Parse.ly we planned to test LiftIgniter, a machine learning API for making recommendations. Our editorial goal was to deliver more effective content recommendations on article pages. Our business goals sat on the shoulders of our Engagement OKR for the quarter. It stands to reason that readers finding more and better content should raise our content share-ability and in turn visibility for impressions.
 
@@ -25,8 +24,6 @@ Out of the gate our cross-functional team came together to define a common-sense
 - A choose your own adventure game?
 - A survey of some sort?
 - A simple tabbed solution?
-
-Lots of other fun and kind of silly possibilities were discussed. We compiled research both on what had worked for us in the past and what other media outlets were doing to make related content visible. The options kind of ran the gamut or what was possible: text links, teaser rolls, simplified teasers, images, stylized images. It was kind of all over the place. Based on our research and some of the notes we took, I started playing around in Sketch trying to see what some of those ideas might look like.
 
 <div class="container__images">
   <figure class="container__image">
@@ -44,7 +41,7 @@ Lots of other fun and kind of silly possibilities were discussed. We compiled re
   </figure>
 </div>
 
-After reviewing what we had in Sketch, we moved the mockups to InVision to test them out. We realized that the fun ideas we had were kind of terrible for a reader. These early concepts mostly created roadblocks for users and were not conducive to skimming headlines and reading articles. This was super valuable feedback from people testing the prototypes. It drove home that we were trying to be too clever.
+Lots of other fun and kind of silly possibilities were discussed. We compiled research both on what had worked for us in the past and what other media outlets were doing to make related content visible. The options kind of ran the gamut or what was possible: text links, teaser rolls, simplified teasers, images, stylized images. It was kind of all over the place. Based on our research and some of the notes we took, I started playing around in Sketch trying to see what some of those ideas might look like.
 
 <figure class="container__image container__break">
   <img class="no-shadow" src="/assets/images/at-iam-statements.png" alt="concepts for choose your own content things." />
@@ -52,6 +49,8 @@ After reviewing what we had in Sketch, we moved the mockups to InVision to test 
     <small>Quick Mockups for a choose your own content component.</small>
   </figcaption>
 </figure>
+
+After reviewing what we had in Sketch, we moved the mockups to InVision to test them out. Through some simple user testing (both in-person and through UserTesting.com's PEEK feature) we realized that the fun ideas we had were kind of terrible for a reader. We tested the concepts with users inside our ideal demographics range: Two female and one male, between 24-34, 2 with children, one without. The overwhelming response by these users was that we had made the interface more complex than it needed to be. Some specific comments were, "I might use this once, but it's pretty cumbersome," and "My only problem... is that this makes me have to think a lot more than I feel like I should about what I'm going to be seeing." It was clear that these early concepts created roadblocks for users and were not conducive to skimming headlines and clicking into articles. This qualitative data early on was a guiding light for the concepts that came after.
 
 During our regroup with one of our Product Managers, it became more and more clear that we were starting too big. We needed to scale back and start again. What does that look like? How does that feel? We refocused and simplified our original scope:
 - We have three content types we need to deliver to all readers
@@ -84,6 +83,8 @@ It wasn't. We got analytics numbers back and "desktop" click through rate had go
 Based on Parse.ly and LiftIgniter suggestions we did, in fact, remove all tabs on smaller screens and went to a 3 row, 4 column view on larger screens. Switching to this layout yielded growth in teasers clicked across screen sizes. As time has gone on we’ve tested and  implemented more changes. Moving to LiftIgniter to power most of our machine learning-driven content recommendations. Splitting recirculation into a mix of plain text links after post content and switching most of our teasers to a highly scrollable new horizontal teaser design. Click through rates seem to hover around 8%. The Apartment Therapy team continue to test, monitor and iterate to deliver the best context-optimized content recommendations.
 
 <hr>
+
+## Other Projects for Apartment Therapy
 
 ### Color Search by Sherwin-Williams
 My first project at AT Media was a complete overhaul of our Sherwin-Williams sponsored Color Search tool, which was a collaboration with McKinney. I came into the process as wireframes were being handed off and was able to jump in and contribute to the team in the first 2 weeks after I started. Our work did not go unnoticed - along with our partners at McKinney and our direct sales and creative services teams, our work on Color Search won an IAB Mixx award in 2016.
