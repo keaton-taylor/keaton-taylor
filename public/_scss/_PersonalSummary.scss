@@ -25,7 +25,7 @@
 
     @include breakpoint(xxlarge) {
       font-size: 2rem;
-      max-width: 24em;
+      max-width: 28em;
       height: 85vh;
     }
 
@@ -39,7 +39,7 @@
       font-weight: lighter;
 
       @include breakpoint(medium) {
-        font-size: 1.75rem;
+        font-size: 2rem;
         padding: 1em;
       }
     }
