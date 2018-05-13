@@ -1,6 +1,7 @@
 .SiteHeader {
   display: flex;
   flex-direction: column;
+  font-family: $sans-stack;
 
   @include breakpoint(49em) {
     flex-direction: row;
@@ -9,8 +10,6 @@
 
   &__wrapper {
     display: flex;
-    justify-content: flex-start;
-    align-self: center;
     align-items: center;
     font-size: 1.5rem;
     text-decoration: none;
@@ -68,7 +67,7 @@
     align-items: center;
     justify-content: space-between;
     font-weight: lighter;
-    padding: 1em 0;
+    padding: 2em 0;
 
     @include breakpoint(medium) {
       padding: 0;

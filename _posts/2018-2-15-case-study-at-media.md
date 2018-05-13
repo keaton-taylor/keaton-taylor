@@ -4,11 +4,12 @@ date:   2017-09-03 16:16:01 -0600
 category: case_study
 image: assets/images/AT_Media.png
 title: "Apartment Therapy: Delivering Better Content Across Devices"
-excerpt: "How Might we deliver content optimized for devices and readers tastes? We have no idea but let's work on it to try and find out!"
+excerpt: "In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time. After interviewing with a few companies I landed at Apartment Therapy. The team culture, engineering focus and commitment to quality have afforded me incredible learning opportunities. One of the most memorable projects we approached involved trying to deliver personalized content to our readers."
 role: Product Designer
 year: 2016 - 2018
 platform: Web
 series: CASE STUDY
+class: at
 ---
 
 ### In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time. After interviewing with a few companies I landed at Apartment Therapy. The team culture, engineering focus and commitment to quality have afforded me incredible learning opportunities. One of the most memorable projects we approached involved trying to deliver personalized content to our readers.

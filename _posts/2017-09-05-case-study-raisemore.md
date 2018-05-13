@@ -3,15 +3,16 @@ layout: work
 date:   2017-09-03 16:16:01 -0600
 category: case_study
 image: assets/images/messaging-img.png
-title: "RaiseMore: On-boarding, Sharing and Coaching (Oh My)"
-excerpt: "RaiseMore was a social fundraising platform that used teamwork and social interactions to maximize fundraising efforts."
+title: "RaiseMore: User Testing, On-boarding and In-App Coaching"
+excerpt: "In the Summer of 2015 I joined the team at RaiseMore, a social fundraising platform based in Oklahoma City. RaiseMore used teamwork and social interactions to maximize fundraising efforts and used aggregate data to help predict fundraising trends and success patterns. We worked on many exciting projects like Dashboards, an automated app building marketplace and in-app coaching for fundraising teams. RaiseMore was my first taste of iterative product design and changed my professional trajectory forever. "
 role: Product Designer
 year: 2015-2016
 platform: Web, Mobile
 series: CASE STUDY
+class: rm
 ---
 
-### In the Summer of 2015 I joined the team at RaiseMore, a social fundraising platform based in Oklahoma City, as a product designer. RaiseMore used teamwork and social interactions to maximize fundraising efforts. In turn we used the aggregate data to help predict fundraising trends and event success patterns.
+### In the Summer of 2015 I joined the team at RaiseMore, a social fundraising platform based in Oklahoma City, as a product designer. RaiseMore used teamwork and social interactions to maximize fundraising efforts. In turn we used the aggregate data to help predict fundraising trends and event success patterns. We worked on many exciting projects and initiatives including Dashboards, an automated app building marketplace and in-app coaching for fundraising teams. RaiseMore was my first taste of iterative product design and changed my professional trajectory forever.
 
 ### The Challenges
 Making fundraising and nonprofit volunteering more fun and social is hard. Fundraising is often a solitary experience. You donate and you go about your business. At RaiseMore we wanted to make fundraising a team sport. How can we offer a competitive platform? How can we give leaders the power to coach based on performance & quantifiable metrics? We aimed to answer these questions and unfortunately the answer was sometimes, “We can’t.”
@@ -22,6 +23,14 @@ I came to RaiseMore hoping to make a difference. I cut my teeth working for non-
 
 ### The RaiseMore Beta
 In September of 2015, We ran a two day feedback summit in Oklahoma City with the entire RaiseMore team. We went through 4 feedback sessions. The rounds of one-on-one interaction with real people was incredibly helpful. The Group discussions On Day 3 discussing the product roadmap was very insightful. The weekend would inform a lot of the next several months of product features and iteration.
+
+<figure class="container__image container__break">
+  <img src="/assets/images/rm-beta.jpg" alt="Our Team Members gaining insights from industry folk" />
+  <figcaption class="mt-half center mb-1">
+    <small>Our team gaining insights from non-profit industry folk</small>
+  </figcaption>
+</figure>
+
 
 We brought in both tech and fundraising people included large organizations like M.D. Anderson as well as smaller orgs like Carry the Load. We went through rounds of feedback on both the actual products and also our roadmap going forward. The insights from that session were insanely helpful and surprising. Among our team, there was a feeling that we really had our finger on the pulse of the industry and in the end, that feeling was a bit of a liability. While we did have a good handle on software design - we did not, in fact - have a good handle on the needs of our fundraising users.
 

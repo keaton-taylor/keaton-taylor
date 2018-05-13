@@ -1,0 +1,115 @@
+.Teaser {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 0 2em;
+  max-height: 800px;
+  padding: 1em 1em;
+  filter: hue-rotate(0deg);
+  transition: $trans--long-out;
+  border-top-right-radius: 0.5em;
+
+  &:hover {
+    filter: hue-rotate(-45deg);
+    transition: $trans--long-in;
+  }
+
+  @include breakpoint(large) {
+    grid-template-columns: 1.75fr 2.25fr;
+    margin-bottom: 5em;
+    padding: 1em 1em 0;
+  }
+
+  @include breakpoint(xlarge) {
+    grid-template-columns: 1.75fr 2.25fr;
+    margin-bottom: 7em;
+  }
+
+  &__image {
+    display: grid;
+    max-width: 600px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    padding: 1em 1em 0;
+    justify-self: center;
+
+    @include breakpoint(xlarge) {
+      justify-self: end;
+      margin-right: -3em;
+      z-index: 1;
+    }
+  }
+
+  &__content {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 1.25em;
+    box-shadow: 0 1px 6px rgba(155, 155, 155, 0.7);
+    border-radius: 3px;
+
+    @include breakpoint(medium) {
+      padding: 1.75em 2em;
+      display: grid;
+      height: fit-content;
+      align-self: center;
+    }
+
+    @include breakpoint(large) {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    @include breakpoint(large) {
+      padding: 1.75em 2.25em;
+      color: $color--text !important;
+      transition: all 0ms ease-in-out;
+      filter: none;
+      max-width: 750px;
+    }
+
+    @include breakpoint(xlarge) {
+      align-self: end;
+      margin-bottom: -3em;
+    }
+  }
+
+  &__title {
+    font-family: $serif-stack;
+    line-height: 1.3;
+    font-size: 1.25em;
+    transition: 0s;
+    color: #123b3b;
+
+    @include breakpoint(medium) {
+      font-size: 2em;
+    }
+
+    @include breakpoint(large) {
+      transition: all 0ms ease-in-out;
+      filter: none;
+      font-size: 2.5em;
+    }
+
+    @include breakpoint(xlarge) {
+      font-size: 3.25em;
+    }
+
+    @include breakpoint(xxlarge) {
+      font-size: 2.5em;
+    }
+  }
+
+  &__summary {
+    display: none;
+    transition: 0s;
+    font-family: $sans-stack;
+
+    @include breakpoint(large) {
+      line-height: 1.6;
+      font-size: 0.85em;
+      font-weight: 400;
+      display: block;
+      color: $color--text !important;
+      transition: all 0ms ease-in-out;
+      filter: none;
+    }
+  }
+}

@@ -1,54 +1,73 @@
   {% include head.html %}
     {% include SiteHeader.html %}
-    <section class="PersonalSummary container__large">
-      <div class="PersonalSummary__wrap">
+    <section class="container__xlarge">
+      <div class="PersonalSummary">
         <h2 class="fade-in mb-2">Hi, I'm Keaton. I help good people build amazing digital products. Let's make it happen. Currently: Product Designer at Apartment Therapy. Remote. Px. Husband, dad, and human jungle gym. Houston Rockets Lifer.</h2>
       </div>
     </section>
 
-    <section class="container__large">
-      <div class="ContentComponent mb-0">
-        <h3 class="ContentComponent__headline mb-1 mt-0 lighter">Work<span class="ContentComponent__down">{% include icon--down.svg%}</span></h3>
-        <div class="ContentComponent__articles">
+    <section class="GridParent">
 
-          {% for post in site.categories.case_study limit:6 %}
-            <a class="mb-3" href="{{ post.url }}">
-              <article class="ContentComponent__article mb-4">
-                <img class="ContentComponent__article-image" src="{{ post.image }}" />
-                <div class="ContentComponent__wrap">
-                  <small>{{ post.series }}</small>
-                  <h3 class="ContentComponent__article-title mb-half mt-quarter"> {{ post.title }} </h3>
-                  <p class="ContentComponent__article-excerpt mt-half mb-0"> {{ post.excerpt }}</p>
-                </div>
-              </article>
-            </a>
-          {% endfor %}
+      <section class="GridParent__section">
+        <section class="container__xlarge-break">
+          <div class="WayFinder mb-1 mt-0 p-0">
+            <h3 class="WayFinder__headline m-0">Work</h3>
+            <div class="WayFinder__icon">{% include icon--down.svg%}</div>
+          </div>
+        </section>
 
-        </div>
-      </div>
-    </section>
+        <section class="container__xlarge-break">
+          <div class="TeaserComponent">
+            <div class="TeaserComponent__teasers ">
 
-    <section class="lg pt-2">
-      <div class="container__small">
-        <div class="ContentComponent mb-0">
-          <h2 class="ContentComponent__headline lighter mt-0 mb-1">Words</h2>
-          <div class="ContentComponent__articles">
-
-          {% for post in site.categories.blog_post limit:4 %}
-            <article class="ContentComponent__article bg-none mb-1 pl-0">
-              <div class="ContentComponent__wrap pr-0 pl-0">
-                <small>{{ post.series }}</small>
-                <a href="{{ post.url }}">
-                  <h3 class="ContentComponent__article-title mb-half mt-quarter">{{ post.title }}</h3>
+              {% for post in site.categories.case_study limit:6 %}
+                <a class="mb-3" href="{{ post.url }}">
+                  <article class="Teaser {{ post.class }}">
+                    <div class="Teaser__image" >
+                      <img src="{{ post.image }}" />
+                    </div>
+                    <div class="Teaser__content">
+                      <small class="Teaser__kicker">{{ post.series }}</small>
+                      <h3 class="Teaser__title mb-half mt-quarter"> {{ post.title }} </h3>
+                      <p class="Teaser__summary mt-half m-0"> {{ post.excerpt }}</p>
+                    </div>
+                  </article>
                 </a>
-                <p class="ContentComponent__article-excerpt mt-half mb-0">{{ post.excerpt }}</p>
-              </div>
-            </article>
-          {% endfor %}
+              {% endfor %}
 
+            </div>
+          </div>
+        </section>
+      </section>
+
+
+      <section class="GridParent__section">
+        <section class="container__xlarge-break">
+          <div class="WayFinder mb-1 mt-0 p-0">
+            <h3 class="WayFinder__headline m-0">Thoughts</h3>
+            <div class="WayFinder__icon">{% include icon--down.svg%}</div>
+          </div>
+        </section>
+
+        <div class="container__xlarge-break">
+          <div class="TeaserComponent mb-0">
+            <div class="TeaserComponent__articles">
+
+            {% for post in site.categories.blog_post limit:10 %}
+              <a href="{{ post.url }}">
+                <article class="Article">
+                  <small class="Article__kicker">{{ post.series }}</small>
+                  <h3 class="Article__title mb-half mt-quarter">{{ post.title }}</h3>
+                  <p class="Article__summary mt-half mb-0">{{ post.excerpt }}</p>
+                </article>
+              </a>
+            {% endfor %}
+
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
     </section>
 
 

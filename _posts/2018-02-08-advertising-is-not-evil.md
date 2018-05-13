@@ -2,11 +2,12 @@
 layout: PostPage
 date:   2017-09-03 16:16:01 -0600
 category: blog_post
-title: Advertising Is not Evil, but the Way We Do It Might Be. Sometimes.
-excerpt: If no one is using your products, your products cannot make money.
+title: Advertising Isn't Evil but the Way We Do It Might Be.
+excerpt: If no one is using your products, your products cannot make money. How do we sustain profitability and have a soul?
 image: /keaton.png
 series: LITTLE THOUGHTS
 comments: true
+image: /assets/images/advertising.png
 ---
 
 Advertising on the web is generally regarded as being a terrible and immoral thing. With some caveats - I disagree with that. I think advertising, in it's many forms, was a logical step in the monetization on the web. Advertising is an ever-present part of modern life. The idea that it would be ported to the internet is totally normal.

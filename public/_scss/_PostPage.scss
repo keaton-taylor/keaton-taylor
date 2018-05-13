@@ -3,6 +3,16 @@
   height: 100%;
   line-height: 1.4;
 
+  &__illo {
+    max-width: 640px;
+    margin: 0 auto;
+    opacity: 0.8;
+
+    @include breakpoint(medium) {
+      margin-top: 2em;
+    }
+  }
+
   p {
     font-family: $sans-stack;
     line-height: 1.4;

@@ -1,47 +1,58 @@
 .PersonalSummary {
-  &__wrap {
-    align-items: center;
-    font-size: 1rem;
-    font-family: $serif-stack;
-    line-height: 1.4;
+  display: grid;
+  align-items: center;
+  font-size: 1rem;
+  font-family: $serif-stack;
+  line-height: 1.4;
+  height: 62vh;
+
+  @include breakpoint(375px) {
+    height: 67vh;
+  }
+
+  @media only screen and (device-width: 375px) and (device-height: 812px) {
+    height: 73vh;
+  }
+
+  @include breakpoint(414px) {
+    height: 70vh;
+  }
+
+  @include breakpoint(medium) {
+    font-size: 1.5rem;
+    justify-content: center;
+    height: 89vh;
+  }
+
+  @include breakpoint(large) {
+    font-size: 3rem;
+    max-width: 16em;
+    height: 81vh;
+  }
+
+  @include breakpoint(xlarge) {
+    max-width: 16em;
+    height: 86vh;
+  }
+
+  @include breakpoint(xxlarge) {
+    font-size: 2rem;
+    max-width: 28em;
+    height: 85vh;
+  }
+
+  @media (min-height: 1079px) {
+    height: 65vh;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    font-weight: lighter;
 
     @include breakpoint(medium) {
-      font-size: 1.5rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    @include breakpoint(large) {
-      font-size: 3rem;
-      max-width: 16em;
-      height: 81vh;
-    }
-
-    @include breakpoint(xlarge) {
-      max-width: 16em;
-      height: 80vh;
-    }
-
-    @include breakpoint(xxlarge) {
       font-size: 2rem;
-      max-width: 28em;
-      height: 85vh;
-    }
-
-    @media (min-height: 1079px) {
-      height: 65vh;
-    }
-
-    h2 {
-      font-size: 1.25rem;
-      line-height: 1.6;
-      font-weight: lighter;
-
-      @include breakpoint(medium) {
-        font-size: 2rem;
-        padding: 1em;
-      }
+      padding: 1em;
     }
   }
 }

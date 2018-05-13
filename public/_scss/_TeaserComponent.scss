@@ -1,0 +1,47 @@
+.TeaserComponent {
+  text-align: center;
+
+  @include breakpoint(medium) {
+    margin-bottom: 2em;
+  }
+
+  @include breakpoint(large) {
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+    @include breakpoint(large) {
+      .ContentComponent__article-title {
+        transition: $trans--long-in;
+      }
+
+      &:hover {
+        .ContentComponent__article-title {
+          transition: $trans--short-out;
+          color: darken($color--blue, 10%);
+        }
+      }
+    }
+  }
+
+  .at {
+    background: url("/assets/images/at-bg-img.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  .m {
+    background: url("/assets/images/m-bg-img.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  .rm {
+    background: url("/assets/images/rm-bg-img.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  .r {
+    background: url("/assets/images/r-bg-img.png") no-repeat center center;
+    background-size: cover;
+  }
+}

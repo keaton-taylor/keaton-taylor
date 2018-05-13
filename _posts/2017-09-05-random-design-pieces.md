@@ -3,10 +3,11 @@ layout: PostPage
 date:   2017-09-01 16:16:01 -0600
 category: case_study
 image: /assets/images/batteryOutfitters.png
-title: "Logos, Websites and General Design Assets from the Last Few Years"
-excerpt: "Some random work that I have lying around. There's everything here from branding to illustration to regional marketing and commerce sites."
+title: "Previous Work: Websites, Logos and Ephemera"
+excerpt: "Over the course of my career I've had the pleasure to work with corporations, organizations and small businesses across the world. This is a small collection of some of that work. These things live as a testament to my roots and the rocky roundabout path I've taken to get to where I am today."
 series: DESIGN WORK
 comments: false
+class: r
 ---
 <section class="container__small mb-2">
 
