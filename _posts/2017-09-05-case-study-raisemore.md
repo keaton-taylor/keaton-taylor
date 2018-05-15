@@ -47,11 +47,25 @@ Here are a Few Takeaways:
 
 In addition to the findings above and our notebooks full of information after the beta, we had a crew on hand to film the days. Enjoy.
 
-<p><a href="https://vimeo.com/200031506">RaiseMore Beta Day 1</a></p>
-<iframe class="mb-2" src="https://player.vimeo.com/video/200031506?byline=0&portrait=0" width="740" height="416" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<figure class="container__image container__break">
+  <div style="padding: 56.25% 0 0 0; position: relative;">
+    <iframe src="https://player.vimeo.com/video/200031506"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+      frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen >
+    </iframe>
+  </div>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</figure>
 
-<p><a href="https://vimeo.com/200031482">RaiseMore Beta Day 2</a></p>
-<iframe src="https://player.vimeo.com/video/200031482?byline=0&portrait=0" width="740" height="416" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<figure class="container__image container__break">
+  <div style="padding: 56.25% 0 0 0; position: relative;">
+    <iframe src="https://player.vimeo.com/video/200031482"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+      frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+    </iframe>
+  </div>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</figure>
 
 ### On-Boarding
 On-boarding is hard. Reworking the general login process was an imperative. One of the glaring issues was the technical debt left over from our Bootstrap MVP. During this Sprint we used more time than we expected walking through the signup process. One of the challenges we spent the most time on was the amount of data we needed to collect. Where is the line between too much and not enough? We weren't sure. In hindsight what we were asking for became a barrier to entry. Our goals for the update were:

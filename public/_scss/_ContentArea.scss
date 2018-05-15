@@ -82,7 +82,11 @@
     display: flex;
     flex-direction: row;
     border-bottom: 3px solid $color--text;
-    max-width: 60%;
+    max-width: 75vw;
+
+    @include breakpoint(large) {
+      max-width: 45vw;
+    }
 
     &-item {
       padding-right: 2rem;
