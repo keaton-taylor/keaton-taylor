@@ -3,3 +3,5 @@ _site
 .jekyll-metadata
 gitconfig
 .DS_Store
+.ruby-version
+Gemlock.lock
