@@ -15,6 +15,7 @@ class: at
 ### In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time. After interviewing with a few companies I landed at Apartment Therapy. The team culture, engineering focus and commitment to quality have afforded me incredible learning opportunities. One of the most memorable projects we approached involved trying to deliver personalized content to our readers.
 
 ### The Challenges and Goals
+
 _How can we deliver personalized content options to readers?_
 
 Our working hypothesis was that by implementing and testing data driven recommendation APIs, we could deliver more opportunities for readers to read better content. We already used Parse.ly for editorial analytics, so pulling recommendations from their API was a relatively low hurdle. In addition to Parse.ly we planned to test LiftIgniter, a machine learning API for making recommendations. Our editorial goal was to deliver more effective content recommendations on article pages. Our business goals sat on the shoulders of our Engagement OKR for the quarter. It stands to reason that readers finding more and better content should raise our content share-ability and in turn visibility for impressions.
@@ -75,7 +76,7 @@ What we found after a few days of monitoring analytics numbers was that very few
 It wasn't. We got analytics numbers back and "desktop" click through rate had gone up from 3.6% to 5.8% and "mobile" had gone down to 3.3% with 99% of clicks coming from the default active tab. Up to this point, we had been using the Parse.ly API to drive recommendations in the "Related" and "Popular" tabs. We decided to follow some suggestions from Parse.ly and LiftIgniter to test a “back to the drawing board” option. Their data suggests that a simple 4x3 grid of article teasers might increase overall interactions.
 
 <figure class="container__image container__break">
-  <img class="no-shadow" src="/assets/images/at-fourthree.png" alt="The four by three column." />
+  <img src="/assets/images/at-fourthree.png" alt="The four by three column." />
   <figcaption class="mt-half center mb-1">
     <small>The 4x3 grid of teasers on a large screen.</small>
   </figcaption>
