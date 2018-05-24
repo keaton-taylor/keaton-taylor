@@ -12,13 +12,22 @@ series: CASE STUDY
 class: at
 ---
 
-### In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time. After interviewing with a few companies I landed at Apartment Therapy. The team culture, engineering focus and commitment to quality have afforded me incredible learning opportunities. One of the most memorable projects we approached involved trying to deliver personalized content to our readers.
+### The Challenge, Hypothesis and Goals  
 
-### The Challenges and Goals
+**Challenge:** _How can we deliver personalized content options to readers?_
 
-_How can we deliver personalized content options to readers?_
+**Hypothesis:** By implementing and testing data driven recommendation APIs, we can deliver more opportunities for readers to read better content.
 
-Our working hypothesis was that by implementing and testing data driven recommendation APIs, we could deliver more opportunities for readers to read better content. We already used Parse.ly for editorial analytics, so pulling recommendations from their API was a relatively low hurdle. In addition to Parse.ly we planned to test LiftIgniter, a machine learning API for making recommendations. Our editorial goal was to deliver more effective content recommendations on article pages. Our business goals sat on the shoulders of our Engagement OKR for the quarter. It stands to reason that readers finding more and better content should raise our content share-ability and in turn visibility for impressions.
+**Background:** We already used Parse.ly for editorial analytics, so pulling recommendations from their API was a relatively low hurdle. In addition to Parse.ly we planned to test LiftIgniter, a machine learning API for making recommendations. We had been using Parse.ly for a limited number of users and saw a very slight upward trend in related metrics, but nothing crazy.
+
+**Editorial Goal:** Deliver better content recommendations on article pages.  
+**Metrics:** Time on site and page views.
+
+**Business Goal:** Raise view-ability numbers for advertising impressions.  
+**Metrics:** Viewability, impressions and CTR for ads in DFP.
+
+**User Goals:** Make it easier and more fun to read AT Media properties by making relevant content easier to find.  
+**Metrics:** Social sharing and sessions.
 
 ### The Process
 Out of the gate our cross-functional team came together to define a common-sense scope for our project. What came out of that were a few ideas on how we could make this engaging and fun for users to navigate the three categories of content we want to deliver:
