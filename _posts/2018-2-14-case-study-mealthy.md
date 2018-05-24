@@ -12,7 +12,8 @@ series: TL;DR
 class: m
 ---
 
-### My time at Mealthy was interesting and challenging. Preemptively building a digital platform to coincide with physical product releases is a very meaty problem set. I'm going to highlight a few specific parts of my 8 months working with the team. I had the opportunity to be an early contract hire which allowed me to grow and lead a very talented team as the organization scaled up.
+### The Challenges
+I was the first person on board for this project. That in and of itself is definitely a challenge. Seeing a product through from ground floor vision to launch is an exhilarating and often stressful responsibility. Hiring, making recommendations for best-practices and having hard conversations with other designers were all very challenging to me. Being another recipe site was a challenge at first. We embraced our ability to overcome that saturation with physical products and things have been humming for the team at Mealthy. I'm very proud of the work we did and they continue to do. 
 
 ### Starting from Scratch
 As the first contractor for Mealthy I was able to help the CEO define systems and processes to create a product-focused culture. Being the first and only designer for a while meant we were working through a lot of bad ideas. I worked with the CEO to bring in the first engineering contractors to work with the editorial team. We tackled a lot of the crazy early stage work - like branding, defining a basic visual system and helping build and evolve a brand bible.
