@@ -3,7 +3,6 @@
   align-items: center;
   font-size: 1rem;
   font-family: $serif-stack;
-  line-height: 1.4;
   height: 62vh;
 
   @include breakpoint(375px) {
@@ -47,7 +46,6 @@
 
   h2 {
     font-size: 1.25rem;
-    line-height: 1.6;
     font-weight: lighter;
 
     @include breakpoint(medium) {

@@ -1,7 +1,6 @@
 .PostPage {
   margin: auto;
   height: 100%;
-  line-height: 1.4;
 
   &__illo {
     max-width: 640px;
@@ -15,7 +14,6 @@
 
   p {
     font-family: $sans-stack;
-    line-height: 1.4;
   }
 
   .ContentHeadline {
