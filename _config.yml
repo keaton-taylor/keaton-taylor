@@ -31,8 +31,8 @@ autoprefixer:
 theme:
 plugins_dir:
   - jekyll-feed
-  - jekyll-browsersync
   - jekyll-autoprefixer
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

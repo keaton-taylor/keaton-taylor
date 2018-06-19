@@ -3,7 +3,7 @@ layout: work
 date:   2017-09-03 16:16:01 -0600
 category: case_study
 image: assets/images/messaging-img.png
-title: "RaiseMore: User Testing, On-boarding and In-App Coaching"
+title: "RaiseMore: Fundraising for the 21st Century"
 excerpt: "In the Summer of 2015 I joined the team at RaiseMore, a social fundraising platform based in Oklahoma City. RaiseMore used teamwork and social interactions to maximize fundraising efforts and used aggregate data to help predict fundraising trends and success patterns. We worked on many exciting projects like Dashboards, an automated app building marketplace and in-app coaching for fundraising teams. RaiseMore was my first taste of iterative product design and changed my professional trajectory forever. "
 role: Product Designer
 year: 2015-2016
@@ -11,8 +11,6 @@ platform: Web, Mobile
 series: CASE STUDY
 class: rm
 ---
-
-### In the Summer of 2015 I joined the team at RaiseMore, a social fundraising platform based in Oklahoma City, as a product designer. RaiseMore used teamwork and social interactions to maximize fundraising efforts. In turn we used the aggregate data to help predict fundraising trends and event success patterns. We worked on many exciting projects and initiatives including Dashboards, an automated app building marketplace and in-app coaching for fundraising teams. RaiseMore was my first taste of iterative product design and changed my professional trajectory forever.
 
 ### The Challenges
 Making fundraising and nonprofit volunteering more fun and social is hard. Fundraising is often a solitary experience. You donate and you go about your business. At RaiseMore we wanted to make fundraising a team sport. How can we offer a competitive platform? How can we give leaders the power to coach based on performance & quantifiable metrics? We aimed to answer these questions and unfortunately the answer was sometimes, “We can’t.”

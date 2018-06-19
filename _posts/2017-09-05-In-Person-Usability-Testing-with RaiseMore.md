@@ -6,7 +6,12 @@ title: "In-Person Usability Testing at the RaiseMore Beta in Oklahoma City"
 excerpt: "It's hard to build software for people when you fundamentally do not understand them. Go figure."
 series: BLOG POST
 comments: false
+
 ---
+
+<figure class="container__image container__break mt-1 mb-1">
+  <img src="/assets/images/rm-beta.jpg" alt="The Gaston Foundation Website" />
+</figure>
 
 In September of 2015, We ran a two day feedback summit in Oklahoma City with the entire RaiseMore team. We went through 4 feedback sessions. The rounds of one-on-one interaction with real people was incredibly helpful. The Group discussions On Day 3 discussing the product roadmap was very insightful. The weekend would inform a lot of the next several months of product features and iteration.
 

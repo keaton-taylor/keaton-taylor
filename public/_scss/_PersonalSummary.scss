@@ -1,56 +1,29 @@
 .PersonalSummary {
   display: grid;
   align-items: center;
-  font-size: 1rem;
-  font-family: $serif-stack;
-  height: 62vh;
-
-  @include breakpoint(375px) {
-    height: 67vh;
-  }
-
-  @media only screen and (device-width: 375px) and (device-height: 812px) {
-    height: 73vh;
-  }
-
-  @include breakpoint(414px) {
-    height: 70vh;
-  }
+  font-size: 1em;
+  font-family: $sans-stack;
+  height: 70vh;
 
   @include breakpoint(medium) {
-    font-size: 1.5rem;
-    justify-content: center;
-    height: 89vh;
-  }
-
-  @include breakpoint(large) {
-    font-size: 3rem;
-    max-width: 16em;
-    height: 81vh;
-  }
-
-  @include breakpoint(xlarge) {
-    max-width: 16em;
-    height: 86vh;
-  }
-
-  @include breakpoint(xxlarge) {
-    font-size: 2rem;
-    max-width: 28em;
-    height: 85vh;
-  }
-
-  @media (min-height: 1079px) {
-    height: 65vh;
+    height: 40vh;
   }
 
   h2 {
-    font-size: 1.25rem;
-    font-weight: lighter;
+    font-size: 1.25em;
+    line-height: 1.3;
+    color: $color--text;
 
     @include breakpoint(medium) {
-      font-size: 2rem;
-      padding: 1em;
+      font-size: 1.75em;
+    }
+
+    @include breakpoint(large) {
+      max-width: 75%;
+    }
+
+    @include breakpoint(xlarge) {
+      max-width: 65%;
     }
   }
 }
