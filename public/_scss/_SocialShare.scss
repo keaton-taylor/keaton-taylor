@@ -6,13 +6,13 @@
   &__button {
     display: flex;
     flex-direction: row;
-    margin-bottom: 2rem;
-    padding-right: 1rem;
+    margin-bottom: 2em;
+    padding-right: 1em;
 
     &--link {
       background-color: $color--light-gray;
-      padding: 0.5rem 1.25rem;
-      border-radius: 0.25rem;
+      padding: 0.5rem 1.25em;
+      border-radius: 0.25em;
       text-decoration: none;
       font-size: 0.75em;
 
@@ -68,7 +68,7 @@
         width: 24px;
         height: 100%;
         fill: #fff;
-        padding-right: 0.25rem;
+        padding-right: 0.25em;
       }
     }
   }

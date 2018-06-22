@@ -11,6 +11,13 @@ class: r
 ---
 <section class="container__small mb-2">
 
+  <figure class="container__image mb-2">
+    <img src="/assets/images/batteryOutfitters.png" alt="battery outfitters" />
+    <figcaption class="mt-half center">
+      <small>Website for <a href="http://batteryoutfitters.com/">Battery Outfitters.</a><br>Design</small>
+    </figcaption>
+  </figure>
+
   <figure class="container__image mt-2 mb-2">
     <img src="/assets/images/gaston_portfolio-background.jpg" alt="The Gaston Foundation Website" />
     <figcaption class="mt-half center">
@@ -26,16 +33,9 @@ class: r
   </figure>
 
   <figure class="container__image mb-2">
-    <img src="/assets/images/batteryOutfitters.png" alt="battery outfitters" />
+    <img src="/assets/images/FOA.png" alt="The words 'Friends of Amos' partially submerged in water" />
     <figcaption class="mt-half center">
-      <small>Website for <a href="http://batteryoutfitters.com/">Battery Outfitters.</a><br>Design</small>
-    </figcaption>
-  </figure>
-
-  <figure class="container__image mb-2 center" style="max-width: 640px !important; justify-content: center; align-self: center;">
-    <img src="/assets/images/campus-rep-af.jpeg" alt="The Art feeds heart-hand with text that says campus rep handbook" />
-    <figcaption class="mt-half center">
-      <small>A badge for the front of the Campus Rep Handbook for <a href="http://www.artfeeds.org">Art Feeds</a>.</small>
+      <small>A logo for a student organization that discusses theology and culture at Emmanuel Christian Seminary.</small>
     </figcaption>
   </figure>
 
@@ -43,6 +43,13 @@ class: r
     <img src="/assets/images/choose-your-weapon.jpg" alt="choose your weapon: 2 sets of hands, one fist bumping and one high-fiving." />
     <figcaption class="mt-half center">
       <small>Test design for a 4 color screen print I did while in college.</small>
+    </figcaption>
+  </figure>
+
+  <figure class="container__image mb-2">
+    <img src="/assets/images/hot-topics.png" alt="fire and stylized text that says Lake Pointe Hot Topics" />
+    <figcaption class="mt-half center">
+      <small>An updated look for the Hot Topics graphic to make it appeal to a younger crowd.</small>
     </figcaption>
   </figure>
 
@@ -64,20 +71,6 @@ class: r
     <img src="/assets/images/hvcm.png" alt="Hippo Valley Christian Mission Type Lockup and 3 accompanying logos" />
     <figcaption class="mt-half center">
       <small>A series of graphics used for HVCM branding purposes on mailers. </small>
-    </figcaption>
-  </figure>
-
-  <figure class="container__image mb-2">
-    <img src="/assets/images/FOA.png" alt="The words 'Friends of Amos' partially submerged in water" />
-    <figcaption class="mt-half center">
-      <small>A logo for a student organization that discusses theology and culture at Emmanuel Christian Seminary.</small>
-    </figcaption>
-  </figure>
-
-  <figure class="container__image mb-2">
-    <img src="/assets/images/hot-topics.png" alt="fire and stylized text that says Lake Pointe Hot Topics" />
-    <figcaption class="mt-half center">
-      <small>An updated look for the Hot Topics graphic to make it appeal to a younger crowd.</small>
     </figcaption>
   </figure>
 

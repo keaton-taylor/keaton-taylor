@@ -1,81 +1,84 @@
 body {
   background: #fff;
-  color: #1a5454;
   border-top: 0.25em solid $color--blue;
-  font-size: 16px;
+  font-size: 16px !important;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-}
+  font-family: $sans-stack;
 
-.container {
-  max-width: 75em;
-  padding: 0 1em 0;
-  margin: 0 auto;
-
-  &__xsmall {
-    max-width: 46.25em;
-    margin: 0 auto;
-
-    @include breakpoint(medium) {
-      padding: 0;
-    }
-  }
-
-  &__small {
-    max-width: 52em;
-    padding: 0 1em 0;
-    margin: 0 auto;
-  }
-
-  &__large {
+  .container {
     max-width: 75em;
     padding: 0 1em 0;
     margin: 0 auto;
 
-    @include breakpoint(medium) {
-      padding: 0 1em;
-    }
-  }
+    &__xsmall {
+      max-width: 46.25em;
+      margin: 0 auto;
 
-  &__xlarge {
-    max-width: 100em;
-    padding: 0 1em 0;
-    margin: 0 auto;
-
-    @include breakpoint(medium) {
-      padding: 0 1em;
-    }
-
-    &-break {
-      @include breakpoint(xlarge) {
-        margin: 0;
+      @include breakpoint(medium) {
+        padding: 0;
       }
     }
-  }
 
-  &__full {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 1em;
-  }
+    &__small {
+      max-width: 52em !important;
+      padding: 0 1em 0;
 
-  &__images {
-    @include breakpoint(medium){
-      display: grid;
-      grid-template-columns: 50% 50%;
-    }
-  }
-
-  &__image {
-    flex-direction: column;
-
-    @include breakpoint(medium) {
-      flex-direction: row;
+      @include breakpoint(medium) {
+        margin: 0 auto;
+      }
     }
 
-    &--small {
-      max-width: 25em;
-      margin: auto;
+    &__large {
+      max-width: 75em;
+      padding: 0 1em 0;
+      margin: 0 auto;
+
+      @include breakpoint(medium) {
+        padding: 0 1em;
+      }
+    }
+
+    &__xlarge {
+      max-width: 100em;
+      padding: 0 1em 0;
+      margin: 0 auto;
+
+      @include breakpoint(medium) {
+        padding: 0 1em;
+      }
+
+      &-break {
+        @include breakpoint(xlarge) {
+          margin: 0;
+        }
+      }
+    }
+
+    &__full {
+      max-width: 100%;
+      padding: 0 1em;
+    }
+
+    &__images {
+      @include breakpoint(medium){
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 1em;
+      }
+    }
+
+    &__image {
+      flex-direction: column;
+
+      @include breakpoint(medium) {
+        flex-direction: row;
+      }
+
+      &--small {
+        max-width: 25em;
+        margin: auto;
+      }
     }
   }
 }

@@ -3,92 +3,59 @@
   grid-template-columns: 1fr;
   margin: 0 0 2em;
   max-height: 800px;
-  padding: 1em 1em;
-  filter: hue-rotate(0deg);
+  padding: 1em;
   transition: $trans--long-out;
-  border-top-right-radius: 0.5em;
 
   &:hover {
-    filter: hue-rotate(-45deg);
-    transition: $trans--long-in;
+    filter: hue-rotate(-35deg);
+    transform: scale(1.01);
+    transition: $trans--short-in;
+  }
+
+  @include breakpoint(medium) {
+    grid-template-columns: 2fr 3fr;
+    margin-bottom: 6em;
+    padding: 2em;
   }
 
   @include breakpoint(large) {
-    grid-template-columns: 1.75fr 2.25fr;
-    margin-bottom: 5em;
-    padding: 1em 1em 0;
-  }
-
-  @include breakpoint(xlarge) {
-    grid-template-columns: 1.75fr 2.25fr;
-    margin-bottom: 7em;
-  }
-
-  &__image {
-    display: grid;
-    max-width: 600px;
-    max-height: 600px;
-    width: auto;
-    height: auto;
-    padding: 1em 1em 0;
-    justify-self: center;
-
-    @include breakpoint(xlarge) {
-      justify-self: end;
-      margin-right: -3em;
-      z-index: 1;
-    }
+    padding: 4em;
   }
 
   &__content {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 1.25em;
-    box-shadow: 0 1px 6px rgba(155, 155, 155, 0.7);
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 1px 6px rgba(155, 155, 155, 0.6);
     border-radius: 3px;
+    align-self: center;
+    padding: 1.25em;
+    text-align: center;
 
     @include breakpoint(medium) {
-      padding: 1.75em 2em;
-      display: grid;
-      height: fit-content;
-      align-self: center;
+      padding: 1.5em;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.97);
     }
 
     @include breakpoint(large) {
-      background: rgba(255, 255, 255, 0.95);
-    }
-
-    @include breakpoint(large) {
-      padding: 1.75em 2.25em;
-      color: $color--text !important;
-      transition: all 0ms ease-in-out;
-      filter: none;
-      max-width: 750px;
-    }
-
-    @include breakpoint(xlarge) {
-      align-self: end;
-      margin-bottom: -3em;
+      padding: 2em;
     }
   }
 
   &__title {
-    font-family: $serif-stack;
+    font-family: $sans-stack;
     font-size: 1.25em;
-    transition: 0s;
-    color: #123b3b;
+    margin: 0 0 0.25em;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: $color--darker-gray;
 
     @include breakpoint(medium) {
-      font-size: 2em;
-    }
-
-    @include breakpoint(large) {
-      transition: all 0ms ease-in-out;
-      filter: none;
-      font-size: 2.5em;
+      font-size: 1.75em;
+      line-height: 1.2;
     }
 
     @include breakpoint(xlarge) {
-      font-size: 3.25em;
+      font-size: 2.25em;
     }
 
     @include breakpoint(xxlarge) {
@@ -100,12 +67,12 @@
     display: none;
     transition: 0s;
     font-family: $sans-stack;
+    color: $color--dark-gray;
 
     @include breakpoint(large) {
-      font-size: 0.85em;
+      font-size: 1em;
       font-weight: 400;
       display: block;
-      color: $color--text !important;
       transition: all 0ms ease-in-out;
       filter: none;
     }

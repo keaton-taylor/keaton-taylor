@@ -3,12 +3,13 @@ layout: work
 date:   2017-09-03 16:16:01 -0600
 category: case_study
 image: assets/images/AT_Media.png
-title: "Apartment Therapy: Delivering Better Content Across Devices"
+title: "Apartment Therapy: Delivering Better Content"
 excerpt: "In 2016 I transitioned from 4 years of working as a web and graphic designer to working on digital products full-time. After interviewing with a few companies I landed at Apartment Therapy. The team culture, engineering focus and commitment to quality have afforded me incredible learning opportunities. One of the most memorable projects we approached involved trying to deliver personalized content to our readers."
 role: Product Designer
 year: 2016 - 2018
 platform: Web
 series: CASE STUDY
+URL: www.apartmenttherapy.com
 class: at
 ---
 
@@ -38,19 +39,34 @@ Out of the gate our cross-functional team came together to define a common-sense
 
 <div class="container__images">
   <figure class="container__image">
-    <img src="/assets/images/at-SurveyConcept.png" alt="A sketch for a survey concept" />
+    <img src="/assets/images/at-idea1.png" alt="A sketch for a custom content experience with yes no questions" />
     <figcaption class="mt-half center">
-      <small>Sketching a possible survey.</small>
+      <small>Idea 1: Choose your own adventure!</small>
     </figcaption>
   </figure>
 
   <figure class="container__image">
-    <img src="/assets/images/at-OwnAdventure.png" alt="A Kind of Choose Your Own Director" />
+    <img src="/assets/images/at-idea2.png" alt="A sketch for a custom content experience with personal preference options" />
     <figcaption class="mt-half center">
-      <small>Sketching out a choose your own adventure of sorts.</small>
+      <small>Idea 2: Choose another adventure!</small>
+    </figcaption>
+  </figure>
+
+  <figure class="container__image">
+    <img src="/assets/images/at-idea3.png" alt="A sketch for a custom content experience with user selectable options" />
+    <figcaption class="mt-half center">
+      <small>A standalone component that changes state from questions to content presentation</small>
+    </figcaption>
+  </figure>
+
+  <figure class="container__image">
+    <img src="/assets/images/at-idea4.png" alt="A sketch for a custom content experience with tabbed selections" />
+    <figcaption class="mt-half center">
+      <small>Idea 4: Components that could be tab-based</small>
     </figcaption>
   </figure>
 </div>
+
 
 Lots of other fun and kind of silly possibilities were discussed. We compiled research both on what had worked for us in the past and what other media outlets were doing to make related content visible. The options kind of ran the gamut or what was possible: text links, teaser rolls, simplified teasers, images, stylized images. It was kind of all over the place. Based on our research and some of the notes we took, I started playing around in Sketch trying to see what some of those ideas might look like.
 
@@ -68,10 +84,10 @@ During our regroup with one of our Product Managers, it became more and more cle
 - We want all three to be optimized across devices
 - We need an easy-to-use interface that doesn't feel clunky
 
-Based on these learnings it was clear that building this into some sort of game didn’t feel on-brand and didn’t meet the goals of the feature. So we stripped everything back to a significantly lower common denominator for testing. We still wanted an interactive experience. We wanted users to feel like they were in control of the experience. As such we started with 3 clickable tabs correlated to our three content categories.
+Based on these learnings it was clear that building this into some sort of game didn’t feel on-brand and didn’t meet the goals of the feature. So we stripped everything back to a significantly lower common denominator for testing. We still wanted an interactive experience. We wanted users to feel like they were in control of the experience. As such we doubled back to try the concept with 3 clickable tabs correlated to our three content categories.
 
 <figure class="container__image container__break">
-  <img class="no-shadow" src="/assets/images/at-upnext.png" alt="Simpler content delivery." />
+  <img class="no-shadow" src="/assets/images/at-top-nav.png" alt="Simpler content delivery." />
   <figcaption class="mt-half center mb-1">
     <small>A simplified interface that feels a little more on-brand.</small>
   </figcaption>
@@ -85,13 +101,22 @@ What we found after a few days of monitoring analytics numbers was that very few
 It wasn't. We got analytics numbers back and "desktop" click through rate had gone up from 3.6% to 5.8% and "mobile" had gone down to 3.3% with 99% of clicks coming from the default active tab. Up to this point, we had been using the Parse.ly API to drive recommendations in the "Related" and "Popular" tabs. We decided to follow some suggestions from Parse.ly and LiftIgniter to test a “back to the drawing board” option. Their data suggests that a simple 4x3 grid of article teasers might increase overall interactions.
 
 <figure class="container__image container__break">
-  <img src="/assets/images/at-fourthree.png" alt="The four by three column." />
+  <img src="/assets/images/at-fourthree.png" alt="The four post by three column." class="no-shadow "  />
   <figcaption class="mt-half center mb-1">
     <small>The 4x3 grid of teasers on a large screen.</small>
   </figcaption>
 </figure>
 
-Based on Parse.ly and LiftIgniter suggestions we did, in fact, remove all tabs on smaller screens and went to a 3 row, 4 column view on larger screens. Switching to this layout yielded growth in teasers clicked across screen sizes. As time has gone on we’ve tested and  implemented more changes. Moving to LiftIgniter to power most of our machine learning-driven content recommendations. Splitting recirculation into a mix of plain text links after post content and switching most of our teasers to a highly scrollable new horizontal teaser design. Click through rates seem to hover around 8%. The Apartment Therapy team continue to test, monitor and iterate to deliver the best context-optimized content recommendations.
+Based on Parse.ly and LiftIgniter suggestions we did, in fact, remove all tabs on smaller screens and went to a 3 row, 4 column view on larger screens. Switching to this layout yielded growth in teasers clicked across screen sizes. As time has gone on we’ve tested and implemented more changes. Moving to LiftIgniter to power most of our machine learning-driven content recommendations. Splitting recirculation into a mix of plain text links after post content and a highly scrollable new horizontal teaser design has been an unexpected win for us. Our design has again evolved so that most of our content on the home page as well as the below-post section follow a more traditional layout.
+
+<figure class="container__image container__break ">
+  <img src="/assets/images/at-new-upnext.png" alt="The four by three column." class="no-shadow" />
+  <figcaption class="mt-half center mb-1">
+    <small>Highly Scrollable new teasers</small>
+  </figcaption>
+</figure>
+
+Click through rates on this new design seem to hover around 8-10% - which is incredibly high. The Apartment Therapy team continue to test, monitor and iterate to deliver the best context-optimized content recommendations.
 
 <hr>
 

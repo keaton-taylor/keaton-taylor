@@ -1,50 +1,56 @@
-<header class="container__full mt-1">
-  <div class="SiteHeader mb-0">
+<header class="container__large">
+  <div class="SiteHeader">
 
-    <div style="max-height: 60px;">
-      <a class="SiteHeader__wrapper" href="/">
+    <div class="SiteHeader__nav">
+      <a href="/">
         <div class="SiteHeader__name">
           <h2 class="m-0">Keaton Taylor</h2>
-          <p class="small m-0">Designer/Dadcore</p>
+          <p class="small">DESIGNER/DADCORE</p>
         </div>
       </a>
+
+      <ul class="SiteHeader__nav-items no-bull p-0">
+        <li class="SiteHeader__nav-item icon github">
+          <a href="https://www.github.com/keaton-taylor" target="_blank">
+            {% include icon--github.svg %}
+          </a>
+        </li>
+
+        <li class="SiteHeader__nav-item icon dribbble">
+          <a href="https://www.dribbble.com/keaton_taylor" target="_blank">
+            {% include icon--dribbble.svg %}
+          </a>
+        </li>
+        <li class="SiteHeader__nav-item icon twitter">
+          <a href="https://www.twitter.com/keaton_taylor" target="_blank">
+            {% include icon--twitter.svg %}
+          </a>
+        </li>
+
+        <li class="SiteHeader__nav-item icon medium">
+          <a href="https://medium.com/@keaton_taylor" target="_blank">
+            {% include icon--medium.svg %}
+          </a>
+        </li>
+
+        <li class="SiteHeader__nav-item icon linkedin">
+          <a href="https://www.linkedin.com/in/keatontaylor/" target="_blank">
+            {% include icon--linkedin.svg %}
+          </a>
+        </li>
+
+        <li class="SiteHeader__nav-item icon resume">
+          <a href="/assets/images/kt_resume_2018.pdf" target="_blank">
+            {% include icon--resume.svg %}
+          </a>
+        </li>
+
+        <li class="SiteHeader__nav-item icon img">
+          <a href="/about.html">
+            <img src="/assets/images/keaton__round.png" alt="Keaton's so handsome">
+          </a>
+        </li>
+      </ul>
     </div>
-
-    <ul class="SiteHeader__nav no-bull mb-0 mt-0">
-      <li class="SiteHeader__nav-item icon github">
-        <a href="https://www.github.com/keaton-taylor" target="_blank">
-          {% include icon--github.svg %}
-        </a>
-      </li>
-
-      <li class="SiteHeader__nav-item icon dribbble">
-        <a href="https://www.dribbble.com/keaton_taylor" target="_blank">
-          {% include icon--dribbble.svg %}
-        </a>
-      </li>
-      <li class="SiteHeader__nav-item icon twitter">
-        <a href="https://www.twitter.com/keaton_taylor" target="_blank">
-          {% include icon--twitter.svg %}
-        </a>
-      </li>
-
-      <li class="SiteHeader__nav-item icon linkedin">
-        <a href="https://www.linkedin.com/in/keatontaylor/" target="_blank">
-          {% include icon--linkedin.svg %}
-        </a>
-      </li>
-
-      <li class="SiteHeader__nav-item icon resume">
-        <a href="/assets/images/kt_resume_2018.pdf" target="_blank">
-          {% include icon--resume.svg %}
-        </a>
-      </li>
-
-      <li class="SiteHeader__nav-item icon img">
-        <a href="/about.html">
-          <img src="/assets/images/keaton__round.png" alt="Keaton's so handsome">
-        </a>
-      </li>
-    </ul>
   </div>
 </header>

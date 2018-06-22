@@ -1,60 +1,52 @@
 .ContentHeadline {
-  font-size: 2rem;
-  padding: 1rem 0 0;
-  font-family: $serif-stack;
-
-  @include breakpoint(medium) {
-    font-size: 4rem;
-    padding: 1.5rem 0 1rem;
-  }
+  font-family: $sans-stack;
+  color: $color--darkest-gray;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 24px;
 }
 
 .ContentArea {
   display: flex;
   flex-direction: column;
-  margin: auto;
 
-  @include breakpoint(medium) {
-    flex-direction: row;
-  }
+  .at,
+  .rm,
+  .m {
+    height: 50vh;
 
-  li {
-    margin-bottom: 0.5rem;
-
-    & > ul {
-      padding-top: 0.5rem;
+    @include breakpoint(medium) {
+      margin-top: 3.5em;
     }
   }
 
   &__main {
-    p {
-      font-family: $serif-stack;
-      margin-top: 0;
-      font-size: 16px;
+    color: $color--darker-gray;
+    li {
+      margin-bottom: 0.5em;
+      font-size: 18px;
 
-      & + ul {
-        margin-top: -0.5rem;
-        margin-bottom: 0;
-        padding: 0 0 0 1.5em;
-        font-family: $serif-stack;
-        font-size: 16px;
+      & > ul {
+        padding-top: 0.5em;
       }
     }
-
-    h2 {
-      font-size: 2em;
+    p {
       font-family: $sans-stack;
+      margin-top: 0;
+      font-size: 18px;
+
+      & + ul {
+        margin-top: -0.5em;
+        margin-bottom: 0;
+        padding: 0 0 0 1.5em;
+        font-family: $sans-stack;
+        font-size: 18px;
+      }
     }
 
     h3 {
       margin: 1em 0 0.25em;
-      font-size: 1.75rem;
-
-      &:first-of-type {
-        font-family: $sans-stack;
-        font-weight: 700;
-        font-size: 1.25rem;
-      }
+      font-size: 1.5em;
+      color: $color--darkest-gray;
     }
 
     h4 {
@@ -65,7 +57,6 @@
 
     img {
       margin: 0.5rem 0;
-      box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1);
 
       @include breakpoint(large) {
         margin: 1rem 0;
@@ -78,28 +69,34 @@
   }
 
   &__data {
-    display: flex;
-    flex-direction: row;
-    border-bottom: 3px solid $color--text;
-    max-width: 75vw;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    grid-gap: 1em;
+    border-bottom: 3px solid $color--dark-gray;
+    max-width: 100%;
+    margin: 1em 0 1em;
+
+    @include breakpoint(375px) {
+      max-width: 85vw;
+      grid-gap: 2em;
+    }
 
     @include breakpoint(large) {
       max-width: 40vw;
     }
 
     &-item {
-      padding-right: 2rem;
 
       h4 {
         font-size: 14px;
         font-weight: 700;
         margin-bottom: 0;
-        padding-bottom: 0.25rem;
+        padding-bottom: 0.25em;
       }
 
       p {
-        margin-top: 0.25rem;
-        font-size: 14px;
+        margin-top: 0.25em;
+        font-size: 12px;
       }
     }
   }

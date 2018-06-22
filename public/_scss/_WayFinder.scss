@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  font-size: 1.75rem;
+  font-size: 1.75em;
   font-weight: 400;
   align-self: center;
   width: 100%;
@@ -10,6 +10,7 @@
   padding: 0 1em;
   margin: 0 auto;
   font-family: $sans-stack;
+  color: $color--dark-gray;
 
   &__headline {
     font-size: 0.75em;
