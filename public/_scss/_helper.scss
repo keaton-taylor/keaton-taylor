@@ -1,10 +1,12 @@
-$color--light-link: lighten(#00c9ff, 10%);
-$color--light-gray: lighten(#1a5454, 70%);
-$color--medium-gray: darken($color--light-gray, 15%);
-$color--text: darken($color--medium-gray, 40%);
-$color--darker-gray: darken($color--text, 70%);
-$color--darkest-gray: darken($color--light-gray, 75%);
-$color--text: #1a5454;
+$color--gray: #95a5a6;
+
+$color--lighter-gray: lighten($color--gray, 35%);
+$color--lighter-gray: lighten($color--gray, 25%);
+$color--light-gray: lighten($color--gray, 15%);
+
+$color--dark-gray: darken($color--gray, 25%);
+$color--darker-gray: darken($color--gray, 35%);
+$color--darkest-gray: darken($color--gray, 45%);
 
 $color--blue: #00c9ff;
 $color--green: #00ff98;
@@ -195,7 +197,7 @@ $trans--short-out: all 200ms ease-in-out;
 .icon {
   height: 28px;
   width: 28px;
-  fill: $color--medium-gray;
+  fill: $color--light-gray;
 }
 
 .round {
@@ -256,6 +258,5 @@ $trans--short-out: all 200ms ease-in-out;
 }
 
 .r {
-  background: url("/assets/images/r-bg-img.png") no-repeat center center;
-  background-size: cover;
+  @include gradient;
 }

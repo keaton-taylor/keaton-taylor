@@ -1,6 +1,6 @@
 .ContentHeadline {
   font-family: $sans-stack;
-  color: $color--text;
+  color: $color--darkest-gray;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 24px;
 }
@@ -19,16 +19,16 @@
     }
   }
 
-  li {
-    margin-bottom: 0.5em;
-    font-size: 18px;
-
-    & > ul {
-      padding-top: 0.5em;
-    }
-  }
-
   &__main {
+    color: $color--darker-gray;
+    li {
+      margin-bottom: 0.5em;
+      font-size: 18px;
+
+      & > ul {
+        padding-top: 0.5em;
+      }
+    }
     p {
       font-family: $sans-stack;
       margin-top: 0;
@@ -45,7 +45,8 @@
 
     h3 {
       margin: 1em 0 0.25em;
-      font-size: 1.75em;
+      font-size: 1.5em;
+      color: $color--darkest-gray;
     }
 
     h4 {
@@ -71,7 +72,7 @@
     display: grid;
     grid-template-columns: max-content max-content max-content;
     grid-gap: 1em;
-    border-bottom: 3px solid $color--text;
+    border-bottom: 3px solid $color--dark-gray;
     max-width: 100%;
     margin: 1em 0 1em;
 

@@ -103,21 +103,12 @@ Mapping out entry points and making them cohesive and contextually relevant was 
   </figure>
 </div>
 
-Once a person works through the actual signup we prompt them to go through our "mini-store" experience to start customizing their new app.
+Once a person works through the actual signup we prompt them to go through our "mini-store" experience to start customizing their new app. Ultimately the mini-store shipped as an MVP. After our Beta, it was clear it needed some updating. We needed a clear affordance to make the process more transparent. We tried a few different iterations of this and the one we landed on was a 3 part status indicator at the top of the page that's purpose was to give people a sense of place and a feeling of completion as they signed up.
 
 <figure class="container__image container__break ">
-  <img src="https://d2mxuefqeaa7sj.cloudfront.net/s_F311AE08451D62116DFFACCBDC7E009E2FF890EF15810A623D30F66D11798920_1517346138952_Screenshot+2018-01-30+15.02.02.png" alt="image After signing up, you’re invited to customize your app - which is released to the app store after your subscription is confirmed through our signup UI." />
+  <img src="/assets/images/rm-store.png" alt="image After signing up, you’re invited to customize your app - which is released to the app store after your subscription is confirmed through our signup UI." />
   <figcaption class="mt-half center mb-1">
     <small>After signing up, you’re invited to customize your app - which is released to the  app store after your subscription is confirmed through our signup UI.</small>
-  </figcaption>
-</figure>
-
-Ultimately the mini-store shipped as an MVP. After our Beta, it was clear it needed some updating. We needed a clear affordance to make the process more transparent. We tried a few different iterations of this and the one we landed on was a 3 part status indicator at the top of the page that's purpose was to give people a sense of place and a feeling of completion as they signed up.
-
-<figure class="container__image container__break mb-1">
-  <img src="/assets/images/review_c1.png" alt="An image of a header with three long green arrows" />
-  <figcaption class="mt-half center">
-    <small>A UI in the mini-store to show people where they are in the process of creation and to launch a demo.</small>
   </figcaption>
 </figure>
 

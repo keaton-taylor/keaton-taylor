@@ -4,12 +4,12 @@
   margin: 0 0 2em;
   max-height: 800px;
   padding: 1em;
-  transition: $trans--short-out;
-  color: $color--text;
+  transition: $trans--long-out;
 
   &:hover {
-    filter: hue-rotate(-25deg);
-    transition: $trans--long-in;
+    filter: hue-rotate(-35deg);
+    transform: scale(1.01);
+    transition: $trans--short-in;
   }
 
   @include breakpoint(medium) {
@@ -33,7 +33,7 @@
     @include breakpoint(medium) {
       padding: 1.5em;
       text-align: left;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.97);
     }
 
     @include breakpoint(large) {
@@ -47,6 +47,7 @@
     margin: 0 0 0.25em;
     font-weight: 800;
     letter-spacing: 0.5px;
+    color: $color--darker-gray;
 
     @include breakpoint(medium) {
       font-size: 1.75em;
@@ -66,6 +67,7 @@
     display: none;
     transition: 0s;
     font-family: $sans-stack;
+    color: $color--dark-gray;
 
     @include breakpoint(large) {
       font-size: 1em;
