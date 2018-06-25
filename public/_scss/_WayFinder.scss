@@ -21,9 +21,5 @@
   &__icon {
     align-items: center;
     text-align: end;
-
-    @include breakpoint(xxlarge) {
-      display: none;
-    }
   }
 }

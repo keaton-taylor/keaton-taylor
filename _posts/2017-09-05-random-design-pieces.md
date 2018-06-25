@@ -2,7 +2,6 @@
 layout: PostPage
 date:   2017-09-01 16:16:01 -0600
 category: case_study
-image: /assets/images/batteryOutfitters.png
 title: "Previous Work: Websites, Logos and Ephemera"
 excerpt: "Over the course of my career I've had the pleasure to work with corporations, organizations and small businesses across the world. This is a small collection of some of that work. These things live as a testament to my roots and the rocky roundabout path I've taken to get to where I am today."
 series: DESIGN WORK

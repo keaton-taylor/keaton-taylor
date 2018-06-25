@@ -5,3 +5,4 @@ gitconfig
 .DS_Store
 .ruby-version
 Gemlock.lock
+node_modules

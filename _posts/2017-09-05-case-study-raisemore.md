@@ -2,7 +2,6 @@
 layout: work
 date:   2017-09-03 16:16:01 -0600
 category: case_study
-image: assets/images/messaging-img.png
 title: "RaiseMore: Fundraising for the 21st Century"
 excerpt: "In the Summer of 2015 I joined the team at RaiseMore, a social fundraising platform based in Oklahoma City. RaiseMore used teamwork and social interactions to maximize fundraising efforts and used aggregate data to help predict fundraising trends and success patterns. We worked on many exciting projects like Dashboards, an automated app building marketplace and in-app coaching for fundraising teams. RaiseMore was my first taste of iterative product design and changed my professional trajectory forever. "
 role: Product Designer
@@ -23,7 +22,7 @@ I came to RaiseMore hoping to make a difference. I cut my teeth working for non-
 In September of 2015, We ran a two day feedback summit in Oklahoma City with the entire RaiseMore team. We went through 4 feedback sessions. The rounds of one-on-one interaction with real people was incredibly helpful. The Group discussions On Day 3 discussing the product roadmap was very insightful. The weekend would inform a lot of the next several months of product features and iteration.
 
 <figure class="container__image container__break">
-  <img src="/assets/images/rm-beta.jpg" alt="Our Team Members gaining insights from industry folk" />
+  <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-beta.jpg?progressive=true&png.optimize=true" alt="Our Team Members gaining insights from industry folk" />
   <figcaption class="mt-half center mb-1">
     <small>Our team gaining insights from non-profit industry folk</small>
   </figcaption>
@@ -79,7 +78,7 @@ On-boarding is hard. Reworking the general login process was an imperative. One 
 In the course of discussing the new on-boarding flow and walking through it with our stakeholders and potential users we exposed a glaring flaw. There were no less than 4 places for a person to sign up and define credentials. In general this doesn't have to be a problem but it becomes one if the experience is not consistent and planned for.
 
 <figure class="container__image container__break">
-  <img src="/assets/images/rm-entry-points.png" alt="image There are at least 4 portals that will drop you into a Sign-Up situation" />
+  <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-entry-points.png?progressive=true&png.optimize=true" alt="image There are at least 4 portals that will drop you into a Sign-Up situation" />
   <figcaption class="mt-half center mb-1">
     <small>There are at least 4 portals that will drop you into a Sign-Up situation</small>
   </figcaption>
@@ -89,14 +88,14 @@ Mapping out entry points and making them cohesive and contextually relevant was 
 
 <div class="container__images">
   <figure class="container__image">
-    <img src="/assets/images/rm-header-cta__modal.png" alt="image Header Call to action" />
+    <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-header-cta__modal.png?progressive=true&png.optimize=true" alt="image Header Call to action" />
     <figcaption class="mt-half center">
       <small>Header Call to action</small>
     </figcaption>
   </figure>
 
   <figure class="container__image">
-    <img src="/assets/images/rm-header-cta__modal-success.jpg" alt="image Header call to action success modal" />
+    <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-header-cta__modal-success.jpg?progressive=true&png.optimize=true" alt="image Header call to action success modal" />
     <figcaption class="mt-half center">
       <small>Header call to action success modal</small>
     </figcaption>
@@ -106,7 +105,7 @@ Mapping out entry points and making them cohesive and contextually relevant was 
 Once a person works through the actual signup we prompt them to go through our "mini-store" experience to start customizing their new app. Ultimately the mini-store shipped as an MVP. After our Beta, it was clear it needed some updating. We needed a clear affordance to make the process more transparent. We tried a few different iterations of this and the one we landed on was a 3 part status indicator at the top of the page that's purpose was to give people a sense of place and a feeling of completion as they signed up.
 
 <figure class="container__image container__break ">
-  <img src="/assets/images/rm-store.png" alt="image After signing up, you’re invited to customize your app - which is released to the app store after your subscription is confirmed through our signup UI." />
+  <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-store.png?progressive=true&png.optimize=true" alt="image After signing up, you’re invited to customize your app - which is released to the app store after your subscription is confirmed through our signup UI." />
   <figcaption class="mt-half center mb-1">
     <small>After signing up, you’re invited to customize your app - which is released to the  app store after your subscription is confirmed through our signup UI.</small>
   </figcaption>
@@ -122,14 +121,14 @@ One of the problems we wanted to tackle was reworking our social sharing workflo
 
 <div class="container__images mb-1">
   <figure class="container__image">
-    <img src="/assets/images/rm-wireframe.jpg" alt="Mobile Sharing sketch 1" />
+    <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-wireframe.jpg?progressive=true&png.optimize=true" alt="Mobile Sharing sketch 1" />
     <figcaption class="mt-half center">
       <small>Mobile Sharing sketch 1</small>
     </figcaption>
   </figure>
 
   <figure class="container__image">
-    <img src="/assets/images/rm-wireframe--2.jpg" alt="Mobile Sharing sketch 2" />
+    <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-wireframe--2.jpg?progressive=true&png.optimize=true" alt="Mobile Sharing sketch 2" />
     <figcaption class="mt-half center">
       <small>Mobile Sharing sketch 2</small>
     </figcaption>
@@ -139,7 +138,7 @@ One of the problems we wanted to tackle was reworking our social sharing workflo
 The person would need to select their social media platforms, write a main post and agree every time the post went to a new social outlet. The final screen is the success screen, the screen below is the “Would you like to send another update?” dialogue. This was a really complex workflow, but was the reality of sharing as we understood it at the time. From there we thought a lot about the interaction. The next social media post sliding up from the bottom for example. we started fleshing this out a little more to hand off to engineering for some prototyping.
 
 <figure class="container__image container__break mb-1">
-  <img src="/assets/images/rm-social-sharing.jpg" alt="Social sharing comp" />
+  <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-social-sharing.jpg?progressive=true&png.optimize=true" alt="Social sharing comp" />
   <figcaption class="mt-half center">
     <small>A UI comp for Social sharing</small>
   </figcaption>
@@ -152,7 +151,7 @@ During the course of my time at RaiseMore there was one feature I coveted more t
 Our first step was to define some types of messages that might be sent. Warning Alerts, Coaching, Reminders, Data Points. The possibilities of message types are nearly endless. We went through a few different types of message and thought about how it might look and feel. starting with the icons it might use.
 
 <figure class="container__image mb-1">
-  <img src="/assets/images/rm-messaging-assets.png" alt="Mobile Sharing sketch 2" alt="a picture of raisemore messaging icons" />
+  <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-messaging-assets.png?progressive=true&png.optimize=true" alt="Mobile Sharing sketch 2" alt="a picture of raisemore messaging icons" />
   <figcaption class="mt-half center">
     <small>raisemore messaging icons</small>
   </figcaption>
@@ -162,7 +161,7 @@ There was an initial idea that floated around of using photos uploaded to the ap
 
 <div class="mb-1">
   <figure class="container__image container__image--small">
-    <img src="/assets/images/rm-ask-comp.png" alt="Mobile Sharing sketch 2" alt="a picture of an early alert comp" />
+    <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-ask-comp.png?progressive=true&png.optimize=true" alt="Mobile Sharing sketch 2" alt="a picture of an early alert comp" />
     <figcaption class="mt-half center">
       <small>initial concept for the alert</small>
     </figcaption>
@@ -172,7 +171,7 @@ There was an initial idea that floated around of using photos uploaded to the ap
 The implementation was more challenging than we were ready to take on at such an early stage. We opted to work with the icons and an integrated color-field that might be slightly different depending on the colors chosen in the app building process.
 
 <figure class="container__image container__break ">
-  <img src="/assets/images/rm-messaging-examples.png" alt="initial concept for the alert" />
+  <img class="no-shadow" src="https://ktportfolio.sirv.com/Images/rm-messaging-examples.png?progressive=true&png.optimize=true" alt="initial concept for the alert" />
   <figcaption class="mt-half center mb-1">
     <small>initial concept for the alert</small>
   </figcaption>
@@ -180,5 +179,5 @@ The implementation was more challenging than we were ready to take on at such an
 
 This feature ended up being mostly aspirational because of some engineering limitations with the Ionic Framework at the time but was a fun excercise in thinking about our products' evolutions over time.
 
-[![RaiseMore Product Walkthrough with CEO, CTO and Lead Engineer and some shots from our beta testing summit. ](/assets/images/rm-cover-img.png)](https://vimeo.com/200031428)
+[![RaiseMore Product Walkthrough with CEO, CTO and Lead Engineer and some shots from our beta testing summit. ](https://ktportfolio.sirv.com/Images/rm-cover-img.png?progressive=true&png.optimize=true)](https://vimeo.com/200031428)
 #### Click above to watch a RaiseMore Product Walkthrough with CEO, CTO and Lead Engineer and some shots from our beta testing summit.

@@ -3,7 +3,6 @@
   grid-template-columns: 1fr;
   margin: 0 0 2em;
   max-height: 800px;
-  padding: 1em;
   transition: $trans--long-out;
 
   &:hover {
@@ -14,36 +13,39 @@
 
   @include breakpoint(medium) {
     grid-template-columns: 2fr 3fr;
-    margin-bottom: 6em;
-    padding: 2em;
+    margin-bottom: 4em;
+    padding: 3.5em 3em;
   }
 
   @include breakpoint(large) {
     padding: 4em;
+    margin-bottom: 4em;
   }
 
   &__content {
-    background: rgba(255, 255, 255, 0.78);
+    background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 1px 6px rgba(155, 155, 155, 0.6);
-    border-radius: 3px;
     align-self: center;
-    padding: 1.25em;
     text-align: center;
+    padding: 1.5em 1em;
 
     @include breakpoint(medium) {
       padding: 1.5em;
       text-align: left;
-      background: rgba(255, 255, 255, 0.97);
     }
 
-    @include breakpoint(large) {
-      padding: 2em;
-    }
+    // @include breakpoint(large) {
+    //   padding: 1.5em 1.25em;
+    // }
+  }
+
+  &__kicker {
+    font-weight: 400;
   }
 
   &__title {
     font-family: $sans-stack;
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin: 0 0 0.25em;
     font-weight: 800;
     letter-spacing: 0.5px;

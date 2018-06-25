@@ -1,9 +1,8 @@
 .PersonalSummary {
   display: grid;
   align-items: center;
-  font-size: 1em;
   font-family: $sans-stack;
-  height: 70vh;
+  height: 57vh;
 
   @include breakpoint(medium) {
     height: 40vh;
