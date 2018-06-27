@@ -6,13 +6,14 @@
 }
 
 .ContentArea {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 
   .at,
   .rm,
   .m {
     height: 50vh;
+    width: 100%;
+    max-width: 1600px;
 
     @include breakpoint(medium) {
       margin-top: 3.5em;
@@ -21,6 +22,7 @@
 
   &__main {
     color: $color--darker-gray;
+    
     li {
       margin-bottom: 0.5em;
       font-size: 18px;
@@ -53,7 +55,10 @@
       margin: 1rem 0 0;
       font-size: 1.25em;
       font-weight: lighter;
-      
+    }
+
+    figure {
+      margin: 0 0 2em 0;
     }
 
     img {
