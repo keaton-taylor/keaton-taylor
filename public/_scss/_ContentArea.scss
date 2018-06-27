@@ -13,7 +13,7 @@
   .m {
     height: 50vh;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1440px;
 
     @include breakpoint(medium) {
       margin-top: 3.5em;
@@ -22,7 +22,7 @@
 
   &__main {
     color: $color--darker-gray;
-    
+
     li {
       margin-bottom: 0.5em;
       font-size: 18px;
