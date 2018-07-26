@@ -1,40 +1,24 @@
   {% include head.html %}
-    {% include SiteHeader.html %}
-    <section class="container__large">
-      <div class="PersonalSummary">
-        <h2 class="fade-in">I work with cross-functional teams to make awesome digital products. Currently: Product Designer at Apartment Therapy. Remote. Px. Husband. Dad. Human Jungle Gym. Houston Rockets Lifer.</h2>
-      </div>
-    </section>
+    {% include SiteHeaderHome.html %}
 
-    <section class="container__large">
-      <div class="WayFinder mb-1 mt-0 p-0">
-        <h3 class="WayFinder__headline m-0">Work</h3>
-        <div class="WayFinder__icon">{% include icon--down.svg%}</div>
-      </div>
-    </section>
-
-    <section class="container__large">
-      <div class="TeaserComponent">
-        <div class="TeaserComponent__teasers ">
+    <section class="container__small">
+      <div class="Teaser">
 
           {% for post in site.categories.case_study limit:6 %}
-            <a class="mb-3" href="{{ post.url }}">
-              <article class="Teaser {{ post.class }}">
-                <div class="Teaser__image" >
-                </div>
+            <a href="{{ post.url }}">
+              <article class="Teaser__wrap">
+                <div class="Teaser__image {{ post.class }}" ></div>
                 <div class="Teaser__content">
                   <small class="Teaser__kicker">{{ post.series }}</small>
                   <h3 class="Teaser__title"> {{ post.title }} </h3>
-                  <p class="Teaser__summary mt-half m-0"> {{ post.excerpt }}</p>
+                  <!-- <p class="Teaser__summary mt-half m-0"> {{ post.excerpt }}</p> -->
                 </div>
               </article>
             </a>
           {% endfor %}
 
-        </div>
       </div>
     </section>
-  </section>
 
 
     {% include footer.html %}

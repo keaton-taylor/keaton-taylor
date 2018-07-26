@@ -257,6 +257,17 @@ $trans--short-out: all 200ms ease-in-out;
   background-size: cover;
 }
 
+.w {
+  background: url("https://ktportfolio-cdn.sirv.com/Images/batteryoutfitters.png?progressive=true&png.optimize=true") no-repeat center center;
+  background-size: cover;
+}
+
 .r {
-  @include gradient;
+  background: url("https://ktportfolio-cdn.sirv.com/Images/FOA.png?progressive=true&png.optimize=true") no-repeat center center;
+  background-size: cover;
+}
+
+.d {
+  background: url("https://ktportfolio.sirv.com/Images/Sign%20in%20Email.png?profile=portfolio") no-repeat center center;
+  background-size: cover;
 }

@@ -3,6 +3,7 @@
   color: $color--darkest-gray;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 24px;
+  font-weight: 600;
 }
 
 .ContentArea {
@@ -10,10 +11,13 @@
 
   .at,
   .rm,
-  .m {
+  .m
+  .w
+  .d {
     height: 50vh;
-    width: 100%;
+    width: 100vw;
     max-width: 1440px;
+    padding: 0;
 
     @include breakpoint(medium) {
       margin-top: 3.5em;
@@ -25,40 +29,36 @@
 
     li {
       margin-bottom: 0.5em;
-      font-size: 18px;
 
       & > ul {
         padding-top: 0.5em;
       }
     }
+
     p {
       font-family: $sans-stack;
       margin-top: 0;
-      font-size: 18px;
 
       & + ul {
         margin-top: -0.5em;
         margin-bottom: 0;
         padding: 0 0 0 1.5em;
         font-family: $sans-stack;
-        font-size: 18px;
       }
     }
 
     h3 {
       margin: 1em 0 0.25em;
-      font-size: 1.5em;
       color: $color--darkest-gray;
     }
 
     h4 {
       margin: 1rem 0 0;
-      font-size: 1.25em;
       font-weight: lighter;
     }
 
     figure {
-      margin: 0 0 2em 0;
+      margin: 1em 0 3em 0;
     }
 
     img {
@@ -94,16 +94,25 @@
     &-item {
 
       h4 {
-        font-size: 14px;
         font-weight: 700;
         margin-bottom: 0;
         padding-bottom: 0.25em;
+        font-size: 0.8em
       }
 
       p {
         margin-top: 0.25em;
-        font-size: 12px;
+        font-size: 0.8em;
+        font-weight: 400;
       }
     }
+  }
+
+  &__grid {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2em;
   }
 }

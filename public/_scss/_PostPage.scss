@@ -16,12 +16,6 @@
     font-family: $sans-stack;
   }
 
-  .ContentHeadline {
-    @include breakpoint(large) {
-      font-size: 4em;
-    }
-  }
-
   .ContentArea {
     grid-template-columns: 1fr;
   }

@@ -1,30 +1,36 @@
 .Teaser {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0 0 2em;
-  max-height: 800px;
-  transition: $trans--long-out;
-
-  &:hover {
-    filter: hue-rotate(-35deg);
-    transform: scale(1.01);
-    transition: $trans--short-in;
-  }
+  grid-gap: 1.5em;
 
   @include breakpoint(medium) {
-    grid-template-columns: 2fr 3fr;
-    margin-bottom: 4em;
-    padding: 3.5em 3em;
+    text-align: left;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
   }
 
-  @include breakpoint(large) {
-    padding: 4em;
-    margin-bottom: 4em;
+  &__wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    max-height: 800px;
+    transition: $trans--long-out;
+    border: 1px solid $color--lighter-gray;
+
+    &:hover {
+      filter: hue-rotate(-22.5deg);
+      transform: scale(1.01);
+      transition: $trans--short-in;
+    }
+
+    @include breakpoint(medium) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr;
+    }
   }
 
   &__content {
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 1px 6px rgba(155, 155, 155, 0.6);
+    background: rgba(255, 255, 255, 1);
     align-self: center;
     text-align: center;
     padding: 1.5em 1em;
@@ -45,24 +51,10 @@
 
   &__title {
     font-family: $sans-stack;
-    font-size: 1.5em;
     margin: 0 0 0.25em;
     font-weight: 800;
     letter-spacing: 0.5px;
     color: $color--darker-gray;
-
-    @include breakpoint(medium) {
-      font-size: 1.75em;
-      line-height: 1.2;
-    }
-
-    @include breakpoint(xlarge) {
-      font-size: 2.25em;
-    }
-
-    @include breakpoint(xxlarge) {
-      font-size: 2.5em;
-    }
   }
 
   &__summary {
@@ -72,11 +64,51 @@
     color: $color--dark-gray;
 
     @include breakpoint(large) {
-      font-size: 1em;
       font-weight: 400;
       display: block;
       transition: all 0ms ease-in-out;
       filter: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    @include breakpoint(medium) {
+      &:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+
+        .Teaser__content {
+          text-align: center;
+        }
+      }
+
+      &:nth-child(6) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 4;
+
+        .Teaser__content {
+          text-align: center;
+        }
+      }
+    }
+
+    @include breakpoint(large) {
+      .ContentComponent__article-title {
+        transition: $trans--long-in;
+      }
+
+      &:hover {
+        .ContentComponent__article-title {
+          transition: $trans--short-out;
+          color: darken($color--blue, 10%);
+        }
+      }
     }
   }
 }

@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  font-size: 1.75em;
   font-weight: 400;
   align-self: center;
   width: 100%;
@@ -13,7 +12,6 @@
   color: $color--dark-gray;
 
   &__headline {
-    font-size: 0.75em;
     text-transform: uppercase;
     font-weight: 400;
   }

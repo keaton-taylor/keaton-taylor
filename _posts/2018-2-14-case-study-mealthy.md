@@ -1,8 +1,8 @@
 ---
 layout: work
-date:   2017-09-03 16:16:01 -0600
+date:   2017-09-12 16:16:01 -0600
 category: case_study
-title: "Mealthy: Apps and Tools for Home Cooks"
+title: "Mealthy: Apps and Tools for Discerning Home Cooks"
 excerpt: "My time at Mealthy was interesting and challenging. Preemptively building a digital platform to coincide with physical product releases is a very meaty problem set. I'm going to highlight a few specific parts of my 8 months working with the team. I had the opportunity to be an early contract hire which allowed me to grow and lead a very talented team as the organization scaled up."
 role: Product Designer
 year: 2017

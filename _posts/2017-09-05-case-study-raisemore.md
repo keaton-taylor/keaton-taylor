@@ -1,6 +1,6 @@
 ---
 layout: work
-date:   2017-09-03 16:16:01 -0600
+date:   2017-09-12 16:16:01 -0600
 category: case_study
 title: "RaiseMore: Fundraising for the 21st Century"
 excerpt: "In the Summer of 2015 I joined the team at RaiseMore, a social fundraising platform based in Oklahoma City. RaiseMore used teamwork and social interactions to maximize fundraising efforts and used aggregate data to help predict fundraising trends and success patterns. We worked on many exciting projects like Dashboards, an automated app building marketplace and in-app coaching for fundraising teams. RaiseMore was my first taste of iterative product design and changed my professional trajectory forever. "
