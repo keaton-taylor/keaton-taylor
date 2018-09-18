@@ -11,8 +11,8 @@
 
   .at,
   .rm,
-  .m
-  .w
+  .m,
+  .w,
   .d {
     height: 50vh;
     width: 100vw;
@@ -76,7 +76,7 @@
 
   &__data {
     display: grid;
-    grid-template-columns: max-content max-content max-content;
+    grid-template-columns: max-content 100px max-content;
     grid-gap: 1em;
     border-bottom: 3px solid $color--dark-gray;
     max-width: 100%;
