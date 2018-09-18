@@ -15,6 +15,7 @@ body {
     &__xsmall {
       max-width: 46.25em;
       margin: 0 auto;
+      padding: 0 1em;
 
       @include breakpoint(medium) {
         padding: 0;
@@ -59,6 +60,10 @@ body {
     &__full {
       max-width: 100%;
       padding: 0 1em 0;
+
+      @include breakpoint(medium) {
+        padding: 0;
+      }
     }
 
     &__images {
