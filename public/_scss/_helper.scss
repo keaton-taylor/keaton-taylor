@@ -245,15 +245,23 @@ $trans--short-out: all 200ms ease-in-out;
 .show--large {
   display: none;
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     display: grid;
   }
 }
 
 .show--small {
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     display: none;
+  }
+}
+
+.show--medium {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: grid;
   }
 }
 
