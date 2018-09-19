@@ -1,4 +1,4 @@
-$sans-stack: "franklin-gothic-urw", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$sans-stack: "franklin-gothic-urw", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 html {font-size: 1.125em;}
 
@@ -20,13 +20,19 @@ a {
   }
 }
 
-p {margin-bottom: 1.3em;}
+p {
+  margin-top: 0;
+  margin-bottom: 1.75em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
-  color: $color--darker-gray;
 }
 
 h1 {
@@ -58,7 +64,7 @@ hr {
 blockquote {
   border-left: 4px solid $color--green;
   font-family: $sans-stack;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-style: italic;
   margin: 1em auto;
   padding-left: 1.25em;

@@ -242,28 +242,51 @@ $trans--short-out: all 200ms ease-in-out;
   border-radius: 100%;
 }
 
+.show--large {
+  display: none;
+
+  @include breakpoint(large) {
+    display: grid;
+  }
+}
+
+.show--small {
+
+  @include breakpoint(large) {
+    display: none;
+  }
+}
+
+.show--medium {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: grid;
+  }
+}
+
 .at {
-  background: url("https://ktportfolio-cdn.sirv.com/Images/at-bg-img2.png?scale.width=1200&png.optimize=true") no-repeat center center;
+  background: url("https://ktportfolio-cdn.sirv.com/Images/at-bg-img2.png?profile=portfolio") no-repeat center center;
   background-size: cover;
 }
 
 .m {
-  background: url("https://ktportfolio-cdn.sirv.com/Images/m-bg-img.png?scale.width=1200&png.optimize=true") no-repeat center center;
+  background: url("https://ktportfolio-cdn.sirv.com/Images/m-bg-img.png?profile=portfolio") no-repeat center center;
   background-size: cover;
 }
 
 .rm {
-  background: url("https://ktportfolio-cdn.sirv.com/Images/rm-bg-img.png?scale.width=1200&png.optimize=true") no-repeat center center;
+  background: url("https://ktportfolio-cdn.sirv.com/Images/rm-bg-img.png?profile=portfolio") no-repeat center center;
   background-size: cover;
 }
 
 .w {
-  background: url("https://ktportfolio-cdn.sirv.com/Images/batteryoutfitters.png?progressive=true&png.optimize=true") no-repeat center center;
+  background: url("https://ktportfolio-cdn.sirv.com/Images/batteryoutfitters.png?profile=portfolio") no-repeat center center;
   background-size: cover;
 }
 
 .r {
-  background: url("https://ktportfolio-cdn.sirv.com/Images/FOA.png?progressive=true&png.optimize=true") no-repeat center center;
+  background: url("https://ktportfolio-cdn.sirv.com/Images/FOA.png?profile=portfolio") no-repeat center center;
   background-size: cover;
 }
 
