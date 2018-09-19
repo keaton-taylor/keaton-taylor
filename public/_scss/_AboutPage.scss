@@ -1,5 +1,6 @@
 .AboutPage {
   padding: 0 1em;
+  margin: 0 auto;
 
   @include breakpoint(medium) {
     display: grid;
