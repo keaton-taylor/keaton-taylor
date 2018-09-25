@@ -23,9 +23,14 @@ $trans--long-out: all 500ms ease-in-out;
 $trans--short-in: all 200ms ease-in;
 $trans--short-out: all 200ms ease-in-out;
 
+$resting-box: 0 4px 6px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+$active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+
 .no-shadow {
   box-shadow: none !important;
 }
+
+
 
 .lg {
   background: $color--light-gray;
@@ -281,8 +286,8 @@ $trans--short-out: all 200ms ease-in-out;
 }
 
 .w {
-  background: url("https://ktportfolio-cdn.sirv.com/Images/batteryoutfitters.png?profile=portfolio") no-repeat center center;
-  background-size: cover;
+  background: #effcff url("https://ktportfolio-cdn.sirv.com/Images/batteryoutfitters.png?profile=portfolio") no-repeat center center;
+  background-size: contain;
 }
 
 .r {

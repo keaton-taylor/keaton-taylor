@@ -29,9 +29,13 @@
     max-width: 100%;
     justify-content: center;
 
+    @include breakpoint(medium) {
+      max-width: 30%;
+      justify-content: left;
+    }
+
     @include breakpoint(large) {
       max-width: 40%;
-      justify-content: left;
     }
   }
 
@@ -45,10 +49,9 @@
     align-items: center;
     margin-bottom: 2em;
 
-
     @include breakpoint(medium) {
       grid-template-columns: max-content max-content max-content max-content max-content max-content max-content;
-      grid-gap: 1em;
+      grid-gap: 2em;
     }
     @include breakpoint(large) {
       grid-gap: 2em;
@@ -89,6 +92,11 @@
       @include breakpoint(medium) {
         font-size: 1.953em;
       }
+
+      @include breakpoint(large) {
+        font-size: 2.253em;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -97,12 +105,6 @@
 
     @include breakpoint(medium) {
       display: initial;
-
-      // img {
-      //   box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
-      //   -webkit-box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
-      //   -moz-box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
-      // }
     }
   }
 

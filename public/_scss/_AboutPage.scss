@@ -87,7 +87,7 @@
     @include breakpoint(medium) {
       grid-row: 6 / span 3;
       grid-column: 6 / span 3;
-      box-shadow: 4px 1px 12px 0 rgba(0, 0, 0, 0.18);
+      box-shadow: $resting-box;
     }
 
     @include breakpoint(large) {
@@ -157,7 +157,7 @@
     @include breakpoint(medium) {
       grid-row: 13 / span 3;
       grid-column: 6 / span 4;
-      box-shadow: 4px 1px 12px 0 rgba(0, 0, 0, 0.18);
+      box-shadow: $resting-box;
       margin: 0;
       padding: 1em;
     }
