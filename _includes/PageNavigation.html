@@ -1,13 +1,13 @@
 
-  <section class="container__small PageNavigation">
+  <section class="container__xsmall PageNavigation">
     {% unless page.category == null %}
       {% capture case_study %}{{ page.category }}{% endcapture %}
       {% unless site.categories[pageCategory].size == 1 %}
         <div class="RelatedPosts__wrap">
-        <h3>More of My Work</h3>
-          {% for post in site.categories[case_study] limit:4 %}
+        <h4>More of My Work</h4>
+          {% for post in site.categories[case_study] limit:5 %}
             {% unless post.title == page.title %}
-             <h3><a onClick="gtag('event', 'Click', { event_category: 'InternalRecirc', event_action: 'RelatedArticle' });" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+             <p><a onClick="gtag('event', 'Click', { event_category: 'InternalRecirc', event_action: 'RelatedArticle' });" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></hp>
             {% endunless %}
           {% endfor %}
         </div>
