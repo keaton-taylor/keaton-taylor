@@ -41,7 +41,7 @@
 
     @include breakpoint(medium) {
       grid-row: 2 / span 2;
-      grid-column: 2 / span 7.1;
+      grid-column: 2 / span 7;
     }
 
     @include breakpoint(large) {
@@ -150,7 +150,7 @@
   }
 
   &__summary-cv {
-    background-color: lighten($color--green, 35%);
+    background-color: lighten($color--green, 25%);
     padding: 1em;
     margin-bottom: 1.75em;
 
@@ -245,7 +245,7 @@
 
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 1em;
+      grid-gap: 2em;
     }
 
     @include breakpoint(large) {
@@ -255,7 +255,11 @@
 
     &-item {
       margin-bottom: 1em;
-      height: 130px;
+      max-height: 130px;
+
+      @include breakpoint(medium) {
+        height: 130px;
+      }
 
       p {
         font-weight: 600;
@@ -268,32 +272,32 @@
     }
   }
 
-    &__square-3 {
-      @include breakpoint(medium) {
-        grid-row: 16 / span 3;
-        grid-column: 2 / span 3;
-        background-color: lighten($color--blue, 25%);
-        z-index: -202;
-        min-height: 11em;
-        margin-left: -2em;
-        margin-top: -2em;
-      }
-    }
-
-    &__square-4 {
-      @include breakpoint(medium) {
-        grid-row: 17 / span 5;
-        grid-column: 7 / span 2;
-        background-color: lighten($color--green, 45%);
-        z-index: -205;
-        min-height: 10em;
-      }
-      @include breakpoint(large) {
-        grid-row: 17 / span 5;
-        grid-column: 9 / span 2;
-        background-color: lighten($color--green, 45%);
-        z-index: -205;
-        min-height: 10em;
-      }
+  &__square-3 {
+    @include breakpoint(medium) {
+      grid-row: 16 / span 3;
+      grid-column: 2 / span 3;
+      background-color: lighten($color--blue, 25%);
+      z-index: -202;
+      min-height: 11em;
+      margin-left: -2em;
+      margin-top: -2em;
     }
   }
+
+  &__square-4 {
+    @include breakpoint(medium) {
+      grid-row: 17 / span 5;
+      grid-column: 7 / span 2;
+      background-color: lighten($color--green, 45%);
+      z-index: -205;
+      min-height: 10em;
+    }
+    @include breakpoint(large) {
+      grid-row: 17 / span 5;
+      grid-column: 9 / span 2;
+      background-color: lighten($color--green, 45%);
+      z-index: -205;
+      min-height: 10em;
+    }
+  }
+}
