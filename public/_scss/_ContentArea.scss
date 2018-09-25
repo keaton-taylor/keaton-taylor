@@ -4,6 +4,10 @@
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   margin-bottom: 24px;
   font-weight: 600;
+
+  @include breakpoint(large) {
+    font-size: 3.5em;
+  }
 }
 
 .ContentArea {
@@ -11,8 +15,8 @@
 
   .at,
   .rm,
-  .m
-  .w
+  .m,
+  .w,
   .d {
     height: 50vh;
     width: 100vw;
@@ -76,15 +80,20 @@
 
   &__data {
     display: grid;
-    grid-template-columns: max-content max-content max-content;
+    grid-template-columns: max-content 100px max-content;
     grid-gap: 1em;
     border-bottom: 3px solid $color--dark-gray;
     max-width: 100%;
     margin: 1em 0 1em;
 
     @include breakpoint(375px) {
-      max-width: 85vw;
+      max-width: 65vw;
       grid-gap: 2em;
+      padding-bottom: 1.5em
+    }
+
+    @include breakpoint(medium) {
+      grid-template-columns: max-content 140px max-content;
     }
 
     @include breakpoint(large) {

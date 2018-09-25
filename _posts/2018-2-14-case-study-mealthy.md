@@ -3,46 +3,90 @@ layout: work
 date:   2017-09-12 16:16:01 -0600
 category: case_study
 title: "Mealthy: Apps and Tools for Discerning Home Cooks"
-excerpt: "My time at Mealthy was interesting and challenging. Preemptively building a digital platform to coincide with physical product releases is a very meaty problem set. I'm going to highlight a few specific parts of my 8 months working with the team. I had the opportunity to be an early contract hire which allowed me to grow and lead a very talented team as the organization scaled up."
-role: Product Designer
+excerpt: "In February of 2017 I joined an early stage startup called Mealthy. I worked with the CEO to hire and lead a product team that included Myself, three product designers and two engineers. We set out to build a people focused digital product and appliance company with editorial and business partners with roots in companies like Allrecipes and Buzzfeed Tasty. Over the course of 8 months we would grow the engineering team, transition one of our engieers to a CTO role, and launch full featured web products on web and native platforms."
+role: Lead Product Designer
 year: 2017
-platform: Web, Mobile, Physical
+platform: Web, Mobile
+URL: www.mealthy.com
 series: CASE STUDY
 class: m
 ---
+### A Brief Introduction
+Mealthy Recipes is an early stage startup building digital products and appliances to make the lives of home cooks a little bit easier. Along with a website and native mobile apps, it’s become a highly engaged multi-platform online community.
 
-### The Challenges
-I was the first person on board for this project. That in and of itself is definitely a challenge. Seeing a product through from ground floor vision to launch is an exhilarating and often stressful responsibility. Hiring, making recommendations for best-practices and having hard conversations with other designers were all very challenging to me. Being another recipe site was a challenge at first. We embraced our ability to overcome that saturation with physical products and things have been humming for the team at Mealthy. I'm very proud of the work we did and they continue to do.
+As the Lead Product Designer for Mealthy, I led and grew the product design team. I was involved in the high-level strategy as well as the implementation of every feature in the products through the V1 launch. My design and engineering contributions directly influence the ongoing growth and success of this company - and that’s pretty cool.
 
-### Starting from Scratch
-As the first contractor for Mealthy I was able to help the CEO define systems and processes to create a product-focused culture. Being the first and only designer for a while meant we were working through a lot of bad ideas. I worked with the CEO to bring in the first engineering contractors to work with the editorial team. We tackled a lot of the crazy early stage work - like branding, defining a basic visual system and helping build and evolve a brand bible.
+### What Problems Were We Solving?
+Designing a recipe product in an already well-saturated market was not the easiest or most groundbreaking project I’ve ever worked on - but Mealthy felt really special. As anyone who has worked on recipe platforms can tell you - the traffic is, by its very nature - transient. Other recipe brands have long focused on broken media models demanding and monetizing the user’s attention and trading off privacy and security. I did not want to fall into that trap.
 
-  <figure class="container__image container__break no-shadow">
-    <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/mealthy-beginning.png?progressive=true&png.optimize=true" alt="A collage of bad ideas" />
-    <figcaption class="mt-half center mb-1">
-      <small>Work through the bad to get to the better</small>
-    </figcaption>
-  </figure>
+Our team wanted to build a first-of-its-kind, community-driven recipe product. A platform for home cooks that offered support, suggestions, and feedback without the trade-offs. To steer away from advertising and data revenue, to focus on the experience. Combining this online community with a repository of healthy recipes and the best tools out there to execute on them.
 
 ### Beginning with Data
-Coming into working with our CEO I was adamant that we have a company mandate to be - at the very least - data informed. He agreed to set aside budget and allow us to set aside time for the collection and use of both qualitative and quantitative data. I wanted to make sure we had a clear picture of what was happening on our platform. Our CEO went one step further and hired a Business Intelligence and Customer Experience Analyst. Having a dedicated team member to run guided usability tests on mock ups and staging servers for our site and app was an immediate game changer. We were able to use that data and some of her recommendations to iterate early-on and avoid potential experience challenges. As we launched the the early versions of the site and app her ability to tie qualitative and quantitative data analysis to features we were building was invaluable.
+From the start, I was adamant that we have a company mandate to be - at the very least - data informed. Our CEO agreed to set aside budget and time to allow us to collect and use both qualitative and quantitative data. I wanted to make sure we had a clear picture of what was happening on our platform. Our CEO went one step further and hired a Business Intelligence and Customer Experience Analyst. Having a dedicated team member to run guided usability tests on prototypes and staging servers for our products was an immediate game changer. We were able to use that data and some of her recommendations to iterate early-on and avoid potential experience pitfalls.
 
-<figure class="container__image container__break no-shadow">
-  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/m-savedrecipes.png?progressive=true&png.optimize=true" alt="2 cell phones showing the saved recipe button on one and the actual saved recipes screen on the other" />
+Early on we started compiling competitive analyses to understand the landscape of recipe products on the market. Luckily our teams at Mealthy included some former employees from organizations like AllRecipes and Buzzfeed Tasty. We were able to capture anecdotal data from them on user demographics, social media consumption patterns and best practices from more established brands. Based on experiences from multiple platforms we had a good idea as to what our target audience probably looked like:
+
+- 30 - 40 years old
+- Mostly females (~70/30 split)
+- Household Income ~$100k per year
+- College Educated (at least some college in most cases)
+- Health conscious and digitally savvy
+
+As time went on we found we were more or less spot-on with our expected demographic with some variants that we didn't account for - people who like kitchen gadgets, gift recipients, meal-prep enthusiasts, and more generally transient traffic.
+
+### The Work
+Soon after getting rolling I recruited and hired my favorite front-end engineer. Ryan applied his years of startup experience to help the CEO and me define and scope MVP and V1 feature sets and sort them into epics. We used those epics and feature lists to start sketching out wireframes for some of the high exposure features like the Recipe Detail, Profiles and Saved Recipes. With some of the demographic and messaging guidelines planned out we began working with a brand designer to help flesh out our logo and some other visual branding guidelines.
+
+<figure class="container__image container__break">
+  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/m-early-branding.png?profile=portfolio" alt="the progression of the recipe page over several months" />
   <figcaption class="mt-half center mb-1">
-    <small>Saved Recipes were a tier 1 feature.</small>
+    <small>Early branding concepts before we landed on the work from J.D. Reeves</small>
   </figcaption>
 </figure>
 
-### Empowering People
-Mealthy products are built around the joy of eating well and sharing it with others. We hoped that sense of community was carried through the products and digital experiences. Working with Business intelligence we did some competitive analysis to see what kind of saving experiences others were using. While some other recipe products at the time had saving there were limitations. Caps on how many items can be saved, a bad UI for those saved recipes and sometimes the saving function flat out didn't work. Knowing those things we set out to build V1 of the best recipe-saving feature on the internet. The business impact of our work on the recipe box section were felt immediately. People were coming back repeatedly to save, share and rate recipes. Engagement on the platform increased quickly and was incredibly helpful in pushing sales of physical products.
+Working with CX, we tested those early wireframes to try to validate some of our assumptions. We did this using Usertesting.com and by doing some simple testing with friends and family members. We ran competitive user tests pitting our wireframes and ideas directly against our eventual competitors. We were very diligent in using real content and recipes to flesh out our wireframes. This gave us the ability to alleviate some of the guesswork as we stubbed out the front and back end engineering specs. Ryan was writing all of the Elixir and React and I was working heavily in markup and scss.
 
 <figure class="container__image container__break">
-  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/mealthy-recipe.png?progressive=true&png.optimize=true" alt="the progression of the recipe page over several months" />
+  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/m-wireframes.png?profile=portfolio" alt="the progression of the recipe page over several months" />
   <figcaption class="mt-half center mb-1">
     <small>The progression of the recipe page over several months and transitioning team members.</small>
   </figcaption>
 </figure>
 
-### Leading and Growing a Team
-As our team grew, I found myself taking on more and more responsibility. I continued contributing day to day as designer but more and more I was defining design and front-end coding processes, having 1:1's and reporting back to the CEO. I was overseeing these kinds of high level details right up to the point that we hired dedicated UX designers to work directly with the CTO and our Business Intelligence Researcher.
+Within a month or so it became more and more clear that - as Ryan and I split our time between design, strategy, and implementation - we needed help. I recruited another senior-level engineer that Ryan and I had worked with before and we brought in our first design hire - a former designer with AllRecipes. Being the de-facto design lead, I began taking on more and more responsibility. I continued contributing day to day as a designer but was defining processes, having 1:1’s and reporting back to the CEO.
+
+<figure class="container__image container__break">
+  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/mealthy-recipe.png?profile=portfolio" alt="the progression of the recipe page over several months" />
+  <figcaption class="mt-half center mb-1">
+    <small>The progression of the recipe page over several months and transitioning team members.</small>
+  </figcaption>
+</figure>
+
+Around this time we were also talking with the amazing folks at Treble Apps about transitioning our general web presence to native apps. We were incredibly lucky to have one of their designers - Diana - come on board part-time to help speed up our product design workflow. Our recently hired Senior Engineer - John - transitioned into a CTO role. Not long after, He and I worked with the CEO to bring in another designer - Tim. Tim dove right in, taking a huge load off my shoulders implementing designs that had been approved and were bottlenecking on the front-end. At this point we, unfortunately, ended up having to let one of our designers go. It was heartbreaking. Regardless of what his skillset was and how it matched with the company, it is never easy to make the decision to let someone go.
+
+<figure class="container__image container__break no-shadow">
+  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/m-savedrecipes.png?profile=portfolio" alt="2 cell phones showing the saved recipe button on one and the actual saved recipes screen on the other" />
+  <figcaption class="mt-half center mb-1">
+    <small>Saved Recipes</small>
+  </figcaption>
+</figure>
+
+As we got through beta release and approaching the finish line on our V1 feature sets, I was starting to feel burnt out. 60 to 80 Hour weeks over the last few months had caught up with me. Balancing my contribution and leadership responsibilities with Mealthy and the responsibilities of my “Day Job,” had become untenable. Our CTO’s incredible leadership and the addition of a couple more engineers had alleviated any bottlenecking in feature production and release cycles. With Tim and Diana taking on the bulk of the day to day design work, I was able to start to transition myself out. After 8 months of working on Mealthy, I took a step back to transition to being a consultant and set of fresh eyes for the design and engineering teams when needed.
+
+### What I learned
+Once upon a time I was in retail store management and before that I was a QA manager at a telemarketing company. I’ve been in positions of relative influence in the past but not in organizations built around collaborative work. During this time I was reading books like _Leaders Eat Last_, _Crucial Conversations_ and _The Hard Thing About Hard Things_. A lot of the lessons I was learning centered around working with people in a position of institutional influence. One of the things I encouraged all of our team members to do was to work cross-functionally so that decisions could be made closer to the problems. We purposefully hired designers that could code and engineers with opinions on UX for this reason. Working on something this early-stage also re-enforced the power of working quickly and iteratively and revealed very plainly the dangers of working that way without definitive plans and roadmaps.
+
+### What would I do differently?
+I am a loud voice on any team. I’m passionate and confident and willing to be wrong. to that end I think that when I left Mealthy I did so in a fashion that - despite my best efforts - did not set the designers on the team up for success in the ways that I could have. There was a vacuum left in the power structure that felt like it pushed some aspects of design and UX away from the forefront of the conversations.
+
+<figure class="container__image container__break">
+  <img src="https://ktportfolio-cdn.sirv.com/Images/m-home-web.png?profile=portfolio" alt="Mealthy.com" />
+  <figcaption class="mt-half center mb-1">
+    <small>Mealthy.com - a web platform built on Elixir, React.js and love.</small>
+  </figcaption>
+</figure>
+
+While I mention above the importance of cross-functional team members and their efforts being an important part of the success of the products, I would be remiss if I didn't mention the strain that structure put on our design team. After the fact, I had one of the designers on my team mention to me that we wasn’t sure he *really* did much design work at all on Mealthy. He spent all his time implementing designs and iterating them on the fly. I think this is fine sometimes in small pods or squad models. When this is the reality of team members for long periods of time it can become a problem. Over-use of one set of skills in a person tends to deplete the tank on other skills. If we’re going out of our way to hire T-Shaped folks, It stands to reason that we would want to keep them T-shaped in practice and in development. Obviously sometimes we have to make use of those skills to meet deadlines. I really wish we had hired a couple more engineers with Deep T’s into front-end development, so we could put more time into ideating and testing, rather than implementation.
+
+### Wrap Up
+Last time I looked, Mealthy had nearly 340k unique likes on facebook, 340k followers and a bustling online community built around facebook. The Mealthy Multipot is an Amazon Best Seller within a year of release and other products by the company are Amazon Picks. I'm insanely proud of the work I was able to do with the team at Mealthy. Echoes of my early work can be seen on the website, in the app and across the content they create. I look proudly at their ongoing success and look forward to the amazing things they launch in 2019.
