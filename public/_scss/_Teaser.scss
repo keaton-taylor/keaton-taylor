@@ -15,12 +15,14 @@
     grid-template-rows: 2fr 1fr;
     max-height: 800px;
     transition: $trans--long-out;
-    border: 1px solid $color--lighter-gray;
+    border-radius: 3px;
+    box-shadow: $resting-box;
 
     &:hover {
       filter: hue-rotate(-22.5deg);
       transform: scale(1.01);
       transition: $trans--short-in;
+      box-shadow: $active-box
     }
 
     @include breakpoint(medium) {
@@ -40,9 +42,13 @@
       text-align: left;
     }
 
-    // @include breakpoint(large) {
-    //   padding: 1.5em 1.25em;
-    // }
+    @include breakpoint(medium) {
+      min-height: 132px;
+    }
+
+    @include breakpoint(large) {
+      min-height: 99px;
+    }
   }
 
   &__kicker {
