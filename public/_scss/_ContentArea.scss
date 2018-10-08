@@ -62,15 +62,11 @@
     }
 
     figure {
-      margin: 1em 0 3em 0;
+      margin: 1em 0 1em 0;
     }
 
     img {
       margin: 0.5rem 0;
-
-      @include breakpoint(large) {
-        margin: 1rem 0;
-      }
     }
 
     hr {

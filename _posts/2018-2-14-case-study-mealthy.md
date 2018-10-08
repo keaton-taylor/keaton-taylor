@@ -38,7 +38,7 @@ As time went on we found we were more or less spot-on with our expected demograp
 Soon after getting rolling I recruited and hired my favorite front-end engineer. Ryan applied his years of startup experience to help the CEO and me define and scope MVP and V1 feature sets and sort them into epics. We used those epics and feature lists to start sketching out wireframes for some of the high exposure features like the Recipe Detail, Profiles and Saved Recipes. With some of the demographic and messaging guidelines planned out we began working with a brand designer to help flesh out our logo and some other visual branding guidelines.
 
 <figure class="container__image container__break">
-  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/m-early-branding.png?profile=portfolio" alt="the progression of the recipe page over several months" />
+  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/img/m-early-branding.png?profile=portfolio" alt="the progression of the recipe page over several months" />
   <figcaption class="mt-half center mb-1">
     <small>Early branding concepts before we landed on the work from J.D. Reeves</small>
   </figcaption>
@@ -47,7 +47,7 @@ Soon after getting rolling I recruited and hired my favorite front-end engineer.
 Working with CX, we tested those early wireframes to try to validate some of our assumptions. We did this using Usertesting.com and by doing some simple testing with friends and family members. We ran competitive user tests pitting our wireframes and ideas directly against our eventual competitors. We were very diligent in using real content and recipes to flesh out our wireframes. This gave us the ability to alleviate some of the guesswork as we stubbed out the front and back end engineering specs. Ryan was writing all of the Elixir and React and I was working heavily in markup and scss.
 
 <figure class="container__image container__break">
-  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/m-wireframes.png?profile=portfolio" alt="the progression of the recipe page over several months" />
+  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/img/m-wireframes.png?profile=portfolio" alt="the progression of the recipe page over several months" />
   <figcaption class="mt-half center mb-1">
     <small>The progression of the recipe page over several months and transitioning team members.</small>
   </figcaption>
@@ -56,7 +56,7 @@ Working with CX, we tested those early wireframes to try to validate some of our
 Within a month or so it became more and more clear that - as Ryan and I split our time between design, strategy, and implementation - we needed help. I recruited another senior-level engineer that Ryan and I had worked with before and we brought in our first design hire - a former designer with AllRecipes. Being the de-facto design lead, I began taking on more and more responsibility. I continued contributing day to day as a designer but was defining processes, having 1:1’s and reporting back to the CEO.
 
 <figure class="container__image container__break">
-  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/mealthy-recipe.png?profile=portfolio" alt="the progression of the recipe page over several months" />
+  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/img/mealthy-recipe.png?profile=portfolio" alt="the progression of the recipe page over several months" />
   <figcaption class="mt-half center mb-1">
     <small>The progression of the recipe page over several months and transitioning team members.</small>
   </figcaption>
@@ -65,7 +65,7 @@ Within a month or so it became more and more clear that - as Ryan and I split ou
 Around this time we were also talking with the amazing folks at Treble Apps about transitioning our general web presence to native apps. We were incredibly lucky to have one of their designers - Diana - come on board part-time to help speed up our product design workflow. Our recently hired Senior Engineer - John - transitioned into a CTO role. Not long after, He and I worked with the CEO to bring in another designer - Tim. Tim dove right in, taking a huge load off my shoulders implementing designs that had been approved and were bottlenecking on the front-end. At this point we, unfortunately, ended up having to let one of our designers go. It was heartbreaking. Regardless of what his skillset was and how it matched with the company, it is never easy to make the decision to let someone go.
 
 <figure class="container__image container__break no-shadow">
-  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/Images/m-savedrecipes.png?profile=portfolio" alt="2 cell phones showing the saved recipe button on one and the actual saved recipes screen on the other" />
+  <img class="no-shadow" src="https://ktportfolio-cdn.sirv.com/img/m-savedrecipes.png?profile=portfolio" alt="2 cell phones showing the saved recipe button on one and the actual saved recipes screen on the other" />
   <figcaption class="mt-half center mb-1">
     <small>Saved Recipes</small>
   </figcaption>
@@ -80,7 +80,7 @@ Once upon a time I was in retail store management and before that I was a QA man
 I am a loud voice on any team. I’m passionate and confident and willing to be wrong. to that end I think that when I left Mealthy I did so in a fashion that - despite my best efforts - did not set the designers on the team up for success in the ways that I could have. There was a vacuum left in the power structure that felt like it pushed some aspects of design and UX away from the forefront of the conversations.
 
 <figure class="container__image container__break">
-  <img src="https://ktportfolio-cdn.sirv.com/Images/m-home-web.png?profile=portfolio" alt="Mealthy.com" />
+  <img src="https://ktportfolio-cdn.sirv.com/img/m-home-web.png?profile=portfolio" alt="Mealthy.com" />
   <figcaption class="mt-half center mb-1">
     <small>Mealthy.com - a web platform built on Elixir, React.js and love.</small>
   </figcaption>
