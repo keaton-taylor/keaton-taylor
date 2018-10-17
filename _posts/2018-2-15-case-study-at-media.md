@@ -11,7 +11,7 @@ series: CASE STUDY
 URL: www.apartmenttherapy.com
 class: at
 ---
-
+<section markdown="1">
 ### The Challenge, Hypothesis and Goals
 
 **Challenge:** _How can we deliver more personalized content options to our readers?_
@@ -20,13 +20,13 @@ class: at
 
 **Background:** We already used Parse.ly for editorial analytics, so pulling recommendations from their API was a relatively low hurdle. In addition to Parse.ly we planned to test LiftIgniter, a machine learning API for making recommendations. We had already been using Parse.ly for a limited number of users and saw an upward trend in related metrics.
 
-**Editorial Goal:** Deliver better content recommendations on article pages.
+**Editorial Goal:** Deliver better content recommendations on article pages.<br>
 **Metrics:** Time on Site and Pageviews.
 
-**Business Goal:** Raise viewability numbers for advertising impressions.
+**Business Goal:** Raise viewability numbers for advertising impressions.<br>
 **Metrics:** Viewability, Impressions and CTR for ads in DFP.
 
-**User Goals:** Make it easier and more fun to read AT Media properties by making relevant content easier to find.
+**User Goals:** Make it easier and more fun to read AT Media properties by making relevant content easier to find.<br>
 **Metrics:** Social sharing and Unique sessions.
 
 ### The Process
@@ -69,7 +69,7 @@ Out of the gate our cross-functional team came together to define a common-sense
 Lots of other fun and kind of silly possibilities were discussed. We compiled research both on what had worked for us in the past and what other media outlets were doing to make related content more visible. The options kind of ran the gamut or what was possible: text links, teaser rolls, simplified teasers, images, stylized images. It was kind of all over the place. Based on our research and some of the notes we took, I started playing around in Sketch trying to see what some of those ideas might look like.
 
 <figure class="container__image container__break">
-  <img src="https://ktportfolio-cdn.sirv.com/img/at-iam-statements.png?progressive=true&png.optimize=true" alt="concepts for choose your own content adventure." />
+  <img src="https://ktportfolio-cdn.sirv.com/img/at-CYO-Detail.png?progressive=true&png.optimize=true" alt="concepts for choose your own content adventure." />
 
   <figcaption class="mt-half center mb-1">
     <small>Quick Mockups for a Choose Your Own Content Component.</small>
@@ -128,3 +128,4 @@ At the end of 2017 our team continued to be more experimental and take more risk
 </figure>
 
 The Apartment Therapy team continue to test, monitor and iterate to deliver the best possible context-optimized content recommendations.
+</section>

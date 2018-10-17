@@ -191,7 +191,7 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 .container__break {
 
   @include breakpoint(xlarge) {
-    margin: 0 -6em !important;
+    margin: 0 -10em 1em !important;
   }
 }
 
@@ -286,7 +286,7 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .w {
-  background: #effcff url("https://ktportfolio-cdn.sirv.com/img/batteryoutfitters.png") no-repeat center center;
+  background: #f7f7f7 url("https://ktportfolio-cdn.sirv.com/img/batteryoutfitters.png") no-repeat center center;
   background-size: contain;
 }
 
@@ -296,6 +296,6 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .d {
-  background: url("https://ktportfolio.sirv.com/img/Sign%20in%20Email.png") no-repeat center center;
+  background: url("https://ktportfolio.sirv.com/img/daily-ish_ui__9.png") no-repeat center center;
   background-size: cover;
 }

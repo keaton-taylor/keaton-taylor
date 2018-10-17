@@ -1,0 +1,91 @@
+.SeeVee {
+  padding: 2em 1em;
+  margin: 0 auto;
+
+  @include breakpoint(medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 1152px;
+  }
+
+  @include breakpoint(xlarge) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    max-width: 768px;
+  }
+
+  ul {
+    padding: 0 0 0 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 1em;
+    }
+  }
+
+  h3, h4, h5, h6, p {
+    margin: 0;
+  }
+
+  h3 {
+    margin-bottom: 0.25em;
+  }
+
+  @include breakpoint(medium) {
+    &__profile {
+      grid-column: 1 / span 5;
+    }
+
+    &__accomplishments {
+      grid-column: 1 / span 5;
+    }
+
+    &__honors {
+      grid-column: 1 / span 5;
+    }
+
+    &__experience {
+      grid-column: 1 / span 5;
+
+      &-position {
+        margin-bottom: 1em;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(xlarge) {
+    &__profile {
+      grid-column: 1 / span 4;
+    }
+
+    &__accomplishments {
+      grid-column: 1 / span 2;
+      grid-row: 2 / span 2;
+    }
+
+    &__honors {
+      grid-column: 3 / span 2;
+      grid-row: 2 / span 2;
+    }
+
+    &__experience {
+      grid-column: 1 / span 4;
+
+      &-position {
+        margin-bottom: 1em;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+
+}
