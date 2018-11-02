@@ -1,15 +1,11 @@
-.SiteHeaderHome {
-  margin: 0 0 4em;
+.SiteHeaderCV {
+  margin: 0 0 1em;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2em;
   padding-right: 0;
   margin-right: 0;
   overflow: hidden;
-
-  @include breakpoint(large) {
-    grid-template-columns: 75%;
-  }
 
   a {
     text-decoration: none;
@@ -91,6 +87,11 @@
 
       @include breakpoint(medium) {
         font-size: 1.953em;
+      }
+
+      @include breakpoint(large) {
+        font-size: 2.253em;
+        margin-bottom: 0;
       }
     }
   }

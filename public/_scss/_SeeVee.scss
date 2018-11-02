@@ -10,9 +10,9 @@
   }
 
   @include breakpoint(xlarge) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
-    max-width: 768px;
+    max-width: 936px;
   }
 
   ul {
