@@ -1,34 +1,50 @@
-.Teaser {
+.TeaserList {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1.5em;
+  list-style: none;
+  padding: 0;
 
-  @include breakpoint(medium) {
-    text-align: left;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2em;
+  li {
+    margin: 0;
   }
 
-  &__wrap {
-    display: grid;
-    grid-template-columns: 1fr;
+  @include breakpoint(large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+    grid-template-rows: auto;
+  }
+}
+
+
+.Teaser {
+  display: grid;
+  box-shadow: $resting-box;
+  list-style: none;
+
+  @include breakpoint(medium) {
     grid-template-rows: 2fr 1fr;
-    max-height: 800px;
+  }
+
+  @include breakpoint(large) {
+    grid-template-rows: auto;
+    grid-gap: 0;
     transition: $trans--long-out;
     border-radius: 3px;
     box-shadow: $resting-box;
+    margin-bottom: 2rem;
 
     &:hover {
       filter: hue-rotate(-22.5deg);
       transform: scale(1.01);
       transition: $trans--short-in;
-      box-shadow: $active-box
+      box-shadow: $active-box;
     }
+  }
 
-    @include breakpoint(medium) {
-      grid-template-columns: 1fr;
-      grid-template-rows: 2fr 1fr;
-    }
+  &__image {
+    min-height: 100%;
+    min-width: 100%;
   }
 
   &__content {
@@ -38,16 +54,17 @@
     padding: 1.5em 1em;
 
     @include breakpoint(medium) {
-      padding: 1.5em;
-      text-align: left;
-    }
-
-    @include breakpoint(medium) {
-      min-height: 132px;
+      padding: 2em 1em;
     }
 
     @include breakpoint(large) {
-      min-height: 99px;
+      display: none;
+
+      &:hover {
+        display: grid;
+        transition: $trans--short-in;
+
+      }
     }
   }
 
@@ -81,7 +98,7 @@
     text-decoration: none;
 
     @include breakpoint(medium) {
-      &:nth-child(3) {
+      &:nth-child(1) {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 2;

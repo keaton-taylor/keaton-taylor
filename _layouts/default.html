@@ -2,22 +2,23 @@
     {% include SiteHeaderHome.html %}
 
     <section class="container__large">
-      <div class="Teaser">
+      <ul class="TeaserList">
 
           {% for post in site.categories.case_study limit:6 %}
+          <li class="Teaser">
             <a href="{{ post.url }}">
-              <article class="Teaser__wrap">
-                <div class="Teaser__image {{ post.class }}" ></div>
+              <article>
+                <div class="Teaser__image {{ post.class }}"></div>
                 <div class="Teaser__content">
                   <small class="Teaser__kicker">{{ post.series }}</small>
                   <h3 class="Teaser__title"> {{ post.title }} </h3>
-                  <!-- <p class="Teaser__summary mt-half m-0"> {{ post.excerpt }}</p> -->
                 </div>
               </article>
             </a>
+          </li>
           {% endfor %}
 
-      </div>
+      </ul>
     </section>
 
 
