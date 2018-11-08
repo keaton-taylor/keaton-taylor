@@ -1,5 +1,4 @@
 body {
-  background-color: #fafafa;
   border-top: 0.25em solid $color--blue;
   font-size: 1em !important;
   font-family: $sans-stack;
@@ -7,6 +6,10 @@ body {
   line-height: 1.45;
   text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+
+  @include breakpoint(large) {
+    background: url('/assets/images/icon--blob.svg') top left/70% no-repeat;
+  }
 
   .container {
     max-width: 75em;
