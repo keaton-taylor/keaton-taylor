@@ -9,14 +9,14 @@ class: w
 ---
 <section class="container__xlarge mt-4 mb-2">
   <figure class="container__image mb-2">
-    <img src="https://ktportfolio-cdn.sirv.com/img/batteryoutfitters.png?progressive=true&png.optimize=true" alt="Battery Outfitters website design" />
+    <img src="https://ktportfolio-cdn.sirv.com/img/w-header-img.png?progressive=true&png.optimize=true" alt="Battery Outfitters website design" />
     <figcaption>
       Website for <a href="http://batteryoutfitters.com/">Battery Outfitters.</a> Working with my friends at <a href="buildmidwestern.com">Midwestern Interactive</a>, I wireframed and designed the front end experiences for the entire website. Working with Midwestern and a local advertising agency, we worked with the client to make sure the flow was tidy, intuitive and informational.<br><small>Role: Design</small>
     </figcaption>
   </figure>
 
   <figure class="container__image mb-2">
-    <img src="https://ktportfolio-cdn.sirv.com/img/r-trucking-app.png?profile=portfolio" alt="Trucking app concept" />
+    <img src="https://ktportfolio-cdn.sirv.com/img/d-header-img.png?profile=portfolio" alt="Trucking app concept" />
     <figcaption>
       Concept for a Logistics and Trucking App to Keep Drivers and Load Booking Crew Informed. This concept was an idea gathering session with a friend who actually works on a similar piece of software. We looked at existing user needs and made some educated guesses about updates that could be helpful.<br><small>Role: Design</small>
     </figcaption>
