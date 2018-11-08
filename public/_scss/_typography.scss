@@ -1,15 +1,15 @@
 $sans-stack: "franklin-gothic-urw", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-html {font-size: 1.125em;}
+html {font-size: 16px;}
 
 a {
   font-weight: 400;
   color: darken(#69d1d1, 40%);
+  text-decoration: none;
 
   &:hover {
 
     @include breakpoint(large) {
-      text-decoration: none;
       color: darken($color--blue, 10%);
     }
   }
