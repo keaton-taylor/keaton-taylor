@@ -8,7 +8,7 @@ body {
     -webkit-font-smoothing: antialiased;
 
   @include breakpoint(large) {
-    background: url('/assets/images/icon--blob.svg') top left/70% no-repeat;
+    background: url('/assets/images/icon--blob.svg') top left/60% no-repeat;
   }
 
   .container {

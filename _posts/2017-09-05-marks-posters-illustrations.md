@@ -7,11 +7,10 @@ series: DESIGN WORK
 comments: false
 class: r
 ---
-<section class="container__small mb-2">
-  <div class="ContentArea__grid">
+<section class="container__xlarge mb-2">
 
     <figure class="container__image mb-2">
-      <img src="https://ktportfolio-cdn.sirv.com/img/FOA.png" alt="The words 'Friends of Amos' partially submerged in water" />
+      <img src="https://ktportfolio-cdn.sirv.com/img/r-header-img.png" alt="The words 'Friends of Amos' partially submerged in water" />
       <figcaption class="mt-half center">
         <small>A logo for a student organization that discusses theology and culture at Emmanuel Christian Seminary.</small>
       </figcaption>
@@ -65,5 +64,5 @@ class: r
         <small>A badge used as a logo for a local running club's 25k race.</small>
       </figcaption>
     </figure>
-  </div>
+
 </section>

@@ -3,7 +3,7 @@
 
   @include breakpoint(large) {
     display: grid;
-    height: 60vh;
+    height: 50vh;
     align-content: center;
     margin-top: 12em;
   }
@@ -17,7 +17,7 @@
     }
 
     h1 {
-      font-size: 1.25em;
+      font-size: 1.65em;
       font-weight: 700;
 
       @include breakpoint(medium) {
@@ -42,9 +42,9 @@
       font-family: $sans-stack;
       margin-top: 0;
       margin-bottom: 0;
+      font-size: 1.25em;
 
       @include breakpoint(medium) {
-        font-size: 1.25em;
         max-width: 75vw;
       }
 
@@ -60,7 +60,6 @@
     grid-gap: 0.75em;
     list-style: none;
     padding-left: 0;
-    justify-items: center;
     align-items: center;
     margin-bottom: 2em;
 

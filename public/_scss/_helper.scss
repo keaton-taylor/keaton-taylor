@@ -23,7 +23,7 @@ $trans--long-out: all 500ms ease-in-out;
 $trans--short-in: all 200ms ease-in;
 $trans--short-out: all 200ms ease-in-out;
 
-$resting-box: 0 4px 6px rgba(0, 0, 0, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+$resting-box: 0 4px 6px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
 $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 
 .no-shadow {
@@ -271,17 +271,22 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .at {
-  background: url("https://ktportfolio-cdn.sirv.com/img/at-teaser-img.png") no-repeat center center;
+  background: #fff url("https://ktportfolio-cdn.sirv.com/img/at-teaser-img.png") no-repeat center center;
+  background-size: cover;
+}
+
+.ath {
+  background: #fff url("https://ktportfolio-cdn.sirv.com/img/at-header-img.png") no-repeat center center;
   background-size: cover;
 }
 
 .m {
-  background: url("https://ktportfolio-cdn.sirv.com/img/m-teaser-img.png") no-repeat center center;
+  background: #fff url("https://ktportfolio-cdn.sirv.com/img/m-teaser-img.png") no-repeat center center;
   background-size: cover;
 }
 
 .rm {
-  background: url("https://ktportfolio-cdn.sirv.com/img/rm-header-img.png") no-repeat center center;
+  background: #fff url("https://ktportfolio-cdn.sirv.com/img/rm-header-img.png") no-repeat center center;
   background-size: cover;
 }
 
