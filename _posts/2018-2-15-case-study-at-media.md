@@ -9,7 +9,7 @@ year: 2016 - 2018
 platform: Web
 series: CASE STUDY
 URL: www.apartmenttherapy.com
-class: at
+class: ath
 ---
 <section markdown="1">
 ### The Challenge, Hypothesis and Goals

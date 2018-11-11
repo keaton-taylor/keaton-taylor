@@ -96,6 +96,21 @@
     }
   }
 
+  &__hattie {
+    @include breakpoint(medium) {
+      grid-row: 7 / span 2;
+      grid-column: 8 / span 2;
+      box-shadow: $resting-box;
+      margin: 0 0 -1em 0;
+    }
+
+    @include breakpoint(large) {
+      grid-row: 8 / span 2;
+      grid-column: 10 / span 2;
+      margin: -1em 0 0 0;
+    }
+  }
+
   &__summary-two {
 
     @include breakpoint(medium) {
