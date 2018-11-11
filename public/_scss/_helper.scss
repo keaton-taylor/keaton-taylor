@@ -202,7 +202,7 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 .icon {
   height: 28px;
   width: 28px;
-  fill: $color--light-gray;
+  fill: $color--darkest-gray !important;
 }
 
 .round {

@@ -9,13 +9,14 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 0.5em;
+    margin-bottom: 12em;
   }
 
   &__wrap {
     display: grid;
     grid-template-columns: 1fr;
     min-height: 200px;
-    transition: $trans--long-out;
+    transition: $trans--short-out;
     border-radius: 3px;
     box-shadow: $resting-box;
 
@@ -32,12 +33,12 @@
       &:hover {
         filter: hue-rotate(-22.5deg);
         transform: scale(1.01);
-        transition: $trans--short-in;
+        transition: $trans--short-out;
         box-shadow: $active-box;
 
         .Teaser__content {
           display: grid;
-          transition: $trans--short-in;
+          transition: $trans--long-in;
         }
       }
     }
@@ -50,7 +51,7 @@
     background-color: rgba(255, 255, 255, 0.7);
     height: 100%;
     width: 100%;
-    transition: $trans--long-out;
+    transition: $trans--short-out;
 
     @include breakpoint(medium) {
       min-height: 132px;
