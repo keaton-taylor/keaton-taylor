@@ -6,10 +6,6 @@ body {
   line-height: 1.45;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-
-  @include breakpoint(large) {
-    background: url('/assets/images/icon--blob.svg') top left/70% no-repeat;
-  }
 }
 
 .container {
