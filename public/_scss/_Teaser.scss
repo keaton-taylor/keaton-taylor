@@ -12,6 +12,10 @@
     margin-bottom: 12em;
   }
 
+  @include breakpoint(large) {
+    height: 103vh;
+  }
+
   &__wrap {
     display: grid;
     grid-template-columns: 1fr;
