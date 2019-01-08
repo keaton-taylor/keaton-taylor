@@ -2,7 +2,7 @@
   font-family: $sans-stack;
   color: $color--darkest-gray;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 24px;
+  margin: 32px 0 24px;
   font-weight: 600;
 
   @include breakpoint(large) {
@@ -21,13 +21,19 @@
   .mh,
   .w,
   .d {
-    height: 50vh;
+    height: 62vh;
     width: 100vw;
     max-width: 1440px;
     padding: 0;
 
     @include breakpoint(medium) {
       margin-top: 1.5em;
+      height: 55vh;
+    }
+
+    @include breakpoint(xlarge) {
+      width: 90vw;
+      height: 62vh;
     }
   }
 
@@ -92,22 +98,34 @@
     }
 
     @include breakpoint(large) {
-      max-width: 40vw;
+      max-width: 50vw;
     }
 
-    &-item {
+    @include breakpoint(xlarge) {
+      grid-template-columns: max-content max-content max-content;
+    }
 
+
+    &-item {
       h4 {
         font-weight: 700;
         margin-bottom: 0;
         padding-bottom: 0.25em;
-        font-size: 0.8em
+        font-size: 0.8em;
+
+        @include breakpoint(large) {
+          font-size: 1.25em;
+        }
       }
 
       p {
         margin-top: 0.25em;
         font-size: 0.8em;
         font-weight: 400;
+
+        @include breakpoint(large) {
+          font-size: 1em;
+        }
       }
     }
   }

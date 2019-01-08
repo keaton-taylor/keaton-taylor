@@ -30,8 +30,6 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   box-shadow: none !important;
 }
 
-
-
 .lg {
   background: $color--light-gray;
 }
@@ -190,8 +188,16 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 
 .container__break {
 
+  @include breakpoint(large) {
+    margin: 0 -10em 1em -11em !important;
+  }
+
   @include breakpoint(xlarge) {
-    margin: 0 -10em 1em !important;
+    margin: 0 -18em 1em -19em !important;
+  }
+
+  @include breakpoint(xxxlarge) {
+    margin: 0 -24em 1em -25em !important;
   }
 }
 
