@@ -1,6 +1,11 @@
 .SeeVee {
   padding: 2em 1em;
   margin: 0 auto;
+  line-height: 1.5;
+
+  &__experience-position {
+    margin-bottom: 2em;
+  }
 
   @include breakpoint(medium) {
     display: grid;
@@ -10,9 +15,9 @@
   }
 
   @include breakpoint(xlarge) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1em;
-    max-width: 936px;
+    max-width: 64em;
   }
 
   ul {

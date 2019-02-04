@@ -54,6 +54,12 @@ body {
     }
   }
 
+  &__xxlarge {
+    @extend .container__xlarge;
+
+    max-width: 1600px;
+  }
+
   &__full {
     max-width: 100%;
     padding: 0 1em 0;

@@ -4,16 +4,21 @@
   grid-gap: 1.5em;
   min-height: 200px;
 
+  .container__xlarge & {
+    max-width: 1600px;
+  }
+
   @include breakpoint(medium) {
     text-align: left;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 0.5em;
-    margin-bottom: 12em;
+    margin-bottom: 10em;
   }
 
   @include breakpoint(large) {
-    height: 103vh;
+    height: 110vh;
+    grid-gap: 2em;
   }
 
   &__wrap {
