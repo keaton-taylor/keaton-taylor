@@ -192,12 +192,8 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 
 .container__break {
 
-  @include breakpoint(large) {
-    margin: 0 -10em 1em -11em !important;
-  }
-
   @include breakpoint(xlarge) {
-    margin: 0 -18em 1em -19em !important;
+    margin: 0 -13em 1em -14em !important;
   }
 
   @include breakpoint(xxxlarge) {
@@ -313,4 +309,10 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 .d {
   background: url("https://ktportfolio.sirv.com/img/d-header-img.png") no-repeat center center;
   background-size: cover;
+}
+
+.th {
+  background: url("https://ktportfolio-cdn.sirv.com/img/th-welcome.png") no-repeat center center;
+  background-size: cover;
+
 }

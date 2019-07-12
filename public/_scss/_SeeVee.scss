@@ -1,7 +1,7 @@
 .SeeVee {
   padding: 2em 1em;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 1.6;
 
   &__experience-position {
     margin-bottom: 2em;
@@ -23,19 +23,18 @@
   ul {
     padding: 0 0 0 0;
     margin: 0;
-    list-style: none;
 
     li {
-      margin-bottom: 1em;
+      margin: 0 0 0.5em 2em;
     }
   }
 
   h3, h4, h5, h6, p {
-    margin: 0;
+    margin: 0 0 0.25em;
   }
 
   h3 {
-    margin-bottom: 0.25em;
+    margin-bottom: 0.75em;
   }
 
   @include breakpoint(medium) {
@@ -55,7 +54,7 @@
       grid-column: 1 / span 5;
 
       &-position {
-        margin-bottom: 1em;
+        margin-bottom: 2em;
 
         span {
           font-weight: bold;
@@ -83,7 +82,7 @@
       grid-column: 1 / span 4;
 
       &-position {
-        margin-bottom: 1em;
+        margin-bottom: 2em;
 
         span {
           font-weight: bold;
