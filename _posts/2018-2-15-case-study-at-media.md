@@ -12,13 +12,14 @@ URL: www.apartmenttherapy.com
 class: ath
 ---
 <section markdown="1">
-### The Challenge, Hypothesis and Goals
+### A Brief Introduction
+In a cross-functional conversation with our Audience Development and Editorial partners, we were informed our content recommendation API (Parse.ly) was  not consistently serving content related to its parent content.   This meant that related metrics were underperforming as well. Some of that could be due to a lack of iteration which saw teasers stagnate after carryover into the recent AT Media redesign (2017) The bottom line was that it was imperative that we figure out what's happening and how to solve for it.
 
-**Challenge:** _How can we deliver more personalized content options to our readers?_
+### What Problems Were We Solving?
+We believed that iterating on our content recommendation tools and processes would give readers more access to better content. This increased content quality could lead to both an increase in reader engagement and a net increase in ad impressions - which could help to positively affect revenue. By implementing and testing data-driven recommendation APIs, we thought we could deliver better content to our readers, more consistently.
 
-**Hypothesis:** By implementing and testing data driven recommendation APIs, we can deliver better content to our readers, more consistently.
-
-**Background:** We already used Parse.ly for editorial analytics, so pulling recommendations from their API was a relatively low hurdle. In addition to Parse.ly we planned to test LiftIgniter, a machine learning API for making recommendations. We had already been using Parse.ly for a limited number of users and saw an upward trend in related metrics.
+### Beginning with Data
+We already used Parse.ly for editorial analytics, so pulling recommendations from their API was a relatively low hurdle. In addition to Parse.ly, we planned to test LiftIgniter, a machine learning API for making recommendations. We had already been using LiftIgniter for a limited number of users on an adjacent feature and saw an upward trend in related metrics. The busy work of defining goals and KPIs came next.
 
 **Editorial Goal:** Deliver better content recommendations on article pages.<br>
 **Metrics:** Time on Site and Pageviews.
@@ -29,8 +30,8 @@ class: ath
 **User Goals:** Make it easier and more fun to read AT Media properties by making relevant content easier to find.<br>
 **Metrics:** Social sharing and Unique sessions.
 
-### The Process
-Out of the gate our cross-functional team came together to define a common-sense scope for our project. What came out of that were a few ideas on how we could make this engaging and fun for readers to navigate the three categories of content we want to deliver. Some questions started to crop up:
+### The Work
+Our cross-functional team came together to define a project scope. What came out of that were a few ideas on how we could make this engaging and fun for readers to navigate the three categories of content we want to deliver. Some questions started to crop up:
 - Could we make it feel magical?
 - A choose your own adventure game?
 - A survey of some sort?
@@ -66,7 +67,7 @@ Out of the gate our cross-functional team came together to define a common-sense
   </figure>
 </div>
 
-Lots of other fun and kind of silly possibilities were discussed. We compiled research both on what had worked for us in the past and what other media outlets were doing to make related content more visible. The options kind of ran the gamut or what was possible: text links, teaser rolls, simplified teasers, images, stylized images. It was kind of all over the place. Based on our research and some of the notes we took, I started playing around in Sketch trying to see what some of those ideas might look like.
+Lots of other fun possibilities were discussed. We compiled research both on what had worked for us in the past and what other media outlets were doing to make related content more visible. The options kind of ran the gamut or what was possible: text links, teaser rolls, simplified teasers, images, stylized images. It was kind of all over the place. Based on our research and some of the notes we took, I started playing around in Sketch trying to see what some of those ideas might look like.
 
 <figure class="container__image container__break">
   <img src="https://ktportfolio-cdn.sirv.com/img/at-CYO-Detail.png?progressive=true&png.optimize=true" alt="concepts for choose your own content adventure." />
@@ -76,14 +77,14 @@ Lots of other fun and kind of silly possibilities were discussed. We compiled re
   </figcaption>
 </figure>
 
-After reviewing what we had in Sketch, we moved the mockups to InVision to test them out. Through some simple user testing (both in-person and through UserTesting.com's PEEK feature) we realized that the fun ideas we had were kind of terrible for a reader. We tested the concepts with readers inside our ideal demographics range: Two female and one male, between 24-34, 2 with children, one without. The overwhelming response by these readers was that we had made the interface more complex than it needed to be. Some specific comments were, "I might use this once, but it's pretty cumbersome," and "My only problem... is that this makes me have to think a lot more than I feel like I should about what I'm going to be seeing." It was clear that these early concepts created roadblocks for readers and were not conducive to skimming headlines and clicking into articles. This qualitative data early on was a guiding light for the concepts that came after.
+After reviewing what we had in Sketch, we moved the mockups to InVision to test them out. Through some simple user testing (both in-person and through UserTesting.com’s PEEK feature) we realized that the fun ideas we had were kind of terrible for a reader. We tested the concepts with readers inside our ideal demographics range: Two female and one male, between 24-34, 2 with children, one without. The overwhelming response by these readers was that we had made the interface more complex than it needed to be. Some specific comments were, “I might use this once, but it’s pretty cumbersome,” and “My only problem… is that this makes me have to think a lot more than I feel like I should about what I’m going to be seeing.” It was clear that these early concepts created roadblocks for readers and were not conducive to skimming headlines and clicking into articles. This qualitative data early on was a guiding light for the concepts that came after.
 
 During our regroup with one of our Product Managers, it became more and more clear that we were starting too big. We needed to scale back and start again. What does that look like? How does that feel? We refocused and simplified our original scope:
 - We have three content types we need to deliver to all readers
 - We want all three to be optimized across devices
 - We need an easy-to-use interface that doesn't feel clunky
 
-Based on these learnings it was clear that building this into some sort of game didn’t feel on-brand and didn’t meet the goals of the feature. So we stripped everything back to a significantly lower common denominator for testing. We still wanted an interactive experience. We wanted readers to feel like they were in control of the experience. As such we doubled back to try the concept with 3 clickable tabs correlated to our three content categories.
+Based on these learnings it was clear that building this into some sort of game didn’t feel on-brand and didn’t meet the goals of the feature. So we stripped everything back to a significantly lower common denominator for testing. We still wanted an interactive experience. We wanted readers to feel like they were in control of the experience, so we tested the concept with 3 clickable tabs correlated to our three content categories.
 
 <figure class="container__image container__break">
   <img src="https://ktportfolio-cdn.sirv.com/img/at-option-details.png" alt="Simpler content delivery." />
@@ -92,7 +93,7 @@ Based on these learnings it was clear that building this into some sort of game 
   </figcaption>
 </figure>
 
-In implementation we ran an initial test comparing Parse.ly to LiftIgniter apples-to-apples and saw a marked difference in engagement. LiftIgniter was clearly making more actionable recommendations. Over time we would come to traffic most of our reader recommendations through LiftIgniter because of the staggering increase in engagement.
+In the implementation stage, we ran an initial test comparing Parse.ly to LiftIgniter apples-to-apples and saw a marked difference in engagement. LiftIgniter was clearly making more actionable recommendations. Over time we would come to traffic most of our reader recommendations through LiftIgniter because of the staggering increase in engagement.
 
 ### Results and Iteration
 What we found after a few days of monitoring analytics numbers was that very few people (<2%) were switching through the tabbed content on larger screens. Smaller screens were doing only slightly better. After talking through the results and ramifications, we decided to split the three content types out into three columns on larger screens. We kept the tabbed interface on smaller screens in hope that adoption was taking more time than expected.
@@ -126,6 +127,4 @@ At the end of 2017 our team continued to be more experimental and take more risk
     <small>Moving from vertically arranged teasers to horizontal ones increased clicks on the home page by just under 36%</small>
   </figcaption>
 </figure>
-
-The Apartment Therapy team continue to test, monitor and iterate to deliver the best possible context-optimized content recommendations.
 </section>

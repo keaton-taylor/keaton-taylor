@@ -56,4 +56,67 @@ class: w
       <b>Community Focused initiatives.</b> My all-time favorite projects for AT Media have been the online community driven initiatives. Launching our new Save feature, refreshing our profile pages and ongoing projects to integrate more connective community features have been a joy to work on. We have a dedicated user0base that loves to connect through comments and social media. It's been a real treat developing features to satisfy some long-standing requests and work with users to develop a roadmap of new and upcoming features.<br><small>Role: Design and CSS</small>
     </figcaption>
   </figure>
+
+  <figure class="container__image mb-2">
+    <img src="https://ktportfolio-cdn.sirv.com/img/dailyui6.png?progressive=true&png.optimize=true" />
+    <figcaption>
+      Daily UI Project
+    </figcaption>
+  </figure>
+
+  <figure class="container__image mb-2">
+    <img src="https://ktportfolio-cdn.sirv.com/img/dailyui5.png?progressive=true&png.optimize=true" />
+    <figcaption>
+      Daily UI Project
+    </figcaption>
+  </figure>
+
+  <figure class="container__image mb-2">
+    <img src="https://ktportfolio-cdn.sirv.com/img/dailyui3.jpg?progressive=true&png.optimize=true" />
+    <figcaption>
+      Daily UI Project
+    </figcaption>
+  </figure>
+
+  <figure class="container__image mb-2">
+    <img src="https://ktportfolio-cdn.sirv.com/img/dailyui2.png?progressive=true&png.optimize=true" />
+    <figcaption>
+      Daily UI Project
+    </figcaption>
+  </figure>
+
+  <figure class="container__image mb-2">
+    <img src="https://ktportfolio.sirv.com/img/Sign%20in%20Email.png?profile=portfolio" />
+    <figcaption>
+      Daily UI Project
+    </figcaption>
+  </figure>
+
+  <figure class="container__image mb-2">
+    <img src="https://ktportfolio-cdn.sirv.com/img/Sign%20in%20username.png?profile=portfolio" />
+    <figcaption>
+      Daily UI Project
+    </figcaption>
+  </figure>
+
+  <figure class="container__image mb-2">
+    <img src="https://ktportfolio-cdn.sirv.com/img/daily-ish_ui__9.png?profile=portfolio" />
+    <figcaption>
+      Daily UI Project
+    </figcaption>
+  </figure>
+
+  <figure class="container__image mb-2">
+    <img src="https://ktportfolio-cdn.sirv.com/img/keaton_taylor_marketplace_listing_detail_desktop_concept_.png?profile=portfolio" />
+    <figcaption>
+      Daily UI Project
+    </figcaption>
+  </figure>
+
+  <figure class="container__image mb-2">
+    <img src="https://ktportfolio-cdn.sirv.com/img/keaton_taylor_daily_ui_11_flash_message.png?profile=portfolio" />
+    <figcaption>
+      Daily UI Project
+    </figcaption>
+  </figure>
 </section>
