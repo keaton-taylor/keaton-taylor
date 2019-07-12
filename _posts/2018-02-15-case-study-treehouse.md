@@ -2,7 +2,7 @@
 layout: work
 date:   2017-09-13 16:17:01 -0600
 category: case_study
-title: "Treehouse: Techdegree Squad"
+title: "Treehouse: Techdegree Squad - Dashboard"
 role: Product Designer
 year: 2019
 platform: Web
