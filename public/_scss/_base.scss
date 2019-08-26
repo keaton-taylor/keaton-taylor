@@ -13,88 +13,13 @@ body {
   padding: 0 1em 0;
   margin: 0 auto;
 
-  &__xsmall {
-    max-width: 40em;
-    margin: 0 auto;
+  @include breakpoint(medium) {
     padding: 0 1em;
-  }
-
-  &__small {
-    max-width: 52em !important;
-    padding: 0 1em 0;
-
-    @include breakpoint(medium) {
-      margin: 0 auto;
-    }
-  }
-
-  &__large {
-    max-width: 64em;
-    padding: 0 1em 0;
-    margin: 0 auto;
-
-    @include breakpoint(medium) {
-      padding: 0 1em;
-    }
-  }
-
-  &__xlarge {
-    max-width: 75em;
-    padding: 0 1em 0;
-    margin: 0 auto;
-
-    @include breakpoint(medium) {
-      padding: 0 1em;
-    }
-
-    &-break {
-      @include breakpoint(xlarge) {
-        margin: 0;
-      }
-    }
-  }
-
-  &__xxlarge {
-    @extend .container__xlarge;
-
-    max-width: 1600px;
-  }
-
-  &__full {
-    max-width: 100%;
-    padding: 0 1em 0;
-
-    @include breakpoint(medium) {
-      padding: 0;
-    }
-  }
-
-  &__images {
-    @include breakpoint(medium) {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-gap: 1em;
-    }
-  }
-
-  &__image {
-    flex-direction: column;
-
-    @include breakpoint(medium) {
-      flex-direction: row;
-    }
-
-    &--small {
-      max-width: 25em;
-      margin: auto;
-    }
   }
 }
 
 footer {
   @include gradient;
-
-  margin-top: 3em;
   padding: 1em 0;
   font-weight: bolder;
   color: white;
