@@ -1,11 +1,15 @@
 .SiteHeaderCV {
   margin: 4em 0 1em;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2em;
   padding-right: 0;
   margin-right: 0;
   overflow: hidden;
+
+  @include breakpoint(medium) {
+    grid-template-columns: 1fr 1fr;
+  }
 
   a {
     text-decoration: none;
