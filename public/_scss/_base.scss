@@ -1,6 +1,6 @@
 body {
   border-top: 0.25em solid #ef3934;
-  font-size: 1em !important;
+  font-size: 16px !important;
   font-family: $sans-stack;
   font-weight: 400;
   line-height: 1.6;
@@ -9,18 +9,65 @@ body {
 }
 
 .container {
-  max-width: 75em;
-  padding: 0 1em 0;
+  max-width: 75rem;
+  padding: 0 1rem 0;
   margin: 0 auto;
 
   @include breakpoint(medium) {
-    padding: 0 2em;
+    padding: 0 2rem;
+  }
+
+  &__small {
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 0 1rem 0;
+  }
+
+  &__xsmall {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 1rem 0;
+  }
+
+  &__large {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem 0;
+  }
+
+
+  &__xlarge {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    overflow:hidden;
+  }
+
+  &__half {
+    @include breakpoint(large) {
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
+
+  &__split {
+    margin: 0 auto;
+
+    @include breakpoint(large) {
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: 600px 1fr;
+      align-items: center;
+    }
   }
 }
 
 footer {
   @include gradient;
-  padding: 1em 0;
+  padding: 1rem 0;
   font-weight: bolder;
   color: white;
+  overflow: hidden;
 }

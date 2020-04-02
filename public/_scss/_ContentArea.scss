@@ -4,6 +4,7 @@
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   margin: 32px 0 24px;
   font-weight: 600;
+  overflow: hidden;
 
   @include breakpoint(large) {
     font-size: 3.5em;
@@ -23,8 +24,7 @@
   .w,
   .d {
     height: 56vh;
-    width: 100vw;
-    max-width: 1440px;
+    width: 98vw;
     padding: 0;
 
     @include breakpoint(medium) {
@@ -34,7 +34,7 @@
 
     @include breakpoint(xlarge) {
       width: 90vw;
-      height: 62vh;
+      height: 75vh;
     }
   }
 
@@ -146,5 +146,14 @@
       grid-template-rows: auto;
       grid-gap: 1em;
     }
+  }
+
+  .BrightSpotStudents {
+    max-width: 350px;
+    margin: 2rem auto;
+  }
+
+  .color-field__th {
+    background-color: #EDEFF0; 
   }
 }

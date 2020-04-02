@@ -2,10 +2,27 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1.5em;
-  min-height: 200px;
+  min-height: 25em;
+
+  @include breakpoint(large) {
+    grid-template-columns: 1fr;
+  }
 
   .container__xlarge & {
     max-width: 1600px;
+  }
+
+  @include breakpoint(medium) {
+    text-align: left;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0.5em;
+    margin-bottom: 0;
+  }
+
+   @include breakpoint(large) {
+    height: 110vh;
+    grid-gap: 1em;
   }
 
   &__wrap {
@@ -13,8 +30,10 @@
     grid-template-columns: 1fr;
     min-height: 200px;
     transition: $trans--short-out;
-    border-radius: 3px;
     box-shadow: $resting-box;
+    border: $color--lighter-gray 1px solid;
+    border-radius: 6px;
+
 
     @include breakpoint(medium) {
       justify-content: center;
@@ -22,10 +41,10 @@
       grid-template-columns: 1fr;
       height: 100%;
       box-shadow: none;
-      border-radius: 0;
     }
 
     @include breakpoint(large) {
+
       &:hover {
         filter: hue-rotate(-22.5deg);
         transform: scale(1.01);
@@ -83,17 +102,51 @@
     }
   }
 
-  &__summary {
-    display: none;
-    transition: 0s;
-    font-family: $sans-stack;
-    color: $color--dark-gray;
+  a {
+    text-decoration: none;
 
-    @include breakpoint(large) {
-      font-weight: 400;
-      display: block;
-      transition: all 0ms ease-in-out;
-      filter: none;
+     @include breakpoint(medium) {
+      &:nth-child(2) {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+      }
+
+       &:nth-child(1) {
+        grid-column: 4 / span 2;
+        grid-row: 1 / span 1;
+      }
+
+       &:nth-child(4) {
+        grid-column: 4 / span 2;
+        grid-row: 2 / span 1;
+      }
+      &:nth-child(5) {
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 2;
+      }
+
+       &:nth-child(6) {
+        grid-column: 3 / span 3;
+        grid-row: 3 / span 1;
+      }
+
+       &:nth-child(3) {
+        grid-column: 3 / span 3;
+        grid-row: 4 / span 1;
+      }
+    }
+
+     @include breakpoint(large) {
+      .ContentComponent__article-title {
+        transition: $trans--long-in;
+      }
+
+       &:hover {
+        .ContentComponent__article-title {
+          transition: $trans--short-out;
+          color: darken($color--blue, 10%);
+        }
+      }
     }
   }
 }
