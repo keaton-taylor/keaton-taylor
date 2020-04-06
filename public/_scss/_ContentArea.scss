@@ -100,7 +100,7 @@
     }
 
     @include breakpoint(medium) {
-      grid-template-columns: max-content 140px max-content;
+      grid-template-columns: max-content 11rem max-content;
     }
 
     @include breakpoint(large) {
@@ -154,6 +154,6 @@
   }
 
   .color-field__th {
-    background-color: #EDEFF0; 
+    background-color: #EDEFF0;
   }
 }

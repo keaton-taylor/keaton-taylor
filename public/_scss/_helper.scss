@@ -242,6 +242,11 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   border-radius: 100%;
 }
 
+.TeaserBG {
+  background-color: lighten($color--resume, 59%);
+
+}
+
 .show--large {
   display: none;
 
@@ -286,7 +291,7 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .w {
-  background: #f7f7f7 url("https://ktportfolio-cdn.sirv.com/img/w-header-img.png") no-repeat center center;
+  background: #fff url("https://ktportfolio-cdn.sirv.com/img/w-header-img.png") no-repeat center center;
   background-size: cover;
 }
 

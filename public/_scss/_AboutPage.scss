@@ -1,13 +1,12 @@
 .AboutPage {
-  padding: 0 1em;
-  margin: 0 auto;
+  margin-bottom: 2rem;
 
   p {
     font-size: 1em;
   }
 
   img {
-    border-radius: 6px;
+    border-radius: 2px;
   }
 
   @include breakpoint(medium) {
@@ -169,79 +168,14 @@
     }
   }
 
-  &__summary-cv {
-    background-color: lighten($color--green, 25%);
-    padding: 1em;
-    margin-bottom: 1.75em;
-
-    @include breakpoint(medium) {
-      grid-row: 13 / span 3;
-      grid-column: 6 / span 4;
-      box-shadow: $resting-box;
-      margin: 0;
-      padding: 1em;
-    }
-
-    @include breakpoint(large) {
-      grid-row: 11 / span 3;
-      grid-column: 9 / span 3;
-    }
-
-    h4 {
-      margin: 0 0 0.5em;
-      font-size: 1em;
-
-      @include breakpoint(xlarge) {
-        font-size: 1.25em;
-      }
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-
-      li {
-        margin-bottom: 0.25em;
-
-        &:last-child {
-          display: flex;
-          flex-direction: row;
-          margin: 0;
-          align-items: flex-end;
-        }
-
-        h5 {
-          margin: 0 0 -0.5em 0;
-          font-weight: 600;
-
-          @include breakpoint(xlarge) {
-            font-size: 1em;
-          }
-        }
-
-        a {
-          text-decoration: none;
-          color: $color--darker-gray;
-
-          small {
-            @include breakpoint(xlarge) {
-              font-size: 1em;
-            }
-          }
-        }
-      }
-    }
-
-    svg {
-      min-width: 24px;
-      height: 24px;
-      margin-right: 0.5em;
-    }
-  }
-
   .AboutPage__values-title {
     margin: 0 0 0.5em 0;
+    font-size: 2rem;
+    font-weight: 800;
+
+    span {
+      color: $color--resume;
+    }
 
     @include breakpoint(medium) {
       grid-row: 12 / span 1;
@@ -264,22 +198,27 @@
       grid-column: 2 / span 8;
 
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 2em;
+      grid-template-columns: 1fr;
     }
 
     @include breakpoint(large) {
       grid-row: 12 / span 4;
-      grid-column: 3 / span 6;
+      grid-column: 3 / span 8;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1.5rem
+    }
+
+    @include breakpoint(xlarge) {
+      grid-row: 12 / span 4;
+      grid-column: 3 / span 7;
     }
 
     &-item {
-      margin-bottom: 3em;
-      max-height: 130px;
+      margin-bottom: 1.5rem;
+      background-color: white;
 
-      @include breakpoint(medium) {
-        height: 130px;
-      }
 
       p {
         font-weight: 600;
@@ -288,6 +227,37 @@
         &.m-0 {
           font-weight: 400;
         }
+      }
+    }
+
+    &-content {
+      border: 1px solid lighten($color--resume, 50%);
+      border-radius: 4px;
+      padding: 1rem;
+      transition:
+        background-color 250ms ease-out,
+        padding 0.1s linear;
+
+      @include breakpoint(medium) {
+        min-height: 80px;
+      }
+
+      @include breakpoint(large) {
+        min-height: 145px;
+      }
+
+      @include breakpoint(xlarge) {
+        min-height: 110px;
+      }
+
+      &:hover {
+        border: none;
+        border-left: 10px inset #a255ef;
+        margin-bottom: calc(1.5rem + 2px);
+        transition:
+          background-color 250ms ease-in,
+          padding 0.1s linear;
+        box-shadow: 0 0 4px rgba(0,0,0,.16);
       }
     }
   }

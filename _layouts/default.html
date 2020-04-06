@@ -1,8 +1,8 @@
 {% include head.html %}
   {% include SiteHeaderHome.html %}
 
-    <section class="container container__xxlarge">
-      <div class="Teaser">
+    <section class="TeaserBG">
+      <div class="Teaser container__xxlarge">
 
          {% for post in site.categories.case_study limit:6 %}
           <a href="{{ post.url }}">
@@ -16,7 +16,9 @@
           </a>
         {% endfor %}
       </div>
+    </section>
 
+    <section class="container__xlarge">
       <div class="AboutPage">
         <img class="AboutPage__family" src="https://ktportfolio-cdn.sirv.com/img/family.png" alt="These things are most important"/>
         <p class="AboutPage__summary-two">I started out making terrible posters and album art for even worse bands. In 2011 I got a job working at a local web design studio and fell in love with the work. From there I worked for studios, startups and media companies crafting products and experiences that people love.</p>
@@ -27,43 +29,56 @@
 
         <p class="AboutPage__summary-three">In 2019 I was a part of a mass layoff from Treehouse four months into my tenure there. That threw my family into a tailspin that sent me to Denver, Raliegh, and San Francisco several times. We packed up our house, put it on the market, and headed for Eastern Kentucky. In that time I've been able to reevaluate my career goals, accept an offer from a really cool startup, and spend a lot of time with my family.</p>
 
-        <h3 class="AboutPage__values-title">Core Values</h3>
+        <h3 class="AboutPage__values-title"><span>Core</span><br>Values</h3>
         <div class="AboutPage__values">
+
           <div>
             <div class="AboutPage__values-item">
-              <p>People First</p>
-              <p class="m-0">Nothing survives if people aren't at the forefront of what you're making. Solving real problems for real people creates a firm foundation.</p>
+              <div class="AboutPage__values-content">
+                <p>People First</p>
+                <p class="m-0">Nothing survives if people aren't at the forefront of what you're making. Solving real problems for real people creates a firm foundation.</p>
+              </div>
             </div>
 
             <div class="AboutPage__values-item">
-              <p>Data Informed</p>
-              <p class="m-0">Qualitative data fleshes out the narrative that quantitative data sets. Don't guess. Talk to people, then watch what they do.</p>
+              <div class="AboutPage__values-content">
+                <p>Data Informed</p>
+                <p class="m-0">Qualitative data fleshes out the narrative that quantitative data sets. Don't guess. Start with people.</p>
+              </div>
             </div>
 
             <div class="AboutPage__values-item">
-              <p>Do the Work</p>
-              <p class="m-0">Be good to people, do the work and good things will come. Recognition is more fun as a team. Don't shy away from the hard problems</p>
+              <div class="AboutPage__values-content">
+                <p>Do the Work</p>
+                <p class="m-0">Be good to people, do the work and good things will come. Recognition is more fun as a team. Don't shy away from the hard problems</p>
+              </div>
             </div>
           </div>
 
           <div>
             <div class="AboutPage__values-item">
-              <p>No Heroes</p>
-              <p class="m-0">No Heroes, No martyrs, No person left behind. Everyone in the organization is fighting for the same thing, so let's fight together.</p>
+              <div class="AboutPage__values-content">
+                <p>No Heroes</p>
+                <p class="m-0">No Heroes, No martyrs, No person left behind. Everyone in the organization is fighting for the same thing, so let's fight together.</p>
             </div>
+          </div>
 
             <div class="AboutPage__values-item">
-              <p>Tiny Wins</p>
-              <p class="m-0">Sometimes 10x isn't realistic. Let's strive for iteration and tiny wins until we hit the jackpot.</p>
+              <div class="AboutPage__values-content">
+                <p>Tiny Wins</p>
+                <p class="m-0">Sometimes 10x isn't realistic. Let's strive for iteration and tiny wins until we hit the jackpot.</p>
             </div>
+          </div>
 
-            <div class="AboutPage__values-item">
+          <div class="AboutPage__values-item">
+            <div class="AboutPage__values-content">
               <p>Eat Last</p>
               <p class="m-0">Leaders aren't defined by titles. Take responsibility for those around you and lead by example.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
   {% include footer.html %}

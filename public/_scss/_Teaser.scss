@@ -3,6 +3,7 @@
   grid-template-columns: 1fr;
   grid-gap: 1.5em;
   min-height: 25em;
+  padding: 2rem 0;
 
   @include breakpoint(large) {
     grid-template-columns: 1fr;
@@ -31,8 +32,7 @@
     min-height: 200px;
     transition: $trans--short-out;
     box-shadow: $resting-box;
-    border: $color--lighter-gray 1px solid;
-    border-radius: 6px;
+    border-radius: 2px;
 
 
     @include breakpoint(medium) {
