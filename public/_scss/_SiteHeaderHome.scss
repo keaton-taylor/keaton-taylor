@@ -1,27 +1,38 @@
 .SiteHeaderHome {
   display: grid;
   height: 75vh;
-  max-width: 768px;
   align-content: center;
-  margin: 0 auto 0;
+
+  @include breakpoint(medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr max-content 1fr;
+  }
 
   &__summary {
     text-align: left;
 
+    @include breakpoint(medium) {
+      grid-column: 1 / span 6;
+      grid-row: 2 / span 1;
+    }
+
     @include breakpoint(large) {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column: 2 / span 5;
+      grid-row: 2 / span 1;
+    }
+
+    @include breakpoint(xlarge) {
+      grid-column: 2 / span 3;
+      grid-row: 2 / span 1;
     }
 
     h1 {
-      font-size: 1.5em;
+      font-size: 2rem;
       line-height: 1.6;
       font-weight: 700;
       color: $color--darkest-gray;
 
-      @include breakpoint(medium) {
-        max-width: 80vw;
-      }
 
       @include breakpoint(large) {
         grid-column: 1 / span 5;
@@ -46,7 +57,7 @@
       color: $color--darkest-gray;
       margin-top: 0;
       margin-bottom: 1.5rem;
-      font-size: 1.25em;
+      font-size: 1.25rem;
 
       a {
         color: $color--darkest-gray;
@@ -58,13 +69,21 @@
         }
       }
 
-      @include breakpoint(medium) {
-        max-width: 75vw;
-      }
-
       @include breakpoint(large) {
         grid-column: 1 / span 5;
       }
+    }
+  }
+
+  &__nav {
+    @include breakpoint(medium) {
+      grid-column: 1 / span 5;
+      grid-row: 3 / span 1;
+    }
+
+    @include breakpoint(large) {
+      grid-column: 2 / span 4;
+      grid-row: 3 / span 1;
     }
   }
 

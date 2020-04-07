@@ -3,8 +3,8 @@ $sans-stack: "Lato", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", 
 html {font-size: 16px;}
 
 a {
-  font-weight: 400;
   color: darken(#69d1d1, 40%);
+  font-weight: 400;
   text-decoration: none;
 
   &:hover {
@@ -21,8 +21,8 @@ a {
 }
 
 p {
-  margin-top: 0;
   margin-bottom: 1.75em;
+  margin-top: 0;
 
   &:last-child {
     margin-bottom: 0;
@@ -30,15 +30,15 @@ p {
 }
 
 h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
+  margin: 1.414em 0 0.5em;
 }
 
 h1 {
-  margin-top: 0;
   font-size: 2.441em;
   font-weight: 900;
+  margin-top: 0;
 }
 
 h2 {font-size: 1.953em;}
@@ -50,15 +50,15 @@ h4 {font-size: 1.25em;}
 small, .small { font-size: 10px; }
 
 figcaption {
-  margin-top: 0.5em;
-  font-family: $sans-stack;
   color: #7f8c8d;
+  font-family: $sans-stack;
   font-size: 14px;
+  margin-top: 0.5em;
 }
 
 hr {
-  width: 100%;
   color: $color--light-gray;
+  width: 100%;
 }
 
 blockquote {
