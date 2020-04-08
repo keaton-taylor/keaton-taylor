@@ -68,14 +68,13 @@
       border-radius: 4px;
       padding: 1rem;
       position: relative;
-      box-shadow: 0 0 4px rgba(0,0,0,.16);
+      box-shadow: $resting-box;
 
       &:hover {
-        box-shadow: 0 0 6px rgba(0,0,0,.16);
+        box-shadow: $active-box;
+        transform: scale(1.01);
         margin-bottom: 1.5rem;
-        transition:
-          background-color 250ms ease-in,
-          padding 0.1s linear;
+        transition: $trans--short-out;
       }
 
       .bar {
@@ -109,9 +108,7 @@
     }
 
     &-content {
-      transition:
-        background-color 250ms ease-out,
-        padding 0.1s linear;
+      transition: $trans--short-in;
       min-height: max-content;
     }
   }
