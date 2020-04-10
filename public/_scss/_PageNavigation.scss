@@ -1,9 +1,14 @@
 .PageNavigation {
-  width: 840px;
-  text-align: right;
-  margin-bottom: 4rem;
+  text-align: left;
+  margin: 4rem 0 -2rem;
+  padding: 1rem 1rem 2rem;
+  background-color: lighten($color--resume, 59%);
 
   p {
     margin-bottom: 1em;
+
+    a {
+      text-decoration: underline;
+    }
   }
 }

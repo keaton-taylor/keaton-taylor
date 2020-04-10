@@ -7,7 +7,7 @@
       <section class="mb-2">
 
         <section class="ContentArea__main">
-          <div class="container__small">
+          <div class="container__xsmall">
             <h2 class="ContentHeadline">{{ page.title }}</h2>
             <section class="ContentArea__data">
               <div class="ContentArea__data-item">
@@ -25,12 +25,24 @@
             </section>
           </div>
           {{ page.content }}
+
+          <div class="PageNavigation">
+            {% unless page.category == null %}
+              {% capture case_study %}{{ page.category }}{% endcapture %}
+              {% unless site.categories[pageCategory].size == 1 %}
+                <div class="RelatedPosts__wrap">
+                <h4>More of My Work</h4>
+                  {% for post in site.categories[case_study] limit:5 %}
+                    {% unless post.title == page.title %}
+                     <p><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p>
+                    {% endunless %}
+                  {% endfor %}
+                </div>
+              {% endunless %}
+            {% endunless %}
+          </div>
         </section>
       </section>
-          {% include PageNavigation.html %}
     </section>
 
-
-
-
-    {% include footer.html %}
+  {% include footer.html %}
