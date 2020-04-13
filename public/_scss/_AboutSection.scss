@@ -29,6 +29,10 @@
     grid-template-rows: max-content repeat(3, 220px) max-content max-content;
   }
 
+  @include breakpoint(xxxlarge) {
+    grid-template-rows: max-content repeat(3, 230px) max-content max-content;
+  }
+
 
   &__title {
     font-size: 2rem;

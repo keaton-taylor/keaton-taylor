@@ -17,15 +17,15 @@ body {
     padding: 0 2rem;
   }
 
-  &__small {
-    margin: 0 auto;
-    max-width: 840px;
-    padding: 0 1rem 0;
-  }
-
   &__xsmall {
     margin: 0 auto;
     max-width: 640px;
+    padding: 0 1rem 0;
+  }
+
+  &__small {
+    margin: 0 auto;
+    max-width: 840px;
     padding: 0 1rem 0;
   }
 
