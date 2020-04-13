@@ -30,7 +30,7 @@
             {% unless page.category == null %}
               {% capture case_study %}{{ page.category }}{% endcapture %}
               {% unless site.categories[pageCategory].size == 1 %}
-                <div class="RelatedPosts__wrap">
+                <div class="container__large RelatedPosts__wrap">
                 <h4>More of My Work</h4>
                   {% for post in site.categories[case_study] limit:5 %}
                     {% unless post.title == page.title %}
