@@ -1,93 +1,68 @@
 .SeeVee {
-  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+
+  @include breakpoint(large) {
+    display: grid;
+    grid-template-columns: 70% 26%;
+    grid-gap: 5rem;
+  }
 
   &__experience-position {
-    margin-bottom: 2em;
-  }
+    margin-bottom: 2rem;
 
-  @include breakpoint(medium) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    max-width: 1152px;
-  }
-
-  @include breakpoint(xlarge) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1em;
-    max-width: 64em;
-  }
-
-  ul {
-    padding: 0 0 0 0;
-    margin: 0;
-
-    li {
-      margin: 0 0 0.5em 2em;
+    p:first-of-type {
+      opacity: 0.8;
     }
   }
+
+  &__main {
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 0 0 0.5em 1.75rem;
+      }
+    }
+  }
+
+  &__sidebar {
+    h4 {
+      color: $color--resume;
+    }
+
+    &-education {
+      p:first-of-type {
+        opacity: 0.7;
+      }
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 0 0 0.5em 0;
+        opacity: 0.7;
+      }
+    }
+  }
+
+
 
   h3, h4, h5, h6, p {
-    margin: 0 0 0.25em;
+    font-size: 16px;
   }
 
-  h3 {
-    margin-bottom: 0.75em;
+  p {
+    margin-bottom: 0.5rem;
   }
 
-  @include breakpoint(medium) {
-    &__profile {
-      grid-column: 1 / span 5;
-    }
-
-    &__accomplishments {
-      grid-column: 1 / span 5;
-    }
-
-    &__honors {
-      grid-column: 1 / span 5;
-    }
-
-    &__experience {
-      grid-column: 1 / span 5;
-
-      &-position {
-        margin-bottom: 2em;
-
-        span {
-          font-weight: bold;
-        }
-      }
-    }
+  h4, h4 a {
+    font-weight: 800;
+    margin-top: 0;
   }
-
-  @include breakpoint(xlarge) {
-    &__profile {
-      grid-column: 1 / span 4;
-    }
-
-    &__accomplishments {
-      grid-column: 1 / span 2;
-      grid-row: 2 / span 2;
-    }
-
-    &__honors {
-      grid-column: 3 / span 2;
-      grid-row: 2 / span 2;
-    }
-
-    &__experience {
-      grid-column: 1 / span 4;
-
-      &-position {
-        margin-bottom: 2em;
-
-        span {
-          font-weight: bold;
-        }
-      }
-    }
-  }
-
-
 }

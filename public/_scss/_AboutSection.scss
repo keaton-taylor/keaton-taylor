@@ -25,6 +25,10 @@
     grid-template-rows: max-content repeat(3, 193px) max-content max-content;
   }
 
+  @include breakpoint(1366px) {
+    grid-template-rows: max-content repeat(3, 211px) max-content max-content;
+  }
+
   @include breakpoint(xxlarge) {
     grid-template-rows: max-content repeat(3, 220px) max-content max-content;
   }

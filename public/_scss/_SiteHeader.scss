@@ -1,103 +1,115 @@
 .SiteHeader {
-  margin: 2em 0 0.5em;
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding-right: 0;
+  margin-right: 0;
+  overflow: hidden;
+  height: max-content;
+  align-items: center;
 
   @include breakpoint(medium) {
-    margin: 2em 0;
+    margin: 5rem 0;
+    grid-template-columns: 1fr max-content;
   }
 
-  @include breakpoint(large) {
-    margin: 3em 1em 0;
+  a {
+    text-decoration: none;
+  }
+
+  &__nav {
+    display: grid;
+    padding-bottom: 0.75em;
+    max-width: 100%;
+
+    @include breakpoint(large) {
+      justify-items: end;
+      width: max-content;
+    }
+  }
+
+  &__nav-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+    list-style: none;
+    padding-left: 0;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2em;
+
+    @include breakpoint(medium) {
+      grid-gap: 2em;
+      margin-bottom: 0;
+      justify-items: end;
+      width: max-content
+    }
   }
 
   &__name {
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
+    width: 60%;
+
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    span {
+      color: $color--resume;
+      font-weight: 800;
+    }
 
     @include breakpoint(medium) {
       justify-content: left;
       text-align: left;
-    }
-
-    h2 {
-      font-weight: 600;
-      text-transform: uppercase;
-      color: $color--darker-gray;
-      letter-spacing: 1px;
-      font-family: $sans-stack;
+      width: 100%;
     }
 
     p {
       font-weight: 600;
       font-family: $sans-stack;
-      margin-top: -4px;
+      margin-top: 0;
       margin-bottom: 0;
       color: $color--light-gray;
-      font-size: 11px;
       letter-spacing: 1px;
     }
   }
 
-  &__nav {
+  &__summary {
     display: grid;
-    grid-gap: 1em;
-    align-self: center;
-    justify-self: center;
     align-items: center;
-    margin: 1em 2em;
+    font-family: $sans-stack;
+    height: auto;
+    font-weight: 300;
 
-    @include breakpoint(medium) {
-      grid-template-columns: max-content 3fr;
-      margin-bottom: 0;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    &-items {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-gap: 0.75em;
-      list-style: none;
-      padding-left: 0;
-      justify-items: center;
-      align-items: center;
+    h2 {
+      color: $color--darker-gray;
+      font-size: 1.563em;
 
       @include breakpoint(medium) {
-        grid-template-columns: max-content max-content max-content max-content max-content max-content max-content;
-        justify-content: end;
-        grid-gap: 1em;
+        font-size: 1.953em;
       }
+
       @include breakpoint(large) {
-        grid-gap: 2em;
+        font-size: 2.253em;
+        margin-bottom: 0;
       }
     }
   }
 
+  &__image {
+    display: none;
+
+    @include breakpoint(medium) {
+      display: initial;
+    }
+  }
+
   &__nav-item.icon {
-    // &.resume svg:active {
-    //   fill: darken($color--resume, 20%);
-    // }
-    //
-    // &.twitter svg:active {
-    //   fill: darken($color--twitter, 20%);
-    // }
-    //
-    // &.github svg:active {
-    //   fill: darken($color--github, 20%);
-    // }
-    //
-    // &.dribbble svg:active {
-    //   fill: darken($color--dribbble, 20%);
-    // }
-    //
-    // &.medium svg:active {
-    //   fill: darken($color--medium, 20%);
-    // }
-    //
-    // &.linkedin svg:active {
-    //   fill: darken($color--linkedin, 20%);
-    // }
 
     &.img {
       filter: grayscale(100%);
