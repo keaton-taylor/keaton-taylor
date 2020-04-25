@@ -15,24 +15,28 @@
 # in the templates via {{ site.myvariable }}.
 title: Keaton Taylor | Product Designer
 email: keatontaylor@me.com
-description: "Keaton is a product designer, his beard is pretty good."
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://keaton-taylor.com" # the base hostname & protocol for your site, e.g. http://example.com
+description: 'Keaton is a product designer, his beard is pretty good.'
+baseurl: '/' # the subpath of your site, e.g. /blog
+url: 'http://keaton-taylor.com' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: keaton_taylor
-github_username:  keaton-taylor
+github_username: keaton-taylor
 
 # Build settings
 markdown: kramdown
 
 autoprefixer:
   browsers:
-  - last 2 versions
+    - last 2 versions
 
 theme:
 plugins_dir:
   - jekyll-feed
   - jekyll-autoprefixer
   - jemoji
+
+plugins:
+  - jekyll-postcss
+  - jekyll-purgecss
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -45,6 +49,10 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - package-lock.json
+  - postcss.config.js
+  - purgecss.config.js
+  - node_modules
 
 sass:
   sass_dir: public/_scss
