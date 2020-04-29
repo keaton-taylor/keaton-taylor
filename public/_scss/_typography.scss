@@ -1,16 +1,16 @@
-$sans-stack: "Lato", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$sans-stack: ff-tisa-sans-web-pro, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 html {font-size: 16px; color: darken(#69d1d1, 40%);}
 
 a {
-  color: darken(#69d1d1, 40%);
+  color: $color--resume;
   font-weight: 400;
   text-decoration: none;
 
   &:hover {
 
     @include breakpoint(large) {
-      color: darken($color--blue, 10%);
+      color: lighten($color--resume, 10%);
     }
   }
 

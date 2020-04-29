@@ -1,13 +1,10 @@
 .ValuesSection {
   grid-gap: 1.5rem;
   display: grid;
-  grid-template-columns: 1fr;
   min-height: 25em;
-  padding: 2rem 0;
 
   @include breakpoint(medium) {
     grid-gap: 1rem;
-    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: max-content 1fr;
     margin-bottom: 0;
     text-align: left;
@@ -15,12 +12,17 @@
 
    @include breakpoint(large) {
     grid-gap: 1.5rem;
+    margin: 4rem 0;
   }
 
 
   &__title {
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 800;
+
+    @include breakpoint(large) {
+      font-size: 2rem;
+    }
 
     span {
       color: $color--resume;
@@ -33,54 +35,35 @@
     }
 
     @include breakpoint(large) {
-      grid-column: 2 / span 1;
+      grid-column: 1 / span 1;
       grid-row: 1 / span 1;
     }
   }
 
   &__values {
     display: grid;
+    grid-gap: 1.5rem;
 
     @include breakpoint(medium) {
-      grid-gap: 1.5rem;
-      display: grid;
-      grid-column: 1 / span 6;
-      grid-row: 2 / span 3;
+      grid-gap: 2rem;
       grid-template-columns: 1fr 1fr;
     }
 
-    @include breakpoint(1024px) {
-      grid-column: 2 / span 4;
-      grid-row: 2 / span 3;
-    }
-
-    @include breakpoint(1440px) {
-      grid-gap: 3rem;
-      grid-column: 2 / span 5;
-      grid-row: 2 / span 3;
-    }
-
     &-item {
-      background-color: white;
-      // border: 1px solid lighten($color--resume, 50%);
-      border-radius: 4px;
-      box-shadow: $resting-box;
       margin-bottom: 1.5rem;
-      padding: 1rem;
+      padding: 1.25rem 1.25rem 1.25rem 0;
       position: relative;
-      transition: $trans--short-out;
 
       @include breakpoint(1440px) {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
       }
 
       .bar {
         background: $color--resume;
         border-radius: 8px;
-        bottom: 8px;
-        left: 12px;
+        bottom: 0.5rem;
         position: absolute;
-        top: 8px;
+        top: 0.5rem;
         width: 4px;
       }
 
@@ -88,7 +71,7 @@
         font-size: 1rem;
         font-weight: 800;
         margin: 0 0 0.5rem 0;
-        padding-left: 0.75rem;
+        padding-left: 1rem;
         color: $color--resume;
       }
 
@@ -97,7 +80,7 @@
         color: #918F8F;
         font-weight: 600;
         margin: 0 !important;
-        padding-left: 0.75rem;
+        padding-left: 1rem;
 
         &.m-0 {
           font-weight: 400;

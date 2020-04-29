@@ -1,13 +1,12 @@
 .ContentHeadline {
   font-family: $sans-stack;
   color: $color--darkest-gray;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   margin: 32px 0 24px;
   font-weight: 600;
   overflow: hidden;
 
   @include breakpoint(large) {
-    font-size: 3.5em;
+    font-size: 3em;
   }
 }
 
@@ -55,6 +54,7 @@
 
     p {
       font-family: $sans-stack;
+      font-size: 18px;
       margin-top: 0;
 
       & + ul {
