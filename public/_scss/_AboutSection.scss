@@ -10,46 +10,20 @@
 
   @include breakpoint(medium) {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: max-content repeat(3, 195px) max-content max-content;
     padding: 1rem 0;
-    row-gap: 1rem;
-    column-gap: 1rem;
+    grid-gap: 1em;
   }
-
-  @include breakpoint(large) {
-    grid-template-rows: max-content repeat(3, 155px) max-content max-content;
-  }
-
-  @include breakpoint(xlarge) {
-    grid-template-rows: max-content repeat(3, 193px) max-content max-content;
-  }
-
-  @include breakpoint(1366px) {
-    grid-template-rows: max-content repeat(3, 211px) max-content max-content;
-  }
-
-  @include breakpoint(xxlarge) {
-    grid-template-rows: max-content repeat(3, 220px) max-content max-content;
-  }
-
-  @include breakpoint(xxxlarge) {
-    grid-template-rows: max-content repeat(3, 230px) max-content max-content;
-  }
-
 
   &__title {
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 800;
-    grid-column: 1 / span 1;
+
+    @include breakpoint(large) {
+      font-size: 2rem;
+    }
 
     span {
       color: $color--resume;
-    }
-
-    @include breakpoint(large) {
-      grid-column: 2 / span 1;
-
     }
   }
 
@@ -57,13 +31,13 @@
     margin-bottom: 1em;
 
     @include breakpoint(medium) {
-      grid-column: 1 / span 6;
+      grid-column: 1 / span 5;
       grid-row: 2 / span 4;
       margin-bottom: 0;
     }
 
     @include breakpoint(large) {
-      grid-column: 2 / span 4;
+      grid-column: 1 / span 5;
       grid-row: 2 / span 2;
     }
   }
@@ -77,8 +51,8 @@
 
     @include breakpoint(large) {
       grid-column: 5 / span 2;
-      grid-row: 3 / span 2;
-      margin: 3em -1em 0 0;
+      grid-row: 3 / span 1;
+      margin: 6em -8em 0 0;
     }
   }
 
@@ -102,42 +76,12 @@
       box-shadow: $resting-box;
       grid-column: 1 / span 2;
       grid-row: 3 / span 2;
-      margin-top: 3em;
+      margin-top: 9em;
     }
     @include breakpoint(large) {
-      grid-column: 2 / span 1;
+      grid-column: 1 / span 1;
       grid-row: 3 / span 1;
-      margin: 0 0 0 -1.5em;
-    }
-  }
-
-  &__summary-two {
-    margin-bottom: 1rem;
-
-    @include breakpoint(medium) {
-      grid-column: 1 / span 2;
-      grid-row: 5 / span 1;
-      margin-bottom: 0;
-    }
-
-    @include breakpoint(large) {
-      grid-column: 2 / span 3;
-      grid-row: 5 / span 1;
-      margin-bottom: 0;
-      align-self: end;
-    }
-  }
-
-  &__summary-three {
-    @include breakpoint(medium) {
-      grid-column: 1 / span 6;
-      grid-row: 6 / span 1;
-      margin-bottom: 0;
-    }
-
-    @include breakpoint(large) {
-      grid-column: 2 / span 5;
-      grid-row: 6 / span 1;
+      margin: 0 0 0 -5em;
     }
   }
 }

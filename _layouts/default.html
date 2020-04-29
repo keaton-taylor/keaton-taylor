@@ -1,97 +1,29 @@
 {% include head.html %}
-  {% include SiteHeaderHome.html %}
+  {% include SiteHeader.html %}
 
-    <section class="TeaserBG">
-      <div class="Teaser container__xlarge">
-        <h3 class="Teaser__section-title mb-0 mt-0"><span>Selected</span><br>Work</h3>
-
-         {% for post in site.categories.case_study limit:6 %}
-          <a href="{{ post.url }}">
-            <article class="Teaser__wrap {{ post.class }}">
-              <div class="Teaser__content">
-                <small class="Teaser__kicker">{{ post.series }}</small>
-                <h3 class="Teaser__title"> {{ post.title }} </h3>
-                <!-- <p class="Teaser__summary mt-half m-0"> {{ post.excerpt }}</p> -->
-              </div>
-            </article>
-          </a>
-        {% endfor %}
-      </div>
+    <section class="Headline container__large">
+      <h2>Hi, I'm Keaton. I'm a product designer who loves to dabble in front-end code. I live and work in Eastern Kentucky with my wife and four children.</h2>
     </section>
 
-    <section class="container__xlarge">
+    {% include Teaser.html %}
+
+
+    <section class="container__split">
+      {% include ValuesSection.html %}
+      {% include Elsewhere.html %}
+    </section>
+
+
+    <section class="container__large mb-4">
       <div class="AboutSection">
-        <h3 class="AboutSection__title mt-2 mb-1"><span>More</span><br>about me</h3>
+        <h3 class="AboutSection__title mt-2 mb-1"><span>Most</span><br>Important</h3>
         <img class="AboutSection__family" src="https://ktportfolio.sirv.com/img/IMG_8388.jpg" alt="These things are most important"/>
-        <p class="AboutSection__summary-two">I started out making terrible posters and album art for even worse bands. In 2011 I got a job working at a local web design studio and fell in love with the work. From there I worked for studios, startups and media companies crafting products and experiences that people love.</p>
 
         <img class="AboutSection__parents show--medium" src="https://ktportfolio.sirv.com/img/78EC1BB8-4928-4E9F-8036-95448A93A38B.JPG" alt="These things are most important"/>
 
         <img class="AboutSection__hattie show--medium" src="https://ktportfolio.sirv.com/img/IMG_8158.jpg" alt="These things are most important"/>
 
         <img class="AboutSection__emma show--medium" src="https://ktportfolio.sirv.com/img/IMG_8044.jpg" alt="These things are most important"/>
-
-
-        <p class="AboutSection__summary-three">In 2019 I was a part of a mass layoff from Treehouse four months into my tenure there. That threw my family into a tailspin that sent me to Denver, Raliegh, and San Francisco several times. We packed up our house, put it on the market, and headed for Eastern Kentucky. In that time I've been able to reevaluate my career goals, accept an offer from a really cool startup, and spend a lot of time with my family.</p>
-      </div>
-    </section>
-
-    <section class="container__xlarge">
-      <div class="ValuesSection">
-        <h3 class="ValuesSection__title mt-2 mb-1"><span>Core</span><br>values</h3>
-          <div class="ValuesSection__values">
-            <div>
-              <div class="ValuesSection__values-item">
-                <div class="ValuesSection__values-content">
-                  <div class="bar"></div>
-                  <h4>People First</h4>
-                  <p class="m-0">People problems are the next frontier and they're much harder.</p>
-                </div>
-              </div>
-
-              <div class="ValuesSection__values-item">
-                <div class="ValuesSection__values-content">
-                  <div class="bar"></div>
-                  <h4>Data Informed</h4>
-                  <p class="m-0">Human beings flesh out the narrative that quant data sets.</p>
-                </div>
-              </div>
-
-              <div class="ValuesSection__values-item">
-                <div class="ValuesSection__values-content">
-                  <div class="bar"></div>
-                  <h4>Do the Work</h4>
-                  <p class="m-0">Be good, do good and the universe reciprocates. Don't back down.</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div class="ValuesSection__values-item">
-                <div class="ValuesSection__values-content">
-                  <div class="bar"></div>
-                  <h4>No Heroes</h4>
-                  <p class="m-0">No Heroes, No martyrs, No person left behind. Teams fight together.</p>
-                </div>
-              </div>
-
-              <div class="ValuesSection__values-item">
-                <div class="ValuesSection__values-content">
-                  <div class="bar"></div>
-                  <h4>Small Wins</h4>
-                  <p class="m-0">Strive for a big victory through small wins. Everyone pitches in.</p>
-                </div>
-              </div>
-
-            <div class="ValuesSection__values-item">
-              <div class="ValuesSection__values-content">
-                <div class="bar"></div>
-                <h4>Eat Last</h4>
-                <p class="m-0">Leaders aren't always defined by titles but they always lead by example.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 

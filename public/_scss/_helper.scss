@@ -244,7 +244,6 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.16);
 
 .TeaserBG {
   background-color: lighten($color--resume, 63%);
-
 }
 
 .show--large {
@@ -267,6 +266,20 @@ $active-box: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.16);
 
   @include breakpoint(medium) {
     display: grid;
+  }
+}
+
+.section-title {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+
+  @include breakpoint(large) {
+    font-size: 2rem;
+  }
+
+  span {
+    color: $color--resume;
   }
 }
 

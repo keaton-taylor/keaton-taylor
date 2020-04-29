@@ -1,16 +1,13 @@
 .SiteHeader {
-  margin: 3rem 0;
+  margin: 5rem 0 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
-  padding-right: 0;
-  margin-right: 0;
-  overflow: hidden;
+  padding: 0;
   height: max-content;
-  align-items: center;
+
 
   @include breakpoint(medium) {
-    margin: 5rem 0;
     grid-template-columns: 1fr max-content;
   }
 
@@ -20,7 +17,6 @@
 
   &__nav {
     display: grid;
-    padding-bottom: 0.75em;
     max-width: 100%;
 
     @include breakpoint(large) {
@@ -32,12 +28,8 @@
   &__nav-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0;
     list-style: none;
-    padding-left: 0;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 2em;
+    margin: 0;
 
     @include breakpoint(medium) {
       grid-gap: 2em;
@@ -48,14 +40,24 @@
   }
 
   &__name {
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    width: 60%;
+    width: 85%;
+    margin-bottom: 1rem;
+
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+    }
 
     h1 {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 600;
+
+      @include breakpoint(large) {
+        font-size: 2rem;
+      }
+
+      a:hover {
+        color: $color--darkest-gray;
+      }
     }
 
     span {
@@ -76,36 +78,6 @@
       margin-bottom: 0;
       color: $color--light-gray;
       letter-spacing: 1px;
-    }
-  }
-
-  &__summary {
-    display: grid;
-    align-items: center;
-    font-family: $sans-stack;
-    height: auto;
-    font-weight: 300;
-
-    h2 {
-      color: $color--darker-gray;
-      font-size: 1.563em;
-
-      @include breakpoint(medium) {
-        font-size: 1.953em;
-      }
-
-      @include breakpoint(large) {
-        font-size: 2.253em;
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  &__image {
-    display: none;
-
-    @include breakpoint(medium) {
-      display: initial;
     }
   }
 
