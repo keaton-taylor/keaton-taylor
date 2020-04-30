@@ -93,16 +93,10 @@ body {
 }
 
 .Headline {
-  align-content: center;
-  display: grid;
   height: 60vh;
-  text-align: left;
 
   h2 {
-    color: $color--darkest-gray;
-    font-family: $sans-stack;
     font-size: 1.5rem;
-    font-weight: 600;
     line-height: 1.4;
     margin: 0;
 
