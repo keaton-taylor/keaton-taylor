@@ -14,4 +14,23 @@
     grid-gap: 1.5rem;
     margin: 4rem 0;
   }
+
+  a {
+    display: inline-block;
+    font-weight: 500;
+
+    span {
+      margin-left: 0.5rem;
+      transition: $trans--short-out;
+    }
+
+    @include breakpoint(large) {
+      &:hover {
+        span {
+          padding-left: 0.5rem;
+          transition: $trans--short-out;
+        }
+      }
+    }
+  }
 }

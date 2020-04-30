@@ -1,9 +1,9 @@
 .Teaser {
+  background-color: lighten($color--resume, 63.5%);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: max-content;
   padding-bottom: 2rem;
-  background-color: lighten($color--resume, 63.5%);
 
   @include breakpoint(medium) {
     margin-bottom: 0;
@@ -11,9 +11,9 @@
   }
 
   &__section-title {
-    margin-bottom: 0;
     font-size: 1.25rem;
-    font-weight: 800;
+    font-weight: 700;
+    margin-bottom: 0;
 
     @include breakpoint(large) {
       font-size: 2rem;
@@ -26,8 +26,8 @@
   }
 
   &__wrap {
-    display: grid;
     border-bottom: 1px dotted $color--resume;
+    display: grid;
     padding: 2rem 0;
 
     &:last-of-type {
@@ -37,8 +37,8 @@
 
 
     @include breakpoint(medium) {
-      grid-template-columns: 1fr 1fr;
       align-items: center;
+      grid-template-columns: 1fr 1fr;
       padding:0;
     }
   }
@@ -68,7 +68,7 @@
   &__title {
     color: $color--darkest-gray;
     font-size: 1.2em;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.5px;
     margin: 0.25rem 0;
 
@@ -78,19 +78,20 @@
   }
 
   a {
-    padding: 0 2rem 0 0;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 500;
+    padding: 0 2rem 0 0;
 
     span {
+      margin-left: 0.5rem;
       transition: $trans--short-out;
     }
 
     @include breakpoint(large) {
       &:hover {
         span {
+          padding-left: 0.5rem;
           transition: $trans--short-out;
-          padding-left: 8px;
         }
       }
     }

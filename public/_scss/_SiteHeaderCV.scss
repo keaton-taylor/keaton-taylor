@@ -1,17 +1,17 @@
 .SiteHeaderCV {
-  margin: 3rem 0;
+  grid-gap: 1rem;
+  align-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
-  padding-right: 0;
+  height: max-content;
+  margin: 3rem 0;
   margin-right: 0;
   overflow: hidden;
-  height: max-content;
-  align-items: center;
+  padding-right: 0;
 
   @include breakpoint(medium) {
-    margin: 10rem 0;
     grid-template-columns: 1fr max-content;
+    margin: 10rem 0;
   }
 
   a {
@@ -20,8 +20,8 @@
 
   &__nav {
     display: grid;
-    padding-bottom: 0.75em;
     max-width: 100%;
+    padding-bottom: 0.75em;
 
     @include breakpoint(large) {
       justify-items: end;
@@ -30,27 +30,27 @@
   }
 
   &__nav-items {
+    grid-gap: 0.75em;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0.75em;
-    list-style: none;
-    padding-left: 0;
     justify-items: center;
-    align-items: center;
+    list-style: none;
     margin-bottom: 2em;
+    padding-left: 0;
 
     @include breakpoint(medium) {
       grid-gap: 2em;
-      margin-bottom: 0;
       justify-items: end;
+      margin-bottom: 0;
       width: max-content
     }
   }
 
   &__name {
     justify-content: center;
-    text-align: center;
     margin: 0 auto;
+    text-align: center;
     width: 60%;
 
     h1 {
@@ -60,7 +60,7 @@
 
     span {
       color: $color--resume;
-      font-weight: 800;
+      font-weight: 700;
     }
 
     @include breakpoint(medium) {
@@ -70,21 +70,21 @@
     }
 
     p {
-      font-weight: 600;
-      font-family: $sans-stack;
-      margin-top: 0;
-      margin-bottom: 0;
       color: $color--light-gray;
+      font-family: $sans-stack;
+      font-weight: 600;
       letter-spacing: 1px;
+      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 
   &__summary {
-    display: grid;
     align-items: center;
+    display: grid;
     font-family: $sans-stack;
-    height: auto;
     font-weight: 300;
+    height: auto;
 
     h2 {
       color: $color--darker-gray;

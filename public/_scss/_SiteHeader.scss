@@ -1,10 +1,10 @@
 .SiteHeader {
-  margin: 5rem 0 0;
+  grid-gap: 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
-  padding: 0;
   height: max-content;
+  margin: 5rem 0 0;
+  padding: 0;
 
 
   @include breakpoint(medium) {
@@ -33,37 +33,38 @@
 
     @include breakpoint(medium) {
       grid-gap: 2em;
-      margin-bottom: 0;
       justify-items: end;
+      margin-bottom: 0;
       width: max-content
     }
   }
 
   &__name {
-    width: 85%;
     margin-bottom: 1rem;
+    width: 85%;
 
     @include breakpoint(medium) {
       margin-bottom: 0;
     }
 
     h1 {
+      span {
+        color: $color--resume;
+        font-weight: 700;
+      }
+
       font-size: 1.5rem;
-      font-weight: 600;
+      font-weight: 400;
+      color: $color--darkest-gray;
+
+
 
       @include breakpoint(large) {
         font-size: 2rem;
       }
-
-      a:hover {
-        color: $color--darkest-gray;
-      }
     }
 
-    span {
-      color: $color--resume;
-      font-weight: 800;
-    }
+
 
     @include breakpoint(medium) {
       justify-content: left;
@@ -72,12 +73,12 @@
     }
 
     p {
-      font-weight: 600;
-      font-family: $sans-stack;
-      margin-top: 0;
-      margin-bottom: 0;
       color: $color--light-gray;
+      font-family: $sans-stack;
+      font-weight: 600;
       letter-spacing: 1px;
+      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 

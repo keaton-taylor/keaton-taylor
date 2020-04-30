@@ -9,14 +9,14 @@
   }
 
   @include breakpoint(medium) {
+    grid-gap: 1em;
     display: grid;
     padding: 1rem 0;
-    grid-gap: 1em;
   }
 
   &__title {
     font-size: 1.25rem;
-    font-weight: 800;
+    font-weight: 700;
 
     @include breakpoint(large) {
       font-size: 2rem;

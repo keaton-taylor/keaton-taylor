@@ -53,12 +53,12 @@
 }
 
 @mixin gradient {
-  background: linear-gradient(1400deg, $color--resume, lighten($color--resume, 25%) );
-  background-size: 400% 400%;
   -webkit-animation: DesignValues 10s infinite;
   -moz-animation: DesignValues 10s ease infinite;
   -o-animation: DesignValues 10s ease infinite;
   animation: DesignValues 10s ease infinite;
+  background: linear-gradient(1400deg, $color--resume, lighten($color--resume, 25%) );
+  background-size: 400% 400%;
 
   @-webkit-keyframes DesignValues {
     0% {

@@ -77,12 +77,14 @@ body {
     margin: 0 auto;
     padding: 0 1rem;
 
+
     @include breakpoint(medium_only) {
       padding: 0 2rem;
     }
 
     @include breakpoint(large) {
       grid-gap: 1rem;
+      grid-gap: 2rem;
       display: grid;
       grid-template-columns: 2fr 1fr;
       max-width: 1140px;
@@ -91,17 +93,17 @@ body {
 }
 
 .Headline {
-  display: grid;
   align-content: center;
-  text-align: left;
+  display: grid;
   height: 60vh;
+  text-align: left;
 
   h2 {
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 1.4;
-    font-family: $sans-stack;
     color: $color--darkest-gray;
+    font-family: $sans-stack;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
     margin: 0;
 
     @include breakpoint(large) {
