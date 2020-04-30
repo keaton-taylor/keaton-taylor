@@ -20,7 +20,8 @@ gem "jekyll", "3.8.6"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
-   gem 'jekyll-autoprefixer', '~> 1.0', '>= 1.0.2'
-   gem 'jekyll-seo-tag', '~> 2.6', '>= 2.6.1'
-   gem 'jekyll-sitemap', '~> 1.4'
+   gem "jekyll-autoprefixer"
+   gem "jekyll-cloudinary"
+   gem "jekyll-postcss"
+   gem "jekyll-purgecss"
 end

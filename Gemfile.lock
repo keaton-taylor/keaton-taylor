@@ -34,6 +34,8 @@ GEM
       autoprefixer-rails (~> 9.3)
     jekyll-feed (0.12.1)
       jekyll (>= 3.7, < 5.0)
+    jekyll-postcss (0.2.2)
+    jekyll-purgecss (0.3.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.6.1)
@@ -71,8 +73,13 @@ DEPENDENCIES
   jekyll (= 3.8.6)
   jekyll-autoprefixer (~> 1.0, >= 1.0.2)
   jekyll-feed (~> 0.6)
+<<<<<<< HEAD
   jekyll-seo-tag (~> 2.6, >= 2.6.1)
   jekyll-sitemap (~> 1.4)
+=======
+  jekyll-postcss
+  jekyll-purgecss
+>>>>>>> f5c599d48275c3844f77ad8f8e9cc8f8814b2647
 
 RUBY VERSION
    ruby 2.4.0p0
