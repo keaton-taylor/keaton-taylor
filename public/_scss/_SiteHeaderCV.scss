@@ -1,15 +1,16 @@
 .SiteHeaderCV {
   grid-gap: 1rem;
-  align-items: center;
   display: grid;
   grid-template-columns: 1fr;
   height: max-content;
-  margin: 3rem 0;
-  margin-right: 0;
-  overflow: hidden;
-  padding-right: 0;
+  margin: 5rem 0 0;
+  padding: 0;
 
   @include breakpoint(medium) {
+    margin: 5rem 0;
+  }
+
+  @include breakpoint(large) {
     grid-template-columns: 1fr max-content;
     margin: 10rem 0;
   }
@@ -21,91 +22,44 @@
   &__nav {
     display: grid;
     max-width: 100%;
-    padding-bottom: 0.75em;
 
     @include breakpoint(large) {
-      justify-items: end;
       width: max-content;
     }
   }
 
   &__nav-items {
-    grid-gap: 0.75em;
-    align-items: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
     list-style: none;
-    margin-bottom: 2em;
-    padding-left: 0;
 
     @include breakpoint(medium) {
       grid-gap: 2em;
       justify-items: end;
-      margin-bottom: 0;
+      margin: 0;
       width: max-content
     }
   }
 
   &__name {
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-    width: 60%;
-
-    h1 {
-      font-size: 24px;
-      font-weight: 600;
-    }
-
-    span {
-      color: $color--resume;
-      font-weight: 700;
-    }
+    width: 70%;
 
     @include breakpoint(medium) {
+      width: 45%;
+    }
+
+    @include breakpoint(large) {
+      margin-bottom: 0;
       justify-content: left;
       text-align: left;
       width: 100%;
     }
 
-    p {
-      color: $color--light-gray;
-      font-family: $sans-stack;
+    h1 a {
+      font-size: 2rem;
       font-weight: 600;
-      letter-spacing: 1px;
-      margin-bottom: 0;
-      margin-top: 0;
-    }
-  }
-
-  &__summary {
-    align-items: center;
-    display: grid;
-    font-family: $sans-stack;
-    font-weight: 300;
-    height: auto;
-
-    h2 {
-      color: $color--darker-gray;
-      font-size: 1.563em;
-
-      @include breakpoint(medium) {
-        font-size: 1.953em;
-      }
-
-      @include breakpoint(large) {
-        font-size: 2.253em;
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  &__image {
-    display: none;
-
-    @include breakpoint(medium) {
-      display: initial;
+      color: $color--darkest-gray;
     }
   }
 
