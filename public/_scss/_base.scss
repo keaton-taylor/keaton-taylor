@@ -32,7 +32,7 @@ body {
 
   &__large {
     margin: 0 auto;
-    max-width: 1140px;
+    max-width: 1024px;
     padding: 0 1rem 0;
 
     @include breakpoint(medium_only) {
@@ -87,7 +87,7 @@ body {
       grid-gap: 2rem;
       display: grid;
       grid-template-columns: 2fr 1fr;
-      max-width: 1140px;
+      max-width: 1024px;
     }
   }
 }
@@ -98,13 +98,30 @@ body {
   height: 60vh;
   text-align: left;
 
+  @include breakpoint(medium_only) {
+    height: 30vh;
+  }
+
   h2 {
     color: $color--darkest-gray;
     font-family: $sans-stack;
     font-size: 1.5rem;
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 1.6;
     margin: 0;
+
+    a {
+      color: #f8423c !important;
+      font-weight: 600;
+      transition: $trans--short-out;
+
+
+      &:hover {
+        color: darken(#f8423c, 15%) !important;
+        transition: $trans--short-in;
+
+      }
+    }
 
     @include breakpoint(large) {
       font-size: 2.5rem;

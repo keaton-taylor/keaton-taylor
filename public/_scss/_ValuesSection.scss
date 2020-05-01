@@ -41,7 +41,6 @@
   }
 
   &__values {
-    grid-gap: 1.5rem;
     display: grid;
 
     @include breakpoint(medium) {

@@ -6,8 +6,7 @@
   margin: 5rem 0 0;
   padding: 0;
 
-
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     grid-template-columns: 1fr max-content;
   }
 
@@ -28,6 +27,7 @@
   &__nav-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-content: center;
     list-style: none;
     margin: 0;
 
@@ -40,11 +40,19 @@
   }
 
   &__name {
-    margin-bottom: 1rem;
-    width: 85%;
+    margin-bottom: 2rem;
+    width: 70%;
 
     @include breakpoint(medium) {
+      margin-bottom: 1rem;
+      width: 45%;
+    }
+
+    @include breakpoint(large) {
       margin-bottom: 0;
+      justify-content: left;
+      text-align: left;
+      width: 100%;
     }
 
     h1 {
@@ -53,32 +61,9 @@
         font-weight: 700;
       }
 
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 400;
       color: $color--darkest-gray;
-
-
-
-      @include breakpoint(large) {
-        font-size: 2rem;
-      }
-    }
-
-
-
-    @include breakpoint(medium) {
-      justify-content: left;
-      text-align: left;
-      width: 100%;
-    }
-
-    p {
-      color: $color--light-gray;
-      font-family: $sans-stack;
-      font-weight: 600;
-      letter-spacing: 1px;
-      margin-bottom: 0;
-      margin-top: 0;
     }
   }
 

@@ -5,7 +5,7 @@
   line-height: 1.6 !important;
 
   @include breakpoint(large) {
-    grid-gap: 5rem;
+    grid-gap: 2rem;
     display: grid;
     grid-template-columns: 70% 26%;
   }
@@ -51,10 +51,8 @@
     }
   }
 
-
-
-  h3, h4, h5, h6, p {
-    font-size: 16px;
+  h3, h4, h5, h6, {
+    font-size: 18px;
   }
 
   p {
