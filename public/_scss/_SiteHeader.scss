@@ -55,14 +55,9 @@
       width: 100%;
     }
 
-    h1 {
-      span {
-        color: $color--resume;
-        font-weight: 700;
-      }
-
+    h1 a {
       font-size: 2rem;
-      font-weight: 400;
+      font-weight: 600;
       color: $color--darkest-gray;
     }
   }

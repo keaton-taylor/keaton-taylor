@@ -1,7 +1,0 @@
----
----
-
-@tailwind base;
-@tailwind components;
-/* This is where you custom css would go either import here or just stick it inline */
-@tailwind utilities;

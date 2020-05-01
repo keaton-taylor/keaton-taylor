@@ -56,45 +56,10 @@
       width: 100%;
     }
 
-    h1 {
-      span {
-        color: $color--resume;
-        font-weight: 700;
-      }
-
+    h1 a {
       font-size: 2rem;
-      font-weight: 400;
+      font-weight: 600;
       color: $color--darkest-gray;
-    }
-  }
-
-  &__summary {
-    align-items: center;
-    display: grid;
-    font-family: $sans-stack;
-    font-weight: 300;
-    height: auto;
-
-    h2 {
-      color: $color--darker-gray;
-      font-size: 1.563em;
-
-      @include breakpoint(medium) {
-        font-size: 1.953em;
-      }
-
-      @include breakpoint(large) {
-        font-size: 2.253em;
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  &__image {
-    display: none;
-
-    @include breakpoint(medium) {
-      display: initial;
     }
   }
 
