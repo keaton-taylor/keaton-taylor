@@ -71,6 +71,7 @@ company: https://media-s3-us-east-1.ceros.com/apartment-therapy/images/2019/03/1
 </section>
 
 <section class="container__small">
+  <h4>Early explorations</h4>
   <p>Lots of other fun possibilities were discussed. We compiled research both on what had worked for us in the past and what other media outlets were doing to make related content more visible. The options kind of ran the gamut or what was possible: text links, teaser rolls, simplified teasers, images, stylized images. It was kind of all over the place. Based on our research and some of the notes we took, I started playing around in Sketch trying to see what some of those ideas might look like.</p>
 </section>
 
@@ -90,20 +91,22 @@ company: https://media-s3-us-east-1.ceros.com/apartment-therapy/images/2019/03/1
   <li> We want all three to be optimized across devices</li>
   <li> We need an easy-to-use interface that doesn't feel clunky</li>
   <br>
-  <p>Based on these learnings it was clear that building this into some sort of game didn’t feel on-brand and didn’t meet the goals of the feature. So we stripped everything back to a significantly lower common denominator for testing. We still wanted an interactive experience. We wanted readers to feel like they were in control of the experience, so we tested the concept with 3 clickable tabs correlated to our three content categories.</p>
+
+  <h4>Descoping the cruft</h4>
+  <p>Based on these learnings it was clear that initial ideas didn’t meet the goals of the feature. So we stripped everything back to a significantly lower common denominator for testing. We still wanted readers to feel like they were in control of the experience, so we tested the concept with 3 clickable tabs correlated to our three content categories.</p>
 </section>
 
 <section class="container__large">
   <figure class="container__image mt-2 mb-2">
     <img src="https://ktportfolio-cdn.sirv.com/img/at-option-details.png?profile=optimized" alt="Simpler content delivery." />
-    <figcaption class="center">A More Clear Look at the Five 3-Option Concepts</figcaption>
+    <figcaption class="center">A More Clear Look at the Five 3-option Concepts</figcaption>
   </figure>
 </section>
 
 <section class="container__small">
+  <h4>Implementation and data gathering</h4>
   <p>In the implementation stage, we ran an initial test comparing Parse.ly to LiftIgniter apples-to-apples and saw a marked difference in engagement. LiftIgniter was clearly making more actionable recommendations. Over time we would come to traffic most of our reader recommendations through LiftIgniter because of the staggering increase in engagement.</p>
 
-  <h3> Results and Iteration</h3>
   <p>What we found after a few days of monitoring analytics numbers was that very few people (<2%) were switching through the tabbed content on larger screens. Smaller screens were doing only slightly better. After talking through the results and ramifications, we decided to split the three content types out into three columns on larger screens. We kept the tabbed interface on smaller screens in hope that adoption was taking more time than expected.</p>
 
   <p>It wasn't. We got analytics numbers back and "desktop" click through rate had gone up from 3.6% to 5.8% and "mobile" had gone down to 3.3% with 99% of clicks coming from the default active tab. Up to this point, we had been using the Parse.ly API to drive recommendations in the "Related" and "Popular" tabs. We decided to follow some suggestions from Parse.ly and LiftIgniter to test a “back to the drawing board” option. Their data suggests that a simple 4x3 grid of article teasers might increase overall interactions.</p>
