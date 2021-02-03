@@ -69,7 +69,7 @@ GEM
     unicode-display_width (1.7.0)
 
 PLATFORMS
-  ruby
+  x86_64-darwin-20
 
 DEPENDENCIES
   jekyll (~> 4.2, >= 4.2.0)
@@ -80,7 +80,7 @@ DEPENDENCIES
   kramdown-parser-gfm
 
 RUBY VERSION
-   ruby 2.4.0p0
+   ruby 2.6.0p0
 
 BUNDLED WITH
    2.2.8
